@@ -1,5 +1,5 @@
-dataTraining:/media/agus/4DD244C0638395F0/dataset/
-dataTesting:/media/agus/4DD244C0638395F0/datates/4/wednesday/outside.tcpdump
+dataTraining:/media/agus/4DD244C0638395F0/dataset/1/wednesday/
+dataTesting:/media/agus/4DD244C0638395F0/2/wednesday/inside.tcpdump
 typePacket:0
 threshold:10
 sFactor:0.001

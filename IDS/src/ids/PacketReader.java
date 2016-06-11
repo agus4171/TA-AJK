@@ -83,9 +83,9 @@ public class PacketReader implements Runnable {
     
     public void Proses(){    
         dataTest.clear();
-//        int free = 0, countFree = 0;
-//        System.out.println(packetBody.size());
-//        free = packetBody.size()/2;
+        int free = 0, countFree = 0;
+        System.out.println(packetBody.size());
+        free = packetBody.size()/2;
         
         for (Map.Entry<String, BodyPacket> entry : packetBody.entrySet()) {
             String key = entry.getKey();
@@ -103,18 +103,18 @@ public class PacketReader implements Runnable {
 
             else if (header[0].equals("3")) {
                 
-//                if (header[1].equals("tcp") && countFree < free) {
-//                    datasetTcp.add(new DataPacket(header[1], header[2], Integer.parseInt(header[3]), header[4], Integer.parseInt(header[5]), numChars, type));
-//                    countFree++;
-//                } 
-//
-//                else if (header[1].equals("udp") && countFree < free) {
-//                    datasetUdp.add(new DataPacket(header[1], header[2], Integer.parseInt(header[3]), header[4], Integer.parseInt(header[5]), numChars, type));
-//                    countFree++;
-//                }
-//                
-//                else
-                dataTest.add(new DataPacket(header[1], header[2], Integer.parseInt(header[3]), header[4], Integer.parseInt(header[5]), numChars, type));
+                if (header[1].equals("tcp") && countFree < free) {
+                    datasetTcp.add(new DataPacket(header[1], header[2], Integer.parseInt(header[3]), header[4], Integer.parseInt(header[5]), numChars, type));
+                    countFree++;
+                } 
+
+                else if (header[1].equals("udp") && countFree < free) {
+                    datasetUdp.add(new DataPacket(header[1], header[2], Integer.parseInt(header[3]), header[4], Integer.parseInt(header[5]), numChars, type));
+                    countFree++;
+                }
+                
+                else
+                    dataTest.add(new DataPacket(header[1], header[2], Integer.parseInt(header[3]), header[4], Integer.parseInt(header[5]), numChars, type));
             }                
         }
         System.out.println("datasetTcp: "+datasetTcp.size());

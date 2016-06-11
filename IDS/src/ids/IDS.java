@@ -302,11 +302,11 @@ public class IDS {
 
                         threshold = ids.getThreshold(); 
                         sFactor = ids.getSFactor();
-//                        fileName = filePath.replace('/', '-').split("-", 0);
-//                        fileFree = new File("PcapTest_free_"+fileName[fileName.length-2]+"_"+fileName[fileName.length-1]+"_"+threshold);
-//                        fileAttack = new File("PcapTest_attack_"+fileName[fileName.length-2]+"_"+fileName[fileName.length-1]+"_"+threshold);
-//                        fwFree = new FileWriter(fileFree,true);
-//                        fwAttack = new FileWriter(fileAttack,true);
+                        fileName = filePath.replace('/', '-').split("-", 0);
+                        fileFree = new File("PcapTest_tcp_dist_"+fileName[fileName.length-2]+"_"+fileName[fileName.length-1]);
+                        fileAttack = new File("PcapTest_udp_dist_"+fileName[fileName.length-2]+"_"+fileName[fileName.length-1]);
+                        fwFree = new FileWriter(fileFree,true);
+                        fwAttack = new FileWriter(fileAttack,true);
 //                        valAttack = new ArrayList<>();
 //                        valFree = new ArrayList<>();
 
@@ -348,8 +348,9 @@ public class IDS {
                                 
                                 sd = new Mahalanobis();
                                 dist = sd.distance(dataPacketTes.getNgram(), sumData, sDeviasi, sFactor);
-
-                                System.out.println("tcp-"+dataPacketTes.getSrcIP()+"-"+dataPacketTes.getSrcPort()+"-"+dataPacketTes.getDstIP()+"-"+dataPacketTes.getDstPort()+" -> "+dist);
+                                
+                                fwFree.append(dataPacketTes.getSrcIP()+"-"+dataPacketTes.getSrcPort()+"-"+dataPacketTes.getDstIP()+"-"+dataPacketTes.getDstPort()+" -> "+dist);
+//                                System.out.println("tcp-"+dataPacketTes.getSrcIP()+"-"+dataPacketTes.getSrcPort()+"-"+dataPacketTes.getDstIP()+"-"+dataPacketTes.getDstPort()+" -> "+dist);
                             }
 
                             else if ("udp".equals(dataPacketTes.getProto())) {
@@ -381,15 +382,16 @@ public class IDS {
                                 }
                                 sd = new Mahalanobis();
                                 dist = sd.distance(dataPacketTes.getNgram(), sumData, sDeviasi, sFactor);
-
-                                System.out.println("udp-"+dataPacketTes.getSrcIP()+"-"+dataPacketTes.getSrcPort()+"-"+dataPacketTes.getDstIP()+"-"+dataPacketTes.getDstPort()+" -> "+dist);                                
+                                
+                                fwAttack.append(dataPacketTes.getSrcIP()+"-"+dataPacketTes.getSrcPort()+"-"+dataPacketTes.getDstIP()+"-"+dataPacketTes.getDstPort()+" -> "+dist);
+//                                System.out.println("udp-"+dataPacketTes.getSrcIP()+"-"+dataPacketTes.getSrcPort()+"-"+dataPacketTes.getDstIP()+"-"+dataPacketTes.getDstPort()+" -> "+dist);                                
                             }
                         }
                         
-//                        fwAttack.close();
-//                        fwFree.close();
-//                        end = System.currentTimeMillis();
-//                        System.out.println("Total time is: "+(end-start)/3600000+" hour "+((end-start)%3600000)/60000+" minutes "+(((end-start)%3600000)%60000)/1000+" seconds");
+                        fwAttack.close();
+                        fwFree.close();
+                        end = System.currentTimeMillis();
+                        System.out.println("Total time is: "+(end-start)/3600000+" hour "+((end-start)%3600000)/60000+" minutes "+(((end-start)%3600000)%60000)/1000+" seconds");
 //                        System.out.println("Total attack packet: "+valAttack.size());
 //                        System.out.println("Total free packet: "+valFree.size());
                     }
