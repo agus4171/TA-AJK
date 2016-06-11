@@ -1,0 +1,11 @@
+GET /verify/EAAAAKWXWGUqY1Um2vdM2e3lEjI.gif HTTP/1.1
+Host: id.google.co.in
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/532.0 (KHTML, like Gecko) Chrome/3.0.195.21 Safari/532.0
+Referer: http://www.google.co.in/search?hl=en&source=hp&q=wireshark&btnG=Google+Search&meta=&aq=f&oq=
+Accept: */*
+Accept-Encoding: gzip,deflate
+Cookie: SNID=27=SUv3JATDYX01BQ2JFzQADU2mX9rm8glEC0e156r4=G8JMB4OOYaQ6hxwN; PREF=ID=796f045a813f82ae:U=71955f24ce2c9b15:TM=1243356989:LM=1243358712:S=oAy0C6_Svfkwtuxi; SID=DQAAAIoAAAC2H0jKZVrsPnHEqa8OPVwrcVADAkKlev8P4IPILeabq9CHU5nD6Ng4W-3lCH_0bl3f5RxQrthwSVnJTsJVf4-j64kZz4U5Epso3J-76xv1jCCkfw_g_8zzU-qOH8l8WCIdjJ_AvQKrUWu98_XjpxMN0JDyiac8OAyN9YA1T-AnLSCh_TmAx60U5Q7wPcd0Fis; HSID=A2PDDPt2kzR3wMENc; NID=27=yvEUDgGSeOw-jZwqjSH2LaxodZfm67IHLy41S0DIiyNIXpXtBtzES5OvljVCSwfc15pjCsGiJ4ohxo6tmM08bql1eRD_78mVwzkCgQ3RbJ2CfxbeaBzBvvc-1U5K7A1j
+Accept-Language: en-US,en;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+

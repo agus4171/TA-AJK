@@ -1,0 +1,14 @@
+dataTraining:/home/agus/KULIAH/TA/AJK/DARPA/
+dataTesting:/home/agus/KULIAH/TA/AJK/DARPA/dump.pcap
+typePacket:0
+threshold:10
+sFactor:0.001
+limitPacket:1000
+
+
+
+/media/agus/4DD244C0638395F0/dataset/
+/media/agus/4DD244C0638395F0/free/
+/media/agus/4DD244C0638395F0/dataset/1/
+/media/agus/4DD244C0638395F0/datates/4/wednesday/inside.tcpdump
+val:sapi terbang

@@ -1,0 +1,66 @@
+Pcap Test
+Open File: /media/agus/4DD244C0638395F0/datates/4/wednesday/inside.tcpdump
+datasetTcp: 410910
+datasetUdp: 36139
+dataTes: 119893
+Threshold: 256.0
+Smoothing Factor: 0.001
+Calculating Mahalanobis Distance...
+Total time is: 0 hour 0 minutes 0 seconds
+Total attack packet: 83
+Total free packet: 28047
+1. Training Dataset
+2. Packet Sniffer Test
+3. Pcap Test
+Choose(1 or 2 or 3): 
+3
+
+
+Pcap Test
+Open File: /media/agus/4DD244C0638395F0/datates/4/wednesday/inside.tcpdump
+datasetTcp: 410910
+datasetUdp: 36139
+dataTes: 119893
+Threshold: 256.0
+Smoothing Factor: 0.001
+Calculating Mahalanobis Distance...
+Total time is: 0 hour 0 minutes 7 seconds
+Total attack packet: 142
+Total free packet: 27988
+1. Training Dataset
+2. Packet Sniffer Test
+3. Pcap Test
+Choose(1 or 2 or 3): 
+
+Pcap Test
+Open File: /media/agus/4DD244C0638395F0/datates/4/wednesday/inside.tcpdump
+datasetTcp: 410910
+datasetUdp: 36139
+dataTes: 119893
+Threshold: 256.0
+Smoothing Factor: 0.001
+Calculating Mahalanobis Distance...
+Total time is: 0 hour 0 minutes 0 seconds
+Total attack packet: 977
+Total free packet: 27153
+1. Training Dataset
+2. Packet Sniffer Test
+3. Pcap Test
+Choose(1 or 2 or 3): 
+
+Pcap Test
+Open File: /media/agus/4DD244C0638395F0/datates/4/wednesday/inside.tcpdump
+Processing Packet ke-0
+datasetTcp: 410619
+datasetUdp: 36136
+dataTes: 119893
+Threshold: 256.0
+Smoothing Factor: 0.001
+Calculating Mahalanobis Distance...
+Total time is: 0 hour 0 minutes 0 seconds
+Total attack packet: 124
+Total free packet: 1794
+1. Training Dataset
+2. Packet Sniffer Test
+3. Pcap Test
+Choose(1 or 2 or 3): 

@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual C# Express 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TcpRecon", "TcpRecon\TcpRecon.csproj", "{BBE081AC-5E3B-47AC-8B8E-FDD8E37A3CA1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BBE081AC-5E3B-47AC-8B8E-FDD8E37A3CA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBE081AC-5E3B-47AC-8B8E-FDD8E37A3CA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBE081AC-5E3B-47AC-8B8E-FDD8E37A3CA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBE081AC-5E3B-47AC-8B8E-FDD8E37A3CA1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
