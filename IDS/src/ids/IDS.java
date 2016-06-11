@@ -33,7 +33,7 @@ public class IDS {
      */
     int files = 1, count;  
     String line;
-    String[] ket = null;
+    String[] ket;
     BufferedReader br;
     static ArrayList<DataPacket> datasetTcp = new ArrayList<>();
     static ArrayList<DataPacket> datasetUdp = new ArrayList<>();
@@ -320,6 +320,7 @@ public class IDS {
 
                             if ("tcp".equals(dataPacketTes.getProto())) {      
                                 dataTraining = new ArrayList<>();                                
+                                
                                 for (DataPacket dataSetA : datasetTcp) {
                                     if (dataSetA.getDstPort() == dataPacketTes.getDstPort()) {                                        
                                         dataTraining.add(ArrayUtils.toObject(dataSetA.getNgram()));                                        
@@ -353,11 +354,13 @@ public class IDS {
 
                             else if ("udp".equals(dataPacketTes.getProto())) {
                                 dataTraining = new ArrayList<>();                                
+                                
                                 for (DataPacket dataSetB : datasetUdp) {
                                     if (dataSetB.getDstPort() == dataPacketTes.getDstPort()) {                                        
                                         dataTraining.add(ArrayUtils.toObject(dataSetB.getNgram()));                                        
                                     }                                    
                                 }
+                                
                                 System.out.println(dataTraining.size());
                                 sumData = new double[ascii];
                                 meanData = new double[ascii];
