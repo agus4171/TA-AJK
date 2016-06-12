@@ -1,5 +1,5 @@
-dataTraining:/home/agus/KULIAH/TA-AJK/DARPA
-dataTesting:/home/agus/KULIAH/TA-AJK/DARPA/dump.pcap
+dataTraining:/media/agus/4DD244C0638395F0/dataset/1/friday/
+dataTesting:/media/agus/4DD244C0638395F0/2/friday/inside.tcpdump
 typePacket:0
 threshold:10
 sFactor:0.001

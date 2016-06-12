@@ -12,7 +12,9 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -38,6 +40,8 @@ public class IDS {
     static ArrayList<DataPacket> datasetTcp = new ArrayList<>();
     static ArrayList<DataPacket> datasetUdp = new ArrayList<>();
     static ArrayList<DataPacket> dataTest = new ArrayList<>();
+    static Map<Integer, Double[]> sumTrain = new HashMap<>();
+    static Map<Integer, Double[]> sDeviasiTrain = new HashMap<>();
     
     private void fileReader(String dir, int inputCmd, List<Thread> threadFile, int type){
         File filePath = new File(dir);
@@ -185,6 +189,73 @@ public class IDS {
                     end = System.currentTimeMillis();
                     System.out.println("Total time is: "+(end-start)/3600000+" hour "+((end-start)%3600000)/60000+" minutes "+(((end-start)%3600000)%60000)/1000+" seconds");               
                     
+                    System.out.println("Trainig Dataset...");
+                    start = System.currentTimeMillis();
+                    
+                    for (DataPacket dataSetA : datasetTcp) {
+                        if (dataSetA.getDstPort() < 1024) {
+                            dataTraining = new ArrayList<>(); 
+                            for (DataPacket dataSetTcp : datasetTcp) {
+                                if (dataSetA.getDstPort() == dataSetTcp.getDstPort()) {                                        
+                                    dataTraining.add(ArrayUtils.toObject(dataSetA.getNgram()));                                        
+                                }                                    
+                            }
+                            sumData = new double[ascii];
+                            meanData = new double[ascii];
+                            sDeviasi = new double[ascii];
+
+                            for (int i = 0; i < dataTraining.size(); i++) {
+                                for (int j = 0; j < ascii; j++) {
+                                    sumData[j] += dataTraining.get(i)[j];
+                                }                                                                        
+                            }
+
+                            for (int i = 0; i < ascii; i++) {
+                                meanData[i] = sumData[i]/dataTraining.size();
+                            }  
+
+                            for (int i = 0; i < ascii; i++) {
+                                sDeviasi[i] = Math.sqrt(Math.pow(sumData[i]-meanData[i], 2)/dataTraining.size());
+                            }
+                            
+                            sumTrain.put(dataSetA.getDstPort(), ArrayUtils.toObject(sumData));
+                            sDeviasiTrain.put(dataSetA.getDstPort(), ArrayUtils.toObject(sDeviasi));
+                        }                             
+                    }
+                    
+                    for (DataPacket dataSetB : datasetUdp) {
+                        if (dataSetB.getDstPort() < 1024) {
+                            dataTraining = new ArrayList<>(); 
+                            for (DataPacket dataSetUdp : datasetUdp) {
+                                if (dataSetB.getDstPort() == dataSetUdp.getDstPort()) {                                        
+                                    dataTraining.add(ArrayUtils.toObject(dataSetB.getNgram()));                                        
+                                }                                    
+                            }
+                            sumData = new double[ascii];
+                            meanData = new double[ascii];
+                            sDeviasi = new double[ascii];
+
+                            for (int i = 0; i < dataTraining.size(); i++) {
+                                for (int j = 0; j < ascii; j++) {
+                                    sumData[j] += dataTraining.get(i)[j];
+                                }                                                                        
+                            }
+
+                            for (int i = 0; i < ascii; i++) {
+                                meanData[i] = sumData[i]/dataTraining.size();
+                            }  
+
+                            for (int i = 0; i < ascii; i++) {
+                                sDeviasi[i] = Math.sqrt(Math.pow(sumData[i]-meanData[i], 2)/dataTraining.size());
+                            }
+                            
+                            sumTrain.put(dataSetB.getDstPort(), ArrayUtils.toObject(sumData));
+                            sDeviasiTrain.put(dataSetB.getDstPort(), ArrayUtils.toObject(sDeviasi));
+                        }                             
+                    }
+                    end = System.currentTimeMillis();
+                    System.out.println("Total time is: "+(end-start)/3600000+" hour "+((end-start)%3600000)/60000+" minutes "+(((end-start)%3600000)%60000)/1000+" seconds");               
+                    
                     break;
                 
                 case 2:
@@ -241,80 +312,21 @@ public class IDS {
                         start = System.currentTimeMillis();
                         for (DataPacket dataPacketTes : dataTest) {     
 
-                            if ("tcp".equals(dataPacketTes.getProto()) && dataPacketTes.getDstPort() < 1024) {                                
-//                                dataTraining = new ArrayList<>();                                
-//                                
-//                                for (DataPacket dataSetA : datasetTcp) {
-//                                    if (dataSetA.getDstPort() == dataPacketTes.getDstPort()) {                                        
-//                                        dataTraining.add(ArrayUtils.toObject(dataSetA.getNgram()));                                        
-//                                    }                                    
-//                                }
-//
-//                                sumData = new double[ascii];
-//                                meanData = new double[ascii];
-//                                sDeviasi = new double[ascii];
-//
-//                                for (int i = 0; i < dataTraining.size(); i++) {
-//                                    for (int j = 0; j < ascii; j++) {
-//                                        sumData[j] += dataTraining.get(i)[j];
-//                                    }                                                                        
-//                                }
-//
-//                                for (int i = 0; i < ascii; i++) {
-//                                    meanData[i] = sumData[i]/dataTraining.size();
-//                                }  
-//
-//                                for (int i = 0; i < ascii; i++) {
-//                                    sDeviasi[i] = Math.sqrt(Math.pow(sumData[i]-meanData[i], 2)/dataTraining.size());
-//                                }
-//
-//                                sd = new Mahalanobis();
-//                                dist = sd.distance(dataPacketTes.getNgram(), sumData, sDeviasi, sFactor);
-//                                
-//                                if (dataPacketTes.getType() == 1) {
-//                                    valAttack.add(dist);
-//                                } else
-//                                    valFree.add(dist);
-//
-//                                fwFree.append(dataPacketTes.getSrcIP()+"-"+dataPacketTes.getSrcPort()+"-"+dataPacketTes.getDstIP()+"-"+dataPacketTes.getDstPort()+" -> "+dist+"\n");
+                            if ("tcp".equals(dataPacketTes.getProto()) && dataPacketTes.getDstPort() < 1024) {
+                                if (sumTrain.containsKey(dataPacketTes.getDstPort())) {
+                                    sd = new Mahalanobis();
+                                    dist = sd.distance(dataPacketTes.getNgram(), ArrayUtils.toPrimitive(sumTrain.get(dataPacketTes.getDstPort())), ArrayUtils.toPrimitive(sDeviasiTrain.get(dataPacketTes.getDstPort())), sFactor);
+                                    fwFree.append(dataPacketTes.getSrcIP()+"-"+dataPacketTes.getSrcPort()+"-"+dataPacketTes.getDstIP()+"-"+dataPacketTes.getDstPort()+" -> "+dist+"\n");
+                                }
+
                             }
 
                             else if ("udp".equals(dataPacketTes.getProto()) && dataPacketTes.getDstPort() < 1024) {
-//                                dataTraining = new ArrayList<>();                                
-//                                
-//                                for (DataPacket dataSetB : datasetUdp) {
-//                                    if (dataSetB.getDstPort() == dataPacketTes.getDstPort()) {                                        
-//                                        dataTraining.add(ArrayUtils.toObject(dataSetB.getNgram()));                                        
-//                                    }                                    
-//                                }
-//
-//                                sumData = new double[ascii];
-//                                meanData = new double[ascii];
-//                                sDeviasi = new double[ascii];
-//
-//                                for (int i = 0; i < dataTraining.size(); i++) {
-//                                    for (int j = 0; j < ascii; j++) {
-//                                        sumData[j] += dataTraining.get(i)[j];
-//                                    }                                                                        
-//                                }
-//
-//                                for (int i = 0; i < ascii; i++) {
-//                                    meanData[i] = sumData[i]/dataTraining.size();
-//                                }  
-//
-//                                for (int i = 0; i < ascii; i++) {
-//                                    sDeviasi[i] = Math.sqrt(Math.pow(sumData[i]-meanData[i], 2)/dataTraining.size());
-//                                }
-//                                
-//                                sd = new Mahalanobis();
-//                                dist = sd.distance(dataPacketTes.getNgram(), sumData, sDeviasi, sFactor);
-//                                
-//                                if (dataPacketTes.getType() == 1) {
-//                                    valAttack.add(dist);
-//                                } else
-//                                    valFree.add(dist);
-//
-//                                fwAttack.append(dataPacketTes.getSrcIP()+"-"+dataPacketTes.getSrcPort()+"-"+dataPacketTes.getDstIP()+"-"+dataPacketTes.getDstPort()+" -> "+dist+"\n");
+                                if (sumTrain.containsKey(dataPacketTes.getDstPort())) {
+                                    sd = new Mahalanobis();
+                                    dist = sd.distance(dataPacketTes.getNgram(), ArrayUtils.toPrimitive(sumTrain.get(dataPacketTes.getDstPort())), ArrayUtils.toPrimitive(sDeviasiTrain.get(dataPacketTes.getDstPort())), sFactor);
+                                    fwAttack.append(dataPacketTes.getSrcIP()+"-"+dataPacketTes.getSrcPort()+"-"+dataPacketTes.getDstIP()+"-"+dataPacketTes.getDstPort()+" -> "+dist+"\n");
+                                }
                             }
                         }
 

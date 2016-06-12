@@ -5,6 +5,7 @@
  */
 package ids;
 
+import static ids.IDS.datasetTcp;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -13,6 +14,7 @@ import jpcap.JpcapCaptor;
 import jpcap.packet.Packet;
 import jpcap.packet.TCPPacket;
 import jpcap.packet.UDPPacket;
+import org.apache.commons.lang3.ArrayUtils;
 
 /**
  *

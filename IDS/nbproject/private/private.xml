@@ -5,6 +5,8 @@
         <group>
             <file>file:/home/agus/KULIAH/TA-AJK/IDS/src/ids/Mahalanobis.java</file>
             <file>file:/home/agus/KULIAH/TA-AJK/IDS/src/ids/PacketReader.java</file>
+            <file>file:/home/agus/KULIAH/TA-AJK/IDS/src/ids/FindDistance.java</file>
+            <file>file:/home/agus/KULIAH/TA-AJK/IDS/src/ids/PacketSniffer.java</file>
             <file>file:/home/agus/KULIAH/TA-AJK/IDS/src/ids/IDS.java</file>
         </group>
     </open-files>
