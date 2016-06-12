@@ -349,7 +349,7 @@ public class IDS {
                                 sd = new Mahalanobis();
                                 dist = sd.distance(dataPacketTes.getNgram(), sumData, sDeviasi, sFactor);
                                 
-                                fwFree.append(dataPacketTes.getSrcIP()+"-"+dataPacketTes.getSrcPort()+"-"+dataPacketTes.getDstIP()+"-"+dataPacketTes.getDstPort()+" -> "+dist);
+                                fwFree.append(dataPacketTes.getSrcIP()+"-"+dataPacketTes.getSrcPort()+"-"+dataPacketTes.getDstIP()+"-"+dataPacketTes.getDstPort()+" -> "+dist+"\n");
 //                                System.out.println("tcp-"+dataPacketTes.getSrcIP()+"-"+dataPacketTes.getSrcPort()+"-"+dataPacketTes.getDstIP()+"-"+dataPacketTes.getDstPort()+" -> "+dist);
                             }
 
@@ -383,7 +383,7 @@ public class IDS {
                                 sd = new Mahalanobis();
                                 dist = sd.distance(dataPacketTes.getNgram(), sumData, sDeviasi, sFactor);
                                 
-                                fwAttack.append(dataPacketTes.getSrcIP()+"-"+dataPacketTes.getSrcPort()+"-"+dataPacketTes.getDstIP()+"-"+dataPacketTes.getDstPort()+" -> "+dist);
+                                fwAttack.append(dataPacketTes.getSrcIP()+"-"+dataPacketTes.getSrcPort()+"-"+dataPacketTes.getDstIP()+"-"+dataPacketTes.getDstPort()+" -> "+dist+"\n");
 //                                System.out.println("udp-"+dataPacketTes.getSrcIP()+"-"+dataPacketTes.getSrcPort()+"-"+dataPacketTes.getDstIP()+"-"+dataPacketTes.getDstPort()+" -> "+dist);                                
                             }
                         }
