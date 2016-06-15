@@ -5,7 +5,6 @@
  */
 package ids;
 
-import static ids.IDS.datasetTcp;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -14,7 +13,6 @@ import jpcap.JpcapCaptor;
 import jpcap.packet.Packet;
 import jpcap.packet.TCPPacket;
 import jpcap.packet.UDPPacket;
-import org.apache.commons.lang3.ArrayUtils;
 
 /**
  *
@@ -47,10 +45,11 @@ public class PacketReader implements Runnable {
     @Override
     public void run(){
         while (true) {
-            Packet packet = captor.getPacket();
-            synchronized(captor){                
+            Packet packet = captor.getPacket(); 
+            
+            synchronized(packetBody){
                 if (packet == null || packet == Packet.EOF) break;
-                
+
                 if (packet instanceof TCPPacket && packet.data.length != 0){
                     tcp = (TCPPacket) packet;
                     BodyPacket tcpBodyData; 
@@ -63,7 +62,7 @@ public class PacketReader implements Runnable {
                         packetBody.put(tuples, tcpBodyData); 
                     } 
                 }
-                
+
                 else if(packet instanceof UDPPacket && packet.data.length != 0){
                     udp = (UDPPacket) packet;
                     BodyPacket udpBodyData; 
@@ -75,18 +74,15 @@ public class PacketReader implements Runnable {
                         udpBodyData = new BodyPacket(udp.data); 
                         packetBody.put(tuples, udpBodyData); 
                     } 
-                }
-                
+                }                
             }            
+        }            
+        
+        if (input == 1) {
+            System.out.println("Storing dataset ke-"+files);
+        } else if (input == 3) {
+            System.out.println("Storing data testing ke-"+files);
         }
-        System.out.println("Processing Packet ke-"+files);
-        Proses();
-    }
-    
-    public void Proses(){    
-        dataTest.clear();
-        int free = 0, countFree = 0;
-        free = packetBody.size()/2;
         
         for (Map.Entry<String, BodyPacket> entry : packetBody.entrySet()) {
             String key = entry.getKey();
@@ -102,8 +98,7 @@ public class PacketReader implements Runnable {
                 datasetUdp.add(new DataPacket(header[1], header[2], Integer.parseInt(header[3]), header[4], Integer.parseInt(header[5]), numChars, type));
             }
 
-            else if (header[0].equals("3")) {
-//                
+            else if (header[0].equals("3")) {    
 //                if (header[1].equals("tcp") && countFree < free) {
 //                    datasetTcp.add(new DataPacket(header[1], header[2], Integer.parseInt(header[3]), header[4], Integer.parseInt(header[5]), numChars, type));
 //                    countFree++;
@@ -118,17 +113,15 @@ public class PacketReader implements Runnable {
                 dataTest.add(new DataPacket(header[1], header[2], Integer.parseInt(header[3]), header[4], Integer.parseInt(header[5]), numChars, type));
             }                
         }
-        System.out.println("datasetTcp: "+datasetTcp.size());
-        System.out.println("datasetUdp: "+datasetUdp.size());
-        System.out.println("dataTes: "+dataTest.size()); 
+        
+        if (input == 1) {
+            System.out.println("Total Dataset of Tcp: "+datasetTcp.size());
+            System.out.println("Total Dataset of Udp: "+datasetUdp.size());            
+        } else if (input == 3) {
+            System.out.println("Total Data Testing: "+dataTest.size());
+        }        
+         
         packetBody.clear();
-    }
-    
-    double[] Sum(double[] one, double[] two){
-        for (int i = 0; i < one.length; i++) {
-            one[i] = one[i] + two[i];
-        }
-        return one;
     }
     
 }

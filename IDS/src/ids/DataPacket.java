@@ -10,26 +10,37 @@ package ids;
  * @author agus
  */
 public class DataPacket {
-    private String proto;
+    private String protokol;
     private String srcIP;
     private String dstIP;
-    private String tuples;
     private int srcPort;
     private int dstPort;
     private byte[] packetData;
     private double[] ngram;
-    private long packetLength; 
-    private double mean;
-    private int type;
+    private int packetType;
     
-    public DataPacket(String proto, String srcIP, int srcPort, String dstIP, int dstPort, double[] ngram, int type){
-        this.proto = proto;
+    public DataPacket(String protokol, String srcIP, int srcPort, String dstIP, int dstPort, double[] ngram, int packetType){
+        this.protokol = protokol;
         this.srcIP = srcIP;
         this.srcPort = srcPort;
         this.dstIP = dstIP;
         this.dstPort = dstPort;
         this.ngram = ngram;
-        this.type = type;
+        this.packetType = packetType;
+    }    
+
+    /**
+     * @return the protokol
+     */
+    public String getProtokol() {
+        return protokol;
+    }
+
+    /**
+     * @param protokol the protokol to set
+     */
+    public void setProtokol(String protokol) {
+        this.protokol = protokol;
     }
 
     /**
@@ -103,62 +114,6 @@ public class DataPacket {
     }
 
     /**
-     * @return the packetLength
-     */
-    public long getPacketLength() {
-        return packetLength;
-    }
-
-    /**
-     * @param packetLength the packetLength to set
-     */
-    public void setPacketLength(long packetLength) {
-        this.packetLength = packetLength;
-    }
-
-    /**
-     * @return the tuples
-     */
-    public String getProto() {
-        return proto;
-    }
-
-    /**
-     * @param tuples the tuples to set
-     */
-    public void setProto(String tuples) {
-        this.proto = tuples;
-    }
-
-    /**
-     * @return the mean
-     */
-    public double getMean() {
-        return mean;
-    }
-
-    /**
-     * @param mean the mean to set
-     */
-    public void setMean(double mean) {
-        this.mean = mean;
-    }
-
-    /**
-     * @return the tuples
-     */
-    public String getTuples() {
-        return tuples;
-    }
-
-    /**
-     * @param tuples the tuples to set
-     */
-    public void setTuples(String tuples) {
-        this.tuples = tuples;
-    }
-
-    /**
      * @return the ngram
      */
     public double[] getNgram() {
@@ -173,17 +128,16 @@ public class DataPacket {
     }
 
     /**
-     * @return the type
+     * @return the packetType
      */
-    public int getType() {
-        return type;
+    public int getPacketType() {
+        return packetType;
     }
 
     /**
-     * @param type the type to set
+     * @param packetType the packetType to set
      */
-    public void setType(int type) {
-        this.type = type;
+    public void setPacketType(int packetType) {
+        this.packetType = packetType;
     }
-    
 }

@@ -26,7 +26,7 @@ public class PacketReader implements Runnable {
     private double[] numChars, temp;
     private String tuples;
     private String[] header;
-    private Map<String, BodyPacket> packetBody = new HashMap<>();
+    private Map<String, BodyPacket> packetBody;
 //    private Map<String, Double[]> datasetPacketTcp;
 //    private Map<String, Double[]> datasetPacketUdp;
 //    private Map<String, Double[]> dataTestPacket;
@@ -37,6 +37,7 @@ public class PacketReader implements Runnable {
     private Ngram ng = new Ngram();
     
     public PacketReader(int files, JpcapCaptor captor, int n, ArrayList<DataPacket> datasetTcp, ArrayList<DataPacket> datasetUdp, ArrayList<DataPacket> dataTest, int type){
+        packetBody = new HashMap<String, BodyPacket>();
         this.files = files;
         this.captor = captor;        
         this.input = n;
@@ -50,7 +51,7 @@ public class PacketReader implements Runnable {
     public void run(){
         while (true) {
             Packet packet = captor.getPacket();
-            synchronized(captor){                
+            synchronized(packetBody){                
                 if (packet == null || packet == Packet.EOF) break;
                 
                 if (packet instanceof TCPPacket &&  packet.data != null){

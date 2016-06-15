@@ -1,10 +1,12 @@
-dataTraining:/media/agus/4DD244C0638395F0/dataset/1/friday/
-dataTesting:/media/agus/4DD244C0638395F0/2/friday/inside.tcpdump
-typePacket:0
-threshold:10
-sFactor:0.001
-limitPacket:1000
+DataTraining:/home/agus/KULIAH/TA-AJK/DARPA/
+DataTesting:/home/agus/KULIAH/TA-AJK/DARPA/
+TypePacket:0
+Threshold:10
+SmoothingFactor:0.001
+LimitPacket:1000
 
+
+/home/agus/KULIAH/TA-AJK/DARPA/
 /media/agus/4DD244C0638395F0/dataset/
 /media/agus/4DD244C0638395F0/free/
 /media/agus/4DD244C0638395F0/dataset/1/

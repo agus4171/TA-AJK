@@ -50,7 +50,7 @@ public class PacketSniffer implements Runnable {
             captor = JpcapCaptor.openDevice(device, 65536, true, 20);
             while (true) {                
                 packet = captor.getPacket();
-                synchronized(captor){                            
+                synchronized(packetBody){                            
                     if (count == counter) break;
                     
                     if (packet instanceof TCPPacket){
@@ -88,12 +88,7 @@ public class PacketSniffer implements Runnable {
             }
         } catch (IOException ex) {
             Logger.getLogger(PacketSniffer.class.getName()).log(Level.SEVERE, null, ex);
-        }        
-        Proses();
-    }
-    
-    public void Proses(){
-        dataTest.clear();
+        }   
         
         for (Map.Entry<String, BodyPacket> entry : packetBody.entrySet()) {
             String key = entry.getKey();
@@ -104,13 +99,7 @@ public class PacketSniffer implements Runnable {
                 dataTest.add(new DataPacket(header[1], header[2], Integer.parseInt(header[3]), header[4], Integer.parseInt(header[5]), numChars, 0));
             }   
         }
-        System.out.println("dataTes: "+dataTest.size());         
-    }
-    double[] Sum(double[] one, double[] two){
-        for (int i = 0; i < one.length; i++) {
-            one[i] = one[i] + two[i];
-        }
-        return one;
+        System.out.println("dataTes: "+dataTest.size()); 
     }
     
 }
