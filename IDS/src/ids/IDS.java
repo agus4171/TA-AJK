@@ -194,9 +194,10 @@ public class IDS {
                                 if (mDist > threshold) {
                                     valAttack.add(mDist);
                                     fwAttack.append(dataPacketTes.getSrcIP()+"-"+dataPacketTes.getSrcPort()+"-"+dataPacketTes.getDstIP()+"-"+dataPacketTes.getDstPort()+" -> "+mDist+"\n");
-                                }
-                                valFree.add(mDist);
-                                fwFree.append(dataPacketTes.getSrcIP()+"-"+dataPacketTes.getSrcPort()+"-"+dataPacketTes.getDstIP()+"-"+dataPacketTes.getDstPort()+" -> "+mDist+"\n");
+                                } else {
+                                    valFree.add(mDist);
+                                    fwFree.append(dataPacketTes.getSrcIP()+"-"+dataPacketTes.getSrcPort()+"-"+dataPacketTes.getDstIP()+"-"+dataPacketTes.getDstPort()+" -> "+mDist+"\n");
+                                }                                
                             }
 
                         }
@@ -208,9 +209,10 @@ public class IDS {
                                 if (mDist > threshold) {
                                     valAttack.add(mDist);
                                     fwAttack.append(dataPacketTes.getSrcIP()+"-"+dataPacketTes.getSrcPort()+"-"+dataPacketTes.getDstIP()+"-"+dataPacketTes.getDstPort()+" -> "+mDist+"\n");
-                                }
-                                valFree.add(mDist);
-                                fwFree.append(dataPacketTes.getSrcIP()+"-"+dataPacketTes.getSrcPort()+"-"+dataPacketTes.getDstIP()+"-"+dataPacketTes.getDstPort()+" -> "+mDist+"\n");
+                                } else {
+                                    valFree.add(mDist);
+                                    fwFree.append(dataPacketTes.getSrcIP()+"-"+dataPacketTes.getSrcPort()+"-"+dataPacketTes.getDstIP()+"-"+dataPacketTes.getDstPort()+" -> "+mDist+"\n");
+                                }                                
                             }
                         }
                     }
@@ -473,11 +475,11 @@ public class IDS {
                                         if (mDist > threshold) {
                                             valAttack.add(mDist);
                                             fwAttack.append(dataPacketTes.getSrcIP()+"-"+dataPacketTes.getSrcPort()+"-"+dataPacketTes.getDstIP()+"-"+dataPacketTes.getDstPort()+" -> "+mDist+"\n");
-                                        }
-                                        valFree.add(mDist);
-                                        fwFree.append(dataPacketTes.getSrcIP()+"-"+dataPacketTes.getSrcPort()+"-"+dataPacketTes.getDstIP()+"-"+dataPacketTes.getDstPort()+" -> "+mDist+"\n");
+                                        } else {
+                                            valFree.add(mDist);
+                                            fwFree.append(dataPacketTes.getSrcIP()+"-"+dataPacketTes.getSrcPort()+"-"+dataPacketTes.getDstIP()+"-"+dataPacketTes.getDstPort()+" -> "+mDist+"\n");
+                                        }                                        
                                     }
-
                                 }
 
                                 else if ("udp".equals(dataPacketTes.getProtokol()) && dataPacketTes.getDstPort() < 1024) {
@@ -487,9 +489,10 @@ public class IDS {
                                         if (mDist > threshold) {
                                             valAttack.add(mDist);
                                             fwAttack.append(dataPacketTes.getSrcIP()+"-"+dataPacketTes.getSrcPort()+"-"+dataPacketTes.getDstIP()+"-"+dataPacketTes.getDstPort()+" -> "+mDist+"\n");
-                                        }
-                                        valFree.add(mDist);
-                                        fwFree.append(dataPacketTes.getSrcIP()+"-"+dataPacketTes.getSrcPort()+"-"+dataPacketTes.getDstIP()+"-"+dataPacketTes.getDstPort()+" -> "+mDist+"\n");
+                                        } else {
+                                            valFree.add(mDist);
+                                            fwFree.append(dataPacketTes.getSrcIP()+"-"+dataPacketTes.getSrcPort()+"-"+dataPacketTes.getDstIP()+"-"+dataPacketTes.getDstPort()+" -> "+mDist+"\n");
+                                        }                                        
                                     }
                                 }
                             }

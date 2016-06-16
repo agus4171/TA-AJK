@@ -1,7 +1,7 @@
 DataTraining:/media/agus/4DD244C0638395F0/dataset/1/inside/
 DataTesting:/media/agus/4DD244C0638395F0/2/friday/
 TypePacket:0
-Threshold:10
+Threshold:40000
 SmoothingFactor:0.001
 LimitPacket:1000
 
