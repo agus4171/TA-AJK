@@ -117,10 +117,9 @@ public class IDS {
         return counterPacket;
     }
     
-    private void datasetReader(String dirPath, int input, int packetType){
+    private void datasetReader(String dirPath, int input, int packetType, List<Thread> threadFile){
         File filePath = new File(dirPath);
-        File[] listFile = filePath.listFiles(); 
-        List<Thread> threadFile = new ArrayList<>();
+        File[] listFile = filePath.listFiles();         
         
         for (File file : listFile) {
             if (file.isFile()) {
@@ -130,8 +129,7 @@ public class IDS {
                     PacketReader pr = new PacketReader(files, captor, input, datasetTcp, datasetUdp, dataTest, packetType);
                     Thread threadFiles = new Thread(pr);
                     threadFiles.start();
-                    threadFile.add(threadFiles);
-
+                    threadFile.add(threadFiles);                        
                 } catch (IOException ex) {
                     Logger.getLogger(IDS.class.getName()).log(Level.SEVERE, null, ex);
                 }               
@@ -139,17 +137,7 @@ public class IDS {
             } 
             
             else if (file.isDirectory()) {
-                datasetReader(file.getAbsolutePath(), input, packetType);
-            }
-        }
-        
-        if (listFile.length < 5) {
-            for (Thread thread : threadFile) {
-                try {
-                    thread.join();
-                } catch (InterruptedException ex) {
-                    Logger.getLogger(IDS.class.getName()).log(Level.SEVERE, null, ex);
-                }
+                datasetReader(file.getAbsolutePath(), input, packetType, threadFile);
             }
         }
     }
@@ -244,6 +232,7 @@ public class IDS {
         long start, end;
         String[] header, fileName;
         List<Thread> threadTraining;
+        List<Thread> threadFile;
         ArrayList<Double> valAttack;
         ArrayList<Double> valFree;
         ArrayList<Double[]> dataTraining;
@@ -267,9 +256,17 @@ public class IDS {
                     ids = new IDS();
                     dirPath = ids.getDatasetDir();
                     packetType = ids.getTypePacket();
+                    threadFile = new ArrayList<>();
                     System.out.println("Dataset directory: "+dirPath);
                     start = System.currentTimeMillis();
-                    ids.datasetReader(dirPath, input, packetType);
+                    ids.datasetReader(dirPath, input, packetType, threadFile);
+                    for (Thread threads : threadFile) {
+                        try {
+                            threads.join();
+                        } catch (InterruptedException ex) {
+                            Logger.getLogger(IDS.class.getName()).log(Level.SEVERE, null, ex);
+                        }
+                    }
                     end = System.currentTimeMillis();
                     System.out.println("Total time of processing dateset is: "+(end-start)/3600000+" hour "+((end-start)%3600000)/60000+" minutes "+(((end-start)%3600000)%60000)/1000+" seconds");
                     
@@ -282,7 +279,7 @@ public class IDS {
                             if (portPacket < 1024) {
                                 if (portTrainingTcp.containsKey(portPacket)) continue;
                                 portTrainingTcp.put(portPacket, portPacket);
-                            }
+                            }                            
                         }                        
 
                         threadTraining = new ArrayList<>();
@@ -291,17 +288,15 @@ public class IDS {
                             dt = new DataTraining("tcp", datasetTcp, datasetUdp, sumTrainTcp, sDeviasiTrainTcp, sumTrainUdp, sDeviasiTrainUdp, port);
                             Thread threadDt = new Thread(dt);
                             threadDt.start();
-                            threadTraining.add(threadDt);
-                            if (threadTraining.size() < 3) {
-                                for (Thread thread : threadTraining) {
-                                    try {
-                                        thread.join();
-                                    } catch (InterruptedException ex) {
-                                        Logger.getLogger(IDS.class.getName()).log(Level.SEVERE, null, ex);
-                                    }
-                                }
-                                threadTraining.clear();
-                            }                            
+                            threadTraining.add(threadDt);                            
+                        }
+                        
+                        for (Thread thread : threadTraining) {
+                            try {
+                                thread.join();
+                            } catch (InterruptedException ex) {
+                                Logger.getLogger(IDS.class.getName()).log(Level.SEVERE, null, ex);
+                            }
                         }
 //                        System.out.println("tcp: "+sumTrainTcp.size()+" "+sDeviasiTrainTcp.size());                                               
                     }  
@@ -313,7 +308,7 @@ public class IDS {
                             if (portPacket < 1024) {
                                 if (portTrainingUdp.containsKey(portPacket)) continue;
                                 portTrainingUdp.put(portPacket, portPacket);
-                            }
+                            }                            
                         }
                         
                         threadTraining = new ArrayList<>();
@@ -322,17 +317,15 @@ public class IDS {
                             dt = new DataTraining("udp", datasetTcp, datasetUdp, sumTrainTcp, sDeviasiTrainTcp, sumTrainUdp, sDeviasiTrainUdp, port);
                             Thread threadDt = new Thread(dt);
                             threadDt.start();
-                            threadTraining.add(threadDt);
-                            if (threadTraining.size() < 3) {
-                                for (Thread thread : threadTraining) {
-                                    try {
-                                        thread.join();
-                                    } catch (InterruptedException ex) {
-                                        Logger.getLogger(IDS.class.getName()).log(Level.SEVERE, null, ex);
-                                    }
-                                }
-                                threadTraining.clear();
-                            } 
+                            threadTraining.add(threadDt); 
+                        }
+                        
+                        for (Thread thread : threadTraining) {
+                            try {
+                                thread.join();
+                            } catch (InterruptedException ex) {
+                                Logger.getLogger(IDS.class.getName()).log(Level.SEVERE, null, ex);
+                            }
                         }
 //                        System.out.println("udp: "+sumTrainUdp.size()+" "+sDeviasiTrainUdp.size()); 
                     }
