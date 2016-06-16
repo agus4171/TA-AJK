@@ -172,8 +172,8 @@ public class IDS {
                     threshold = idsTesting.getThreshold(); 
                     sFactor = idsTesting.getSFactor();
                     fileName = file.getAbsolutePath().replace('/', '-').split("-", 0);
-                    fileFree = new File("PcapTesting_tcp_dist_"+fileName[fileName.length-2]+"_"+fileName[fileName.length-1]);
-                    fileAttack = new File("PcapTesting_udp_dist_"+fileName[fileName.length-2]+"_"+fileName[fileName.length-1]);
+                    fileFree = new File("PcapTesting_free_packet"+fileName[fileName.length-2]+"_"+fileName[fileName.length-1]);
+                    fileAttack = new File("PcapTesting_attack_packet"+fileName[fileName.length-2]+"_"+fileName[fileName.length-1]);
                     fwFree = new FileWriter(fileFree,true);
                     fwAttack = new FileWriter(fileAttack,true);
                     valAttack = new ArrayList<>();
@@ -187,10 +187,15 @@ public class IDS {
 
                     for (DataPacket dataPacketTes : dataTest) {     
 
-                        if ("tcp".equals(dataPacketTes.getProtokol()) && dataPacketTes.getDstPort() < 1024) {
+                         if ("tcp".equals(dataPacketTes.getProtokol()) && dataPacketTes.getDstPort() < 1024) {
                             if (sumTrainTcp.containsKey(dataPacketTes.getDstPort())) {
                                 mahalanobis = new Mahalanobis();
                                 mDist = mahalanobis.distance(dataPacketTes.getNgram(), ArrayUtils.toPrimitive(sumTrainTcp.get(dataPacketTes.getDstPort())), ArrayUtils.toPrimitive(sDeviasiTrainTcp.get(dataPacketTes.getDstPort())), sFactor);
+                                if (mDist > threshold) {
+                                    valAttack.add(mDist);
+                                    fwAttack.append(dataPacketTes.getSrcIP()+"-"+dataPacketTes.getSrcPort()+"-"+dataPacketTes.getDstIP()+"-"+dataPacketTes.getDstPort()+" -> "+mDist+"\n");
+                                }
+                                valFree.add(mDist);
                                 fwFree.append(dataPacketTes.getSrcIP()+"-"+dataPacketTes.getSrcPort()+"-"+dataPacketTes.getDstIP()+"-"+dataPacketTes.getDstPort()+" -> "+mDist+"\n");
                             }
 
@@ -200,7 +205,12 @@ public class IDS {
                             if (sumTrainUdp.containsKey(dataPacketTes.getDstPort())) {
                                 mahalanobis = new Mahalanobis();
                                 mDist = mahalanobis.distance(dataPacketTes.getNgram(), ArrayUtils.toPrimitive(sumTrainUdp.get(dataPacketTes.getDstPort())), ArrayUtils.toPrimitive(sDeviasiTrainUdp.get(dataPacketTes.getDstPort())), sFactor);
-                                fwAttack.append(dataPacketTes.getSrcIP()+"-"+dataPacketTes.getSrcPort()+"-"+dataPacketTes.getDstIP()+"-"+dataPacketTes.getDstPort()+" -> "+mDist+"\n");
+                                if (mDist > threshold) {
+                                    valAttack.add(mDist);
+                                    fwAttack.append(dataPacketTes.getSrcIP()+"-"+dataPacketTes.getSrcPort()+"-"+dataPacketTes.getDstIP()+"-"+dataPacketTes.getDstPort()+" -> "+mDist+"\n");
+                                }
+                                valFree.add(mDist);
+                                fwFree.append(dataPacketTes.getSrcIP()+"-"+dataPacketTes.getSrcPort()+"-"+dataPacketTes.getDstIP()+"-"+dataPacketTes.getDstPort()+" -> "+mDist+"\n");
                             }
                         }
                     }
@@ -441,8 +451,8 @@ public class IDS {
                             threshold = ids.getThreshold(); 
                             sFactor = ids.getSFactor();
                             fileName = filePath.replace('/', '-').split("-", 0);
-                            fileFree = new File("PcapTesting_tcp_dist_"+fileName[fileName.length-2]+"_"+fileName[fileName.length-1]);
-                            fileAttack = new File("PcapTesting_udp_dist_"+fileName[fileName.length-2]+"_"+fileName[fileName.length-1]);
+                            fileFree = new File("PcapTesting_free_packet"+fileName[fileName.length-2]+"_"+fileName[fileName.length-1]);
+                            fileAttack = new File("PcapTesting_attack_packet"+fileName[fileName.length-2]+"_"+fileName[fileName.length-1]);
                             fwFree = new FileWriter(fileFree,true);
                             fwAttack = new FileWriter(fileAttack,true);
                             valAttack = new ArrayList<>();
@@ -460,6 +470,11 @@ public class IDS {
                                     if (sumTrainTcp.containsKey(dataPacketTes.getDstPort())) {
                                         mahalanobis = new Mahalanobis();
                                         mDist = mahalanobis.distance(dataPacketTes.getNgram(), ArrayUtils.toPrimitive(sumTrainTcp.get(dataPacketTes.getDstPort())), ArrayUtils.toPrimitive(sDeviasiTrainTcp.get(dataPacketTes.getDstPort())), sFactor);
+                                        if (mDist > threshold) {
+                                            valAttack.add(mDist);
+                                            fwAttack.append(dataPacketTes.getSrcIP()+"-"+dataPacketTes.getSrcPort()+"-"+dataPacketTes.getDstIP()+"-"+dataPacketTes.getDstPort()+" -> "+mDist+"\n");
+                                        }
+                                        valFree.add(mDist);
                                         fwFree.append(dataPacketTes.getSrcIP()+"-"+dataPacketTes.getSrcPort()+"-"+dataPacketTes.getDstIP()+"-"+dataPacketTes.getDstPort()+" -> "+mDist+"\n");
                                     }
 
@@ -469,7 +484,12 @@ public class IDS {
                                     if (sumTrainUdp.containsKey(dataPacketTes.getDstPort())) {
                                         mahalanobis = new Mahalanobis();
                                         mDist = mahalanobis.distance(dataPacketTes.getNgram(), ArrayUtils.toPrimitive(sumTrainUdp.get(dataPacketTes.getDstPort())), ArrayUtils.toPrimitive(sDeviasiTrainUdp.get(dataPacketTes.getDstPort())), sFactor);
-                                        fwAttack.append(dataPacketTes.getSrcIP()+"-"+dataPacketTes.getSrcPort()+"-"+dataPacketTes.getDstIP()+"-"+dataPacketTes.getDstPort()+" -> "+mDist+"\n");
+                                        if (mDist > threshold) {
+                                            valAttack.add(mDist);
+                                            fwAttack.append(dataPacketTes.getSrcIP()+"-"+dataPacketTes.getSrcPort()+"-"+dataPacketTes.getDstIP()+"-"+dataPacketTes.getDstPort()+" -> "+mDist+"\n");
+                                        }
+                                        valFree.add(mDist);
+                                        fwFree.append(dataPacketTes.getSrcIP()+"-"+dataPacketTes.getSrcPort()+"-"+dataPacketTes.getDstIP()+"-"+dataPacketTes.getDstPort()+" -> "+mDist+"\n");
                                     }
                                 }
                             }
