@@ -20,6 +20,8 @@ public class SplitString {
      */
     public static void main(String[] args) {
         String str = "tcp-10.151.36.100-80-202.46.129.70-9000";
+        String strName = "senin_inside.tcpdump";
+        System.out.println(strName.replaceAll("\\.", ""));
         String strDua = "selamat datang di dunia jaringan tcp-10.151.36.100-80-202.46.129.70-9000";
         ArrayList<Double> val = new ArrayList<>();
         val.add(2.0);

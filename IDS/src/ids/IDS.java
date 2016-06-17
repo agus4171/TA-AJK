@@ -435,8 +435,8 @@ public class IDS {
                             threshold = ids.getThreshold(80); 
                             sFactor = ids.getSFactor();
                             fileName = fileDataTesting.toString().replace('/', '-').split("-", 0);
-                            fileFree = new File("PcapTesting_TCP_dist_"+portTesting+"_"+fileName[fileName.length-2]+"_"+fileName[fileName.length-1]);
-                            fileAttack = new File("PcapTesting_UDP_dist_"+portTesting+"_"+fileName[fileName.length-2]+"_"+fileName[fileName.length-1]);
+                            fileFree = new File("PcapTesting_TCP_dist_"+portTesting+"_"+fileName[fileName.length-2]+"_"+fileName[fileName.length-1].replace(".", "_"));
+                            fileAttack = new File("PcapTesting_UDP_dist_"+portTesting+"_"+fileName[fileName.length-2]+"_"+fileName[fileName.length-1].replace(".", "_"));
                             fwFree = new FileWriter(fileFree,true);
                             fwAttack = new FileWriter(fileAttack,true);
                             valAttack = new ArrayList<>();
@@ -454,7 +454,7 @@ public class IDS {
                                         if (dataTcp.getDstPort() == dataPacketTes.getDstPort()) {
                                             mahalanobis = new Mahalanobis();
                                             mDist = mahalanobis.distance(dataPacketTes.getNgram(), dataTcp.getMeanData(), dataTcp.getDeviasiData(),sFactor);
-                                            fwFree.append(mDist+" "+new String(dataPacketTes.getPacketData(), StandardCharsets.US_ASCII)+"\n");
+                                            fwFree.append(mDist+" -> "+new String(dataPacketTes.getPacketData(), StandardCharsets.US_ASCII)+"\n");
                                         }
                                     }
                                 }
@@ -464,7 +464,7 @@ public class IDS {
                                         if (dataUdp.getDstPort() == dataPacketTes.getDstPort()) {
                                             mahalanobis = new Mahalanobis();
                                             mDist = mahalanobis.distance(dataPacketTes.getNgram(), dataUdp.getMeanData(), dataUdp.getDeviasiData(),sFactor);
-                                            fwAttack.append(mDist+" "+new String(dataPacketTes.getPacketData(), StandardCharsets.US_ASCII)+"\n");
+                                            fwAttack.append(mDist+" -> "+new String(dataPacketTes.getPacketData(), StandardCharsets.US_ASCII)+"\n");
                                         }
                                     }
                                 }
