@@ -6,6 +6,8 @@
 package ids;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
 import java.util.Map;
 import org.apache.commons.lang3.ArrayUtils;
 
@@ -13,85 +15,95 @@ import org.apache.commons.lang3.ArrayUtils;
  *
  * @author agus
  */
-public class DataTraining implements Runnable {
-    
+public class DataTraining implements Runnable {    
     private int ascii = 256, port;
     private String proto;
-    private double[] sumData = new double[ascii], meanData = new double[ascii], sDeviasi = new double[ascii];
+    private double[] sumData = new double[ascii], meanData = new double[ascii], deviasiData = new double[ascii], quadraticData = new double[ascii];
     private ArrayList<DataPacket> datasetTcp;       
     private ArrayList<DataPacket> datasetUdp;  
     private ArrayList<Double[]> dataTraining = new ArrayList<>();
-    private Map<Integer, Double[]> sumTrainTcp;
-    private Map<Integer, Double[]> sDeviasiTrainTcp;
-    private Map<Integer, Double[]> sumTrainUdp;
-    private Map<Integer, Double[]> sDeviasiTrainUdp;
+    private ArrayList<DataModel> modelTcp;
+    private ArrayList<DataModel> modelUdp;
     
-    
-    public DataTraining(String proto, ArrayList<DataPacket> datasetTcp, ArrayList<DataPacket> datasetUdp, Map<Integer, Double[]> sumTrainTcp, Map<Integer, Double[]> sDeviasiTrainTcp, Map<Integer, Double[]> sumTrainUdp, Map<Integer, Double[]> sDeviasiTrainUdp, int port){
+    public DataTraining(String proto, ArrayList<DataPacket> datasetTcp, ArrayList<DataPacket> datasetUdp, ArrayList<DataModel> modelTcp, ArrayList<DataModel> modelUdp, int port){
         this.proto = proto;
         this.datasetTcp = datasetTcp;
         this.datasetUdp = datasetUdp;
-        this.sumTrainTcp = sumTrainTcp;
-        this.sDeviasiTrainTcp = sDeviasiTrainTcp;
-        this.sumTrainUdp = sumTrainUdp;
-        this.sDeviasiTrainUdp = sDeviasiTrainUdp;
+        this.modelTcp = modelTcp;
+        this.modelUdp = modelUdp;
         this.port = port;
     }
     
     public void run(){
         synchronized(dataTraining){
-            if (proto.equals("tcp")) {
+            if (proto.equals("TCP")) {
                 for (DataPacket dataSetA : datasetTcp) {
                     if (dataSetA.getDstPort() == port) {                                        
                         dataTraining.add(ArrayUtils.toObject(dataSetA.getNgram()));                                        
                     }                                    
                 }               
 
-                if (dataTraining.size() != 0) {
-                    for (int i = 0; i < dataTraining.size(); i++) {
-                        for (int j = 0; j < ascii; j++) {
-                            sumData[j] += dataTraining.get(i)[j];
-                        }                                                                        
-                    }
+                for (int i = 0; i < dataTraining.size(); i++) {
+                    for (int j = 0; j < ascii; j++) {
+                        sumData[j] += dataTraining.get(i)[j];
+                        quadraticData[j] += Math.pow(dataTraining.get(i)[j], 2);
+                    }                                                                        
+                }
 
-                    for (int i = 0; i < ascii; i++) {
-                        meanData[i] = sumData[i]/dataTraining.size();
-                    }  
+                for (int i = 0; i < ascii; i++) {
+                    meanData[i] = sumData[i]/dataTraining.size();
+                }  
 
-                    for (int i = 0; i < ascii; i++) {
-                        sDeviasi[i] = Math.sqrt(Math.pow(sumData[i]-meanData[i], 2)/dataTraining.size());
-                    }
+//                for (int i = 0; i < dataTraining.size(); i++) {
+//                    for (int j = 0; j < ascii; j++) {
+//                        deviasiData[j] += Math.pow(dataTraining.get(i)[j]-meanData[j], 2);
+//                    }
+//                }
+//                
+//                for (int i = 0; i < deviasiData.length; i++) {
+//                    deviasiData[i] = Math.sqrt(deviasiData[i]/(dataTraining.size()-1));
+//                }
 
-                    sumTrainTcp.put(port, ArrayUtils.toObject(sumData));
-                    sDeviasiTrainTcp.put(port, ArrayUtils.toObject(sDeviasi));
-                }            
+                for (int i = 0; i < deviasiData.length; i++) {
+                    deviasiData[i] = Math.sqrt((dataTraining.size()*quadraticData[i]-Math.pow(sumData[i], 2))/(dataTraining.size()*(dataTraining.size()-1)));
+                }
+
+                modelTcp.add(new DataModel(port, meanData, deviasiData, quadraticData, dataTraining.size()));
             }
 
-            else if (proto.equals("udp")) {
+            else if (proto.equals("UDP")) {
                 for (DataPacket dataSetA : datasetUdp) {
                     if (dataSetA.getDstPort() == port) {                                        
                         dataTraining.add(ArrayUtils.toObject(dataSetA.getNgram()));                                        
                     }                                    
                 }
 
-                if (dataTraining.size() != 0) {
-                    for (int i = 0; i < dataTraining.size(); i++) {
-                        for (int j = 0; j < ascii; j++) {
-                            sumData[j] += dataTraining.get(i)[j];
-                        }                                                                        
-                    }
+                for (int i = 0; i < dataTraining.size(); i++) {
+                    for (int j = 0; j < ascii; j++) {
+                        sumData[j] += dataTraining.get(i)[j];
+                        quadraticData[j] += Math.pow(dataTraining.get(i)[j], 2);
+                    }                                                                        
+                }
 
-                    for (int i = 0; i < ascii; i++) {
-                        meanData[i] = sumData[i]/dataTraining.size();
-                    }  
+                for (int i = 0; i < ascii; i++) {
+                    meanData[i] = sumData[i]/dataTraining.size();
+                }  
 
-                    for (int i = 0; i < ascii; i++) {
-                        sDeviasi[i] = Math.sqrt(Math.pow(sumData[i]-meanData[i], 2)/dataTraining.size());
-                    }
+//                for (int i = 0; i < dataTraining.size(); i++) {
+//                    for (int j = 0; j < ascii; j++) {
+//                        deviasiData[j] += Math.pow(dataTraining.get(i)[j]-meanData[j], 2);
+//                    }
+//                }
+//                
+//                for (int i = 0; i < deviasiData.length; i++) {
+//                    deviasiData[i] = Math.sqrt(deviasiData[i]/(dataTraining.size()-1));
+//                }
 
-                    sumTrainUdp.put(port, ArrayUtils.toObject(sumData));
-                    sDeviasiTrainUdp.put(port, ArrayUtils.toObject(sDeviasi));              
-                }            
+                for (int i = 0; i < deviasiData.length; i++) {
+                    deviasiData[i] = Math.sqrt((dataTraining.size()*quadraticData[i]-Math.pow(sumData[i], 2))/(dataTraining.size()*(dataTraining.size()-1)));
+                }
+
+                modelUdp.add(new DataModel(port, meanData, deviasiData, quadraticData, dataTraining.size()));
             }            
         }                
     }

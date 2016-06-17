@@ -57,7 +57,7 @@ public class PacketSniffer implements Runnable {
                         tcp = (TCPPacket) packet;
                         System.out.println(count+" "+tcp);
                         BodyPacket tcpBodyData; 
-                        tuples = "tcp-"+tcp.src_ip.toString().substring(1)+"-"+tcp.src_port+"-"+tcp.dst_ip.toString().substring(1)+"-"+tcp.dst_port;
+                        tuples = "TCP-"+tcp.src_ip.toString().substring(1)+"-"+tcp.src_port+"-"+tcp.dst_ip.toString().substring(1)+"-"+tcp.dst_port;
                         if (packetBody.containsKey(tuples)){
                             tcpBodyData = packetBody.get(tuples);
                             tcpBodyData.addBytes(tcp.data);
@@ -73,7 +73,7 @@ public class PacketSniffer implements Runnable {
                         udp = (UDPPacket) packet;
                         System.out.println(count+" "+udp);
                         BodyPacket udpBodyData; 
-                        tuples = "udp-"+udp.src_ip.toString().substring(1)+"-"+udp.src_port+"-"+udp.dst_ip.toString().substring(1)+"-"+udp.dst_port;
+                        tuples = "UDP-"+udp.src_ip.toString().substring(1)+"-"+udp.src_port+"-"+udp.dst_ip.toString().substring(1)+"-"+udp.dst_port;
                         if(packetBody.containsKey(tuples)){
                             udpBodyData = packetBody.get(tuples);
                             udpBodyData.addBytes(udp.data);

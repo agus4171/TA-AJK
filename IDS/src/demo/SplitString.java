@@ -5,15 +5,8 @@
  */
 package demo;
 
-import ids.DataPacket;
-import java.io.File;
-import java.io.IOException;
-import java.nio.charset.Charset;
-import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import org.apache.commons.lang3.ArrayUtils;
 
 /**
@@ -34,16 +27,16 @@ public class SplitString {
         val.add(2.30);
         //String delimiter = "-";
         ArrayList<Double[]> tes = new ArrayList<>();
-        double[] value = new double[]{1.0, 1, 1};
-        double[] value1 = new double[]{2.0, 2, 2};
-        double[] value2 = new double[]{3.0, 3, 3};
-        double[] value3 = new double[]{6.0, 4, 4};
-        double[] value4 = new double[]{6.0, 4, 4};
-        double[] value5 = new double[]{6.0, 4, 4};
-        double[] value6 = new double[]{6.0, 4, 4};
-        double[] value7 = new double[]{6.0, 4, 4};
-        double[] value8 = new double[]{6.0, 4, 4};
-        double[] value9 = new double[]{6.0, 4, 4};        
+        double[] value = new double[]{172};
+        double[] value1 = new double[]{167};
+        double[] value2 = new double[]{180};
+        double[] value3 = new double[]{170};
+        double[] value4 = new double[]{169};
+        double[] value5 = new double[]{160};
+        double[] value6 = new double[]{175};
+        double[] value7 = new double[]{165};
+        double[] value8 = new double[]{173};
+        double[] value9 = new double[]{170};        
         
         
 //        double[][] dataTraining = new double[][256];
@@ -65,27 +58,57 @@ public class SplitString {
         tes.add(ArrayUtils.toObject(value8));
         tes.add(ArrayUtils.toObject(value9));
         System.out.println(tes.size());
-        double[] mean = new double[tes.size()];
-        double[] data = new double[tes.size()];   
-        double[] sDeviasi = new double[tes.size()];
+        double[] mean = new double[value.length];
+        double[] data = new double[value.length];   
+        double[] sDeviasi = new double[value.length];
+        double[] pow = new double[value.length];
       
         for (int i = 0; i < tes.size(); i++) {
 //            System.out.println(tes.get(i)[2]);
-            for (int j = 0; j < 3; j++) {
+            for (int j = 0; j < value.length; j++) {
                 data[j] += tes.get(i)[j];
+//                System.out.println(j);
             }
 
         }
-        for (int i = 0; i < 3; i++) {
-            mean[i] = data[i]/tes.size();
-            System.out.println(mean[i]);
-        }
+        System.out.println(Arrays.toString(data));
+//        System.out.println(Arrays.toString(data));
+        for (int i = 0; i < tes.size(); i++) {
+//            System.out.println(tes.get(i)[2]);
+            for (int j = 0; j < value.length; j++) {
+                pow[j] += Math.pow(tes.get(i)[j], 2);
+//                System.out.println(j);
+            }
 
-                                    
-        for (int i = 0; i < 3; i++) {
-            sDeviasi[i] = Math.sqrt(Math.pow(data[i]-mean[i], 2)/tes.size());
-            System.out.println(sDeviasi[i]);
-        }  
+        }
+        System.out.println(Arrays.toString(pow));
+        for (int i = 0; i < data.length; i++) {
+            mean[i] = data[i]/tes.size();
+        }
+//        System.out.println(Arrays.toString(mean));
+//
+////                                    
+//        for (int i = 0; i < tes.size(); i++) {
+//            for (int j = 0; j < value.length; j++) {
+//                sDeviasi[j] += Math.pow(tes.get(i)[j]-mean[j], 2);
+//            }
+//
+//        } 
+//        System.out.println(Arrays.toString(sDeviasi));
+        for (int i = 0; i < value.length; i++) {
+            System.out.println(Math.sqrt((tes.size()*pow[i]-Math.pow(data[i], 2))/(tes.size()*(tes.size()-1))));
+            sDeviasi[i] = Math.sqrt((tes.size()*pow[i] - Math.pow(data[i], 2))/tes.size()*(tes.size()-1));
+
+        } 
+        System.out.println(Arrays.toString(sDeviasi));
+        
+        for (int i = 0; i < data.length; i++) {
+            sDeviasi[i] = Math.sqrt(sDeviasi[i]/(tes.size()-1));
+        }
+        System.out.println(Arrays.toString(sDeviasi));
+//        1.1.1
+//        2.3.4
+//        System.out.println(Arrays.toString(data));
         
 //        double[] a = ArrayUtils.toPrimitive(value);
 //        Double[] v = ArrayUtils.toObject(a);

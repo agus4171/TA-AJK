@@ -15,7 +15,7 @@ import java.util.logging.Logger;
  * @author agus
  */
 public class BodyPacket {
-    byte[] bytes = null;
+    private byte[] bytes = null;
         
     public BodyPacket(byte[] bytes){
         this.bytes = bytes;      

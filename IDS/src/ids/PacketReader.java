@@ -9,8 +9,6 @@ import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import jpcap.JpcapCaptor;
 import jpcap.packet.Packet;
 import jpcap.packet.TCPPacket;
@@ -26,7 +24,7 @@ public class PacketReader implements Runnable {
     private UDPPacket udp;
     private int input, files, type;
     private double[] numChars;
-    private String tuples;
+    private String tuples, regex = "\\r?\\n";
     private String[] header;
     private Map<String, BodyPacket> packetBody = new HashMap<>();
     private ArrayList<DataPacket> datasetTcp;       
@@ -56,13 +54,26 @@ public class PacketReader implements Runnable {
                     tcp = (TCPPacket) packet;
                     BodyPacket tcpBodyData;
                     if (tcp.dst_port < 1024) {
-                        tuples = input+"-tcp-"+tcp.src_ip.toString().substring(1)+"-"+tcp.src_port+"-"+tcp.dst_ip.toString().substring(1)+"-"+tcp.dst_port;
-                        if (packetBody.containsKey(tuples)){
-                            tcpBodyData = packetBody.get(tuples);
-                            tcpBodyData.addBytes(tcp.data);
-                        } else { 
-                            tcpBodyData = new BodyPacket(tcp.data); 
-                            packetBody.put(tuples, tcpBodyData); 
+                        if (tcp.dst_port == 80) {
+                            String[] split = new String(tcp.data, StandardCharsets.US_ASCII).split(regex);
+                            byte[] data = split[0].getBytes(StandardCharsets.US_ASCII);
+                            tuples = input+"-TCP-"+tcp.src_ip.toString().substring(1)+"-"+tcp.src_port+"-"+tcp.dst_ip.toString().substring(1)+"-"+tcp.dst_port;
+                            if (packetBody.containsKey(tuples)){
+                                tcpBodyData = packetBody.get(tuples);
+                                tcpBodyData.addBytes(data);
+                            } else { 
+                                tcpBodyData = new BodyPacket(data); 
+                                packetBody.put(tuples, tcpBodyData); 
+                            }
+                        } else {
+                            tuples = input+"-TCP-"+tcp.src_ip.toString().substring(1)+"-"+tcp.src_port+"-"+tcp.dst_ip.toString().substring(1)+"-"+tcp.dst_port;
+                            if (packetBody.containsKey(tuples)){
+                                tcpBodyData = packetBody.get(tuples);
+                                tcpBodyData.addBytes(tcp.data);
+                            } else { 
+                                tcpBodyData = new BodyPacket(tcp.data); 
+                                packetBody.put(tuples, tcpBodyData); 
+                            }
                         }
                     } 
                 }
@@ -71,7 +82,7 @@ public class PacketReader implements Runnable {
                     udp = (UDPPacket) packet;
                     BodyPacket udpBodyData; 
                     if (udp.dst_port < 1024) {
-                        tuples = input+"-udp-"+udp.src_ip.toString().substring(1)+"-"+udp.src_port+"-"+udp.dst_ip.toString().substring(1)+"-"+udp.dst_port;
+                        tuples = input+"-UDP-"+udp.src_ip.toString().substring(1)+"-"+udp.src_port+"-"+udp.dst_ip.toString().substring(1)+"-"+udp.dst_port;
                         if(packetBody.containsKey(tuples)){
                             udpBodyData = packetBody.get(tuples);
                             udpBodyData.addBytes(udp.data);
@@ -96,26 +107,15 @@ public class PacketReader implements Runnable {
             BodyPacket value = entry.getValue();
             numChars = ng.Ngram(new String(value.getBytes(), StandardCharsets.US_ASCII));
                 
-            if (header[0].equals("1") && header[1].equals("tcp")) {
-                datasetTcp.add(new DataPacket(header[1], header[2], Integer.parseInt(header[3]), header[4], Integer.parseInt(header[5]), value.getBytes(), numChars, type));
+            if (header[0].equals("1") && header[1].equals("TCP")) {
+                datasetTcp.add(new DataPacket(header[1], header[2], Integer.parseInt(header[3]), header[4], Integer.parseInt(header[5]), null, numChars, type));
             } 
 
-            else if (header[0].equals("1") && header[1].equals("udp")) {
-                datasetUdp.add(new DataPacket(header[1], header[2], Integer.parseInt(header[3]), header[4], Integer.parseInt(header[5]), value.getBytes(), numChars, type));
+            else if (header[0].equals("1") && header[1].equals("UDP")) {
+                datasetUdp.add(new DataPacket(header[1], header[2], Integer.parseInt(header[3]), header[4], Integer.parseInt(header[5]), null, numChars, type));
             }
 
             else if (header[0].equals("3")) {    
-//                if (header[1].equals("tcp") && countFree < free) {
-//                    datasetTcp.add(new DataPacket(header[1], header[2], Integer.parseInt(header[3]), header[4], Integer.parseInt(header[5]), numChars, type));
-//                    countFree++;
-//                } 
-//
-//                else if (header[1].equals("udp") && countFree < free) {
-//                    datasetUdp.add(new DataPacket(header[1], header[2], Integer.parseInt(header[3]), header[4], Integer.parseInt(header[5]), numChars, type));
-//                    countFree++;
-//                }
-//                
-//                else
                 dataTest.add(new DataPacket(header[1], header[2], Integer.parseInt(header[3]), header[4], Integer.parseInt(header[5]), value.getBytes(), numChars, type));
             }                
         }
