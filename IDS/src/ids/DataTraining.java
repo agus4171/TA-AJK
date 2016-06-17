@@ -6,9 +6,6 @@
 package ids;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
 import org.apache.commons.lang3.ArrayUtils;
 
 /**
@@ -52,17 +49,7 @@ public class DataTraining implements Runnable {
 
                 for (int i = 0; i < ascii; i++) {
                     meanData[i] = sumData[i]/dataTraining.size();
-                }  
-
-//                for (int i = 0; i < dataTraining.size(); i++) {
-//                    for (int j = 0; j < ascii; j++) {
-//                        deviasiData[j] += Math.pow(dataTraining.get(i)[j]-meanData[j], 2);
-//                    }
-//                }
-//                
-//                for (int i = 0; i < deviasiData.length; i++) {
-//                    deviasiData[i] = Math.sqrt(deviasiData[i]/(dataTraining.size()-1));
-//                }
+                }
 
                 for (int i = 0; i < deviasiData.length; i++) {
                     deviasiData[i] = Math.sqrt((dataTraining.size()*quadraticData[i]-Math.pow(sumData[i], 2))/(dataTraining.size()*(dataTraining.size()-1)));
@@ -87,17 +74,7 @@ public class DataTraining implements Runnable {
 
                 for (int i = 0; i < ascii; i++) {
                     meanData[i] = sumData[i]/dataTraining.size();
-                }  
-
-//                for (int i = 0; i < dataTraining.size(); i++) {
-//                    for (int j = 0; j < ascii; j++) {
-//                        deviasiData[j] += Math.pow(dataTraining.get(i)[j]-meanData[j], 2);
-//                    }
-//                }
-//                
-//                for (int i = 0; i < deviasiData.length; i++) {
-//                    deviasiData[i] = Math.sqrt(deviasiData[i]/(dataTraining.size()-1));
-//                }
+                }
 
                 for (int i = 0; i < deviasiData.length; i++) {
                     deviasiData[i] = Math.sqrt((dataTraining.size()*quadraticData[i]-Math.pow(sumData[i], 2))/(dataTraining.size()*(dataTraining.size()-1)));

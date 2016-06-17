@@ -1,10 +1,10 @@
-DataTraining:/media/agus/4DD244C0638395F0/dataset/1/inside/friday/
+DataTraining:/media/agus/4DD244C0638395F0/dataset/inside/
 DataTesting:/media/agus/4DD244C0638395F0/2/friday/
 TypePacket:0
 Threshold:80-40000:53-20000:25-11000:123-10000:79-1700:23-4400:21-1800
 SmoothingFactor:0.001
 LimitPacket:1000
-Port:80
+Port:22
 
 /home/agus/KULIAH/TA-AJK/DARPA/
 /media/agus/4DD244C0638395F0/dataset/

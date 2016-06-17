@@ -11,6 +11,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -234,8 +235,9 @@ public class IDS {
                     System.out.println("Dataset directory: "+dirPath);
                     start = System.currentTimeMillis();
                     ids.getListFile(dirPath, fileData);
+                    System.out.println("Total dataset is: "+fileData.size()+" file");
                     for (File fileDataset : fileData) {
-                        if (threadFile.size() >= core) {
+                        if (threadFile.size() == core) {
                             for (Thread threads : threadFile) {
                                 try {
                                     threads.join();
@@ -244,15 +246,14 @@ public class IDS {
                                 }
                             }
                             threadFile.clear();
-                        } else {
-                            JpcapCaptor captor = JpcapCaptor.openFile(fileDataset.toString());
-                            PacketReader pr = new PacketReader(countFile, captor, input, datasetTcp, datasetUdp, dataTest, packetType);
-                            Thread threadFiles = new Thread(pr);
-                            threadFiles.start();
-                            System.out.println("Processing dataset ke-"+countFile+" "+fileDataset.toString());
-                            threadFile.add(threadFiles);
-                            countFile++;
-                        }                        
+                        } 
+                        JpcapCaptor captor = JpcapCaptor.openFile(fileDataset.toString());
+                        PacketReader pr = new PacketReader(countFile, captor, input, datasetTcp, datasetUdp, dataTest, packetType);
+                        Thread threadFiles = new Thread(pr);
+                        threadFiles.start();
+                        System.out.println("Processing dataset ke-"+countFile+" "+fileDataset.toString());
+                        threadFile.add(threadFiles);
+                        countFile++;
                     }
                     
                     for (Thread threads : threadFile) {
@@ -268,8 +269,8 @@ public class IDS {
                     
                     System.out.println("Training Dataset...");
                     start = System.currentTimeMillis();
-                    portTrainingTcp = new HashMap<>();
                     if (datasetTcp.size() != 0) {
+                        portTrainingTcp = new HashMap<>();
                         for (DataPacket dpTcp : datasetTcp) {
                             portPacket = dpTcp.getDstPort();
                             if (portTrainingTcp.containsKey(portPacket)) continue;
@@ -379,7 +380,7 @@ public class IDS {
                                     if (dataTcp.getDstPort() == dataPacketTes.getDstPort()) {
                                         mahalanobis = new Mahalanobis();
                                         mDist = mahalanobis.distance(dataPacketTes.getNgram(), dataTcp.getMeanData(), dataTcp.getDeviasiData(),sFactor);
-                                        fwFree.append(dataPacketTes.getSrcIP()+"-"+dataPacketTes.getSrcPort()+"-"+dataPacketTes.getDstIP()+"-"+dataPacketTes.getDstPort()+" -> "+mDist+"\n");
+                                        fwFree.append(mDist+"\n");
                                     }
                                 }
                             }
@@ -389,15 +390,19 @@ public class IDS {
                                     if (dataUdp.getDstPort() == dataPacketTes.getDstPort()) {
                                         mahalanobis = new Mahalanobis();
                                         mDist = mahalanobis.distance(dataPacketTes.getNgram(), dataUdp.getMeanData(), dataUdp.getDeviasiData(),sFactor);
-                                        fwAttack.append(dataPacketTes.getSrcIP()+"-"+dataPacketTes.getSrcPort()+"-"+dataPacketTes.getDstIP()+"-"+dataPacketTes.getDstPort()+" -> "+mDist+"\n");
+                                        fwAttack.append(mDist+"\n");
                                     }
                                 }
                             }
                         }
 
                         fwFree.close();
+                        fwAttack.close();
                         end = System.currentTimeMillis();
                         System.out.println("Total time of sniffer testing is: "+(end-start)/3600000+" hour "+((end-start)%3600000)/60000+" minutes "+(((end-start)%3600000)%60000)/1000+" seconds");
+                        System.out.println("Total attack packet: "+valAttack.size());
+                        System.out.println("Total free packet: "+valFree.size());
+                        dataTest.clear();
                     }          
                     
                     System.out.println("Please choose Training Dataset First!");
@@ -449,17 +454,17 @@ public class IDS {
                                         if (dataTcp.getDstPort() == dataPacketTes.getDstPort()) {
                                             mahalanobis = new Mahalanobis();
                                             mDist = mahalanobis.distance(dataPacketTes.getNgram(), dataTcp.getMeanData(), dataTcp.getDeviasiData(),sFactor);
-                                            fwFree.append(dataPacketTes.getSrcIP()+"-"+dataPacketTes.getSrcPort()+"-"+dataPacketTes.getDstIP()+"-"+dataPacketTes.getDstPort()+" -> "+mDist+"\n");
+                                            fwFree.append(mDist+" "+new String(dataPacketTes.getPacketData(), StandardCharsets.US_ASCII)+"\n");
                                         }
                                     }
                                 }
 
-                                else if ("UDP".equals(dataPacketTes.getProtokol()) && dataPacketTes.getDstPort() < 1024) {
+                                else if ("UDP".equals(dataPacketTes.getProtokol()) && dataPacketTes.getDstPort() == portTesting) {
                                     for (DataModel dataUdp : modelUdp) {
                                         if (dataUdp.getDstPort() == dataPacketTes.getDstPort()) {
                                             mahalanobis = new Mahalanobis();
                                             mDist = mahalanobis.distance(dataPacketTes.getNgram(), dataUdp.getMeanData(), dataUdp.getDeviasiData(),sFactor);
-                                            fwAttack.append(dataPacketTes.getSrcIP()+"-"+dataPacketTes.getSrcPort()+"-"+dataPacketTes.getDstIP()+"-"+dataPacketTes.getDstPort()+" -> "+mDist+"\n");
+                                            fwAttack.append(mDist+" "+new String(dataPacketTes.getPacketData(), StandardCharsets.US_ASCII)+"\n");
                                         }
                                     }
                                 }
