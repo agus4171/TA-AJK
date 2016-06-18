@@ -19,6 +19,7 @@ public class SplitString {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        System.out.println(Math.round(3.019961948*100.0)/100.0);
         String str = "tcp-10.151.36.100-80-202.46.129.70-9000";
         String strName = "senin_inside.tcpdump";
         System.out.println(strName.replaceAll("\\.", ""));
@@ -98,16 +99,16 @@ public class SplitString {
 //        } 
 //        System.out.println(Arrays.toString(sDeviasi));
         for (int i = 0; i < value.length; i++) {
-            System.out.println(Math.sqrt((tes.size()*pow[i]-Math.pow(data[i], 2))/(tes.size()*(tes.size()-1))));
+            System.out.println(Math.round(Math.sqrt((tes.size()*pow[i]-Math.pow(data[i], 2))/(tes.size()*(tes.size()-1)))*100.0)/100.0);
             sDeviasi[i] = Math.sqrt((tes.size()*pow[i] - Math.pow(data[i], 2))/tes.size()*(tes.size()-1));
 
         } 
-        System.out.println(Arrays.toString(sDeviasi));
+//        System.out.println(Arrays.toString(sDeviasi));
         
         for (int i = 0; i < data.length; i++) {
             sDeviasi[i] = Math.sqrt(sDeviasi[i]/(tes.size()-1));
         }
-        System.out.println(Arrays.toString(sDeviasi));
+//        System.out.println(Arrays.toString(sDeviasi));
 //        1.1.1
 //        2.3.4
 //        System.out.println(Arrays.toString(data));

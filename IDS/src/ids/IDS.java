@@ -13,6 +13,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -454,7 +455,7 @@ public class IDS {
                                         if (dataTcp.getDstPort() == dataPacketTes.getDstPort()) {
                                             mahalanobis = new Mahalanobis();
                                             mDist = mahalanobis.distance(dataPacketTes.getNgram(), dataTcp.getMeanData(), dataTcp.getDeviasiData(),sFactor);
-                                            fwFree.append(mDist+" -> "+new String(dataPacketTes.getPacketData(), StandardCharsets.US_ASCII)+"\n");
+                                            fwFree.append(Math.round(mDist*100.0)/100.0+"\n");
                                         }
                                     }
                                 }
@@ -464,7 +465,7 @@ public class IDS {
                                         if (dataUdp.getDstPort() == dataPacketTes.getDstPort()) {
                                             mahalanobis = new Mahalanobis();
                                             mDist = mahalanobis.distance(dataPacketTes.getNgram(), dataUdp.getMeanData(), dataUdp.getDeviasiData(),sFactor);
-                                            fwAttack.append(mDist+" -> "+new String(dataPacketTes.getPacketData(), StandardCharsets.US_ASCII)+"\n");
+                                            fwAttack.append(Math.round(mDist*100.0)/100.0+"\n");
                                         }
                                     }
                                 }
