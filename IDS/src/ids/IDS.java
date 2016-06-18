@@ -237,16 +237,16 @@ public class IDS {
                     ids.getListFile(dirPath, fileData);
                     System.out.println("Total dataset is: "+fileData.size()+" file");
                     for (File fileDataset : fileData) {
-                        if (threadFile.size() == core) {
-                            for (Thread threads : threadFile) {
-                                try {
-                                    threads.join();
-                                } catch (InterruptedException ex) {
-                                    Logger.getLogger(IDS.class.getName()).log(Level.SEVERE, null, ex);
-                                }
-                            }
-                            threadFile.clear();
-                        } 
+//                        if (threadFile.size() == core) {
+//                            for (Thread threads : threadFile) {
+//                                try {
+//                                    threads.join();
+//                                } catch (InterruptedException ex) {
+//                                    Logger.getLogger(IDS.class.getName()).log(Level.SEVERE, null, ex);
+//                                }
+//                            }
+//                            threadFile.clear();
+//                        } 
                         JpcapCaptor captor = JpcapCaptor.openFile(fileDataset.toString());
                         PacketReader pr = new PacketReader(countFile, captor, input, datasetTcp, datasetUdp, dataTest, packetType);
                         Thread threadFiles = new Thread(pr);
