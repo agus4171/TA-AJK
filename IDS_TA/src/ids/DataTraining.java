@@ -47,7 +47,7 @@ public class DataTraining implements Runnable {
                     }                                                                        
                 }
 
-                for (int i = 0; i < meanData.length; i++) {
+                for (int i = 0; i < ascii; i++) {
                     meanData[i] = sumData[i]/dataTraining.size();
                 }
 
@@ -72,7 +72,7 @@ public class DataTraining implements Runnable {
                     }                                                                        
                 }
 
-                for (int i = 0; i < meanData.length; i++) {
+                for (int i = 0; i < ascii; i++) {
                     meanData[i] = sumData[i]/dataTraining.size();
                 }
 
