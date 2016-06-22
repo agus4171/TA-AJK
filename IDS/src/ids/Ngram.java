@@ -12,19 +12,16 @@ import java.nio.charset.StandardCharsets;
  * @author agus
  */
 public class Ngram {
-    private int len;
-    private byte[] ascii;
+    private int ascii;
     private double[] n;
     
-    public double[] Ngram(String data){
+    public double[] Ngram(byte[] data){
         if (data != null) {
             n = new double[256];
-            ascii = data.getBytes(StandardCharsets.US_ASCII);
-            
-            for (byte b : ascii) {
-                if (b < 256) {
-                    n[b] += 1;
-                }
+
+            for (byte b : data) {
+                ascii = b & 0xFF;
+                n[ascii] += 1;
             }
         }
         return n;

@@ -7,6 +7,7 @@ package ids;
 
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 import jpcap.JpcapCaptor;
@@ -113,7 +114,7 @@ public class PacketReader implements Runnable {
             String key = entry.getKey();
             header = key.split("-", 0);
             BodyPacket value = entry.getValue();
-            numChars = ng.Ngram(new String(value.getBytes(), StandardCharsets.US_ASCII));
+            numChars = ng.Ngram(value.getBytes());            
                 
             if (header[0].equals("1") && header[1].equals("TCP")) {
                 datasetTcp.add(new DataPacket(header[1], header[2], Integer.parseInt(header[3]), header[4], Integer.parseInt(header[5]), null, numChars, type));

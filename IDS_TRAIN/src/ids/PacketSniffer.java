@@ -95,7 +95,7 @@ public class PacketSniffer implements Runnable {
             header = key.split("-", 0);
             BodyPacket value = entry.getValue();
             if (value.getBytes().length != 0) {
-                numChars = ng.Ngram(new String(value.getBytes(), StandardCharsets.US_ASCII));
+                numChars = ng.Ngram(value.getBytes());
                 dataTest.add(new DataPacket(header[1], header[2], Integer.parseInt(header[3]), header[4], Integer.parseInt(header[5]), value.getBytes(), numChars, 0));
             }   
         }

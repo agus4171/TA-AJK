@@ -51,7 +51,7 @@ public class IDS {
         String dataTraining = null;
         while ((line = br.readLine()) != null) {
             ket = line.split(":", 0);
-            if (ket[0].equals("DataTraining ")) {
+            if (ket[0].equals("Data Training ")) {
                 dataTraining = ket[1].substring(1);
             }
         }
@@ -94,7 +94,7 @@ public class IDS {
         double sFactor = 0;
         while ((line = br.readLine()) != null) {
             ket = line.split(":", 0);
-            if (ket[0].equals("SmoothingFactor ")) {
+            if (ket[0].equals("Smoothing Factor ")) {
                 sFactor = Double.parseDouble(ket[1]);
             }
         }
@@ -106,7 +106,7 @@ public class IDS {
         int counterPacket = 0;
         while ((line = br.readLine()) != null) {
             ket = line.split(":", 0);
-            if (ket[0].equals("LimitPacket ")) {
+            if (ket[0].equals("Limit Packet ")) {
                 counterPacket = Integer.parseInt(ket[1].substring(1));
             }
         }
