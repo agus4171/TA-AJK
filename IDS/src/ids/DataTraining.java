@@ -6,6 +6,7 @@
 package ids;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import org.apache.commons.lang3.ArrayUtils;
 
 /**
@@ -15,7 +16,7 @@ import org.apache.commons.lang3.ArrayUtils;
 public class DataTraining implements Runnable {    
     private int ascii = 256, port;
     private String proto;
-    private double[] sumData = new double[ascii], meanData = new double[ascii], deviasiData = new double[ascii], quadraticData = new double[ascii];
+    private double[] sumData = new double[ascii], meanData = new double[ascii], deviasiData = new double[ascii], quadraticData = new double[ascii], standardData = new double[ascii];
     private ArrayList<DataPacket> datasetTcp;       
     private ArrayList<DataPacket> datasetUdp;  
     private ArrayList<Double[]> dataTraining = new ArrayList<>();
@@ -34,9 +35,9 @@ public class DataTraining implements Runnable {
     public void run(){
         synchronized(dataTraining){
             if (proto.equals("TCP")) {
-                for (DataPacket dataSetA : datasetTcp) {
-                    if (dataSetA.getDstPort() == port) {                                        
-                        dataTraining.add(ArrayUtils.toObject(dataSetA.getNgram()));                                        
+                for (DataPacket dataSetTcp : datasetTcp) {
+                    if (dataSetTcp.getDstPort() == port) {                                        
+                        dataTraining.add(ArrayUtils.toObject(dataSetTcp.getNgram()));
                     }                                    
                 }               
 
@@ -54,14 +55,15 @@ public class DataTraining implements Runnable {
                 for (int i = 0; i < deviasiData.length; i++) {
                     deviasiData[i] = Math.sqrt((dataTraining.size()*quadraticData[i]-Math.pow(sumData[i], 2))/(dataTraining.size()*(dataTraining.size()-1)));
                 }
-
-                modelTcp.add(new DataModel(port, meanData, deviasiData, quadraticData, dataTraining.size()));
+                
+                modelTcp.add(new DataModel(port, meanData, deviasiData, quadraticData, standardData, dataTraining.size()));
+                dataTraining.clear();
             }
 
             else if (proto.equals("UDP")) {
-                for (DataPacket dataSetA : datasetUdp) {
-                    if (dataSetA.getDstPort() == port) {                                        
-                        dataTraining.add(ArrayUtils.toObject(dataSetA.getNgram()));                                        
+                for (DataPacket dataSetUdp : datasetUdp) {
+                    if (dataSetUdp.getDstPort() == port) {                                        
+                        dataTraining.add(ArrayUtils.toObject(dataSetUdp.getNgram()));                                        
                     }                                    
                 }
 
@@ -80,7 +82,8 @@ public class DataTraining implements Runnable {
                     deviasiData[i] = Math.sqrt((dataTraining.size()*quadraticData[i]-Math.pow(sumData[i], 2))/(dataTraining.size()*(dataTraining.size()-1)));
                 }
 
-                modelUdp.add(new DataModel(port, meanData, deviasiData, quadraticData, dataTraining.size()));
+                modelUdp.add(new DataModel(port, meanData, deviasiData, quadraticData, standardData, dataTraining.size()));
+                dataTraining.clear();
             }            
         }                
     }

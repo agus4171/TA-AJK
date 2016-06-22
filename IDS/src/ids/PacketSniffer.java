@@ -17,7 +17,6 @@ import jpcap.NetworkInterface;
 import jpcap.packet.Packet;
 import jpcap.packet.TCPPacket;
 import jpcap.packet.UDPPacket;
-import org.apache.commons.lang3.ArrayUtils;
 
 /**
  *
@@ -55,8 +54,7 @@ public class PacketSniffer implements Runnable {
                     
                     if (packet instanceof TCPPacket){
                         tcp = (TCPPacket) packet;
-                        System.out.println(count+" "+tcp);
-                        BodyPacket tcpBodyData; 
+                        BodyPacket tcpBodyData;
                         tuples = "TCP-"+tcp.src_ip.toString().substring(1)+"-"+tcp.src_port+"-"+tcp.dst_ip.toString().substring(1)+"-"+tcp.dst_port;
                         if (packetBody.containsKey(tuples)){
                             tcpBodyData = packetBody.get(tuples);
@@ -71,7 +69,6 @@ public class PacketSniffer implements Runnable {
                     
                     else if(packet instanceof UDPPacket){
                         udp = (UDPPacket) packet;
-                        System.out.println(count+" "+udp);
                         BodyPacket udpBodyData; 
                         tuples = "UDP-"+udp.src_ip.toString().substring(1)+"-"+udp.src_port+"-"+udp.dst_ip.toString().substring(1)+"-"+udp.dst_port;
                         if(packetBody.containsKey(tuples)){
@@ -90,16 +87,17 @@ public class PacketSniffer implements Runnable {
             Logger.getLogger(PacketSniffer.class.getName()).log(Level.SEVERE, null, ex);
         }   
         
+        System.out.println("Total Packet: "+count);
         for (Map.Entry<String, BodyPacket> entry : packetBody.entrySet()) {
             String key = entry.getKey();
             header = key.split("-", 0);
             BodyPacket value = entry.getValue();
             if (value.getBytes().length != 0) {
                 numChars = ng.Ngram(new String(value.getBytes(), StandardCharsets.US_ASCII));
-                dataTest.add(new DataPacket(header[1], header[2], Integer.parseInt(header[3]), header[4], Integer.parseInt(header[5]), value.getBytes(), numChars, 0));
+                dataTest.add(new DataPacket(header[0], header[1], Integer.parseInt(header[2]), header[3], Integer.parseInt(header[4]), value.getBytes(), numChars));
             }   
         }
-        System.out.println("dataTes: "+dataTest.size()); 
+        System.out.println("Total Data Testing : "+dataTest.size());
     }
     
 }
