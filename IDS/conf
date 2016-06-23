@@ -1,4 +1,4 @@
-Data Training : /home/agus/KULIAH/TA-AJK/DARPA/
+Data Training : /media/agus/4DD244C0638395F0/dataset/inside/3/monday/
 Threshold : 21-0: 23-0: 25-0: 80-0: 53-0: 143-0: 513-0
 Smoothing Factor : 0.001
 Limit Packet : 1000

@@ -36,7 +36,7 @@ public class IDS {
      * @param args the command line arguments
      * @throws java.io.IOException
      */
-    static int ascii = 256, core = Runtime.getRuntime().availableProcessors();
+    static int ascii = 256, packetCounter = 1, core = Runtime.getRuntime().availableProcessors();
     String line;
     String[] ket;
     BufferedReader br;
@@ -129,7 +129,7 @@ public class IDS {
     }
     
     String getDateTime(){
-        SimpleDateFormat date = new SimpleDateFormat("E_yyy-MM-dd_hh-mm-ss_a");
+        SimpleDateFormat date = new SimpleDateFormat("E_yyyy-MM-dd_hha");
         Date dateNow = new Date();
         return date.format(dateNow);    
     }
@@ -185,12 +185,12 @@ public class IDS {
     }
     
     public static void main(String[] args) throws IOException {    
-        int input, packetCounter, packetType, portPacket, portTesting, countFile = 1;
+        int input, packetLimit, packetType, portPacket, portTesting, countFile = 1;
         double mDist, threshold, sFactor;
         double[] sumData, meanData, deviasiData;
         long start, end;
         String time, thresholdAll;
-        String[] header, fileName;
+        String[] header, fileName, dateTime;
         List<Thread> threadTraining;
         List<Thread> threadFile;
         List<File> fileData;
@@ -200,7 +200,7 @@ public class IDS {
         Map<Integer, Integer> portTrainingTcp;
         Map<Integer, Integer> portTrainingUdp;
         String dirPath, filePath;
-        File file, fileFree, fileAttack;
+        File file, fileLog, fileDir;
         FileWriter fw, fwFree, fwAttack;
         Mahalanobis mahalanobis;
         IDS ids;
@@ -218,7 +218,7 @@ public class IDS {
         System.out.println("Total dataset is : "+fileData.size()+" file");
         for (File fileDataset : fileData) {
             JpcapCaptor captor = JpcapCaptor.openFile(fileDataset.toString());
-            PacketReader pr = new PacketReader(countFile, captor, 1, datasetTcp, datasetUdp, dataTest);
+            PacketReader pr = new PacketReader(countFile, captor, datasetTcp, datasetUdp, dataTest, packetCounter);
             Thread threadFiles = new Thread(pr);
             threadFiles.start();
             System.out.println("Processing dataset ke-"+countFile+" "+fileDataset.toString());
@@ -313,13 +313,11 @@ public class IDS {
                    
         while (true) {
             ids = new IDS();           
-            packetCounter = ids.getCounterPacket();
+            packetLimit = ids.getCounterPacket();
             time = ids.getDateTime();
-            fileFree = new File("SnifferTesting");
-            fwFree = new FileWriter(fileFree,true);
             System.out.println(device[input].name);
             System.out.println("Start Sniffing...");
-            PacketSniffer ps = new PacketSniffer(device[input], 1, dataTest, packetCounter);
+            PacketSniffer ps = new PacketSniffer(device[input], 1, dataTest, packetLimit);
             Thread threadPs = new Thread(ps);
             threadPs.start();
             try {
@@ -330,8 +328,17 @@ public class IDS {
 
             thresholdAll = ids.getTh(); 
             sFactor = ids.getSFactor();
-            fileAttack = new File("Sniffing_result_attack_"+time);
-            fwAttack = new FileWriter(fileAttack,true);
+            dateTime = time.split("_");
+            fileDir = new File(dateTime[0]+"_"+dateTime[1]);
+            if (!fileDir.exists()) {
+                fileDir.mkdir();
+            }
+            fileLog = new File(dateTime[0]+"_"+dateTime[1]+"/Sniffing_log_"+dateTime[2]);
+            if (!fileLog.exists()) {
+                fileLog.createNewFile();
+            }
+            fw = new FileWriter(fileLog,true);
+            fw.append(time+"\n");
             valAttack = new ArrayList<>();
             valFree = new ArrayList<>();
             System.out.println("Threshold : "+thresholdAll.substring(4, ids.getTh().length()-1));
@@ -349,8 +356,8 @@ public class IDS {
                             mDist = mahalanobis.distance(dataPacketTes.getNgram(), dataTcp.getMeanData(), dataTcp.getDeviasiData(),sFactor);
                             if (mDist > ids.getThreshold(dataPacketTes.getDstPort())) {
                                 valAttack.add(mDist);
-                                fwAttack.append(Math.round(mDist*100.0)/100.0+" -> "+dataPacketTes.getSrcIP()+"-"+dataPacketTes.getSrcPort()+"-"+dataPacketTes.getDstIP()+"-"+dataPacketTes.getDstPort()+"\n");
-                                fwAttack.append(new String(dataPacketTes.getPacketData(), StandardCharsets.US_ASCII)+"\n");
+                                fw.append(Math.round(mDist*100.0)/100.0+" -> "+dataPacketTes.getSrcIP()+"-"+dataPacketTes.getSrcPort()+"-"+dataPacketTes.getDstIP()+"-"+dataPacketTes.getDstPort()+"\n");
+                                fw.append(new String(dataPacketTes.getPacketData(), StandardCharsets.US_ASCII)+"\n");
                             } else {
                                 valFree.add(mDist);
                                 ids.incremental("TCP", dataPacketTes.getNgram(), dataPacketTes.getDstPort());
@@ -366,8 +373,8 @@ public class IDS {
                             mDist = mahalanobis.distance(dataPacketTes.getNgram(), dataUdp.getMeanData(), dataUdp.getDeviasiData(),sFactor);
                             if (mDist > ids.getThreshold(dataPacketTes.getDstPort())) {
                                 valAttack.add(mDist);
-                                fwAttack.append(Math.round(mDist*100.0)/100.0+" -> "+dataPacketTes.getSrcIP()+"-"+dataPacketTes.getSrcPort()+"-"+dataPacketTes.getDstIP()+"-"+dataPacketTes.getDstPort()+"\n");
-                                fwAttack.append(new String(dataPacketTes.getPacketData(), StandardCharsets.US_ASCII)+"\n");
+                                fw.append(Math.round(mDist*100.0)/100.0+" -> "+dataPacketTes.getSrcIP()+"-"+dataPacketTes.getSrcPort()+"-"+dataPacketTes.getDstIP()+"-"+dataPacketTes.getDstPort()+"\n");
+                                fw.append(new String(dataPacketTes.getPacketData(), StandardCharsets.US_ASCII)+"\n");
                             } else {
                                 valFree.add(mDist);
                                 ids.incremental("UDP", dataPacketTes.getNgram(), dataPacketTes.getDstPort());
@@ -377,8 +384,7 @@ public class IDS {
                 }
             }
 
-            fwFree.close();
-            fwAttack.close();
+            fw.close();
             end = System.currentTimeMillis();
             System.out.println("Total time of sniffer testing is: "+(end-start)/3600000+" hour "+((end-start)%3600000)/60000+" minutes "+(((end-start)%3600000)%60000)/1000+" seconds");
             System.out.println("Total attack packet: "+valAttack.size());

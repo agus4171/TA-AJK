@@ -5,8 +5,6 @@
  */
 package ids;
 
-import java.nio.charset.StandardCharsets;
-
 /**
  *
  * @author agus

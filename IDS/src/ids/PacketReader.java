@@ -5,9 +5,7 @@
  */
 package ids;
 
-import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 import jpcap.JpcapCaptor;
@@ -33,14 +31,14 @@ public class PacketReader implements Runnable {
     private ArrayList<DataPacket> dataTest;
     private Ngram ng = new Ngram();
     
-    public PacketReader(int files, JpcapCaptor captor, int input, ArrayList<DataPacket> datasetTcp, ArrayList<DataPacket> datasetUdp, ArrayList<DataPacket> dataTest){
+    public PacketReader(int files, JpcapCaptor captor, ArrayList<DataPacket> datasetTcp, ArrayList<DataPacket> datasetUdp, ArrayList<DataPacket> dataTest, int counter){
         this.files = files;
         this.captor = captor;        
         this.input = input;
         this.datasetTcp = datasetTcp;
         this.datasetUdp = datasetUdp;
         this.dataTest = dataTest;
-        countPacket = new Integer(1);
+        this.countPacket = counter;
     }
     
     @Override

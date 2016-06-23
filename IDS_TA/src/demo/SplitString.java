@@ -5,8 +5,12 @@
  */
 package demo;
 
+import java.io.File;
+import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Date;
 import org.apache.commons.lang3.ArrayUtils;
 
 /**
@@ -18,8 +22,22 @@ public class SplitString {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 //        System.out.println(Math.round(3.019961948*100.0)/100.0);
+        
+        File dir = new File("new_folder/sa");
+        if (!dir.exists()) {
+            dir.mkdirs();
+        }
+        File baru = new File("new_folder/"+"coba");
+        if (!baru.exists()) {
+            baru.createNewFile();
+        }
+        SimpleDateFormat date = new SimpleDateFormat("E_yyyy-MM-dd_hha");
+        Date dateNow = new Date();
+        System.out.println(date.format(dateNow));
+        String[] time = date.format(dateNow).split("_");
+        System.out.println(time[0]+time[1]);
         String str = "tcp-10.151.36.100-80-202.46.129.70-9000";
         String strName = "Threshold : 80-40000: 53-20000: 25-11000: 123-10000: 79-1700: 23-4400: 21-1800";
         String[] head = strName.split(":");
