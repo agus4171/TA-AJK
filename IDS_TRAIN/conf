@@ -1,5 +1,5 @@
-Data Training : /media/agus/4DD244C0638395F0/dataset/inside/1/friday
-Data Testing : /media/agus/4DD244C0638395F0/data_attack/inside/2/friday
+Data Training : /home/agus/KULIAH/TA-AJK/DARPA/
+Data Testing : /media/agus/4DD244C0638395F0/data_attack/inside/2/monday/
 Packet Type : 0
 Threshold : 21-0: 23-0: 25-0: 80-0: 53-0: 143-0: 513-0
 Smoothing Factor : 0.001

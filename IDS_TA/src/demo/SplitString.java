@@ -7,10 +7,13 @@ package demo;
 
 import java.io.File;
 import java.io.IOException;
+import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Calendar;
 import java.util.Date;
+import java.util.TimeZone;
 import org.apache.commons.lang3.ArrayUtils;
 
 /**
@@ -23,7 +26,30 @@ public class SplitString {
      * @param args the command line arguments
      */
     public static void main(String[] args) throws IOException {
+        System.out.println("Start time : "+new String(new SimpleDateFormat("yyyy-MMMM-dd HH:mm:ss a").format(Calendar.getInstance().getTime())));
+        System.out.println("-------------------------------------");
+        System.out.println("Protokol | Date | Source | Destination | Distance");
+        System.out.println("-------------------------------------------------");
+        System.out.println("#################################################");
 //        System.out.println(Math.round(3.019961948*100.0)/100.0);
+        Calendar calNewYork = Calendar.getInstance(TimeZone.getTimeZone("America/New_York"));
+
+//        calNewYork.setTimeInMillis(922712402);
+//        calNewYork.setTimeZone(TimeZone.getTimeZone("America/New_York"));
+//        System.out.println(calNewYork.getTime());
+//        System.out.println("Time in New York: " + calNewYork.get(Calendar.HOUR_OF_DAY)+":"+calNewYork.get(Calendar.MINUTE));
+        String ep = "922712402";
+        Long lp = Long.parseLong(ep);
+        System.out.println(lp);
+        Date dateE = new Date(lp*1000L);
+        DateFormat format = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
+        format.setTimeZone(TimeZone.getTimeZone("America/New_York"));
+        String formatted = format.format(dateE);
+        System.out.println(formatted);
+        
+        format.setTimeZone(TimeZone.getTimeZone("Australia/Sydney"));
+        formatted = format.format(dateE);
+//        System.out.println(formatted);
         
         File dir = new File("new_folder/sa");
         if (!dir.exists()) {
@@ -33,7 +59,7 @@ public class SplitString {
         if (!baru.exists()) {
             baru.createNewFile();
         }
-        SimpleDateFormat date = new SimpleDateFormat("E_yyyy-MM-dd_hha");
+        SimpleDateFormat date = new SimpleDateFormat("yyyy_MMMM_EEEE-dd_hha");
         Date dateNow = new Date();
         System.out.println(date.format(dateNow));
         String[] time = date.format(dateNow).split("_");
