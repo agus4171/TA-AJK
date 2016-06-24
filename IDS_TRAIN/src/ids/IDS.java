@@ -370,9 +370,9 @@ public class IDS {
                 case 2:
                     if (!modelTcp.isEmpty() | !modelUdp.isEmpty()) {
                         System.out.println("Sniffer Testing...");
-                        ids = new IDS();
-                        time = ids.getDateTime();
-                        windowSize = ids.getWindowSize();
+//                        ids = new IDS();
+//                        time = ids.getDateTime();
+//                        windowSize = ids.getWindowSize();
                         NetworkInterface[] device = JpcapCaptor.getDeviceList();
                         
                         for (int i = 0; i < device.length; i++) {
@@ -392,101 +392,107 @@ public class IDS {
                                 System.out.println("   Address: "+a.address + " " + a.subnet + " "+ a.broadcast);
                             System.out.println("\n");
                         }
-                        System.out.println("Window Size : "+windowSize);
+//                        System.out.println("Window Size : "+windowSize);
                         System.out.println("Choose active network interface...(0,1,2)!");
                         sc = new Scanner(System.in);
                         input = sc.nextInt();
                         System.out.println("Selected network interface name : "+device[input].name);
-                        PacketSniffer ps = new PacketSniffer(device[input], input, dataTest, windowSize);
-                        Thread threadPs = new Thread(ps);
-                        threadPs.start();
-                        try {
-                            threadPs.join();
-                        } catch (InterruptedException ex) {
-                            Logger.getLogger(IDS.class.getName()).log(Level.SEVERE, null, ex);
-                        }
-                        
-                        System.out.println("Total Paket Testing : "+dataTest.size()+" connections");
-                        thresholdAll = ids.getTh(); 
-                        portTh = ids.getThreshold();
-                        sFactor = ids.getSFactor();
-                        dateTime = time.split("_");
-                        fileLog = new File(dateTime[0]+"/"+dateTime[1]+"/"+dateTime[2]);
-                        if (!fileLog.exists()) {
-                            fileLog.mkdirs();
-                        }
-                        fileLog = new File(dateTime[0]+"/"+dateTime[1]+"/"+dateTime[2]+"/Sniff_Result_log_"+dateTime[3]);
-                        fileRecord = new File(dateTime[0]+"/"+dateTime[1]+"/"+dateTime[2]+"/Sniff_Record_log_"+dateTime[3]);
-                        if (!fileLog.exists() | !fileRecord.exists()) {
-                            fileLog.createNewFile();
-                            fileRecord.createNewFile();
-                        }
-                        fwLog = new FileWriter(fileLog,true);
-                        fwRecord = new FileWriter(fileRecord, true);
-                        fwLog.append("+++++++++++++++++++++++++++++++++++++++++++"+"\n");
-                        fwLog.append("#  Start time : "+new String(new SimpleDateFormat("yyyy-MMMM-dd HH:mm:ss a  #").format(Calendar.getInstance().getTime()))+"\n");
-                        fwLog.append("+++++++++++++++++++++++++++++++++++++++++++"+"\n");
-                        fwLog.append("Protokol | Date | Source | Destination | Distance"+"\n");
-                        fwLog.append("-------------------------------------------------"+"\n");
-                        fwRecord.append("+++++++++++++++++++++++++++++++++++++++++++"+"\n");
-                        fwRecord.append("#  Start time : "+new String(new SimpleDateFormat("yyyy-MMMM-dd HH:mm:ss a  #").format(Calendar.getInstance().getTime()))+"\n");
-                        fwRecord.append("+++++++++++++++++++++++++++++++++++++++++++"+"\n");
-                        fwRecord.append("Protokol | Date | Source | Destination | Keterangan"+"\n");
-                        fwRecord.append("---------------------------------------------------"+"\n");
-                        System.out.println("Threshold : "+thresholdAll.substring(4, ids.getTh().length()-1));
-                        System.out.println("Smoothing Factor : "+sFactor);
-                        System.out.println("Calculating Mahalanobis Distance...");
+                        while (true) {                            
+                            System.out.println("Start Sniffing...");
+                            ids = new IDS();
+                            time = ids.getDateTime();
+                            windowSize = ids.getWindowSize();
+                            System.out.println("Window Size : "+windowSize);
+                            PacketSniffer ps = new PacketSniffer(device[input], input, dataTest, windowSize);
+                            Thread threadPs = new Thread(ps);
+                            threadPs.start();
+                            try {
+                                threadPs.join();
+                            } catch (InterruptedException ex) {
+                                Logger.getLogger(IDS.class.getName()).log(Level.SEVERE, null, ex);
+                            }
 
-                        start = System.currentTimeMillis();
-                        
-                        for (DataPacket dataPacketTes : dataTest) {     
+                            System.out.println("Total Paket Testing : "+dataTest.size()+" connections");
+                            thresholdAll = ids.getTh(); 
+                            portTh = ids.getThreshold();
+                            sFactor = ids.getSFactor();
+                            dateTime = time.split("_");
+                            fileLog = new File(dateTime[0]+"/"+dateTime[1]+"/"+dateTime[2]);
+                            if (!fileLog.exists()) {
+                                fileLog.mkdirs();
+                            }
+                            fileLog = new File(dateTime[0]+"/"+dateTime[1]+"/"+dateTime[2]+"/Sniff_Result_log_"+dateTime[3]);
+                            fileRecord = new File(dateTime[0]+"/"+dateTime[1]+"/"+dateTime[2]+"/Sniff_Record_log_"+dateTime[3]);
+                            if (!fileLog.exists() | !fileRecord.exists()) {
+                                fileLog.createNewFile();
+                                fileRecord.createNewFile();
+                            }
+                            fwLog = new FileWriter(fileLog,true);
+                            fwRecord = new FileWriter(fileRecord, true);
+                            fwLog.append("+++++++++++++++++++++++++++++++++++++++++++"+"\n");
+                            fwLog.append("#  Start time : "+new String(new SimpleDateFormat("yyyy-MMMM-dd HH:mm:ss a  #").format(Calendar.getInstance().getTime()))+"\n");
+                            fwLog.append("+++++++++++++++++++++++++++++++++++++++++++"+"\n");
+                            fwLog.append("Protokol | Date | Source | Destination | Distance"+"\n");
+                            fwLog.append("-------------------------------------------------"+"\n");
+                            fwRecord.append("+++++++++++++++++++++++++++++++++++++++++++"+"\n");
+                            fwRecord.append("#  Start time : "+new String(new SimpleDateFormat("yyyy-MMMM-dd HH:mm:ss a  #").format(Calendar.getInstance().getTime()))+"\n");
+                            fwRecord.append("+++++++++++++++++++++++++++++++++++++++++++"+"\n");
+                            fwRecord.append("Protokol | Date | Source | Destination | Keterangan"+"\n");
+                            fwRecord.append("---------------------------------------------------"+"\n");
+                            System.out.println("Threshold : "+thresholdAll.substring(4, ids.getTh().length()-1));
+                            System.out.println("Smoothing Factor : "+sFactor);
+                            System.out.println("Calculating Mahalanobis Distance...");
 
-                            if ("TCP".equals(dataPacketTes.getProtokol())) {
-                                for (DataModel dataTcp : modelTcp) {
-                                    if (dataTcp.getDstPort() == dataPacketTes.getDstPort()) {
-                                        mahalanobis = new Mahalanobis();
-                                        mDist = mahalanobis.distance(dataPacketTes.getNgram(), dataTcp.getMeanData(), dataTcp.getDeviasiData(),sFactor);
-                                        if (mDist > portTh[dataPacketTes.getDstPort()]) {
-                                            fwLog.append("TCP | "+dataPacketTes.getTimePacket()+" | "+dataPacketTes.getSrcIP()+":"+dataPacketTes.getSrcPort()+" | "+dataPacketTes.getDstIP()+":"+dataPacketTes.getDstPort()+" | "+Math.round(mDist*100.0)/100.0+"\n");
-                                            fwLog.append("+++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++"+"\n");
-                                            fwLog.append(new String(dataPacketTes.getPacketData(), StandardCharsets.US_ASCII)+"\n");
-                                            fwLog.append("++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++"+"\n");
-                                            fwRecord.append("TCP | "+dataPacketTes.getTimePacket()+" | "+dataPacketTes.getSrcIP()+":"+dataPacketTes.getSrcPort()+" | "+dataPacketTes.getDstIP()+":"+dataPacketTes.getDstPort()+" | Attack"+"\n");
-                                        } else {                                            
-                                            fwRecord.append("TCP | "+dataPacketTes.getTimePacket()+" | "+dataPacketTes.getSrcIP()+":"+dataPacketTes.getSrcPort()+" | "+dataPacketTes.getDstIP()+":"+dataPacketTes.getDstPort()+" | Normal"+"\n");
-                                            ids.incremental("TCP", dataPacketTes.getNgram(), dataPacketTes.getDstPort());
+                            start = System.currentTimeMillis();
+
+                            for (DataPacket dataPacketTes : dataTest) {     
+
+                                if ("TCP".equals(dataPacketTes.getProtokol())) {
+                                    for (DataModel dataTcp : modelTcp) {
+                                        if (dataTcp.getDstPort() == dataPacketTes.getDstPort()) {
+                                            mahalanobis = new Mahalanobis();
+                                            mDist = mahalanobis.distance(dataPacketTes.getNgram(), dataTcp.getMeanData(), dataTcp.getDeviasiData(),sFactor);
+                                            if (mDist > portTh[dataPacketTes.getDstPort()]) {
+                                                fwLog.append("TCP | "+dataPacketTes.getTimePacket()+" | "+dataPacketTes.getSrcIP()+":"+dataPacketTes.getSrcPort()+" | "+dataPacketTes.getDstIP()+":"+dataPacketTes.getDstPort()+" | "+Math.round(mDist*100.0)/100.0+"\n");
+                                                fwLog.append("+++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++"+"\n");
+                                                fwLog.append(new String(dataPacketTes.getPacketData(), StandardCharsets.US_ASCII)+"\n");
+                                                fwLog.append("++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++"+"\n");
+                                                fwRecord.append("TCP | "+dataPacketTes.getTimePacket()+" | "+dataPacketTes.getSrcIP()+":"+dataPacketTes.getSrcPort()+" | "+dataPacketTes.getDstIP()+":"+dataPacketTes.getDstPort()+" | Attack"+"\n");
+                                            } else {                                            
+                                                fwRecord.append("TCP | "+dataPacketTes.getTimePacket()+" | "+dataPacketTes.getSrcIP()+":"+dataPacketTes.getSrcPort()+" | "+dataPacketTes.getDstIP()+":"+dataPacketTes.getDstPort()+" | Normal"+"\n");
+                                                ids.incremental("TCP", dataPacketTes.getNgram(), dataPacketTes.getDstPort());
+                                            }
+                                        }
+                                    }
+                                }
+
+                                else if ("UDP".equals(dataPacketTes.getProtokol())) {
+                                    for (DataModel dataUdp : modelUdp) {
+                                        if (dataUdp.getDstPort() == dataPacketTes.getDstPort()) {
+                                            mahalanobis = new Mahalanobis();
+                                            mDist = mahalanobis.distance(dataPacketTes.getNgram(), dataUdp.getMeanData(), dataUdp.getDeviasiData(),sFactor);
+                                            if (mDist > portTh[dataPacketTes.getDstPort()]) {
+                                                fwLog.append("UDP | "+dataPacketTes.getTimePacket()+" | "+dataPacketTes.getSrcIP()+":"+dataPacketTes.getSrcPort()+" | "+dataPacketTes.getDstIP()+":"+dataPacketTes.getDstPort()+" | "+Math.round(mDist*100.0)/100.0+"\n");
+                                                fwLog.append("+++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++"+"\n");
+                                                fwLog.append(new String(dataPacketTes.getPacketData(), StandardCharsets.US_ASCII)+"\n");
+                                                fwLog.append("++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++"+"\n");
+                                                fwRecord.append("UDP | "+dataPacketTes.getTimePacket()+" | "+dataPacketTes.getSrcIP()+":"+dataPacketTes.getSrcPort()+" | "+dataPacketTes.getDstIP()+":"+dataPacketTes.getDstPort()+" | Attack"+"\n");
+                                            } else {
+                                                fwRecord.append("UDP | "+dataPacketTes.getTimePacket()+" | "+dataPacketTes.getSrcIP()+":"+dataPacketTes.getSrcPort()+" | "+dataPacketTes.getDstIP()+":"+dataPacketTes.getDstPort()+" | Normal"+"\n");
+                                                ids.incremental("UDP", dataPacketTes.getNgram(), dataPacketTes.getDstPort());
+                                            } 
                                         }
                                     }
                                 }
                             }
 
-                            else if ("UDP".equals(dataPacketTes.getProtokol())) {
-                                for (DataModel dataUdp : modelUdp) {
-                                    if (dataUdp.getDstPort() == dataPacketTes.getDstPort()) {
-                                        mahalanobis = new Mahalanobis();
-                                        mDist = mahalanobis.distance(dataPacketTes.getNgram(), dataUdp.getMeanData(), dataUdp.getDeviasiData(),sFactor);
-                                        if (mDist > portTh[dataPacketTes.getDstPort()]) {
-                                            fwLog.append("UDP | "+dataPacketTes.getTimePacket()+" | "+dataPacketTes.getSrcIP()+":"+dataPacketTes.getSrcPort()+" | "+dataPacketTes.getDstIP()+":"+dataPacketTes.getDstPort()+" | "+Math.round(mDist*100.0)/100.0+"\n");
-                                            fwLog.append("+++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++"+"\n");
-                                            fwLog.append(new String(dataPacketTes.getPacketData(), StandardCharsets.US_ASCII)+"\n");
-                                            fwLog.append("++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++"+"\n");
-                                            fwRecord.append("UDP | "+dataPacketTes.getTimePacket()+" | "+dataPacketTes.getSrcIP()+":"+dataPacketTes.getSrcPort()+" | "+dataPacketTes.getDstIP()+":"+dataPacketTes.getDstPort()+" | Attack"+"\n");
-                                        } else {
-                                            fwRecord.append("UDP | "+dataPacketTes.getTimePacket()+" | "+dataPacketTes.getSrcIP()+":"+dataPacketTes.getSrcPort()+" | "+dataPacketTes.getDstIP()+":"+dataPacketTes.getDstPort()+" | Normal"+"\n");
-                                            ids.incremental("UDP", dataPacketTes.getNgram(), dataPacketTes.getDstPort());
-                                        } 
-                                    }
-                                }
-                            }
-                        }
-
-                        fwLog.close();
-                        fwRecord.close();
-                        end = System.currentTimeMillis();
-                        System.out.println("Total time of sniffer testing :  "+(end-start)/3600000+" hour "+((end-start)%3600000)/60000+" minutes "+(((end-start)%3600000)%60000)/1000+" seconds");
-                        dataTest.clear();
-                    }          
-                    
+                            fwLog.close();
+                            fwRecord.close();
+                            end = System.currentTimeMillis();
+                            System.out.println("Total time of sniffer testing :  "+(end-start)/3600000+" hour "+((end-start)%3600000)/60000+" minutes "+(((end-start)%3600000)%60000)/1000+" seconds");
+                            dataTest.clear();
+                        }          
+                    }
                     System.out.println("Please choose Training Dataset First!");
                     
                     break;
