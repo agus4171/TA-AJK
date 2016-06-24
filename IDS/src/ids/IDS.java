@@ -36,7 +36,7 @@ public class IDS {
      * @param args the command line arguments
      * @throws java.io.IOException
      */
-    static int ascii = 256, packetCounter = 1, core = Runtime.getRuntime().availableProcessors();
+    static int ascii = 256, core = Runtime.getRuntime().availableProcessors();
     String line;
     String[] ket;
     BufferedReader br;
@@ -185,7 +185,7 @@ public class IDS {
     }
     
     public static void main(String[] args) throws IOException {    
-        int input, packetLimit, packetType, portPacket, portTesting, countFile = 1;
+        int input, packetLimit, packetCounter, packetType, portPacket, portTesting, countFile = 1;
         double mDist, threshold, sFactor;
         double[] sumData, meanData, deviasiData;
         long start, end;
@@ -204,6 +204,7 @@ public class IDS {
         FileWriter fw, fwFree, fwAttack;
         Mahalanobis mahalanobis;
         IDS ids;
+        PacketReader pr;
         DataTraining dt;
         Scanner sc;
         
@@ -218,7 +219,7 @@ public class IDS {
         System.out.println("Total dataset is : "+fileData.size()+" file");
         for (File fileDataset : fileData) {
             JpcapCaptor captor = JpcapCaptor.openFile(fileDataset.toString());
-            PacketReader pr = new PacketReader(countFile, captor, datasetTcp, datasetUdp, dataTest, packetCounter);
+            pr = new PacketReader(countFile, captor, datasetTcp, datasetUdp, dataTest);
             Thread threadFiles = new Thread(pr);
             threadFiles.start();
             System.out.println("Processing dataset ke-"+countFile+" "+fileDataset.toString());
@@ -234,7 +235,12 @@ public class IDS {
             }
         }
         countFile = 1;
+        pr = new PacketReader();
+        packetCounter = pr.getCountPacket();
         end = System.currentTimeMillis();
+        System.out.println("Total Packet: "+packetCounter+" packet");
+        System.out.println("Total TCP Connection : "+datasetTcp.size()+" connections");
+        System.out.println("Total UDP Connection : "+datasetUdp.size()+" connections");  
         System.out.println("Total time of processing dateset is : "+(end-start)/3600000+" hour "+((end-start)%3600000)/60000+" minutes "+(((end-start)%3600000)%60000)/1000+" seconds");
 
         System.out.println("Training Dataset...");

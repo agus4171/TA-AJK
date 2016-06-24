@@ -7,7 +7,6 @@ package ids;
 
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 import jpcap.JpcapCaptor;
@@ -20,18 +19,23 @@ import jpcap.packet.UDPPacket;
  * @author agus
  */
 public class PacketReader implements Runnable {
-    private JpcapCaptor captor;
-    private TCPPacket tcp;
-    private UDPPacket udp;
-    private int input, files, type, countPacket;
+    private static int countPacket = 1;
+    private int input, files, type;
     private double[] numChars;
     private String tuples, regex = "\\r?\\n";
     private String[] header;
-    private Map<String, BodyPacket> packetBody = new HashMap<>();
+    private JpcapCaptor captor;
+    private TCPPacket tcp;
+    private UDPPacket udp;
     private ArrayList<DataPacket> datasetTcp;       
     private ArrayList<DataPacket> datasetUdp;
     private ArrayList<DataPacket> dataTest;
+    private Map<String, BodyPacket> packetBody = new HashMap<>();
     private Ngram ng = new Ngram();
+    
+    public PacketReader(){
+        
+    }
     
     public PacketReader(int files, JpcapCaptor captor, int input, ArrayList<DataPacket> datasetTcp, ArrayList<DataPacket> datasetUdp, ArrayList<DataPacket> dataTest, int type){
         this.files = files;
@@ -41,7 +45,6 @@ public class PacketReader implements Runnable {
         this.datasetUdp = datasetUdp;
         this.dataTest = dataTest;
         this.type = type;
-        countPacket = new Integer(1);
     }
     
     @Override
@@ -57,10 +60,11 @@ public class PacketReader implements Runnable {
                     BodyPacket tcpBodyData;
                     if (tcp.dst_port < 1024) {
 //                        if (tcp.dst_port == 80) {
-//                            System.out.println(countPacket+" "+tcp.data.length+" "+new String(tcp.data, StandardCharsets.US_ASCII));
+//                            System.out.println(tcp+new String(tcp.data, StandardCharsets.US_ASCII));
 //                        }
 //                        if (tcp.dst_port == 80) {
 //                            String[] split = new String(tcp.data, StandardCharsets.US_ASCII).split(regex);
+//                            System.out.println(split[2]);
 //                            byte[] data = split[0].getBytes(StandardCharsets.US_ASCII);
 //                            tuples = input+"-TCP-"+tcp.src_ip.toString().substring(1)+"-"+tcp.src_port+"-"+tcp.dst_ip.toString().substring(1)+"-"+tcp.dst_port;
 //                            if (packetBody.containsKey(tuples)){
@@ -70,7 +74,8 @@ public class PacketReader implements Runnable {
 //                                tcpBodyData = new BodyPacket(data); 
 //                                packetBody.put(tuples, tcpBodyData); 
 //                            }
-//                        } else {
+//                        } 
+//                        else {
                             tuples = input+"-TCP-"+tcp.src_ip.toString().substring(1)+"-"+tcp.src_port+"-"+tcp.dst_ip.toString().substring(1)+"-"+tcp.dst_port;
                             if (packetBody.containsKey(tuples)){
                                 tcpBodyData = packetBody.get(tuples);
@@ -80,9 +85,8 @@ public class PacketReader implements Runnable {
                                 packetBody.put(tuples, tcpBodyData); 
                             }
 //                        }
-                        countPacket++;
+                            countPacket++;
                     }
-//                    countPacket++;
                 }
 
                 else if(packet instanceof UDPPacket && packet.data.length != 0){
@@ -99,16 +103,9 @@ public class PacketReader implements Runnable {
                         }
                         countPacket++;
                     }
-//                    countPacket++;
                 }                
             }            
-        }            
-        System.out.println("Total Packet: "+countPacket);
-        if (input == 1) {
-            System.out.println("Storing dataset ke-"+files);
-        } else if (input == 3) {
-            System.out.println("Storing data testing ke-"+files);
-        }
+        }  
         
         for (Map.Entry<String, BodyPacket> entry : packetBody.entrySet()) {
             String key = entry.getKey();
@@ -127,16 +124,23 @@ public class PacketReader implements Runnable {
             else if (header[0].equals("3")) {    
                 dataTest.add(new DataPacket(header[1], header[2], Integer.parseInt(header[3]), header[4], Integer.parseInt(header[5]), value.getBytes(), numChars, type));
             }                
-        }
+        }   
         
-        if (input == 1) {
-            System.out.println("Total Dataset of Tcp: "+datasetTcp.size());
-            System.out.println("Total Dataset of Udp: "+datasetUdp.size());            
-        } else if (input == 3) {
-            System.out.println("Total Data Testing: "+dataTest.size());
-        }        
-         
         packetBody.clear();
+    }
+    
+    /**
+     * @return the countPacket
+     */
+    public static int getCountPacket() {
+        return countPacket;
+    }
+
+    /**
+     * @param aCountPacket the countPacket to set
+     */
+    public static void setCountPacket(int aCountPacket) {
+        countPacket = aCountPacket;
     }
     
 }

@@ -12,17 +12,17 @@ package ids;
 public class DataModel {
     private int dstPort;
     private int totalModel;
+    private double[] sumData;
     private double[] meanData;
     private double[] deviasiData;
     private double[] quadraticData;
-    private double[] standardData;
     
-    public DataModel(int dstPort, double[] meanData, double[] deviasiData, double[] quadraticData, double[] standardData, int totalModel){
+    public DataModel(int dstPort, double[] sumData, double[] meanData, double[] deviasiData, double[] quadraticData, int totalModel){
         this.dstPort = dstPort;
+        this.sumData = sumData;
         this.meanData = meanData;
         this.deviasiData = deviasiData;
         this.quadraticData = quadraticData;
-        this.standardData = deviasiData;
         this.totalModel = totalModel;
     }
 
@@ -52,6 +52,20 @@ public class DataModel {
      */
     public void setTotalModel(int totalModel) {
         this.totalModel = totalModel;
+    }
+
+    /**
+     * @return the sumData
+     */
+    public double[] getSumData() {
+        return sumData;
+    }
+
+    /**
+     * @param sumData the sumData to set
+     */
+    public void setSumData(double[] sumData) {
+        this.sumData = sumData;
     }
 
     /**
@@ -95,18 +109,5 @@ public class DataModel {
     public void setQuadraticData(double[] quadraticData) {
         this.quadraticData = quadraticData;
     }
-
-    /**
-     * @return the standardData
-     */
-    public double[] getStandardData() {
-        return standardData;
-    }
-
-    /**
-     * @param standardData the standardData to set
-     */
-    public void setStandardData(double[] standardData) {
-        this.standardData = standardData;
-    }
+    
 }

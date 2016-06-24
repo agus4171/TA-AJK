@@ -6,7 +6,6 @@
 package ids;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import org.apache.commons.lang3.ArrayUtils;
 
 /**
@@ -14,14 +13,14 @@ import org.apache.commons.lang3.ArrayUtils;
  * @author agus
  */
 public class DataTraining implements Runnable {    
-    private int ascii = 256, port;
+    private int port, ascii = 256;
     private String proto;
     private double[] sumData = new double[ascii], meanData = new double[ascii], deviasiData = new double[ascii], quadraticData = new double[ascii], standardData = new double[ascii];
     private ArrayList<DataPacket> datasetTcp;       
-    private ArrayList<DataPacket> datasetUdp;  
-    private ArrayList<Double[]> dataTraining = new ArrayList<>();
+    private ArrayList<DataPacket> datasetUdp;
     private ArrayList<DataModel> modelTcp;
     private ArrayList<DataModel> modelUdp;
+    private ArrayList<Double[]> dataTraining = new ArrayList<>();
     
     public DataTraining(String proto, ArrayList<DataPacket> datasetTcp, ArrayList<DataPacket> datasetUdp, ArrayList<DataModel> modelTcp, ArrayList<DataModel> modelUdp, int port){
         this.proto = proto;
@@ -56,7 +55,7 @@ public class DataTraining implements Runnable {
                     deviasiData[i] = Math.sqrt((dataTraining.size()*quadraticData[i]-Math.pow(sumData[i], 2))/(dataTraining.size()*(dataTraining.size()-1)));
                 }
                 
-                modelTcp.add(new DataModel(port, meanData, deviasiData, quadraticData, standardData, dataTraining.size()));
+                modelTcp.add(new DataModel(port, sumData, meanData, deviasiData, quadraticData, dataTraining.size()));
             }
 
             else if (proto.equals("UDP")) {
@@ -81,7 +80,7 @@ public class DataTraining implements Runnable {
                     deviasiData[i] = Math.sqrt((dataTraining.size()*quadraticData[i]-Math.pow(sumData[i], 2))/(dataTraining.size()*(dataTraining.size()-1)));
                 }
 
-                modelUdp.add(new DataModel(port, meanData, deviasiData, quadraticData, standardData, dataTraining.size()));
+                modelUdp.add(new DataModel(port, sumData, meanData, deviasiData, quadraticData, dataTraining.size()));
             }            
         }                
     }

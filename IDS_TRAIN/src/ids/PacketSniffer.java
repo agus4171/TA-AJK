@@ -6,7 +6,6 @@
 package ids;
 
 import java.io.IOException;
-import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
@@ -17,7 +16,6 @@ import jpcap.NetworkInterface;
 import jpcap.packet.Packet;
 import jpcap.packet.TCPPacket;
 import jpcap.packet.UDPPacket;
-import org.apache.commons.lang3.ArrayUtils;
 
 /**
  *
@@ -33,8 +31,8 @@ public class PacketSniffer implements Runnable {
     private String[] header;
     private int input, counter, count = 1;
     private double[] numChars, temp;
-    private final Map<String, BodyPacket> packetBody = new HashMap<>(); 
     private final ArrayList<DataPacket> dataTest;
+    private final Map<String, BodyPacket> packetBody = new HashMap<>();
     private final Ngram ng = new Ngram();
     
     public PacketSniffer(NetworkInterface device, int n, ArrayList<DataPacket> dataTest, int counter){        
@@ -99,7 +97,6 @@ public class PacketSniffer implements Runnable {
                 dataTest.add(new DataPacket(header[1], header[2], Integer.parseInt(header[3]), header[4], Integer.parseInt(header[5]), value.getBytes(), numChars, 0));
             }   
         }
-        System.out.println("dataTes: "+dataTest.size()); 
     }
     
 }

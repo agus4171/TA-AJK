@@ -18,10 +18,11 @@ import jpcap.packet.UDPPacket;
  * @author agus
  */
 public class PacketReader implements Runnable {
+    private static int countPacket = 1;
     private JpcapCaptor captor;
     private TCPPacket tcp;
     private UDPPacket udp;
-    private int input, files, countPacket;
+    private int files;
     private double[] numChars;
     private String tuples, regex = "\\r?\\n";
     private String[] header;
@@ -31,14 +32,16 @@ public class PacketReader implements Runnable {
     private ArrayList<DataPacket> dataTest;
     private Ngram ng = new Ngram();
     
-    public PacketReader(int files, JpcapCaptor captor, ArrayList<DataPacket> datasetTcp, ArrayList<DataPacket> datasetUdp, ArrayList<DataPacket> dataTest, int counter){
+    public PacketReader(){
+        
+    }
+    
+    public PacketReader(int files, JpcapCaptor captor, ArrayList<DataPacket> datasetTcp, ArrayList<DataPacket> datasetUdp, ArrayList<DataPacket> dataTest){
         this.files = files;
-        this.captor = captor;        
-        this.input = input;
+        this.captor = captor;
         this.datasetTcp = datasetTcp;
         this.datasetUdp = datasetUdp;
         this.dataTest = dataTest;
-        this.countPacket = counter;
     }
     
     @Override
@@ -77,7 +80,7 @@ public class PacketReader implements Runnable {
                                 packetBody.put(tuples, tcpBodyData); 
                             }
 //                        }
-                        countPacket++;
+                        setCountPacket(getCountPacket() + 1);
                     }
 //                    countPacket++;
                 }
@@ -94,14 +97,14 @@ public class PacketReader implements Runnable {
                             udpBodyData = new BodyPacket(udp.data); 
                             packetBody.put(tuples, udpBodyData); 
                         }
-                        countPacket++;
+                        setCountPacket(getCountPacket() + 1);
                     }
 //                    countPacket++;
                 }                
             }            
         }            
-        System.out.println("Total Packet: "+countPacket);
-        System.out.println("Storing dataset ke-"+files);
+//        System.out.println("Total Packet: "+countPacket);
+        System.out.println("Storing dataset ke-"+files+" to List");
         
         for (Map.Entry<String, BodyPacket> entry : packetBody.entrySet()) {
             String key = entry.getKey();
@@ -117,10 +120,24 @@ public class PacketReader implements Runnable {
                 datasetUdp.add(new DataPacket(header[0], header[1], Integer.parseInt(header[2]), header[3], Integer.parseInt(header[4]), null, numChars));            
         }
         
-        System.out.println("Total Dataset of TCP : "+datasetTcp.size());
-        System.out.println("Total Dataset of UDP : "+datasetUdp.size());     
+//        System.out.println("Total Dataset of TCP : "+datasetTcp.size());
+//        System.out.println("Total Dataset of UDP : "+datasetUdp.size());     
          
         packetBody.clear();
+    }    
+    
+    /**
+     * @return the countPacket
+     */
+    public static int getCountPacket() {
+        return countPacket;
+    }
+
+    /**
+     * @param aCountPacket the countPacket to set
+     */
+    public static void setCountPacket(int aCountPacket) {
+        countPacket = aCountPacket;
     }
     
 }
