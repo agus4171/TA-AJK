@@ -26,8 +26,9 @@ public class SplitString {
      * @param args the command line arguments
      */
     public static void main(String[] args) throws IOException {
-        System.out.println("Start time : "+new String(new SimpleDateFormat("yyyy-MMMM-dd HH:mm:ss a").format(Calendar.getInstance().getTime())));
-        System.out.println("-------------------------------------");
+        System.out.println("+++++++++++++++++++++++++++++++++++++++++++");
+        System.out.println("#  Start time : "+new String(new SimpleDateFormat("yyyy-MMMM-dd HH:mm:ss a  #").format(Calendar.getInstance().getTime())));
+        System.out.println("+++++++++++++++++++++++++++++++++++++++++++");
         System.out.println("Protokol | Date | Source | Destination | Distance");
         System.out.println("UDP | 29/03/1999 08:40:08 | 172.16.112.100:1659 | 172.16.112.20:53 | 4.04");
         System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");

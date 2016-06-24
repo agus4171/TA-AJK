@@ -423,13 +423,16 @@ public class IDS {
                         }
                         fwLog = new FileWriter(fileLog,true);
                         fwRecord = new FileWriter(fileRecord, true);
-                        fwLog.append("Start time : "+new String(new SimpleDateFormat("yyyy-MMMM-dd HH:mm:ss a").format(Calendar.getInstance().getTime()))+"\n");
-                        fwLog.append("-------------------------------------"+"\n");
+                        fwLog.append("+++++++++++++++++++++++++++++++++++++++++++"+"\n");
+                        fwLog.append("#  Start time : "+new String(new SimpleDateFormat("yyyy-MMMM-dd HH:mm:ss a  #").format(Calendar.getInstance().getTime()))+"\n");
+                        fwLog.append("+++++++++++++++++++++++++++++++++++++++++++"+"\n");
                         fwLog.append("Protokol | Date | Source | Destination | Distance"+"\n");
                         fwLog.append("-------------------------------------------------"+"\n");
-                        fwRecord.append("Start time : "+new String(new SimpleDateFormat("yyyy-MMMM-dd HH:mm:ss a").format(Calendar.getInstance().getTime()))+"\n");
-                        fwRecord.append("-------------------------------------"+"\n");
+                        fwRecord.append("+++++++++++++++++++++++++++++++++++++++++++"+"\n");
+                        fwRecord.append("#  Start time : "+new String(new SimpleDateFormat("yyyy-MMMM-dd HH:mm:ss a  #").format(Calendar.getInstance().getTime()))+"\n");
+                        fwRecord.append("+++++++++++++++++++++++++++++++++++++++++++"+"\n");
                         fwRecord.append("Protokol | Date | Source | Destination | Keterangan"+"\n");
+                        fwRecord.append("---------------------------------------------------"+"\n");
                         System.out.println("Threshold : "+thresholdAll.substring(4, ids.getTh().length()-1));
                         System.out.println("Smoothing Factor : "+sFactor);
                         System.out.println("Calculating Mahalanobis Distance...");
@@ -516,7 +519,7 @@ public class IDS {
                             portTh = ids.getThreshold();
                             sFactor = ids.getSFactor();
                             dateTime = time.split("_");
-                            fileName = filePath.replace("/", "-").split("-");
+                            fileName = fileDataTesting.toString().replace("/", "-").split("-");
                             fileSave = fileName[fileName.length-2]+"_"+fileName[fileName.length-1];
                             fileLog = new File(dateTime[0]+"/"+dateTime[1]+"/"+dateTime[2]);
                             if (!fileLog.exists()) {
@@ -530,13 +533,16 @@ public class IDS {
                             }
                             fwLog = new FileWriter(fileLog,true);
                             fwRecord = new FileWriter(fileRecord, true);
-                            fwLog.append("Start time : "+new String(new SimpleDateFormat("yyyy-MMMM-dd HH:mm:ss a").format(Calendar.getInstance().getTime()))+"\n");
-                            fwLog.append("-------------------------------------"+"\n");
+                            fwLog.append("+++++++++++++++++++++++++++++++++++++++++++"+"\n");
+                            fwLog.append("#  Start time : "+new String(new SimpleDateFormat("yyyy-MMMM-dd HH:mm:ss a  #").format(Calendar.getInstance().getTime()))+"\n");
+                            fwLog.append("+++++++++++++++++++++++++++++++++++++++++++"+"\n");
                             fwLog.append("Protokol | Date | Source | Destination | Distance"+"\n");
                             fwLog.append("-------------------------------------------------"+"\n");
-                            fwRecord.append("Start time : "+new String(new SimpleDateFormat("yyyy-MMMM-dd HH:mm:ss a").format(Calendar.getInstance().getTime()))+"\n");
-                            fwRecord.append("-------------------------------------"+"\n");
+                            fwRecord.append("+++++++++++++++++++++++++++++++++++++++++++"+"\n");
+                            fwRecord.append("#  Start time : "+new String(new SimpleDateFormat("yyyy-MMMM-dd HH:mm:ss a  #").format(Calendar.getInstance().getTime()))+"\n");
+                            fwRecord.append("+++++++++++++++++++++++++++++++++++++++++++"+"\n");
                             fwRecord.append("Protokol | Date | Source | Destination | Keterangan"+"\n");
+                            fwRecord.append("---------------------------------------------------"+"\n");
                             System.out.println("Threshold : "+thresholdAll.substring(4, ids.getTh().length()-1));
                             System.out.println("Smoothing Factor : "+sFactor);
                             System.out.println("Calculating Mahalanobis Distance...");                    
