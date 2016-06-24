@@ -33,6 +33,9 @@ public class Jpcap {
     public static void main(String[] args) {
         int core = Runtime.getRuntime().availableProcessors();
         System.out.println(core);
+        String str = "/home/agus/dataset/inside/1/tuesday/inside.tcpdump";
+        String[] s = str.replace("/", "-").split("-");
+        System.out.println(s[s.length-1].replace(".", "-"));
 //        try {
 //            JpcapCaptor captor = JpcapCaptor.openFile("/media/agus/4DD244C0638395F0/dataset/1/inside/friday/inside.tcpdump");
 //            int i =1;
