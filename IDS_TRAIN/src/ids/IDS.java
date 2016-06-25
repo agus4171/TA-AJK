@@ -550,11 +550,11 @@ public class IDS {
                         sFactor = ids.getSFactor();
                         packetType = ids.getPacketType();
                         filePath = ids.getPcapTest();
+                        System.out.println("Data testing directory : "+filePath);
+                        fwRunning.append("Data testing directory : "+filePath+"\n");
                         fileData = new ArrayList<>();
                         ids.getListFile(filePath, fileData);
                         for (File fileDataTesting : fileData) {
-                            System.out.println("Data testing directory : "+filePath);
-                            fwRunning.append("Data testing directory : "+filePath+"\n");
                             dateTime = time.split("_");
                             fileName = fileDataTesting.toString().replace("/", "-").split("-");
                             fileSave = fileName[fileName.length-2]+"_"+fileName[fileName.length-1];
@@ -659,11 +659,11 @@ public class IDS {
                             fwRunning.append("Total attack packet: "+attackPacket.size()+"\n");
                             System.out.println("Total free packet: "+freePacket.size()); 
                             fwRunning.append("Total free packet: "+freePacket.size()+"\n");
-                            fwRunning.append("++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++\n");
                             dataTest.clear();
                         }
                         countFile = 1;
-                    }                         
+                        fwRunning.append("++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++\n");
+                    }
                     
                     else
                         System.out.println("Please choose Training Dataset First!");
