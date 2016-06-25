@@ -281,6 +281,7 @@ public class IDS {
             switch (input) {
                 case 1:
                     System.out.println("Processing Dataset...");
+                    fwRunning.append("+++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++\n");
                     fwRunning.append("Processing Dataset...\n");
                     ids = new IDS();
                     dirPath = ids.getDatasetDir();
@@ -383,6 +384,7 @@ public class IDS {
                     end = System.currentTimeMillis();
                     System.out.println("Total time of training dataset : "+(end-start)/3600000+" hour "+((end-start)%3600000)/60000+" minutes "+(((end-start)%3600000)%60000)/1000+" seconds");
                     fwRunning.append("Total time of training dataset : "+(end-start)/3600000+" hour "+((end-start)%3600000)/60000+" minutes "+(((end-start)%3600000)%60000)/1000+" seconds\n");
+                    fwRunning.append("++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++\n");
                     datasetTcp.clear();
                     datasetUdp.clear();
                     
@@ -391,6 +393,7 @@ public class IDS {
                 case 2:
                     if (!modelTcp.isEmpty() | !modelUdp.isEmpty()) {
                         System.out.println("Sniffer Testing...");
+                        fwRunning.append("+++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++\n");
                         fwRunning.append("Sniffer Testing...\n");
 //                        ids = new IDS();
 //                        time = ids.getDateTime();
@@ -467,7 +470,9 @@ public class IDS {
                             fwRecord.append("Protokol | Date | Source | Destination | Keterangan\n");
                             fwRecord.append("---------------------------------------------------\n");
                             System.out.println("Threshold : "+thresholdAll.substring(4, ids.getTh().length()-1));
+                            fwRunning.append("Threshold : "+thresholdAll.substring(4, ids.getTh().length()-1)+"\n");
                             System.out.println("Smoothing Factor : "+sFactor);
+                            fwRunning.append("Smoothing Factor : "+sFactor+"\n");
                             System.out.println("Calculating Mahalanobis Distance...");
 
                             start = System.currentTimeMillis();
@@ -525,6 +530,7 @@ public class IDS {
                             fwRunning.append("Total attack packet: "+attackPacket.size()+"\n");
                             System.out.println("Total free packet: "+freePacket.size()); 
                             fwRunning.append("Total free packet: "+freePacket.size()+"\n");
+                            fwRunning.append("++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++\n");
                             dataTest.clear();
                         }          
                     }
@@ -535,6 +541,7 @@ public class IDS {
                 case 3:
                     if (!modelTcp.isEmpty() | !modelUdp.isEmpty()) {
                         System.out.println("Pcap Testing...");
+                        fwRunning.append("+++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++\n");
                         fwRunning.append("Pcap Testing...\n");
                         ids = new IDS();
                         time = ids.getDateTime();
@@ -592,7 +599,9 @@ public class IDS {
                             fwRecord.append("Protokol | Date | Source | Destination | Keterangan\n");
                             fwRecord.append("---------------------------------------------------\n");
                             System.out.println("Threshold : "+thresholdAll.substring(4, ids.getTh().length()-1));
+                            fwRunning.append("Threshold : "+thresholdAll.substring(4, ids.getTh().length()-1)+"\n");
                             System.out.println("Smoothing Factor : "+sFactor);
+                            fwRunning.append("Smoothing Factor : "+sFactor+"\n");
                             System.out.println("Calculating Mahalanobis Distance...");
 
                             start = System.currentTimeMillis();                         
@@ -650,6 +659,7 @@ public class IDS {
                             fwRunning.append("Total attack packet: "+attackPacket.size()+"\n");
                             System.out.println("Total free packet: "+freePacket.size()); 
                             fwRunning.append("Total free packet: "+freePacket.size()+"\n");
+                            fwRunning.append("++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++\n");
                             dataTest.clear();
                         }
                         countFile = 1;
