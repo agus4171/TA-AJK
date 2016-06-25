@@ -531,8 +531,8 @@ public class IDS {
                             if (!fileLog.exists()) {
                                 fileLog.mkdirs();
                             }
-                            fileLog = new File(dateTime[0]+"/"+dateTime[1]+"/"+dateTime[2]+"/Pcap_Result_log_"+fileSave+"_"+dateTime[3]);
-                            fileRecord = new File(dateTime[0]+"/"+dateTime[1]+"/"+dateTime[2]+"/Pcap_Record_log_"+fileSave+"_"+dateTime[3]);
+                            fileLog = new File(dateTime[0]+"/"+dateTime[1]+"/"+dateTime[2]+"/Pcap_Result_log_"+fileSave);
+                            fileRecord = new File(dateTime[0]+"/"+dateTime[1]+"/"+dateTime[2]+"/Pcap_Record_log_"+fileSave);
                             if (!fileLog.exists() | !fileRecord.exists()) {
                                 fileLog.createNewFile();
                                 fileRecord.createNewFile();
