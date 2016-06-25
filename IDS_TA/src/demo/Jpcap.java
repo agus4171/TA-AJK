@@ -31,6 +31,11 @@ public class Jpcap {
      * @param args the command line arguments
      */        
     public static void main(String[] args) {
+        boolean a = true;
+        System.out.println(a);
+        int b = 0;
+        a = b != 0;
+        System.out.println(a);
         int core = Runtime.getRuntime().availableProcessors();
         System.out.println(core);
         String str = "/home/agus/dataset/inside/1/tuesday/inside.tcpdump";

@@ -44,46 +44,21 @@ public class IDS {
     static ArrayList<DataModel> modelTcp = new ArrayList<>();
     static ArrayList<DataModel> modelUdp = new ArrayList<>();
     
-    private String getDatasetDir() throws FileNotFoundException, IOException{
+    private String getData(String data) throws FileNotFoundException, IOException{
         BufferedReader br = new BufferedReader(new FileReader("conf"));
-        String dataTraining = null;
+        String dataString = null;
         String line;
         String[] ket;
         while ((line = br.readLine()) != null) {
             ket = line.split(":", 0);
-            if (ket[0].equals("Data Training ")) {
-                dataTraining = ket[1].substring(1);
+            if (ket[0].equals(data)) {
+                if (ket[0].equals("Threshold ")) {
+                    dataString = Arrays.toString(ket).replace("Threshold ", "");
+                } else
+                    dataString = ket[1].substring(1);
             }
         }
-        return dataTraining;
-    }
-    
-    private String getPcapTest() throws FileNotFoundException, IOException{
-        BufferedReader br = new BufferedReader(new FileReader("conf"));
-        String pcapTest = null;
-        String line;
-        String[] ket;
-        while ((line = br.readLine()) != null) {
-            ket = line.split(":", 0);
-            if (ket[0].equals("Data Testing ")) {
-                pcapTest = ket[1].substring(1);
-            }
-        }
-        return pcapTest;
-    }
-    
-    private int getPacketType() throws FileNotFoundException, IOException{
-        BufferedReader br = new BufferedReader(new FileReader("conf"));
-        int packetType = 0;
-        String line;
-        String[] ket;
-        while ((line = br.readLine()) != null) {
-            ket = line.split(":", 0);
-            if (ket[0].equals("Packet Type ")) {
-                packetType = Integer.parseInt(ket[1].substring(1));
-            }
-        }
-        return packetType;
+        return dataString;
     }
     
     private double[] getThreshold() throws FileNotFoundException, IOException{
@@ -101,62 +76,6 @@ public class IDS {
             }
         }
         return threshold;
-    }
-    
-    private String getTh() throws FileNotFoundException, IOException{
-        BufferedReader br = new BufferedReader(new FileReader("conf"));
-        String th = null;
-        String line;
-        String[] ket;
-        while ((line = br.readLine()) != null) {
-            ket = line.split(":", 0);
-            if (ket[0].equals("Threshold ")) {
-                th = Arrays.toString(ket).replace("Threshold ", "");
-            }
-        }
-        return th;
-    }
-    
-    private double getSFactor() throws FileNotFoundException, IOException{
-        BufferedReader br = new BufferedReader(new FileReader("conf"));
-        double sFactor = 0;
-        String line;
-        String[] ket;
-        while ((line = br.readLine()) != null) {
-            ket = line.split(":", 0);
-            if (ket[0].equals("Smoothing Factor ")) {
-                sFactor = Double.parseDouble(ket[1].substring(1));
-            }
-        }
-        return sFactor;
-    }
-    
-    private int getWindowSize() throws FileNotFoundException, IOException{
-        BufferedReader br = new BufferedReader(new FileReader("conf"));
-        int windowSize = 0;
-        String line;
-        String[] ket;
-        while ((line = br.readLine()) != null) {
-            ket = line.split(":", 0);
-            if (ket[0].equals("Window Size ")) {
-                windowSize = Integer.parseInt(ket[1].substring(1));
-            }
-        }
-        return windowSize;
-    }
-    
-    private int getPort() throws FileNotFoundException, IOException{
-        BufferedReader br = new BufferedReader(new FileReader("conf"));
-        int portTesting = 0;
-        String line;
-        String[] ket;
-        while ((line = br.readLine()) != null) {
-            ket = line.split(":", 0);
-            if (ket[0].equals("Por t")) {
-                portTesting = Integer.parseInt(ket[1].substring(1));
-            }
-        }
-        return portTesting;
     }
     
     private void getListFile(String dirPath, List<File> files){
@@ -242,7 +161,8 @@ public class IDS {
         }
     }
     
-    public static void main(String[] args) throws IOException {    
+    public static void main(String[] args) throws IOException {
+        boolean snifferStatus;
         int input, totalPacket, windowSize, packetType, portPacket, countFile = 1;
         double mDist, threshold, sFactor;
         double[] portTh;
@@ -280,12 +200,13 @@ public class IDS {
             input = sc.nextInt();
             switch (input) {
                 case 1:
-                    System.out.println("Processing Dataset...");
+                    System.out.println("Training Dataset...");
                     fwRunning.append("+++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++\n");
-                    fwRunning.append("Processing Dataset...\n");
+                    fwRunning.append("Start time : "+new String(new SimpleDateFormat("yyyy-MMMM-dd HH:mm:ss a").format(Calendar.getInstance().getTime()))+"\n");
+                    fwRunning.append("Training Dataset...\n");
                     ids = new IDS();
-                    dirPath = ids.getDatasetDir();
-                    packetType = ids.getPacketType();
+                    dirPath = ids.getData("Data Training ");
+                    packetType = Integer.parseInt(ids.getData("Packet Type "));
                     threadFile = new ArrayList<>();
                     fileData = new ArrayList<>();
                     System.out.println("Dataset directory : "+dirPath);
@@ -334,8 +255,8 @@ public class IDS {
                     fwRunning.append("Total UDP Connection : "+datasetUdp.size()+" connections\n");
                     System.out.println("Total time of processing dateset : "+(end-start)/3600000+" hour "+((end-start)%3600000)/60000+" minutes "+(((end-start)%3600000)%60000)/1000+" seconds");
                     fwRunning.append("Total time of processing dateset : "+(end-start)/3600000+" hour "+((end-start)%3600000)/60000+" minutes "+(((end-start)%3600000)%60000)/1000+" seconds\n");
-                    System.out.println("Training Dataset...");
-                    fwRunning.append("Training Dataset...\n");
+                    System.out.println("Create Model Data Training...");
+                    fwRunning.append("Create Model Data Training...\n");
                     start = System.currentTimeMillis();
                     if (!datasetTcp.isEmpty()) {
                         portTrainingTcp = new HashMap<>();
@@ -394,6 +315,7 @@ public class IDS {
                     if (!modelTcp.isEmpty() | !modelUdp.isEmpty()) {
                         System.out.println("Sniffer Testing...");
                         fwRunning.append("+++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++\n");
+                        fwRunning.append("Start time : "+new String(new SimpleDateFormat("yyyy-MMMM-dd HH:mm:ss a").format(Calendar.getInstance().getTime()))+"\n");
                         fwRunning.append("Sniffer Testing...\n");
 //                        ids = new IDS();
 //                        time = ids.getDateTime();
@@ -423,14 +345,15 @@ public class IDS {
                         input = sc.nextInt();
                         System.out.println("Selected network interface name : "+device[input].name);
                         fwRunning.append("Selected network interface name : "+device[input].name+"\n");
-                        while (true) {                            
+                        snifferStatus = true;
+                        while (snifferStatus) {                            
                             System.out.println("Start Sniffing...");
                             ids = new IDS();
                             time = ids.getDateTime();
-                            windowSize = ids.getWindowSize();
-                            thresholdAll = ids.getTh(); 
+                            windowSize = Integer.parseInt(ids.getData("Window Size "));
+                            thresholdAll = ids.getData("Threshold "); 
                             portTh = ids.getThreshold();
-                            sFactor = ids.getSFactor();
+                            sFactor = Double.parseDouble(ids.getData("Smoothing Factor "));
                             dateTime = time.split("_");
                             fileLog = new File(dateTime[0]+"/"+dateTime[1]+"/"+dateTime[2]);
                             if (!fileLog.exists()) {
@@ -469,8 +392,8 @@ public class IDS {
                             fwRecord.append("+++++++++++++++++++++++++++++++++++++++++++\n");
                             fwRecord.append("Protokol | Date | Source | Destination | Keterangan\n");
                             fwRecord.append("---------------------------------------------------\n");
-                            System.out.println("Threshold : "+thresholdAll.substring(4, ids.getTh().length()-1));
-                            fwRunning.append("Threshold : "+thresholdAll.substring(4, ids.getTh().length()-1)+"\n");
+                            System.out.println("Threshold : "+thresholdAll.substring(4, ids.getData("Threshold ").length()-1));
+                            fwRunning.append("Threshold : "+thresholdAll.substring(4, ids.getData("Threshold ").length()-1)+"\n");
                             System.out.println("Smoothing Factor : "+sFactor);
                             fwRunning.append("Smoothing Factor : "+sFactor+"\n");
                             System.out.println("Calculating Mahalanobis Distance...");
@@ -530,8 +453,11 @@ public class IDS {
                             fwRunning.append("Total attack packet: "+attackPacket.size()+"\n");
                             System.out.println("Total free packet: "+freePacket.size()); 
                             fwRunning.append("Total free packet: "+freePacket.size()+"\n");
-                            fwRunning.append("++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++\n");
                             dataTest.clear();
+                            snifferStatus = Integer.parseInt(ids.getData("Sniffer Status ")) != 0;
+                            if (!snifferStatus) {
+                                fwRunning.append("++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++\n");
+                            }
                         }          
                     }
                     System.out.println("Please choose Training Dataset First!");
@@ -542,14 +468,15 @@ public class IDS {
                     if (!modelTcp.isEmpty() | !modelUdp.isEmpty()) {
                         System.out.println("Pcap Testing...");
                         fwRunning.append("+++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++\n");
+                        fwRunning.append("Start time : "+new String(new SimpleDateFormat("yyyy-MMMM-dd HH:mm:ss a").format(Calendar.getInstance().getTime()))+"\n");
                         fwRunning.append("Pcap Testing...\n");
                         ids = new IDS();
                         time = ids.getDateTime();
-                        thresholdAll = ids.getTh(); 
+                        thresholdAll = ids.getData("Threshold "); 
                         portTh = ids.getThreshold();
-                        sFactor = ids.getSFactor();
-                        packetType = ids.getPacketType();
-                        filePath = ids.getPcapTest();
+                        sFactor = Double.parseDouble(ids.getData("Smoothing Factor "));
+                        packetType = Integer.parseInt(ids.getData("Packet Type "));
+                        filePath = ids.getData("Data Testing ");
                         System.out.println("Data testing directory : "+filePath);
                         fwRunning.append("Data testing directory : "+filePath+"\n");
                         fileData = new ArrayList<>();
@@ -598,8 +525,8 @@ public class IDS {
                             fwRecord.append("+++++++++++++++++++++++++++++++++++++++++++\n");
                             fwRecord.append("Protokol | Date | Source | Destination | Keterangan\n");
                             fwRecord.append("---------------------------------------------------\n");
-                            System.out.println("Threshold : "+thresholdAll.substring(4, ids.getTh().length()-1));
-                            fwRunning.append("Threshold : "+thresholdAll.substring(4, ids.getTh().length()-1)+"\n");
+                            System.out.println("Threshold : "+thresholdAll.substring(4, ids.getData("Threshold ").length()-1));
+                            fwRunning.append("Threshold : "+thresholdAll.substring(4, ids.getData("Threshold ").length()-1)+"\n");
                             System.out.println("Smoothing Factor : "+sFactor);
                             fwRunning.append("Smoothing Factor : "+sFactor+"\n");
                             System.out.println("Calculating Mahalanobis Distance...");
