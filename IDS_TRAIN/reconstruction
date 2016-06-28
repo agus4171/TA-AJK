@@ -1,0 +1,38 @@
+Paket data ke-1 -> TCP 192.168.1.2:1449-74.125.67.100:80 
+GET /complete/search?hl=en&q=wire&cp=4 HTTP/1.1
+Host: clients1.google.co.in
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/532.0 (KHTML, like Gecko) Chrome/3.0.195.21 Safari/532.0
+Referer: http://www.google.co.in/
+Accept: */*
+Accept-Encoding: gzip,deflate
+Accept-Language: en-US,en;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+
+GET /complete/search?hl=en&q=wireshark&cp=9 HTTP/1.1
+Host: clients1.google.co.in
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/532.0 (KHTML, like Gecko) Chrome/3.0.195.21 Safari/532.0
+Referer: http://www.google.co.in/
+Accept: */*
+Accept-Encoding: gzip,deflate
+Accept-Language: en-US,en;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+
+GET /generate_204 HTTP/1.1
+Host: clients1.google.co.in
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/532.0 (KHTML, like Gecko) Chrome/3.0.195.21 Safari/532.0
+Referer: http://www.google.co.in/search?hl=en&source=hp&q=wireshark&btnG=Google+Search&meta=&aq=f&oq=
+Accept: */*
+Accept-Encoding: gzip,deflate
+Accept-Language: en-US,en;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+
+
+
+
+
+
+
+

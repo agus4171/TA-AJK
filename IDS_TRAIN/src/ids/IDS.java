@@ -105,22 +105,30 @@ public class IDS {
                 if (dataTcp.getDstPort() == port) {
                     int numNew = dataTcp.getTotalModel();
                     double[] sumNew = dataTcp.getSumData();
+//                    System.out.println("old sum "+Arrays.toString(sumNew));
                     for (int i = 0; i < sumNew.length; i++) {
                         sumNew[i] = sumNew[i]+ngram[i];
                     }                    
+//                    System.out.println("new sum "+Arrays.toString(sumNew));
                     double[] quadraticNew = dataTcp.getQuadraticData();
+//                    System.out.println("old kuadrat "+Arrays.toString(quadraticNew));
                     for (int i = 0; i < quadraticNew.length; i++) {
                         quadraticNew[i] = quadraticNew[i]+Math.pow(ngram[i], 2);
                     }
+//                    System.out.println("new kuadrat "+Arrays.toString(quadraticNew));
                     double[] meanNew = dataTcp.getMeanData();
+//                    System.out.println("old mean "+Arrays.toString(meanNew));
                     for (int i = 0; i < meanNew.length; i++) {
                         meanNew[i] = (meanNew[i]*numNew+ngram[i])/(numNew+1);
                     }
+//                    System.out.println("new mean"+Arrays.toString(meanNew));
                     numNew = numNew + 1;
                     double[] deviasiNew = dataTcp.getDeviasiData();
+//                    System.out.println("old deviasi"+Arrays.toString(deviasiNew));
                     for (int i = 0; i < deviasiNew.length; i++) {
                         deviasiNew[i] = Math.sqrt((numNew*quadraticNew[i]-Math.pow(sumNew[i], 2))/(numNew*(numNew-1)));
                     }
+//                    System.out.println("new deviasi"+Arrays.toString(deviasiNew));
                     dataTcp.setSumData(sumNew);
                     dataTcp.setDeviasiData(deviasiNew);
                     dataTcp.setMeanData(meanNew);
@@ -302,6 +310,15 @@ public class IDS {
                         }
                     }
                     
+//                    for (DataModel modelTcp : modelTcp) {
+//                        System.out.println(modelTcp.getDstPort());
+//                        System.out.println(modelTcp.getTotalModel());
+//                        System.out.println(Arrays.toString(modelTcp.getSumData()));
+//                        System.out.println(Arrays.toString(modelTcp.getMeanData()));
+//                        System.out.println(Arrays.toString(modelTcp.getDeviasiData()));
+//                        System.out.println(Arrays.toString(modelTcp.getQuadraticData()));
+//                    }
+                    
                     end = System.currentTimeMillis();
                     System.out.println("Total time of training dataset : "+(end-start)/3600000+" hour "+((end-start)%3600000)/60000+" minutes "+(((end-start)%3600000)%60000)/1000+" seconds");
                     fwRunning.append("Total time of training dataset : "+(end-start)/3600000+" hour "+((end-start)%3600000)/60000+" minutes "+(((end-start)%3600000)%60000)/1000+" seconds\n");
@@ -361,9 +378,11 @@ public class IDS {
                             }
                             fileLog = new File(dateTime[0]+"/"+dateTime[1]+"/"+dateTime[2]+"/Sniff_Result_log_"+dateTime[3]);
                             fileRecord = new File(dateTime[0]+"/"+dateTime[1]+"/"+dateTime[2]+"/Sniff_Record_log_"+dateTime[3]);
+                            fileRunning = new File(dateTime[0]+"/"+dateTime[1]+"/"+dateTime[2]+"/Running_Test_log");
                             if (!fileLog.exists() | !fileRecord.exists()) {
                                 fileLog.createNewFile();
                                 fileRecord.createNewFile();
+                                fileRunning.createNewFile();
                             }
                             fwLog = new FileWriter(fileLog,true);
                             fwRecord = new FileWriter(fileRecord, true);
@@ -484,16 +503,18 @@ public class IDS {
                         for (File fileDataTesting : fileData) {
                             dateTime = time.split("_");
                             fileName = fileDataTesting.toString().replace("/", "-").split("-");
-                            fileSave = fileName[fileName.length-2]+"_"+fileName[fileName.length-1];
+                            fileSave = fileName[fileName.length-2]+"_"+fileName[fileName.length-1].replace(".", "_");
                             fileLog = new File(dateTime[0]+"/"+dateTime[1]+"/"+dateTime[2]);
                             if (!fileLog.exists()) {
                                 fileLog.mkdirs();
                             }
                             fileLog = new File(dateTime[0]+"/"+dateTime[1]+"/"+dateTime[2]+"/Pcap_Result_log_"+fileSave);
                             fileRecord = new File(dateTime[0]+"/"+dateTime[1]+"/"+dateTime[2]+"/Pcap_Record_log_"+fileSave);
+                            fileRunning = new File(dateTime[0]+"/"+dateTime[1]+"/"+dateTime[2]+"/Running_Test_log");
                             if (!fileLog.exists() | !fileRecord.exists()) {
                                 fileLog.createNewFile();
                                 fileRecord.createNewFile();
+                                fileRunning.createNewFile();
                             }
                             fwLog = new FileWriter(fileLog,true);
                             fwRecord = new FileWriter(fileRecord, true);
@@ -539,6 +560,7 @@ public class IDS {
                                         if (dataTcp.getDstPort() == dataPacketTes.getDstPort()) {
                                             mahalanobis = new Mahalanobis();
                                             mDist = mahalanobis.distance(dataPacketTes.getNgram(), dataTcp.getMeanData(), dataTcp.getDeviasiData(),sFactor);
+//                                            System.out.println("TCP | "+dataPacketTes.getTimePacket()+" | "+dataPacketTes.getSrcIP()+":"+dataPacketTes.getSrcPort()+" | "+dataPacketTes.getDstIP()+":"+dataPacketTes.getDstPort()+" | "+Math.round(mDist*100.0)/100.0+"\n");
                                             if (mDist > portTh[dataPacketTes.getDstPort()]) {
                                                 fwLog.append("TCP | "+dataPacketTes.getTimePacket()+" | "+dataPacketTes.getSrcIP()+":"+dataPacketTes.getSrcPort()+" | "+dataPacketTes.getDstIP()+":"+dataPacketTes.getDstPort()+" | "+Math.round(mDist*100.0)/100.0+"\n");
                                                 fwLog.append("+++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++\n");
@@ -560,6 +582,7 @@ public class IDS {
                                         if (dataUdp.getDstPort() == dataPacketTes.getDstPort()) {
                                             mahalanobis = new Mahalanobis();
                                             mDist = mahalanobis.distance(dataPacketTes.getNgram(), dataUdp.getMeanData(), dataUdp.getDeviasiData(),sFactor);
+//                                            System.out.println("UDP | "+dataPacketTes.getTimePacket()+" | "+dataPacketTes.getSrcIP()+":"+dataPacketTes.getSrcPort()+" | "+dataPacketTes.getDstIP()+":"+dataPacketTes.getDstPort()+" | "+Math.round(mDist*100.0)/100.0+"\n");
                                             if (mDist > portTh[dataPacketTes.getDstPort()]) {
                                                 fwLog.append("UDP | "+dataPacketTes.getTimePacket()+" | "+dataPacketTes.getSrcIP()+":"+dataPacketTes.getSrcPort()+" | "+dataPacketTes.getDstIP()+":"+dataPacketTes.getDstPort()+" | "+Math.round(mDist*100.0)/100.0+"\n");
                                                 fwLog.append("+++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++\n");

@@ -6,6 +6,7 @@
 package ids;
 
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -62,6 +63,7 @@ public class PacketSniffer implements Runnable {
                     if (packet instanceof TCPPacket && packet.data.length != 0){
                         tcp = (TCPPacket) packet;
                         if (tcp.dst_port < 1024) {
+                            System.out.println("TCP "+tcp + new String(tcp.data, StandardCharsets.US_ASCII));
                             time = new String(tcp.toString()).split(":");
                             date = new Date(Long.parseLong(time[0])*1000L);
                             format = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
@@ -85,6 +87,7 @@ public class PacketSniffer implements Runnable {
                     else if(packet instanceof UDPPacket && packet.data.length != 0){
                         udp = (UDPPacket) packet;
                         if (udp.dst_port < 1024) {
+                            System.out.println("UDP "+udp + new String(udp.data, StandardCharsets.US_ASCII));
                             time = new String(udp.toString()).split(":");
                             date = new Date(Long.parseLong(time[0])*1000L);
                             format = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
