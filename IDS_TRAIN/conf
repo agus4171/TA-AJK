@@ -1,6 +1,6 @@
-Data Training : /home/agus/KULIAH/TA-AJK/DARPA/
-Data Testing : /home/agus/KULIAH/TA-AJK/DARPA/
-Threshold : 21-128.0: 23-128.0: 25-128.0: 80-128.0: 53-128.0: 143-128.0: 513-128.0
+Data Training : /media/agus/4DD244C0638395F0/dataset/inside/
+Data Testing : /home/agus/monday
+Threshold : 21-0.0: 23-0.0: 25-0.0: 80-0.0: 53-0.0: 143-0.0: 513-0.0
 Smoothing Factor : 0.001
 Window Size : 1000
 Sniffer Status : 1

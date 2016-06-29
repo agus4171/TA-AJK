@@ -1,0 +1,1301 @@
++++++++++++++++++++++++++++++++++++++++++++
+#  Start time : 2016-June-29 09:59:22 AM  #
++++++++++++++++++++++++++++++++++++++++++++
+Protokol | Date | Source | Destination | Distance
+-------------------------------------------------
+TCP | 29/03/1999 09:11:48 | 172.16.112.149:10996 | 207.121.184.81:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET /canon/./Applets/ET_MessageScroll.class HTTP/1.0
+Referer: http://canonusa3.cam-colo.bbnplanet.com/canon/
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: canonusa3.cam-colo.bbnplanet.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:11:54 | 172.16.112.149:11361 | 207.121.184.81:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET /canon/images/textspacer.gif HTTP/1.0
+Referer: http://canonusa3.cam-colo.bbnplanet.com/canon/
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: canonusa3.cam-colo.bbnplanet.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:11:59 | 172.16.112.149:11374 | 207.121.184.81:80 | 0.03
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET /canon/images/ACFBC.gif HTTP/1.0
+Referer: http://canonusa3.cam-colo.bbnplanet.com/canon/
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: canonusa3.cam-colo.bbnplanet.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:12:16 | 172.16.112.149:12332 | 207.121.184.81:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET /canon/images/line.gif HTTP/1.0
+Referer: http://canonusa3.cam-colo.bbnplanet.com/canon/
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: canonusa3.cam-colo.bbnplanet.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:12:04 | 172.16.112.149:11624 | 207.121.184.81:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET /canon/images/elura_link.gif HTTP/1.0
+Referer: http://canonusa3.cam-colo.bbnplanet.com/canon/
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: canonusa3.cam-colo.bbnplanet.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:11:48 | 172.16.112.149:10930 | 207.121.184.81:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET /canon/images/line.gif HTTP/1.0
+Referer: http://canonusa3.cam-colo.bbnplanet.com/canon/
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: canonusa3.cam-colo.bbnplanet.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:11:48 | 172.16.112.149:10867 | 207.121.184.81:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET /canon/images/click_search.gif HTTP/1.0
+Referer: http://canonusa3.cam-colo.bbnplanet.com/canon/
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: canonusa3.cam-colo.bbnplanet.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:12:10 | 172.16.112.149:12317 | 207.121.184.81:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET /canon/ HTTP/1.0
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: canonusa3.cam-colo.bbnplanet.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:11:48 | 172.16.112.149:10864 | 207.121.186.144:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET /graphics/header.gif HTTP/1.0
+Referer: http://canonusa3.cam-colo.bbnplanet.com/canon/
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: www.usa.canon.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:11:48 | 172.16.112.149:10929 | 207.121.184.81:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET /canon/images/textspacer.gif HTTP/1.0
+Referer: http://canonusa3.cam-colo.bbnplanet.com/canon/
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: canonusa3.cam-colo.bbnplanet.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:12:15 | 172.16.112.149:12318 | 207.121.184.81:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET /canon/images/vistura.jpg HTTP/1.0
+Referer: http://canonusa3.cam-colo.bbnplanet.com/canon/
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: canonusa3.cam-colo.bbnplanet.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:11:54 | 172.16.112.149:11360 | 207.121.184.81:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET /canon/images/picshadow.gif HTTP/1.0
+Referer: http://canonusa3.cam-colo.bbnplanet.com/canon/
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: canonusa3.cam-colo.bbnplanet.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:11:48 | 172.16.112.149:10931 | 207.121.184.81:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET /canon/images/header.gif HTTP/1.0
+Referer: http://canonusa3.cam-colo.bbnplanet.com/canon/
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: canonusa3.cam-colo.bbnplanet.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:12:04 | 172.16.112.149:11625 | 207.121.184.81:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET /canon/images/footer.gif HTTP/1.0
+Referer: http://canonusa3.cam-colo.bbnplanet.com/canon/
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: canonusa3.cam-colo.bbnplanet.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:12:21 | 172.16.117.52:12347 | 206.64.4.109:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET / HTTP/1.0
+User-Agent: Mozilla/2.01 (Win3.1; I;)
+Host: www.hotjobs.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, */*
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:12:15 | 172.16.112.149:12319 | 207.121.184.81:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET /canon/images/elura_link.gif HTTP/1.0
+Referer: http://canonusa3.cam-colo.bbnplanet.com/canon/
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: canonusa3.cam-colo.bbnplanet.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:12:16 | 172.16.112.149:12329 | 207.121.184.81:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET /canon/images/bottom_news.jpg HTTP/1.0
+Referer: http://canonusa3.cam-colo.bbnplanet.com/canon/
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: canonusa3.cam-colo.bbnplanet.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:11:53 | 172.16.112.149:11307 | 207.121.184.81:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET /canon/images/quickfinder.gif HTTP/1.0
+Referer: http://canonusa3.cam-colo.bbnplanet.com/canon/
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: canonusa3.cam-colo.bbnplanet.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:11:54 | 172.16.112.149:11367 | 207.121.186.144:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET / HTTP/1.0
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: www.usa.canon.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:12:10 | 172.16.112.149:12269 | 207.121.184.81:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET /canon/images/click_search.gif HTTP/1.0
+Referer: http://canonusa3.cam-colo.bbnplanet.com/canon/
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: canonusa3.cam-colo.bbnplanet.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:11:54 | 172.16.112.149:11308 | 207.121.184.81:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET /canon/images/click_search.gif HTTP/1.0
+Referer: http://canonusa3.cam-colo.bbnplanet.com/canon/
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: canonusa3.cam-colo.bbnplanet.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:12:09 | 172.16.112.149:12141 | 207.121.184.81:80 | 0.03
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET /canon/images/ACFBC.gif HTTP/1.0
+Referer: http://canonusa3.cam-colo.bbnplanet.com/canon/
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: canonusa3.cam-colo.bbnplanet.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:12:16 | 172.16.112.149:12333 | 207.121.184.81:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET /canon/images/header.gif HTTP/1.0
+Referer: http://canonusa3.cam-colo.bbnplanet.com/canon/
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: canonusa3.cam-colo.bbnplanet.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:12:09 | 172.16.112.149:12142 | 207.121.186.144:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET /graphics/header.gif HTTP/1.0
+Referer: http://canonusa3.cam-colo.bbnplanet.com/canon/
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: www.usa.canon.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:11:59 | 172.16.112.149:11372 | 207.121.184.81:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET /canon/images/footer.gif HTTP/1.0
+Referer: http://canonusa3.cam-colo.bbnplanet.com/canon/
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: canonusa3.cam-colo.bbnplanet.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:12:09 | 172.16.112.149:12015 | 207.121.184.81:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET /canon/images/vistura.jpg HTTP/1.0
+Referer: http://canonusa3.cam-colo.bbnplanet.com/canon/
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: canonusa3.cam-colo.bbnplanet.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:11:43 | 172.16.112.149:10800 | 207.121.184.81:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET /canon/ HTTP/1.0
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: canonusa3.cam-colo.bbnplanet.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:12:18 | 172.16.112.194:12346 | 196.37.75.158:79 | 22.46
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+Janelle
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:11:51 | 172.16.117.111:11108 | 205.158.50.71:80 | 0.04
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET /scripts/ListingSearch.dll/Default?center=HomeScout HTTP/1.0
+Referer: http://homescout.homeshark.com/
+User-Agent: Mozilla/3.01-C-MACOS8 (Macintosh; I; PPC)
+Host: homescout.homeshark.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, */*
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:11:48 | 172.16.112.149:10870 | 207.121.184.81:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET /canon/images/picshadow.gif HTTP/1.0
+Referer: http://canonusa3.cam-colo.bbnplanet.com/canon/
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: canonusa3.cam-colo.bbnplanet.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:11:48 | 172.16.112.149:10866 | 207.121.184.81:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET /canon/images/quickfinder.gif HTTP/1.0
+Referer: http://canonusa3.cam-colo.bbnplanet.com/canon/
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: canonusa3.cam-colo.bbnplanet.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:11:59 | 172.16.112.149:11371 | 207.121.184.81:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET /canon/images/elura_link.gif HTTP/1.0
+Referer: http://canonusa3.cam-colo.bbnplanet.com/canon/
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: canonusa3.cam-colo.bbnplanet.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+UDP | 29/03/1999 09:12:18 | 172.16.112.20:53 | 192.168.1.20:53 | 2.23
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+�         wwwhotjobscom   
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:11:59 | 172.16.112.149:11553 | 207.121.184.81:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET /canon/images/bottom_news.jpg HTTP/1.0
+Referer: http://canonusa3.cam-colo.bbnplanet.com/canon/
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: canonusa3.cam-colo.bbnplanet.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:12:16 | 172.16.112.149:12328 | 207.121.184.81:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET /canon/images/click_search.gif HTTP/1.0
+Referer: http://canonusa3.cam-colo.bbnplanet.com/canon/
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: canonusa3.cam-colo.bbnplanet.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:11:54 | 172.16.112.149:11364 | 207.121.184.81:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET /canon/images/header.gif HTTP/1.0
+Referer: http://canonusa3.cam-colo.bbnplanet.com/canon/
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: canonusa3.cam-colo.bbnplanet.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:12:04 | 172.16.112.149:11626 | 207.121.184.81:80 | 0.03
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET /canon/images/ACFBC.gif HTTP/1.0
+Referer: http://canonusa3.cam-colo.bbnplanet.com/canon/
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: canonusa3.cam-colo.bbnplanet.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+UDP | 29/03/1999 09:11:50 | 172.16.113.50:123 | 172.16.112.10:123 | 15.74
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+� �     �            ��f+p ��l-!� ���,�@ 
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:11:43 | 172.16.112.149:10796 | 207.121.184.81:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET /canon/images/newsbytes.jpg HTTP/1.0
+Referer: http://canonusa3.cam-colo.bbnplanet.com/canon/
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: canonusa3.cam-colo.bbnplanet.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:11:59 | 172.16.112.149:11558 | 207.121.184.81:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET /canon/images/newsbytes.jpg HTTP/1.0
+Referer: http://canonusa3.cam-colo.bbnplanet.com/canon/
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: canonusa3.cam-colo.bbnplanet.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:12:16 | 172.16.112.149:12323 | 207.121.186.144:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET /graphics/header.gif HTTP/1.0
+Referer: http://canonusa3.cam-colo.bbnplanet.com/canon/
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: www.usa.canon.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:12:10 | 172.16.112.149:12308 | 207.121.184.81:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET /canon/images/textspacer.gif HTTP/1.0
+Referer: http://canonusa3.cam-colo.bbnplanet.com/canon/
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: canonusa3.cam-colo.bbnplanet.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:12:04 | 172.16.112.149:11823 | 207.121.184.81:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET /canon/images/bottom_news.jpg HTTP/1.0
+Referer: http://canonusa3.cam-colo.bbnplanet.com/canon/
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: canonusa3.cam-colo.bbnplanet.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:12:16 | 172.16.112.149:12331 | 207.121.184.81:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET /canon/images/textspacer.gif HTTP/1.0
+Referer: http://canonusa3.cam-colo.bbnplanet.com/canon/
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: canonusa3.cam-colo.bbnplanet.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:11:59 | 172.16.112.149:11560 | 207.121.186.144:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET / HTTP/1.0
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: www.usa.canon.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:11:59 | 172.16.112.149:11426 | 207.121.184.81:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET /canon/images/quickfinder.gif HTTP/1.0
+Referer: http://canonusa3.cam-colo.bbnplanet.com/canon/
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: canonusa3.cam-colo.bbnplanet.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:12:16 | 172.16.112.149:12339 | 207.121.186.144:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET / HTTP/1.0
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: www.usa.canon.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:12:16 | 172.16.112.149:12321 | 207.121.184.81:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET /canon/images/footer.gif HTTP/1.0
+Referer: http://canonusa3.cam-colo.bbnplanet.com/canon/
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: canonusa3.cam-colo.bbnplanet.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:11:59 | 172.16.112.149:11561 | 207.121.184.81:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET /canon/ HTTP/1.0
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: canonusa3.cam-colo.bbnplanet.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:12:16 | 172.16.112.149:12336 | 207.121.184.81:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET /canon/images/newsbytes.jpg HTTP/1.0
+Referer: http://canonusa3.cam-colo.bbnplanet.com/canon/
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: canonusa3.cam-colo.bbnplanet.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:11:48 | 172.16.112.149:10803 | 207.121.184.81:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET /canon/images/elura_link.gif HTTP/1.0
+Referer: http://canonusa3.cam-colo.bbnplanet.com/canon/
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: canonusa3.cam-colo.bbnplanet.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:12:04 | 172.16.112.149:11753 | 207.121.184.81:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET /canon/images/quickfinder.gif HTTP/1.0
+Referer: http://canonusa3.cam-colo.bbnplanet.com/canon/
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: canonusa3.cam-colo.bbnplanet.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:12:10 | 172.16.112.149:12306 | 207.121.184.81:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET /canon/images/bottom_news.jpg HTTP/1.0
+Referer: http://canonusa3.cam-colo.bbnplanet.com/canon/
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: canonusa3.cam-colo.bbnplanet.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:12:10 | 172.16.112.149:12312 | 207.121.184.81:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET /canon/images/header.gif HTTP/1.0
+Referer: http://canonusa3.cam-colo.bbnplanet.com/canon/
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: canonusa3.cam-colo.bbnplanet.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:11:59 | 172.16.112.149:11556 | 207.121.184.81:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET /canon/images/line.gif HTTP/1.0
+Referer: http://canonusa3.cam-colo.bbnplanet.com/canon/
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: canonusa3.cam-colo.bbnplanet.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:11:53 | 172.16.112.149:11109 | 207.121.184.81:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET /canon/images/vistura.jpg HTTP/1.0
+Referer: http://canonusa3.cam-colo.bbnplanet.com/canon/
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: canonusa3.cam-colo.bbnplanet.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:11:43 | 195.115.218.108:4132 | 172.16.112.50:22 | 193.95
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+   
+��^GT���������   
+5P������X�j��a   
+��I�,%\@��o���:   
+����&���Y�
+`l@�   
+1��ip�y�x
+����@   
+����!�e�	)l_E,��   
+S�<���Q��6��f��   
+���xR��=f����}   
+���c=:�t���e�   
+k����A��'��8�@   
+-�OCE�3�zG��n�   
+�1�]�����:�>�E   
+�W��� �e���v�   
+5!oN��J�!iNb   
+%1����y����;8   
+P�."��tn���|?��i   
+ U9�{Cg�[{��+'   
+��}���+��k^*   
+@Q����������ID   
+8�c�9���,9�   
+}�.\�R��6�	���   
+^9��a)���e����   
+U��Z$��7����.�   
+�T�0�ssY���/ �"   
+�#�)�r�wK�E�   
+����~�����T�2�n   
+z��%kk�8���\%J   
+���rui}��`C   
+�T�%�/�Juh��#M3   
+�\���d��I�T�   
+b:����|���,�   
+����) %v�����/   
+�[R�����7�����   
+��&L�w����f\ ��   
+_�.E���'QAH���+�   
+n��M�9G��B���   
+���{�K���L���   
+h��A�����6�[g["   
+�k�����[9��]O   
+5-"��O�"�$�0�(j�   
+����)�+�������   
+h8�V';]���2�U=d   
+�q����?[&7����
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:12:04 | 172.16.112.149:11887 | 207.121.184.81:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET /canon/images/header.gif HTTP/1.0
+Referer: http://canonusa3.cam-colo.bbnplanet.com/canon/
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: canonusa3.cam-colo.bbnplanet.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:12:17 | 172.16.112.194:12417 | 135.8.60.182:23 | 86.32
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+Now
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:11:54 | 172.16.112.149:11366 | 207.121.184.81:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET /canon/./Applets/ET_MessageScroll.class HTTP/1.0
+Referer: http://canonusa3.cam-colo.bbnplanet.com/canon/
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: canonusa3.cam-colo.bbnplanet.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:11:59 | 172.16.112.149:11555 | 207.121.184.81:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET /canon/images/textspacer.gif HTTP/1.0
+Referer: http://canonusa3.cam-colo.bbnplanet.com/canon/
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: canonusa3.cam-colo.bbnplanet.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+UDP | 29/03/1999 09:12:02 | 172.16.112.20:520 | 172.16.118.255:520 | 14.21
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+     �             
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+UDP | 29/03/1999 09:12:02 | 172.16.112.20:520 | 172.16.255.255:520 | 14.21
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+     �             
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:12:04 | 172.16.112.149:11886 | 207.121.184.81:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET /canon/images/line.gif HTTP/1.0
+Referer: http://canonusa3.cam-colo.bbnplanet.com/canon/
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: canonusa3.cam-colo.bbnplanet.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:11:53 | 172.16.112.149:11110 | 207.121.184.81:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET /canon/images/elura_link.gif HTTP/1.0
+Referer: http://canonusa3.cam-colo.bbnplanet.com/canon/
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: canonusa3.cam-colo.bbnplanet.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:12:10 | 172.16.112.149:12316 | 207.121.186.144:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET / HTTP/1.0
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: www.usa.canon.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:11:54 | 172.16.112.149:11368 | 207.121.184.81:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET /canon/ HTTP/1.0
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: canonusa3.cam-colo.bbnplanet.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:12:04 | 172.16.112.149:11888 | 207.121.184.81:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET /canon/images/newsbytes.jpg HTTP/1.0
+Referer: http://canonusa3.cam-colo.bbnplanet.com/canon/
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: canonusa3.cam-colo.bbnplanet.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:11:53 | 172.16.112.149:11237 | 207.121.184.81:80 | 0.03
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET /canon/images/ACFBC.gif HTTP/1.0
+Referer: http://canonusa3.cam-colo.bbnplanet.com/canon/
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: canonusa3.cam-colo.bbnplanet.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:12:16 | 172.16.112.149:12324 | 207.121.184.81:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET /canon/images/quickfinder.gif HTTP/1.0
+Referer: http://canonusa3.cam-colo.bbnplanet.com/canon/
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: canonusa3.cam-colo.bbnplanet.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:11:53 | 172.16.112.149:11306 | 207.121.186.144:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET /graphics/header.gif HTTP/1.0
+Referer: http://canonusa3.cam-colo.bbnplanet.com/canon/
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: www.usa.canon.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:12:04 | 172.16.112.149:11822 | 207.121.184.81:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET /canon/images/click_search.gif HTTP/1.0
+Referer: http://canonusa3.cam-colo.bbnplanet.com/canon/
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: canonusa3.cam-colo.bbnplanet.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:11:48 | 172.16.112.149:10805 | 207.121.184.81:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET /canon/images/footer.gif HTTP/1.0
+Referer: http://canonusa3.cam-colo.bbnplanet.com/canon/
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: canonusa3.cam-colo.bbnplanet.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+UDP | 29/03/1999 09:12:18 | 192.168.1.20:53 | 172.16.112.20:53 | 2.42
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+���    wwwhotjobscom   �   Q� �@m    Q� aesopworldnet �<   Q� ��
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:11:48 | 172.16.112.149:10806 | 207.121.184.81:80 | 0.03
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET /canon/images/ACFBC.gif HTTP/1.0
+Referer: http://canonusa3.cam-colo.bbnplanet.com/canon/
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: canonusa3.cam-colo.bbnplanet.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:11:48 | 197.218.177.69:4121 | 172.16.112.50:22 | 198.75
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+   69\��;���SB�2%f�7��,�   	c�aC�y������
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:12:05 | 172.16.112.149:11949 | 207.121.184.81:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET /canon/./Applets/ET_MessageScroll.class HTTP/1.0
+Referer: http://canonusa3.cam-colo.bbnplanet.com/canon/
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: canonusa3.cam-colo.bbnplanet.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:12:10 | 172.16.112.149:12313 | 207.121.184.81:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET /canon/images/newsbytes.jpg HTTP/1.0
+Referer: http://canonusa3.cam-colo.bbnplanet.com/canon/
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: canonusa3.cam-colo.bbnplanet.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:11:43 | 172.16.112.149:10799 | 207.121.186.144:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET / HTTP/1.0
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: www.usa.canon.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:11:59 | 172.16.112.149:11554 | 207.121.184.81:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET /canon/images/picshadow.gif HTTP/1.0
+Referer: http://canonusa3.cam-colo.bbnplanet.com/canon/
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: canonusa3.cam-colo.bbnplanet.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:11:49 | 172.16.112.149:11046 | 207.121.184.81:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET /canon/ HTTP/1.0
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: canonusa3.cam-colo.bbnplanet.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:12:16 | 172.16.112.149:12322 | 207.121.184.81:80 | 0.03
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET /canon/images/ACFBC.gif HTTP/1.0
+Referer: http://canonusa3.cam-colo.bbnplanet.com/canon/
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: canonusa3.cam-colo.bbnplanet.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:12:10 | 172.16.112.149:12315 | 207.121.184.81:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET /canon/./Applets/ET_MessageScroll.class HTTP/1.0
+Referer: http://canonusa3.cam-colo.bbnplanet.com/canon/
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: canonusa3.cam-colo.bbnplanet.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+UDP | 29/03/1999 09:12:04 | 172.16.0.1:520 | 224.0.0.9:520 | 14.2
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+                       �� ���        
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:11:48 | 172.16.112.149:10932 | 207.121.184.81:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET /canon/images/newsbytes.jpg HTTP/1.0
+Referer: http://canonusa3.cam-colo.bbnplanet.com/canon/
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: canonusa3.cam-colo.bbnplanet.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:12:09 | 172.16.112.149:12140 | 207.121.184.81:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET /canon/images/footer.gif HTTP/1.0
+Referer: http://canonusa3.cam-colo.bbnplanet.com/canon/
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: canonusa3.cam-colo.bbnplanet.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:11:43 | 172.16.112.149:10797 | 207.121.184.81:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET /canon/./Applets/ET_MessageScroll.class HTTP/1.0
+Referer: http://canonusa3.cam-colo.bbnplanet.com/canon/
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: canonusa3.cam-colo.bbnplanet.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:12:09 | 172.16.112.149:12078 | 207.121.184.81:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET /canon/images/elura_link.gif HTTP/1.0
+Referer: http://canonusa3.cam-colo.bbnplanet.com/canon/
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: canonusa3.cam-colo.bbnplanet.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:12:10 | 172.16.112.149:12307 | 207.121.184.81:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET /canon/images/picshadow.gif HTTP/1.0
+Referer: http://canonusa3.cam-colo.bbnplanet.com/canon/
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: canonusa3.cam-colo.bbnplanet.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:12:04 | 172.16.112.149:11884 | 207.121.184.81:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET /canon/images/textspacer.gif HTTP/1.0
+Referer: http://canonusa3.cam-colo.bbnplanet.com/canon/
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: canonusa3.cam-colo.bbnplanet.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:12:05 | 172.16.112.149:11951 | 207.121.184.81:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET /canon/ HTTP/1.0
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: canonusa3.cam-colo.bbnplanet.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:11:59 | 172.16.112.149:11559 | 207.121.184.81:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET /canon/./Applets/ET_MessageScroll.class HTTP/1.0
+Referer: http://canonusa3.cam-colo.bbnplanet.com/canon/
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: canonusa3.cam-colo.bbnplanet.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:11:54 | 172.16.112.149:11310 | 207.121.184.81:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET /canon/images/bottom_news.jpg HTTP/1.0
+Referer: http://canonusa3.cam-colo.bbnplanet.com/canon/
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: canonusa3.cam-colo.bbnplanet.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:11:54 | 172.16.112.149:11363 | 207.121.184.81:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET /canon/images/line.gif HTTP/1.0
+Referer: http://canonusa3.cam-colo.bbnplanet.com/canon/
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: canonusa3.cam-colo.bbnplanet.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:11:59 | 172.16.112.149:11370 | 207.121.184.81:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET /canon/images/vistura.jpg HTTP/1.0
+Referer: http://canonusa3.cam-colo.bbnplanet.com/canon/
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: canonusa3.cam-colo.bbnplanet.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:11:54 | 172.16.112.149:11365 | 207.121.184.81:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET /canon/images/newsbytes.jpg HTTP/1.0
+Referer: http://canonusa3.cam-colo.bbnplanet.com/canon/
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: canonusa3.cam-colo.bbnplanet.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:12:04 | 172.16.112.149:11824 | 207.121.184.81:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET /canon/images/picshadow.gif HTTP/1.0
+Referer: http://canonusa3.cam-colo.bbnplanet.com/canon/
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: canonusa3.cam-colo.bbnplanet.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:11:48 | 172.16.112.149:10802 | 207.121.184.81:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET /canon/images/vistura.jpg HTTP/1.0
+Referer: http://canonusa3.cam-colo.bbnplanet.com/canon/
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: canonusa3.cam-colo.bbnplanet.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:12:04 | 172.16.112.149:11562 | 207.121.184.81:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET /canon/images/vistura.jpg HTTP/1.0
+Referer: http://canonusa3.cam-colo.bbnplanet.com/canon/
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: canonusa3.cam-colo.bbnplanet.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:12:05 | 172.16.112.149:11950 | 207.121.186.144:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET / HTTP/1.0
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: www.usa.canon.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:11:59 | 172.16.112.149:11425 | 207.121.186.144:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET /graphics/header.gif HTTP/1.0
+Referer: http://canonusa3.cam-colo.bbnplanet.com/canon/
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: www.usa.canon.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:11:53 | 172.16.112.149:11173 | 207.121.184.81:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET /canon/images/footer.gif HTTP/1.0
+Referer: http://canonusa3.cam-colo.bbnplanet.com/canon/
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: canonusa3.cam-colo.bbnplanet.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:12:16 | 172.16.112.149:12337 | 207.121.184.81:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET /canon/./Applets/ET_MessageScroll.class HTTP/1.0
+Referer: http://canonusa3.cam-colo.bbnplanet.com/canon/
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: canonusa3.cam-colo.bbnplanet.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:11:49 | 172.16.112.149:10999 | 207.121.186.144:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET / HTTP/1.0
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: www.usa.canon.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:12:04 | 172.16.112.149:11689 | 207.121.186.144:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET /graphics/header.gif HTTP/1.0
+Referer: http://canonusa3.cam-colo.bbnplanet.com/canon/
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: www.usa.canon.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+UDP | 29/03/1999 09:11:50 | 172.16.112.10:123 | 172.16.113.50:123 | 15.96
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+�   �  }��
+��u��0 ���,�@ ���	 � ���	� 
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:12:16 | 172.16.112.149:12340 | 207.121.184.81:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET /canon/ HTTP/1.0
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: canonusa3.cam-colo.bbnplanet.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:11:59 | 172.16.112.149:11490 | 207.121.184.81:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET /canon/images/click_search.gif HTTP/1.0
+Referer: http://canonusa3.cam-colo.bbnplanet.com/canon/
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: canonusa3.cam-colo.bbnplanet.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:12:16 | 172.16.112.149:12330 | 207.121.184.81:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET /canon/images/picshadow.gif HTTP/1.0
+Referer: http://canonusa3.cam-colo.bbnplanet.com/canon/
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: canonusa3.cam-colo.bbnplanet.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:11:48 | 172.16.112.149:10869 | 207.121.184.81:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET /canon/images/bottom_news.jpg HTTP/1.0
+Referer: http://canonusa3.cam-colo.bbnplanet.com/canon/
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: canonusa3.cam-colo.bbnplanet.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:11:59 | 172.16.112.149:11557 | 207.121.184.81:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET /canon/images/header.gif HTTP/1.0
+Referer: http://canonusa3.cam-colo.bbnplanet.com/canon/
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: canonusa3.cam-colo.bbnplanet.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:12:09 | 172.16.112.149:12205 | 207.121.184.81:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET /canon/images/quickfinder.gif HTTP/1.0
+Referer: http://canonusa3.cam-colo.bbnplanet.com/canon/
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: canonusa3.cam-colo.bbnplanet.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 29/03/1999 09:12:10 | 172.16.112.149:12310 | 207.121.184.81:80 | 0.02
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+GET /canon/images/line.gif HTTP/1.0
+Referer: http://canonusa3.cam-colo.bbnplanet.com/canon/
+User-Agent: Mozilla/4.04 [en] (X11; I; Linux 2.0.32 i686)
+Host: canonusa3.cam-colo.bbnplanet.com
+Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, image/png, */*
+Accept-Language: en
+Accept-Charset: iso-8859-1,*,utf-8
+
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
