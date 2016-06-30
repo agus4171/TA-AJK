@@ -36,13 +36,13 @@ public class Jpcap {
      * @param args the command line arguments
      */        
     public static void main(String[] args) throws FileNotFoundException, IOException {
-        BufferedReader br = new BufferedReader(new FileReader("friday"));
+        BufferedReader br = new BufferedReader(new FileReader("tuesday"));
         Map<String, Integer> dataTruth = new HashMap<>();
         String line;
         String[] ip;
         while ((line = br.readLine()) != null) {
             ip = line.split(" ");
-            System.out.println(ip[5]);
+            System.out.println(ip[6]);
 //            System.out.println(line.substring(10, 29));
 //            dataTruth.put(line.substring(10, 20), 1);
         }
