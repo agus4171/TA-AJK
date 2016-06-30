@@ -91,7 +91,7 @@ public class PacketReader implements Runnable {
                         if (input == 3) {
                             time = new String(tcp.toString()).split(":");
                             date = new Date(Long.parseLong(time[0])*1000L);
-                            format = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+                            format = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss");
                             format.setTimeZone(TimeZone.getTimeZone("America/New_York"));
                             timeFormat = format.format(date);
                         }
@@ -116,7 +116,7 @@ public class PacketReader implements Runnable {
                         if (input == 3) {
                             time = new String(udp.toString()).split(":");
                             date = new Date(Long.parseLong(time[0])*1000L);
-                            format = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+                            format = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss");
                             format.setTimeZone(TimeZone.getTimeZone("America/New_York"));
                             timeFormat = format.format(date);
                         }

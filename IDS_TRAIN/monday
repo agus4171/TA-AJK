@@ -1,0 +1,54 @@
+ 41.08403103/29/1999 08:18:35  00:04:07 172.016.112.050ps         out              rem     succ     aDmp   oDmp  iDmp BSM  SysLg   FSLst     Stlth   Old  llU2R 
+ 41.08403103/29/1999 08:19:37  00:01:56 209.154.098.104ps         out              rem     succ     aDmp   oDmp  iDmp BSM  SysLg   FSLst     Stlth   Old  llU2R 
+ 41.08403103/29/1999 08:29:27  00:00:43 172.016.112.050ps         out              rem     succ     aDmp   oDmp  iDmp BSM  SysLg   FSLst     Stlth   Old  llU2R 
+ 41.08403103/29/1999 08:40:14  00:24:26 172.016.112.050ps         out              rem     succ     aDmp   oDmp  iDmp BSM  SysLg   FSLst     Stlth   Old  llU2R 
+ 41.08481803/29/1999 08:48:12  00:00:02 172.016.114.050sendmail   out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 41.08481803/29/1999 08:48:12  00:00:01 202.049.244.010sendmail   out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L ÅllLINUX
+ 41.09000003/29/1999 09:08:00  00:08:00 172.16.112.100ntfsdos             man     cons    succ     not    not   not  not  SysLg   FSLst     Clr     New  llDATA-llU2R- llNT
+ 41.09153103/29/1999 09:15:05  00:00:01 172.016.113.050portsweep  in       auto    rem     succ     aDmp   not   iDmp not  not     not       Stlth   Old  llPROBE 
+ 41.09153103/29/1999 09:25:21  00:00:01 172.016.113.050portsweep  in       auto    rem     succ     aDmp   not   iDmp not  not     not       Stlth   Old  llPROBE 
+ 41.09153103/29/1999 09:35:36  00:00:01 172.016.113.050portsweep  in       auto    rem     succ     aDmp   not   iDmp not  not     not       Stlth   Old  llPROBE 
+ 41.09370803/29/1999 09:36:23  00:00:01 172.016.114.050sshtrojan  out      auto    rem     succ     aDmp   oDmp  iDmp not  SysLg   FSLst     Clr     New  llR2L ÔäSllLINUX
+ 41.09370803/29/1999 09:36:23  00:00:01 202.077.162.213sshtrojan  out      auto    rem     succ     aDmp   oDmp  iDmp not  SysLg   FSLst     Clr     New  llR2L ÔTllLINUX
+ 41.09370803/29/1999 09:38:35  00:03:11 172.016.114.050sshtrojan  out      auto    rem     succ     aDmp   oDmp  iDmp not  SysLg   FSLst     Clr     New  llR2L üœTllLINUX
+ 41.09370803/29/1999 09:39:37  00:00:31 135.013.216.191sshtrojan  out      auto    rem     succ     aDmp   oDmp  iDmp not  SysLg   FSLst     Clr     New  llR2L üÀTllLINUX
+ 41.11153103/29/1999 11:15:15  00:00:01 192.168.001.001portsweep  in       auto    rem     succ     aDmp   not   iDmp not  not     not       Stlth   Old  llPROBE sllCISCO
+ 41.11153103/29/1999 11:16:15  00:00:01 192.168.001.001portsweep  in       auto    rem     succ     aDmp   not   iDmp not  not     not       Stlth   Old  llPROBE 
+ 41.11153103/29/1999 11:17:15  00:00:01 192.168.001.001portsweep  in       auto    rem     succ     aDmp   not   iDmp not  not     not       Stlth   Old  llPROBE 
+ 41.11153103/29/1999 11:18:15  00:00:01 192.168.001.001portsweep  in       auto    rem     succ     aDmp   not   iDmp not  not     not       Stlth   Old  llPROBE llCISCO
+ 41.11153103/29/1999 11:19:15  00:00:01 192.168.001.001portsweep  in       auto    rem     succ     aDmp   not   iDmp not  not     not       Stlth   Old  llPROBE 
+ 41.11212703/29/1999 11:22:43  00:01:17 172.016.114.168xsnoop     out              rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 41.11455403/29/1999 11:45:12  00:25:35 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L ÿÿ
+ 41.11455403/29/1999 12:10:48  00:07:55 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 4®qllCISCO
+ 41.11470303/29/1999 11:47:16  00:00:10 172.016.113.050guesstelnet out      auto    rem     succ     aDmp   oDmp  iDmp not  SysLg   not       Clr     Old  llR2L 
+ 41.12222203/29/1999 12:22:15  00:00:01 172.016.112.100portsweep  out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Stlth   Old  llPROBE mllNT
+ 41.12222203/29/1999 12:22:15  00:00:03 153.107.252.061portsweep  out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Stlth   Old  llPROBE 
+ 41.12222203/29/1999 12:23:55  00:00:01 172.016.112.100portsweep  out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Stlth   Old  llPROBE nllNT
+ 41.12222203/29/1999 12:25:35  00:00:01 172.016.112.100portsweep  out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Stlth   Old  llPROBE 
+ 41.12222203/29/1999 12:27:15  00:00:01 172.016.112.100portsweep  out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Stlth   Old  llPROBE rllNT
+ 41.13333303/29/1999 13:33:16  00:00:21 172.016.112.050guessftp   in       auto    rem     succ     aDmp   not   iDmp BSM  SysLg   not       Clr     Old  llR2L ”
+ 41.13333303/29/1999 13:33:20  00:00:01 172.016.118.070guessftp   in       auto    rem     succ     aDmp   not   iDmp BSM  SysLg   not       Clr     Old  llR2L magllSOLARIS
+ 41.13333303/29/1999 13:33:25  00:00:01 172.016.118.070guessftp   in       auto    rem     succ     aDmp   not   iDmp BSM  SysLg   not       Clr     Old  llR2L hatllSOLARIS
+ 41.13333303/29/1999 13:33:29  00:00:01 172.016.118.070guessftp   in       auto    rem     succ     aDmp   not   iDmp BSM  SysLg   not       Clr     Old  llR2L  thllSOLARIS
+ 41.13333303/29/1999 13:33:33  00:00:01 172.016.118.070guessftp   in       auto    rem     succ     aDmp   not   iDmp BSM  SysLg   not       Clr     Old  llR2L meallSOLARIS
+ 41.13333303/29/1999 13:33:37  00:00:01 172.016.118.070guessftp   in       auto    rem     succ     aDmp   not   iDmp BSM  SysLg   not       Clr     Old  llR2L ommllSOLARIS
+ 41.13583003/29/1999 13:58:16  00:00:12 172.016.112.050ftpwrite   out      auto    rem     succ     aDmp   oDmp  iDmp BSM  SysLg   FSLst     Clr     Old  llR2L ttlllSOLARIS
+ 41.13583003/29/1999 13:58:20  00:00:01 194.027.251.021ftpwrite   out      auto    rem     succ     aDmp   oDmp  iDmp BSM  SysLg   FSLst     Clr     Old  llR2L 
+ 41.13583003/29/1999 14:03:29  00:00:32 172.016.112.050ftpwrite   out      auto    rem     succ     aDmp   oDmp  iDmp BSM  SysLg   FSLst     Clr     Old  llR2L rprllSOLARIS
+ 41.15504803/29/1999 15:50:15  00:23:26 172.016.112.100yaga       in       auto    rem     succ     aDmp   not   iDmp not  SysLg   not       Clr     New  llU2R $UUllNT
+ 41.15504803/29/1999 19:50:16  00:13:05 172.016.112.100yaga       in       auto    rem     succ     aDmp   not   iDmp not  SysLg   not       Clr     New  llU2R ´yUllN
+ 41.16130803/29/1999 16:13:08  00:15:05 172.016.112.100crashii    in       auto    rem     succ     aDmp   not   iDmp not  not     not       Clr     Old  llDOS »f
+ 41.16271503/29/1999 16:27:10  00:00:01 172.016.114.169portsweep  out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Stlth   Old  llPROBE llLINUX
+ 41.16271503/29/1999 16:27:16  00:00:01 172.016.114.169portsweep  out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Stlth   Old  llPROBE 
+ 41.16271503/29/1999 16:28:22  00:00:01 172.016.114.169portsweep  out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Stlth   Old  llPROBE 
+ 41.16271503/29/1999 16:28:28  00:00:01 172.016.114.169portsweep  out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Stlth   Old  llPROBE 
+ 41.16271503/29/1999 16:29:34  00:00:01 172.016.114.169portsweep  out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Stlth   Old  llPROBE 
+ 41.16271503/29/1999 16:29:40  00:00:01 172.016.114.169portsweep  out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Stlth   Old  llPROBE ÿllLINUX
+ 41.16271503/29/1999 16:30:46  00:00:01 172.016.114.169portsweep  out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Stlth   Old  llPROBE xllLINUX
+ 41.16271503/29/1999 16:30:52  00:00:01 172.016.114.169portsweep  out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Stlth   Old  llPROBE 
+ 41.16271503/29/1999 16:31:59  00:00:01 172.016.114.169portsweep  out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Stlth   Old  llPROBE 
+ 41.16271503/29/1999 16:32:05  00:00:01 172.016.114.169portsweep  out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Stlth   Old  llPROBE llLINUX
+ 41.18245303/29/1999 18:24:19  00:08:41 172.016.112.050secret     out      auto    rem     succ     aDmp   oDmp  iDmp BSM  not     FSLst     Clr     New  llDATA ›QllSOLARIS
+ 41.18245303/29/1999 18:27:45  00:00:01 195.115.218.108secret     out      auto    rem     succ     aDmp   oDmp  iDmp BSM  not     FSLst     Clr     New  llDATA RllSOLARIS
+ 41.21344603/29/1999 21:34:16  00:00:01 172.016.112.050smurf      out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llDOS À}llSOLARIS
+ 41.21344603/29/1999 21:34:26  00:00:01 172.016.112.050smurf      out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llDOS 

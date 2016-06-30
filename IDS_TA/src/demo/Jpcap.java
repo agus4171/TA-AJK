@@ -7,9 +7,14 @@ package demo;
 
 import ids.Mahalanobis;
 import ids.Ngram;
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.logging.Level;
@@ -30,17 +35,41 @@ public class Jpcap {
     /**
      * @param args the command line arguments
      */        
-    public static void main(String[] args) {
-        boolean a = true;
-        System.out.println(a);
-        int b = 0;
-        a = b != 0;
-        System.out.println(a);
-        int core = Runtime.getRuntime().availableProcessors();
-        System.out.println(core);
-        String str = "/home/agus/dataset/inside/1/tuesday/inside.tcpdump";
-        String[] s = str.replace("/", "-").split("-");
-        System.out.println(s[s.length-2]+"_"+s[s.length-1].replace(".", "-"));
+    public static void main(String[] args) throws FileNotFoundException, IOException {
+        BufferedReader br = new BufferedReader(new FileReader("friday"));
+        Map<String, Integer> dataTruth = new HashMap<>();
+        String line;
+        String[] ip;
+        while ((line = br.readLine()) != null) {
+            ip = line.split(" ");
+            System.out.println(ip[5]);
+//            System.out.println(line.substring(10, 29));
+//            dataTruth.put(line.substring(10, 20), 1);
+        }
+            
+//        ArrayList<Double> tes = new ArrayList<>();
+//        tes.add(0.0);
+//        tes.add(4.1);
+//        tes.add(4.2);
+//        tes.add(4.3);
+//        tes.add(5.0);
+//        tes.add(1.0);
+//        tes.add(3.0);
+//        tes.add(2.0);
+//        tes.add(7.0);
+//        tes.add(100.0);
+//        System.out.println(Collections.max(tes));
+//        System.out.println(Collections.min(tes));
+//        boolean a = true;
+//        System.out.println(a);
+//        int b = 0;
+//        a = b != 0;
+//        System.out.println(a);
+//        int core = Runtime.getRuntime().availableProcessors();
+//        System.out.println(core);
+//        String str = "/home/agus/dataset/inside/1/tuesday/inside.tcpdump";
+//        String[] s = str.replace("/", "-").split("-");
+//        System.out.println(s[s.length-2]+"_"+s[s.length-1].replace(".", "-"));
 //        try {
 //            JpcapCaptor captor = JpcapCaptor.openFile("/media/agus/4DD244C0638395F0/dataset/1/inside/friday/inside.tcpdump");
 //            int i =1;
