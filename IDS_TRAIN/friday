@@ -1,7 +1,7 @@
- 45.08454704/02/1999 08:45:18  00:00:02 172.16.112.50 smurf      in       auto    rem     succ     aDmp   not   iDmp not  not     not       Clr     Old  llDOS 
- 45.09000004/02/1999 09:00:10  00:00:18 172.16.114.50 arppoison  out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     New  llDOS  anllLINUX
+﻿ 45.08454704/02/1999 08:45:18  00:00:02 172.16.112.50 1.12.120.6 smurf      in       auto    rem     succ     aDmp   not   iDmp not  not     not       Clr     Old  llDOS 
+ 45.09000004/02/1999 09:00:10  00:00:18 172.16.114.50 206.047.98.151 arppoison  out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     New  llDOS  anllLINUX
  45.09000004/02/1999 09:02:09  00:10:52 172.16.114.50 arppoison  out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     New  llDOS sh llLINUX
- 45.09554104/02/1999 09:55:15  00:10:29 172.16.114.50 sshtrojan  out      auto    rem     succ     aDmp   oDmp  iDmp not  SysLg   FSLst     Clr     New  llR2L L
+ 45.09554104/02/1999 09:55:15  00:10:29 172.16.114.50  195.73.151.50 sshtrojan  out      auto    rem     succ     aDmp   oDmp  iDmp not  SysLg   FSLst     Clr     New  llR2L L
  45.10033404/02/1999 10:03:10  00:00:01 172.16.112.1 ipsweep    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Stlth   Old  llPROBE 
  45.10033404/02/1999 10:04:50  00:00:01 172.16.112.2 ipsweep    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Stlth   Old  llPROBE 
  45.10033404/02/1999 10:06:30  00:00:01 172.16.112.3 ipsweep    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Stlth   Old  llPROBE 
@@ -14,8 +14,8 @@
  45.10033404/02/1999 10:16:30  00:00:01 172.16.112.9 ipsweep    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Stlth   Old  llPROBE pllALL
  45.10033404/02/1999 10:18:10  00:00:01 172.16.112.10 ipsweep    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Stlth   Old  llPROBE rllALL
  45.10033404/02/1999 10:18:10  00:00:01 194.7.248.153 ipsweep    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Stlth   Old  llPROBE lllALL
- 45.10393704/02/1999 10:42:04  00:00:18 172.16.114.50 xlock      out      man     rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
- 45.10393704/02/1999 10:43:04  00:00:19 172.16.114.50 xlock      out      man     rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 45.10393704/02/1999 10:42:04  00:00:18 172.16.114.50 139.134.061.42 xlock      out      man     rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 45.10393704/02/1999 10:43:04  00:00:19 172.16.114.50 139.134.061.42 xlock      out      man     rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
  45.10513804/02/1999 10:53:24  00:03:35 172.16.112.20 named      out      man     rem     succ     aDmp   oDmp  iDmp not  SysLg   not       Clr     Old  llR2L 
  45.10513804/02/1999 10:53:24  00:03:35 172.16.113.105 named      out      man     rem     succ     aDmp   oDmp  iDmp not  SysLg   not       Clr     Old  llR2L 
  45.10513804/02/1999 10:53:24  00:03:35 194.7.248.153 named      out      man     rem     succ     aDmp   oDmp  iDmp not  SysLg   not       Clr     Old  llR2L 
