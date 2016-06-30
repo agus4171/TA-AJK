@@ -69,7 +69,7 @@ public class IDS {
         String[] ip;
         while ((line = br.readLine()) != null) {
             ip = line.split(" ");
-            dataTruth.put(line.substring(10, 29), ip[5]);
+            dataTruth.put(ip[5], ip[6]);
         }
         return dataTruth;
     }
@@ -577,7 +577,7 @@ public class IDS {
                                         if (dataTcp.getDstPort() == dataPacketTes.getDstPort()) {
                                             mahalanobis = new Mahalanobis();
                                             mDist = mahalanobis.distance(dataPacketTes.getNgram(), dataTcp.getMeanData(), dataTcp.getDeviasiData(),sFactor);
-                                            if (dataTruth.containsKey(dataPacketTes.getTimePacket())) {
+                                            if (dataPacketTes.getSrcIP().equals(dataTruth.containsKey(dataPacketTes.getDstIP()))) {
                                                 fwLog.append("TCP | "+dataPacketTes.getTimePacket()+" | "+dataPacketTes.getSrcIP()+":"+dataPacketTes.getSrcPort()+" | "+dataPacketTes.getDstIP()+":"+dataPacketTes.getDstPort()+" | "+Math.round(mDist*100.0)/100.0+"\n");
     //                                            fwLog.append("+++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++\n");
                                                 fwLog.append(new String(dataPacketTes.getPacketData(), StandardCharsets.US_ASCII)+"\n");
@@ -608,7 +608,7 @@ public class IDS {
                                         if (dataUdp.getDstPort() == dataPacketTes.getDstPort()) {
                                             mahalanobis = new Mahalanobis();
                                             mDist = mahalanobis.distance(dataPacketTes.getNgram(), dataUdp.getMeanData(), dataUdp.getDeviasiData(),sFactor);
-                                            if (dataTruth.containsKey(dataPacketTes.getTimePacket())) {
+                                            if (dataPacketTes.getSrcIP().equals(dataTruth.containsKey(dataPacketTes.getDstIP()))) {
                                                 fwLog.append("UDP | "+dataPacketTes.getTimePacket()+" | "+dataPacketTes.getSrcIP()+":"+dataPacketTes.getSrcPort()+" | "+dataPacketTes.getDstIP()+":"+dataPacketTes.getDstPort()+" | "+Math.round(mDist*100.0)/100.0+"\n");
     //                                            fwLog.append("+++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++\n");
                                                 fwLog.append(new String(dataPacketTes.getPacketData(), StandardCharsets.US_ASCII)+"\n");
