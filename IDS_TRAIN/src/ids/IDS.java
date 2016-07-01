@@ -572,12 +572,12 @@ public class IDS {
                             start = System.currentTimeMillis();                         
 
                             for (DataPacket dataPacketTes : dataTest) {     
-                                if ("TCP".equals(dataPacketTes.getProtokol()) && dataPacketTes.getDstPort() == portTest) {
+                                if ("TCP".equals(dataPacketTes.getProtokol())) {
                                     for (DataModel dataTcp : modelTcp) {
                                         if (dataTcp.getDstPort() == dataPacketTes.getDstPort()) {
                                             mahalanobis = new Mahalanobis();
                                             mDist = mahalanobis.distance(dataPacketTes.getNgram(), dataTcp.getMeanData(), dataTcp.getDeviasiData(),sFactor);
-                                            if (dataTruth.containsKey(dataPacketTes.getDstIP())) {
+                                            if (dataPacketTes.getSrcIP().equals(dataTruth.get(dataPacketTes.getDstIP()))) {
                                                 fwLog.append("TCP | "+dataPacketTes.getTimePacket()+" | "+dataPacketTes.getSrcIP()+":"+dataPacketTes.getSrcPort()+" | "+dataPacketTes.getDstIP()+":"+dataPacketTes.getDstPort()+" | "+Math.round(mDist*100.0)/100.0+"\n");
     //                                            fwLog.append("+++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++\n");
                                                 fwLog.append(new String(dataPacketTes.getPacketData(), StandardCharsets.US_ASCII)+"\n");
@@ -603,12 +603,12 @@ public class IDS {
                                     }
                                 }
 
-                                else if ("UDP".equals(dataPacketTes.getProtokol()) && dataPacketTes.getDstPort() == portTest) {
+                                else if ("UDP".equals(dataPacketTes.getProtokol())) {
                                     for (DataModel dataUdp : modelUdp) {
                                         if (dataUdp.getDstPort() == dataPacketTes.getDstPort()) {
                                             mahalanobis = new Mahalanobis();
                                             mDist = mahalanobis.distance(dataPacketTes.getNgram(), dataUdp.getMeanData(), dataUdp.getDeviasiData(),sFactor);
-                                            if (dataTruth.containsKey(dataPacketTes.getDstIP())) {
+                                            if (dataPacketTes.getSrcIP().equals(dataTruth.get(dataPacketTes.getDstIP()))) {
                                                 fwLog.append("UDP | "+dataPacketTes.getTimePacket()+" | "+dataPacketTes.getSrcIP()+":"+dataPacketTes.getSrcPort()+" | "+dataPacketTes.getDstIP()+":"+dataPacketTes.getDstPort()+" | "+Math.round(mDist*100.0)/100.0+"\n");
     //                                            fwLog.append("+++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++\n");
                                                 fwLog.append(new String(dataPacketTes.getPacketData(), StandardCharsets.US_ASCII)+"\n");
