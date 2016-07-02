@@ -67,7 +67,7 @@ public class PacketSniffer implements Runnable {
                             time = new String(tcp.toString()).split(":");
                             date = new Date(Long.parseLong(time[0])*1000L);
                             format = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
-                            format.setTimeZone(TimeZone.getTimeZone("America/New_York"));
+                            format.setTimeZone(TimeZone.getTimeZone("Asia/Jakarta"));
                             timeFormat = format.format(date);
                             tuples = "TCP-"+tcp.src_ip.toString().substring(1)+"-"+tcp.src_port+"-"+tcp.dst_ip.toString().substring(1)+"-"+tcp.dst_port;
                             if (packetBody.containsKey(tuples)){
