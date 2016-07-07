@@ -7,9 +7,13 @@ package ids;
 
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.TimeZone;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import jpcap.JpcapCaptor;
@@ -23,18 +27,22 @@ import jpcap.packet.UDPPacket;
  * @author agus
  */
 public class PacketSniffer implements Runnable {
-    private JpcapCaptor captor;
-    private final NetworkInterface device;
-    private Packet packet;
-    private TCPPacket tcp;
-    private UDPPacket udp;
-    private String tuples;
-    private String[] header;
     private int input, counter, count = 1;
     private double[] numChars, temp;
-    private final Map<String, BodyPacket> packetBody = new HashMap<>(); 
-    private final ArrayList<DataPacket> dataTest;
-    private final Ngram ng = new Ngram();
+    private String tuples, timeFormat, startTime;
+    private String[] header, time;
+    private Date date;
+    private DateFormat format;
+    private JpcapCaptor captor;
+    private NetworkInterface device;
+    private Packet packet;
+    private TCPPacket tcp;
+    private UDPPacket udp;        
+    private ArrayList<DataPacket> dataTest;
+    private Map<String, BodyPacket> packetBody = new HashMap<>();
+    private Map<String, String> packetTime = new HashMap<>();
+    Ngram ng = new Ngram();
+    BodyPacket bp;
     
     public PacketSniffer(NetworkInterface device, int n, ArrayList<DataPacket> dataTest, int counter){        
         this.device = device;
@@ -52,52 +60,69 @@ public class PacketSniffer implements Runnable {
                 synchronized(packetBody){                            
                     if (count == counter) break;
                     
-                    if (packet instanceof TCPPacket){
+                    if (packet instanceof TCPPacket && packet.data.length != 0){
                         tcp = (TCPPacket) packet;
-                        BodyPacket tcpBodyData;
-                        tuples = "TCP-"+tcp.src_ip.toString().substring(1)+"-"+tcp.src_port+"-"+tcp.dst_ip.toString().substring(1)+"-"+tcp.dst_port;
-                        if (packetBody.containsKey(tuples)){
-                            tcpBodyData = packetBody.get(tuples);
-                            tcpBodyData.addBytes(tcp.data);
+                        if (tcp.dst_port < 1024) {
+                            System.out.println("TCP "+tcp + new String(tcp.data, StandardCharsets.US_ASCII));
+                            time = new String(tcp.toString()).split(":");
+                            date = new Date(Long.parseLong(time[0])*1000L);
+                            format = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+                            format.setTimeZone(TimeZone.getTimeZone("Asia/Jakarta"));
+                            timeFormat = format.format(date);
+                            tuples = "TCP-"+tcp.src_ip.toString().substring(1)+"-"+tcp.src_port+"-"+tcp.dst_ip.toString().substring(1)+"-"+tcp.dst_port;
+                            if (packetBody.containsKey(tuples)){
+                                bp = packetBody.get(tuples);
+                                bp.addBytes(tcp.data);
 
-                        } else { 
-                            tcpBodyData = new BodyPacket(tcp.data); 
-                            packetBody.put(tuples, tcpBodyData); 
-                        } 
+                            } else { 
+                                bp = new BodyPacket(tcp.data); 
+                                packetBody.put(tuples, bp); 
+                                packetTime.put(tuples, timeFormat);
+                            } 
+//                            count++;
+                        }
                         count++;
                     }
                     
-                    else if(packet instanceof UDPPacket){
+                    else if(packet instanceof UDPPacket && packet.data.length != 0){
                         udp = (UDPPacket) packet;
-                        BodyPacket udpBodyData; 
-                        tuples = "UDP-"+udp.src_ip.toString().substring(1)+"-"+udp.src_port+"-"+udp.dst_ip.toString().substring(1)+"-"+udp.dst_port;
-                        if(packetBody.containsKey(tuples)){
-                            udpBodyData = packetBody.get(tuples);
-                            udpBodyData.addBytes(udp.data);
-                        } else { 
-                            udpBodyData = new BodyPacket(udp.data); 
-                            packetBody.put(tuples, udpBodyData); 
-                        } 
+                        if (udp.dst_port < 1024) {
+                            System.out.println("UDP "+udp + new String(udp.data, StandardCharsets.US_ASCII));
+                            time = new String(udp.toString()).split(":");
+                            date = new Date(Long.parseLong(time[0])*1000L);
+                            format = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+                            format.setTimeZone(TimeZone.getTimeZone("Asia/Jakarta"));
+                            timeFormat = format.format(date);
+                            tuples = "UDP-"+udp.src_ip.toString().substring(1)+"-"+udp.src_port+"-"+udp.dst_ip.toString().substring(1)+"-"+udp.dst_port;
+                            if(packetBody.containsKey(tuples)){
+                                bp = packetBody.get(tuples);
+                                bp.addBytes(udp.data);
+                            } else { 
+                                bp = new BodyPacket(udp.data); 
+                                packetBody.put(tuples, bp); 
+                                packetTime.put(tuples, timeFormat);
+                            } 
+//                            count++;
+                        }       
                         count++;
-                    }
-                    
+                    }                    
                 }     
             }
         } catch (IOException ex) {
             Logger.getLogger(PacketSniffer.class.getName()).log(Level.SEVERE, null, ex);
         }   
         
-        System.out.println("Total Packet: "+count);
         for (Map.Entry<String, BodyPacket> entry : packetBody.entrySet()) {
             String key = entry.getKey();
             header = key.split("-", 0);
             BodyPacket value = entry.getValue();
-            if (value.getBytes().length != 0) {
-                numChars = ng.Ngram(value.getBytes());
-                dataTest.add(new DataPacket(header[0], header[1], Integer.parseInt(header[2]), header[3], Integer.parseInt(header[4]), value.getBytes(), numChars));
-            }   
+            numChars = ng.Ngram(value.getBytes());
+            startTime = packetTime.get(header[0]+"-"+header[1]+"-"+header[2]+"-"+header[3]+"-"+header[4]);
+            dataTest.add(new DataPacket(startTime, header[0], header[1], Integer.parseInt(header[2]), header[3], Integer.parseInt(header[4]), value.getBytes(), numChars, 0));
         }
-        System.out.println("Total Data Testing : "+dataTest.size());
+        
+        packetBody.clear();
+        packetTime.clear();
     }
     
 }

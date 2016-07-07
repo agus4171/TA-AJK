@@ -10,7 +10,6 @@ package ids;
  * @author agus
  */
 public class DataPacket {
-    private String timePacket;
     private String protokol;
     private String srcIP;
     private String dstIP;
@@ -20,8 +19,7 @@ public class DataPacket {
     private double[] ngram;
     private int packetType;
     
-    public DataPacket(String timePacket, String protokol, String srcIP, int srcPort, String dstIP, int dstPort, byte[] packetData, double[] ngram, int packetType){
-        this.timePacket = timePacket;
+    public DataPacket(String protokol, String srcIP, int srcPort, String dstIP, int dstPort, byte[] packetData, double[] ngram){
         this.protokol = protokol;
         this.srcIP = srcIP;
         this.srcPort = srcPort;
@@ -29,22 +27,7 @@ public class DataPacket {
         this.dstPort = dstPort;
         this.packetData = packetData;
         this.ngram = ngram;
-        this.packetType = packetType;
     }    
-
-    /**
-     * @return the timePacket
-     */
-    public String getTimePacket() {
-        return timePacket;
-    }
-
-    /**
-     * @param timePacket the timePacket to set
-     */
-    public void setTimePacket(String timePacket) {
-        this.timePacket = timePacket;
-    }
 
     /**
      * @return the protokol
@@ -157,5 +140,4 @@ public class DataPacket {
     public void setPacketType(int packetType) {
         this.packetType = packetType;
     }
-    
 }

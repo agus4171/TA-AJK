@@ -5,9 +5,15 @@
  */
 package ids;
 
+import java.nio.charset.StandardCharsets;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.TimeZone;
 import jpcap.JpcapCaptor;
 import jpcap.packet.Packet;
 import jpcap.packet.TCPPacket;
@@ -19,29 +25,35 @@ import jpcap.packet.UDPPacket;
  */
 public class PacketReader implements Runnable {
     private static int countPacket = 1;
+    private int input, files, type;
+    private double[] numChars;
+    private String tuples, timeFormat, startTime, regex = "\\r?\\n";
+    private String[] header, time;
+    private Date date;
+    private DateFormat format;
     private JpcapCaptor captor;
     private TCPPacket tcp;
     private UDPPacket udp;
-    private int files;
-    private double[] numChars;
-    private String tuples, regex = "\\r?\\n";
-    private String[] header;
-    private Map<String, BodyPacket> packetBody = new HashMap<>();
     private ArrayList<DataPacket> datasetTcp;       
     private ArrayList<DataPacket> datasetUdp;
     private ArrayList<DataPacket> dataTest;
-    private Ngram ng = new Ngram();
+    private Map<String, BodyPacket> packetBody = new HashMap<>();
+    private Map<String, String> packetTime = new HashMap<>();
+    Ngram ng = new Ngram();
+    BodyPacket bp;
     
     public PacketReader(){
         
     }
     
-    public PacketReader(int files, JpcapCaptor captor, ArrayList<DataPacket> datasetTcp, ArrayList<DataPacket> datasetUdp, ArrayList<DataPacket> dataTest){
+    public PacketReader(int files, JpcapCaptor captor, int input, ArrayList<DataPacket> datasetTcp, ArrayList<DataPacket> datasetUdp, ArrayList<DataPacket> dataTest, int type){
         this.files = files;
-        this.captor = captor;
+        this.captor = captor;        
+        this.input = input;
         this.datasetTcp = datasetTcp;
         this.datasetUdp = datasetUdp;
         this.dataTest = dataTest;
+        this.type = type;
     }
     
     @Override
@@ -54,77 +66,106 @@ public class PacketReader implements Runnable {
 
                 if (packet instanceof TCPPacket && packet.data.length != 0){
                     tcp = (TCPPacket) packet;
-                    BodyPacket tcpBodyData;
                     if (tcp.dst_port < 1024) {
+//                        System.out.println("TCP "+tcp + new String(tcp.data, StandardCharsets.US_ASCII));
 //                        if (tcp.dst_port == 80) {
-//                            System.out.println(countPacket+" "+tcp.data.length+" "+new String(tcp.data, StandardCharsets.US_ASCII));
+//                            System.out.println(tcp+new String(tcp.data, StandardCharsets.US_ASCII));
 //                        }
 //                        if (tcp.dst_port == 80) {
 //                            String[] split = new String(tcp.data, StandardCharsets.US_ASCII).split(regex);
-//                            byte[] data = split[0].getBytes(StandardCharsets.US_ASCII);
+//                            for (String string : split) {
+//                                String[] line = string.split(":");
+//                                byte[] data = line[1].getBytes(StandardCharsets.US_ASCII);
+//                            }
+//                            
 //                            tuples = input+"-TCP-"+tcp.src_ip.toString().substring(1)+"-"+tcp.src_port+"-"+tcp.dst_ip.toString().substring(1)+"-"+tcp.dst_port;
 //                            if (packetBody.containsKey(tuples)){
-//                                tcpBodyData = packetBody.get(tuples);
-//                                tcpBodyData.addBytes(data);
+//                                bp = packetBody.get(tuples);
+//                                bp.addBytes(data);
 //                            } else { 
-//                                tcpBodyData = new BodyPacket(data); 
-//                                packetBody.put(tuples, tcpBodyData); 
+//                                bp = new BodyPacket(data); 
+//                                packetBody.put(tuples, bp); 
 //                            }
-//                        } else {
-                            tuples = "TCP-"+tcp.src_ip.toString().substring(1)+"-"+tcp.src_port+"-"+tcp.dst_ip.toString().substring(1)+"-"+tcp.dst_port;
-                            if (packetBody.containsKey(tuples)){
-                                tcpBodyData = packetBody.get(tuples);
-                                tcpBodyData.addBytes(tcp.data);
-                            } else { 
-                                tcpBodyData = new BodyPacket(tcp.data); 
-                                packetBody.put(tuples, tcpBodyData); 
-                            }
+//                        } 
+//                        else {
+                        if (input == 3) {
+                            time = new String(tcp.toString()).split(":");
+                            date = new Date(Long.parseLong(time[0])*1000L);
+                            format = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss");
+                            format.setTimeZone(TimeZone.getTimeZone("America/New_York"));
+                            timeFormat = format.format(date);
+                        }
+                        tuples = input+"-TCP-"+tcp.src_ip.toString().substring(1)+"-"+tcp.src_port+"-"+tcp.dst_ip.toString().substring(1)+"-"+tcp.dst_port;
+                        if (packetBody.containsKey(tuples)){
+                            bp = packetBody.get(tuples);
+                            bp.addBytes(tcp.data);
+                        } else { 
+                            bp = new BodyPacket(tcp.data); 
+                            packetBody.put(tuples, bp); 
+                            packetTime.put("TCP-"+tcp.src_ip.toString().substring(1)+"-"+tcp.src_port+"-"+tcp.dst_ip.toString().substring(1)+"-"+tcp.dst_port, timeFormat);
+                        }
 //                        }
-                        setCountPacket(getCountPacket() + 1);
+                        countPacket++;
                     }
-//                    countPacket++;
                 }
 
                 else if(packet instanceof UDPPacket && packet.data.length != 0){
-                    udp = (UDPPacket) packet;
-                    BodyPacket udpBodyData; 
+                    udp = (UDPPacket) packet; 
                     if (udp.dst_port < 1024) {
-                        tuples = "UDP-"+udp.src_ip.toString().substring(1)+"-"+udp.src_port+"-"+udp.dst_ip.toString().substring(1)+"-"+udp.dst_port;
-                        if(packetBody.containsKey(tuples)){
-                            udpBodyData = packetBody.get(tuples);
-                            udpBodyData.addBytes(udp.data);
-                        } else { 
-                            udpBodyData = new BodyPacket(udp.data); 
-                            packetBody.put(tuples, udpBodyData); 
+//                        System.out.println("UDP "+udp + new String(udp.data, StandardCharsets.US_ASCII));
+                        if (input == 3) {
+                            time = new String(udp.toString()).split(":");
+                            date = new Date(Long.parseLong(time[0])*1000L);
+                            format = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss");
+                            format.setTimeZone(TimeZone.getTimeZone("America/New_York"));
+                            timeFormat = format.format(date);
                         }
-                        setCountPacket(getCountPacket() + 1);
+                        tuples = input+"-UDP-"+udp.src_ip.toString().substring(1)+"-"+udp.src_port+"-"+udp.dst_ip.toString().substring(1)+"-"+udp.dst_port;
+                        if(packetBody.containsKey(tuples)){
+                            bp = packetBody.get(tuples);
+                            bp.addBytes(udp.data);
+                        } else { 
+                            bp = new BodyPacket(udp.data); 
+                            packetBody.put(tuples, bp); 
+                            packetTime.put("UDP-"+udp.src_ip.toString().substring(1)+"-"+udp.src_port+"-"+udp.dst_ip.toString().substring(1)+"-"+udp.dst_port, timeFormat);
+                        }
+                        countPacket++;
                     }
-//                    countPacket++;
                 }                
             }            
-        }            
-//        System.out.println("Total Packet: "+countPacket);
-        System.out.println("Storing dataset ke-"+files+" to List");
+        }  
         
         for (Map.Entry<String, BodyPacket> entry : packetBody.entrySet()) {
             String key = entry.getKey();
             header = key.split("-", 0);
             BodyPacket value = entry.getValue();
             numChars = ng.Ngram(value.getBytes());
-                
-            if (header[0].equals("TCP")) {
-                datasetTcp.add(new DataPacket(header[0], header[1], Integer.parseInt(header[2]), header[3], Integer.parseInt(header[4]), null, numChars));
+//            System.out.println("Panjang konten paket data: "+value.getBytes().length);
+//            System.out.println(header[1]+" "+header[2]+":"+header[3]+"-"+header[4]+":"+header[5]+Arrays.toString(numChars));
+//            double sum = 0;
+//            for (double numChar : numChars) {
+//                sum += numChar;
+//            }
+//            System.out.println("Jumlah karakter :"+sum);
+            if (header[0].equals("1") && header[1].equals("TCP")) {
+//                System.out.println(header[1]+" "+header[2]+":"+header[3]+"-"+header[4]+":"+header[5]+new String(value.getBytes(), StandardCharsets.US_ASCII));
+                datasetTcp.add(new DataPacket(startTime, header[1], header[2], Integer.parseInt(header[3]), header[4], Integer.parseInt(header[5]), null, numChars, type));
             } 
 
-            else 
-                datasetUdp.add(new DataPacket(header[0], header[1], Integer.parseInt(header[2]), header[3], Integer.parseInt(header[4]), null, numChars));            
-        }
+            else if (header[0].equals("1") && header[1].equals("UDP")) {
+//                System.out.println(header[1]+" "+header[2]+":"+header[3]+"-"+header[4]+":"+header[5]+new String(value.getBytes(), StandardCharsets.US_ASCII));
+                datasetUdp.add(new DataPacket(startTime, header[1], header[2], Integer.parseInt(header[3]), header[4], Integer.parseInt(header[5]), null, numChars, type));
+            }
+
+            else {
+                startTime = packetTime.get(header[1]+"-"+header[2]+"-"+header[3]+"-"+header[4]+"-"+header[5]);
+                dataTest.add(new DataPacket(startTime, header[1], header[2], Integer.parseInt(header[3]), header[4], Integer.parseInt(header[5]), value.getBytes(), numChars, type));
+            }                
+        }   
         
-//        System.out.println("Total Dataset of TCP : "+datasetTcp.size());
-//        System.out.println("Total Dataset of UDP : "+datasetUdp.size());     
-         
         packetBody.clear();
-    }    
+        packetTime.clear();
+    }
     
     /**
      * @return the countPacket
