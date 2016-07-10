@@ -1,0 +1,155 @@
+ID: 42.090909
+Date: 03/30/1999
+Name: httptunnel
+Category: r2l
+Start_Time: 09:09:17
+Duration: 00:02:39
+Attacker: 197.182.091.233
+Victim: 172.016.112.050
+Username: rexn o format login /var/adm/lastlog
+Ports:
+	At_Attacker: 20-21{1} 
+	At_Victim: 23{1} 
+
+ID: 42.094131
+Date: 03/30/1999
+Name: phf
+Category: r2l
+Start_Time: 09:41:12
+Duration: 00:00:01
+Attacker: 202.247.224.089
+Victim: 172.016.114.050
+Username: n/a
+Ports:
+	At_Attacker: 
+	At_Victim: 80{1} 
+
+ID: 42.104107
+Date: 03/30/1999
+Name: loadmodule
+Category: u2r
+Start_Time: 10:41:12
+Duration: 00:26:10
+Attacker: 194.027.251.021
+Victim: 172.016.113.050
+Username: marlyy
+Ports:
+	At_Attacker: 
+	At_Victim: 23{1} 
+
+ID: 42.112913
+Date: 03/30/1999
+Name: ps
+Category: u2r
+Start_Time: 11:29:17
+Duration: 00:35:52
+Attacker: 206.222.003.197
+Victim: 172.016.112.050
+Username: bramy
+Ports:
+	At_Attacker: 
+	At_Victim: 20-21{1}, 23{1} 
+
+ID: 42.120000
+Date: 03/30/1999
+Name: New_Attack_1999 (ntfsdos)
+Category: r2l
+Start_Time: 12:00:00
+Duration: 00:10:00
+Attacker: 172.16.112.100
+Victim: 172.16.112.100
+Username: n/a
+Ports:
+	At_Attacker: 
+	At_Victim: i{1} 
+
+ID: 42.122248
+Date: 03/30/1999
+Name: New_Attack_1999 (secret)
+Category: data
+Start_Time: 12:22:13
+Duration: 00:52:29
+Attacker: 197.218.177.069
+Victim: 172.016.114.050
+Username: quintond p0 TTY
+Ports:
+	At_Attacker: 20-21{1}, 25{1}, 113{1} 
+	At_Victim: 23{1}, 25{1}, 113{1} 
+
+ID: 42.135452
+Date: 03/30/1999
+Name: sqlattack
+Category: r2l
+Start_Time: 13:54:17
+Duration: 00:01:09
+Attacker: 207.253.084.013
+Victim: 172.016.112.194
+Username: db3
+Ports:
+	At_Attacker: 
+	At_Victim: 23{1} 
+
+ID: 42.143228
+Date: 03/30/1999
+Name: New_Attack_1999 (sechole)
+Category: u2r
+Start_Time: 14:32:15
+Duration: 05:04:52
+Attacker: 205.160.208.190
+Victim: 172.016.112.100
+Username: n/a
+Ports:
+	At_Attacker: 
+	At_Victim: 20{2}, 21{1}, 23{2} 
+
+ID: 42.145441
+Date: 03/30/1999
+Name: land
+Category: dos
+Start_Time: 14:54:10
+Duration: 00:00:01
+Attacker: 172.016.113.050
+Victim: 172.016.113.050
+Username: n/a
+Ports:
+	At_Attacker: 
+	At_Victim: 23{1} 
+
+ID: 42.155148
+Date: 03/30/1999
+Name: mailbomb
+Category: dos
+Start_Time: 15:51:16
+Duration: 00:11:24
+Attacker: 194.027.251.021
+Victim: 172.016.114.050
+Username: n/a
+Ports:
+	At_Attacker: i{1}, 25{3}, 110{1}, 113{200} 
+	At_Victim: 25{200} 
+
+ID: 42.174944
+Date: 03/30/1999
+Name: processtable
+Category: dos
+Start_Time: 17:49:15
+Duration: 00:03:01
+Attacker: 208.240.124.083
+Victim: 172.016.114.050
+Username: n/a
+Ports:
+	At_Attacker: 
+	At_Victim: 22{352} 
+
+ID: 42.210410
+Date: 03/30/1999
+Name: crashiis
+Category: dos
+Start_Time: 21:04:10
+Duration: 00:00:07
+Attacker: 209.001.012.046
+Victim: 172.016.112.100
+Username: n/a
+Ports:
+	At_Attacker: 
+	At_Victim: 80{1} 

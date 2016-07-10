@@ -1,0 +1,202 @@
+
+Summarized attack: 54.082003
+ IDnum    Date       StartTime Duration Destination    Attackname insider? manual? console?success? aDump? oDump iDumpBSM? SysLogs FSListing StealthyNew? Category OS
+ 54.08200304/08/1999 08:33:00  00:03:00 172.016.112.050ps                  man     cons    succ     not    not   not  BSM  not     FSLst     Stlth   Old  llU2R ¬Î¿llSOLARIS
+
+Summarized attack: 54.090101
+ IDnum    Date       StartTime Duration Destination    Attackname insider? manual? console?success? aDump? oDump iDumpBSM? SysLogs FSListing StealthyNew? Category OS
+ 54.09010104/08/1999 09:01:08  00:00:05 172.016.114.050phf        in       auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 54.09010104/08/1999 09:31:33  00:00:08 172.016.114.050phf        in       auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 54.09010104/08/1999 09:31:43  00:00:06 172.016.114.050phf        in       auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 54.09010104/08/1999 09:32:03  00:00:07 172.016.114.050phf        in       auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 54.09010104/08/1999 09:32:19  00:00:11 172.016.114.050phf        in       auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 54.09010104/08/1999 09:32:37  00:00:05 172.016.114.050phf        in       auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 54.09010104/08/1999 09:32:48  00:00:06 172.016.114.050phf        in       auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+
+Summarized attack: 54.091200
+ IDnum    Date       StartTime Duration Destination    Attackname insider? manual? console?success? aDump? oDump iDumpBSM? SysLogs FSListing StealthyNew? Category OS
+ 54.09120004/08/1999 09:16:20  00:01:18 172.016.112.100casesen    in       man     rem     succ     aDmp   not   iDmp not  SysLg   not       Clr     New  llU2R 
+ 54.09120004/08/1999 09:17:18  00:00:01 172.016.112.149casesen    in       man     rem     succ     aDmp   not   iDmp not  SysLg   not       Clr     New  llU2R R>llNT
+ 54.09120004/08/1999 09:17:24  00:00:01 172.016.112.149casesen    in       man     rem     succ     aDmp   not   iDmp not  SysLg   not       Clr     New  llU2R 
+ 54.09120004/08/1999 09:17:28  00:00:01 172.016.112.149casesen    in       man     rem     succ     aDmp   not   iDmp not  SysLg   not       Clr     New  llU2R œ
+ 54.09120004/08/1999 09:17:33  00:00:01 172.016.112.149casesen    in       man     rem     succ     aDmp   not   iDmp not  SysLg   not       Clr     New  llU2R io llNT
+ 54.09120004/08/1999 09:17:52  00:09:43 172.016.112.100casesen    in       man     rem     succ     aDmp   not   iDmp not  SysLg   not       Clr     New  llU2R s bllNT
+ 54.09120004/08/1999 11:14:29  00:05:38 172.016.112.100casesen    in       man     rem     succ     aDmp   not   iDmp not  SysLg   not       Clr     New  llU2R 
+
+Summarized attack: 54.102102
+ IDnum    Date       StartTime Duration Destination   Attackname insider? manual? console?success? aDump? oDump iDumpBSM? SysLogs FSListing StealthyNew? Category OS
+ 54.10210204/08/1999 10:21:00  00:15:00 172.16.112.100ntfsdos             man     cons    succ     not    not   not  not  SysLg   FSLst     Clr     New  llDATA yrllNT
+
+Summarized attack: 54.103459
+ IDnum    Date       StartTime Duration Destination    Attackname insider? manual? console?success? aDump? oDump iDumpBSM? SysLogs FSListing StealthyNew? Category OS
+ 54.10345904/08/1999 10:34:11  00:00:01 172.016.112.050portsweep  out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Stlth   Old  llPROBE fllSOLARIS
+ 54.10345904/08/1999 10:37:02  00:00:01 172.016.112.050portsweep  out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Stlth   Old  llPROBE  llSOLARIS
+ 54.10345904/08/1999 10:39:54  00:00:01 172.016.112.050portsweep  out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Stlth   Old  llPROBE ellSOLARIS
+
+Summarized attack: 54.110416
+ IDnum    Date       StartTime Duration Destination    Attackname insider? manual? console?success? aDump? oDump iDumpBSM? SysLogs FSListing StealthyNew? Category OS
+ 54.11041604/08/1999 11:26:37  00:16:09 172.016.112.100ntinfoscan out      auto    rem     succ     aDmp   oDmp  iDmp not  SysLg   FSLst     Clr     Old  llPROBE 
+ 54.11041604/08/1999 11:26:38  00:00:01 206.048.044.018ntinfoscan out      auto    rem     succ     aDmp   oDmp  iDmp not  SysLg   FSLst     Clr     Old  llPROBE mllNT
+
+Summarized attack: 54.115000
+ IDnum    Date       StartTime Duration Destination    Attackname insider? manual? console?success? aDump? oDump iDumpBSM? SysLogs FSListing StealthyNew? Category OS
+ 54.11500004/08/1999 11:52:05  00:05:31 172.016.112.100yaga       out      man     rem     succ     aDmp   oDmp  iDmp not  SysLg   not       Clr     New  llU2R 
+ 54.11500004/08/1999 12:04:20  00:03:24 172.016.112.100yaga       out      man     rem     succ     aDmp   oDmp  iDmp not  SysLg   not       Clr     New  llU2R 
+
+Summarized attack: 54.115701
+ IDnum    Date       StartTime Duration Destination    Attackname insider? manual? console?success? aDump? oDump iDumpBSM? SysLogs FSListing StealthyNew? Category OS
+ 54.11570104/08/1999 11:57:01  00:15:03 172.016.112.100crashiis   out      man     rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llDOS g tllNT
+
+Summarized attack: 54.120600
+ IDnum    Date       StartTime Duration Destination    Attackname insider? manual? console?success? aDump? oDump iDumpBSM? SysLogs FSListing StealthyNew? Category OS
+ 54.12060004/08/1999 12:06:30  00:00:01 196.037.075.158httptunnel out      auto    rem     succ     aDmp   oDmp  iDmp BSM  SysLg   FSLst     Clr     Old  llR2L 
+ 54.12060004/08/1999 12:07:00  00:00:01 196.037.075.158httptunnel out      auto    rem     succ     aDmp   oDmp  iDmp BSM  SysLg   FSLst     Clr     Old  llR2L hrellSOLARIS
+ 54.12060004/08/1999 12:07:30  00:00:01 196.037.075.158httptunnel out      auto    rem     succ     aDmp   oDmp  iDmp BSM  SysLg   FSLst     Clr     Old  llR2L appllSOLARIS
+ 54.12060004/08/1999 12:08:00  00:00:01 196.037.075.158httptunnel out      auto    rem     succ     aDmp   oDmp  iDmp BSM  SysLg   FSLst     Clr     Old  llR2L ip llSOLARIS
+ 54.12060004/08/1999 12:08:30  00:00:01 196.037.075.158httptunnel out      auto    rem     succ     aDmp   oDmp  iDmp BSM  SysLg   FSLst     Clr     Old  llR2L À}llSOLARIS
+ 54.12060004/08/1999 12:09:00  00:00:01 196.037.075.158httptunnel out      auto    rem     succ     aDmp   oDmp  iDmp BSM  SysLg   FSLst     Clr     Old  llR2L 
+
+ 54.12060004/08/1999 12:09:30  00:00:01 196.037.075.158httptunnel out      auto    rem     succ     aDmp   oDmp  iDmp BSM  SysLg   FSLst     Clr     Old  llR2L ÿÿ
+ 54.12060004/08/1999 12:10:00  00:00:01 196.037.075.158httptunnel out      auto    rem     succ     aDmp   oDmp  iDmp BSM  SysLg   FSLst     Clr     Old  llR2L 4ÈllSOLARIS
+
+Summarized attack: 54.125758
+ IDnum    Date       StartTime Duration Destination    Attackname insider? manual? console?success? aDump? oDump iDumpBSM? SysLogs FSListing StealthyNew? Category OS
+ 54.12575804/08/1999 12:57:17  00:02:17 172.016.112.050fdformat   out      auto    rem     succ     aDmp   oDmp  iDmp BSM  not     FSLst     Clr     Old  llU2R rdsllSOLARIS
+ 54.12575804/08/1999 12:59:06  00:00:01 194.027.251.021fdformat   out      auto    rem     succ     aDmp   oDmp  iDmp BSM  not     FSLst     Clr     Old  llU2R s bllSOLARIS
+ 54.12575804/08/1999 13:11:54  00:25:33 172.016.112.050fdformat   out      auto    rem     succ     aDmp   oDmp  iDmp BSM  not     FSLst     Clr     Old  llU2R *f llSOLARIS
+
+Summarized attack: 54.145832
+ IDnum    Date       StartTime Duration Destination    Attackname insider? manual? console?success? aDump? oDump iDumpBSM? SysLogs FSListing StealthyNew? Category OS
+ 54.14583204/08/1999 14:58:29  00:02:12 172.016.114.050satan      out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llPROBE 
+
+Summarized attack: 54.155338
+ IDnum    Date       StartTime Duration Destination    Attackname insider? manual? console?success? aDump? oDump iDumpBSM? SysLogs FSListing StealthyNew? Category OS
+ 54.15533804/08/1999 15:53:18  00:15:01 172.016.114.050teardrop   out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llDOS üllLINUX
+
+Summarized attack: 54.160341
+ IDnum    Date       StartTime Duration Destination    Attackname insider? manual? console?success? aDump? oDump iDumpBSM? SysLogs FSListing StealthyNew? Category OS
+ 54.16034104/08/1999 16:03:15  00:00:07 172.016.112.100sechole    out      auto    rem     succ     aDmp   oDmp  iDmp not  SysLg   not       Clr     New  llU2R trallNT
+ 54.16034104/08/1999 16:03:20  00:00:02 208.240.124.083sechole    out      auto    rem     succ     aDmp   oDmp  iDmp not  SysLg   not       Clr     New  llU2R 
+ 54.16034104/08/1999 16:03:24  00:06:42 172.016.112.100sechole    out      auto    rem     succ     aDmp   oDmp  iDmp not  SysLg   not       Clr     New  llU2R 
+ 54.16034104/08/1999 16:20:08  00:05:03 172.016.112.100sechole    out      auto    rem     succ     aDmp   oDmp  iDmp not  SysLg   not       Clr     New  llU2R 
+
+Summarized attack: 54.170132
+ IDnum    Date       StartTime Duration Destination  Attackname insider? manual? console?success? aDump? oDump iDumpBSM? SysLogs FSListing StealthyNew? Category OS
+ 54.17013204/08/1999 17:01:19  00:01:02 172.016.112.*resetscan  in       auto    rem     succ     aDmp   not   iDmp not  not     not       Stlth   New  llPROBE cllALL
+
+Summarized attack: 54.171643
+ IDnum    Date       StartTime Duration Destination    Attackname insider? manual? console?success? aDump? oDump iDumpBSM? SysLogs FSListing StealthyNew? Category OS
+ 54.17164304/08/1999 17:16:10  00:00:01 172.016.112.001ipsweep    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llPROBE allALL
+ 54.17164304/08/1999 17:16:20  00:00:01 172.016.112.002ipsweep    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llPROBE ellALL
+ 54.17164304/08/1999 17:16:30  00:00:01 172.016.112.003ipsweep    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llPROBE ²llALL
+ 54.17164304/08/1999 17:16:40  00:00:01 172.016.112.004ipsweep    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llPROBE ²llALL
+ 54.17164304/08/1999 17:16:50  00:00:01 172.016.112.005ipsweep    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llPROBE allALL
+ 54.17164304/08/1999 17:16:50  00:00:01 207.136.086.223ipsweep    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llPROBE jllALL
+ 54.17164304/08/1999 17:17:00  00:00:01 172.016.112.006ipsweep    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llPROBE 
+ 54.17164304/08/1999 17:17:10  00:00:01 172.016.112.007ipsweep    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llPROBE ºllALL
+ 54.17164304/08/1999 17:17:20  00:00:01 172.016.112.008ipsweep    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llPROBE 
+ 54.17164304/08/1999 17:17:30  00:00:01 172.016.112.009ipsweep    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llPROBE 
+ 54.17164304/08/1999 17:17:40  00:00:01 172.016.112.010ipsweep    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llPROBE ÁllALL
+ 54.17164304/08/1999 17:17:40  00:00:01 207.136.086.223ipsweep    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llPROBE 
+
+Summarized attack: 54.175007
+ IDnum    Date       StartTime Duration Destination    Attackname insider? manual? console?success? aDump? oDump iDumpBSM? SysLogs FSListing StealthyNew? Category OS
+ 54.17500704/08/1999 17:50:12  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 54.17500704/08/1999 17:50:17  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 54.17500704/08/1999 17:50:22  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 54.17500704/08/1999 17:50:28  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 54.17500704/08/1999 17:50:33  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 54.17500704/08/1999 17:50:38  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 54.17500704/08/1999 17:50:43  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 54.17500704/08/1999 17:50:48  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 54.17500704/08/1999 17:50:53  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 54.17500704/08/1999 17:50:58  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 54.17500704/08/1999 17:51:03  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 54.17500704/08/1999 17:51:08  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 54.17500704/08/1999 17:51:13  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 54.17500704/08/1999 17:51:18  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 54.17500704/08/1999 17:51:23  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 54.17500704/08/1999 17:51:28  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 54.17500704/08/1999 17:51:33  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 54.17500704/08/1999 17:51:39  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 54.17500704/08/1999 17:51:44  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 54.17500704/08/1999 17:51:49  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 54.17500704/08/1999 17:51:54  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 54.17500704/08/1999 17:51:59  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 54.17500704/08/1999 17:52:04  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 54.17500704/08/1999 17:52:09  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 54.17500704/08/1999 17:52:14  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 54.17500704/08/1999 17:52:19  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 54.17500704/08/1999 17:52:24  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 54.17500704/08/1999 17:52:29  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 54.17500704/08/1999 17:52:34  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 54.17500704/08/1999 17:52:39  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 54.17500704/08/1999 17:52:45  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 54.17500704/08/1999 17:52:50  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 54.17500704/08/1999 17:52:55  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 54.17500704/08/1999 17:53:00  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 54.17500704/08/1999 17:53:05  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 54.17500704/08/1999 17:53:10  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 54.17500704/08/1999 17:53:15  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 54.17500704/08/1999 17:53:20  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 54.17500704/08/1999 17:53:25  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 54.17500704/08/1999 17:53:30  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 54.17500704/08/1999 17:53:35  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 54.17500704/08/1999 17:53:40  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 54.17500704/08/1999 17:53:46  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 54.17500704/08/1999 17:53:51  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 54.17500704/08/1999 17:53:56  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 54.17500704/08/1999 17:54:01  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 54.17500704/08/1999 17:54:06  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 54.17500704/08/1999 17:54:11  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 54.17500704/08/1999 17:54:16  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 54.17500704/08/1999 17:54:21  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 54.17500704/08/1999 17:54:26  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 54.17500704/08/1999 17:54:31  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 54.17500704/08/1999 17:54:36  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 54.17500704/08/1999 17:54:41  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 54.17500704/08/1999 17:54:46  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 54.17500704/08/1999 17:54:52  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 54.17500704/08/1999 17:54:57  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 54.17500704/08/1999 17:55:02  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 54.17500704/08/1999 17:55:07  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 54.17500704/08/1999 17:55:12  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 54.17500704/08/1999 17:55:17  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+
+Summarized attack: 54.183002
+ IDnum    Date       StartTime Duration Destination    Attackname insider? manual? console?success? aDump? oDump iDumpBSM? SysLogs FSListing StealthyNew? Category OS
+ 54.18300204/08/1999 18:31:00  00:16:09 172.016.112.100ntinfoscan out      auto    rem     succ     aDmp   oDmp  iDmp not  SysLg   FSLst     Clr     Old  llPROBE ellNT
+ 54.18300204/08/1999 18:31:00  00:00:01 206.048.044.018ntinfoscan out      auto    rem     succ     aDmp   oDmp  iDmp not  SysLg   FSLst     Clr     Old  llPROBE ollNT
+ 54.18300204/08/1999 18:47:10  00:00:01 172.016.112.100ntinfoscan out      auto    rem     succ     aDmp   oDmp  iDmp not  SysLg   FSLst     Clr     Old  llPROBE rllNT
+
+Summarized attack: 54.190707
+ IDnum    Date       StartTime Duration Destination    Attackname insider? manual? console?success? aDump? oDump iDumpBSM? SysLogs FSListing StealthyNew? Category OS
+ 54.19070704/08/1999 19:08:31  00:00:01 172.016.112.020ls_domain  out      auto    rem     succ     aDmp   oDmp  iDmp not  SysLg   not       Clr     New  llPROBE ollLINUX
+
+Summarized attack: 54.194108
+ IDnum    Date       StartTime Duration Destination    Attackname insider? manual? console?success? aDump? oDump iDumpBSM? SysLogs FSListing StealthyNew? Category OS
+ 54.19410804/08/1999 19:41:14  00:00:41 172.016.112.050warez      out      auto    rem     succ     aDmp   oDmp  iDmp BSM  SysLg   not       Clr     Old  llDOS 
+ 54.19410804/08/1999 19:41:44  00:00:01 209.030.070.014warez      out      auto    rem     succ     aDmp   oDmp  iDmp BSM  SysLg   not       Clr     Old  llDOS 
+
+Summarized attack: 54.195951
+ IDnum    Date       StartTime Duration Destination  Attackname insider? manual? console?success? aDump? oDump iDumpBSM? SysLogs FSListing StealthyNew? Category OS
+ 54.19595104/08/1999 19:58:30  04:01:29 172.016.112.*mscan      out      auto    rem     succ     aDmp   oDmp  iDmp not  SysLg   not       Clr     Old  llPROBE  llALL
+ 54.19595104/09/1999 00:00:01  02:18:00 172.016.112.*mscan      out      auto    rem     succ     aDmp   oDmp  iDmp not  SysLg   not       Clr     Old  llPROBE bllALL
+ 54.19595104/08/1999 19:58:30  04:01:29 172.016.113.*mscan      out      auto    rem     succ     aDmp   oDmp  iDmp not  SysLg   not       Clr     Old  llPROBE ellALL
+ 54.19595104/09/1999 00:00:01  02:18:00 172.016.113.*mscan      out      auto    rem     succ     aDmp   oDmp  iDmp not  SysLg   not       Clr     Old  llPROBE 
+ 54.19595104/08/1999 19:58:30  04:01:29 172.016.114.*mscan      out      auto    rem     succ     aDmp   oDmp  iDmp not  SysLg   not       Clr     Old  llPROBE illALL
+ 54.19595104/09/1999 00:00:01  02:18:00 172.016.114.*mscan      out      auto    rem     succ     aDmp   oDmp  iDmp not  SysLg   not       Clr     Old  llPROBE 
+ 54.19595104/08/1999 19:58:30  04:01:29 172.016.115.*mscan      out      auto    rem     succ     aDmp   oDmp  iDmp not  SysLg   not       Clr     Old  llPROBE „llALL
+ 54.19595104/09/1999 00:00:01  02:18:00 172.016.115.*mscan      out      auto    rem     succ     aDmp   oDmp  iDmp not  SysLg   not       Clr     Old  llPROBE llALL
+ 54.19595104/08/1999 19:58:30  04:01:29 172.016.116.*mscan      out      auto    rem     succ     aDmp   oDmp  iDmp not  SysLg   not       Clr     Old  llPROBE 
+llALL
+ 54.19595104/09/1999 00:00:01  02:18:00 172.016.116.*mscan      out      auto    rem     succ     aDmp   oDmp  iDmp not  SysLg   not       Clr     Old  llPROBE ÿllALL
+ 54.19595104/08/1999 19:58:30  04:01:29 172.016.117.*mscan      out      auto    rem     succ     aDmp   oDmp  iDmp not  SysLg   not       Clr     Old  llPROBE 4llALL
+ 54.19595104/09/1999 00:00:01  02:18:00 172.016.117.*mscan      out      auto    rem     succ     aDmp   oDmp  iDmp not  SysLg   not       Clr     Old  llPROBE ollALL
+ 54.19595104/08/1999 19:58:30  04:01:29 172.016.118.*mscan      out      auto    rem     succ     aDmp   oDmp  iDmp not  SysLg   not       Clr     Old  llPROBE 
+ 54.19595104/09/1999 00:00:01  02:18:00 172.016.118.*mscan      out      auto    rem     succ     aDmp   oDmp  iDmp not  SysLg   not       Clr     Old  llPROBE llALL
+
+Summarized attack: 54.225131
+ IDnum    Date       StartTime Duration Destination    Attackname insider? manual? console?success? aDump? oDump iDumpBSM? SysLogs FSListing StealthyNew? Category OS
+ 54.22513104/08/1999 22:51:14  00:05:21 172.016.112.100arppoison  out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     New  llDOS plellNT
+ 54.22513104/08/1999 22:59:56  00:19:19 172.016.112.100arppoison  out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     New  llDOS 

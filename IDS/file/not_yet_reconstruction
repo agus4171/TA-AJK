@@ -1,0 +1,44 @@
+Paket data ke-1 -> 1254030344:418804 /192.168.1.2->/74.125.67.100 protocol(6) priority(0)  hop(128)  offset(0) ident(11339) TCP 1449 > 80 seq(1762339492) win(64604) ack 3683340383  P
+GET /generate_204 HTTP/1.1
+Host: clients1.google.co.in
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/532.0 (KHTML, like Gecko) Chrome/3.0.195.21 Safari/532.0
+Referer: http://www.google.co.in/search?hl=en&source=hp&q=wireshark&btnG=Google+Search&meta=&aq=f&oq=
+Accept: */*
+Accept-Encoding: gzip,deflate
+Accept-Language: en-US,en;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+
+Paket data ke-10 -> 1254030345:88934 /192.168.1.2->/74.125.19.103 protocol(6) priority(0)  hop(128)  offset(0) ident(11352) TCP 1447 > 80 seq(215618439) win(65535) ack 1904946141  P
+GET /csi?v=3&s=web&action=&srt=1164&tran=undefined&e=17259,21589,21766,21819,22023&ei=A_y-StKoEY6QsgOsuKFO&rt=prt.40,xjs.161,ol.814 HTTP/1.1
+Host: www.google.co.in
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/532.0 (KHTML, like Gecko) Chrome/3.0.195.21 Safari/532.0
+Referer: http://www.google.co.in/search?hl=en&source=hp&q=wireshark&btnG=Google+Search&meta=&aq=f&oq=
+Accept: */*
+Accept-Encoding: gzip,deflate
+Accept-Language: en-US,en;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+
+Paket data ke 20 -> 1254030339:430292 /192.168.1.2->/74.125.67.100 protocol(6) priority(0)  hop(128)  offset(0) ident(11274) TCP 1449 > 80 seq(1762337759) win(65535) ack 3683339452  P
+GET /complete/search?hl=en&q=wire&cp=4 HTTP/1.1
+Host: clients1.google.co.in
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/532.0 (KHTML, like Gecko) Chrome/3.0.195.21 Safari/532.0
+Referer: http://www.google.co.in/
+Accept: */*
+Accept-Encoding: gzip,deflate
+Accept-Language: en-US,en;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+
+
+TCP 1254030343:124981 /192.168.1.2->/74.125.19.103 protocol(6) priority(0)  hop(128)  offset(0) ident(11299) TCP 1447 > 80 seq(215617432) win(65320) ack 1904936503  PGET /search?hl=en&source=hp&q=wireshark&btnG=Google+Search&meta=&aq=f&oq= HTTP/1.1
+Host: www.google.co.in
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/532.0 (KHTML, like Gecko) Chrome/3.0.195.21 Safari/532.0
+Referer: http://www.google.co.in/
+Accept: application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+Accept-Encoding: gzip,deflate
+Cookie: SS=Q0=bGl2ZWx5IGtlcm5lbA; PREF=ID=796f045a813f82ae:U=71955f24ce2c9b15:TM=1243356989:LM=1243358712:S=oAy0C6_Svfkwtuxi; SID=DQAAAIoAAAC2H0jKZVrsPnHEqa8OPVwrcVADAkKlev8P4IPILeabq9CHU5nD6Ng4W-3lCH_0bl3f5RxQrthwSVnJTsJVf4-j64kZz4U5Epso3J-76xv1jCCkfw_g_8zzU-qOH8l8WCIdjJ_AvQKrUWu98_XjpxMN0JDyiac8OAyN9YA1T-AnLSCh_TmAx60U5Q7wPcd0Fis; HSID=A2PDDPt2kzR3wMENc; NID=27=yvEUDgGSeOw-jZwqjSH2LaxodZfm67IHLy41S0DIiyNIXpXtBtzES5OvljVCSwfc15pjCsGiJ4ohxo6tmM08bql1eRD_78mVwzkCgQ3RbJ2CfxbeaBzBvvc-1U5K7A1j
+Accept-Language: en-US,en;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3

@@ -25,7 +25,7 @@ import jpcap.packet.UDPPacket;
  */
 public class PacketReader implements Runnable {
     private static int countPacket = 1;
-    private int input, files, type;
+    private int input, files, type, counter = 1, windowSize;
     private double[] numChars;
     private String tuples, timeFormat, startTime, regex = "\\r?\\n";
     private String[] header, time;
@@ -46,7 +46,7 @@ public class PacketReader implements Runnable {
         
     }
     
-    public PacketReader(int files, JpcapCaptor captor, int input, ArrayList<DataPacket> datasetTcp, ArrayList<DataPacket> datasetUdp, ArrayList<DataPacket> dataTest, int type){
+    public PacketReader(int files, JpcapCaptor captor, int input, ArrayList<DataPacket> datasetTcp, ArrayList<DataPacket> datasetUdp, ArrayList<DataPacket> dataTest, int type, int windowSize){
         this.files = files;
         this.captor = captor;        
         this.input = input;
@@ -54,6 +54,7 @@ public class PacketReader implements Runnable {
         this.datasetUdp = datasetUdp;
         this.dataTest = dataTest;
         this.type = type;
+        this.windowSize = windowSize;
     }
     
     @Override
@@ -62,7 +63,7 @@ public class PacketReader implements Runnable {
             Packet packet = captor.getPacket(); 
             
             synchronized(packetBody){
-                if (packet == null || packet == Packet.EOF) break;
+                if (packet == null || packet == Packet.EOF || (input == 3 && counter == windowSize)) break;
 
                 if (packet instanceof TCPPacket && packet.data.length != 0){
                     tcp = (TCPPacket) packet;
@@ -89,6 +90,7 @@ public class PacketReader implements Runnable {
 //                        } 
 //                        else {
                         if (input == 3) {
+//                            if (countPacket == windowSize) break;
                             time = new String(tcp.toString()).split(":");
                             date = new Date(Long.parseLong(time[0])*1000L);
                             format = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss");
@@ -106,6 +108,7 @@ public class PacketReader implements Runnable {
                         }
 //                        }
                         countPacket++;
+                        counter++;
                     }
                 }
 
@@ -114,6 +117,7 @@ public class PacketReader implements Runnable {
                     if (udp.dst_port < 1024) {
 //                        System.out.println("UDP "+udp + new String(udp.data, StandardCharsets.US_ASCII));
                         if (input == 3) {
+//                            if (countPacket == windowSize) break;
                             time = new String(udp.toString()).split(":");
                             date = new Date(Long.parseLong(time[0])*1000L);
                             format = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss");
@@ -130,6 +134,7 @@ public class PacketReader implements Runnable {
                             packetTime.put("UDP-"+udp.src_ip.toString().substring(1)+"-"+udp.src_port+"-"+udp.dst_ip.toString().substring(1)+"-"+udp.dst_port, timeFormat);
                         }
                         countPacket++;
+                        counter++;
                     }
                 }                
             }            

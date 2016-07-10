@@ -249,7 +249,7 @@ public class IDS {
 //                            threadFile.clear();
 //                        } 
                         JpcapCaptor captor = JpcapCaptor.openFile(fileDataset.toString());
-                        pr = new PacketReader(countFile, captor, input, datasetTcp, datasetUdp, dataTest, packetType);
+                        pr = new PacketReader(countFile, captor, input, datasetTcp, datasetUdp, dataTest, packetType, 0);
                         Thread threadFiles = new Thread(pr);
                         threadFiles.start();
                         System.out.println("Processing dataset ke-"+countFile+" "+fileDataset.toString());
@@ -487,6 +487,8 @@ public class IDS {
                             System.out.println("Total free packet: "+freePacket.size()); 
                             fwRunning.append("Total free packet: "+freePacket.size()+"\n");
                             dataTest.clear();
+                            attackPacket.clear();
+                            freePacket.clear();
                             snifferStatus = Integer.parseInt(ids.getData("Sniffer Status ")) != 0;
                             if (!snifferStatus) {
                                 fwRunning.append("++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++\n");
@@ -507,6 +509,7 @@ public class IDS {
                         time = ids.getDateTime();
                         thresholdAll = ids.getData("Threshold "); 
                         portTh = ids.getThreshold();
+                        windowSize = Integer.parseInt(ids.getData("Window Size "));
                         portTest = Integer.parseInt(ids.getData("Port "));
                         sFactor = Double.parseDouble(ids.getData("Smoothing Factor "));
                         packetType = Integer.parseInt(ids.getData("Packet Type "));
@@ -536,9 +539,9 @@ public class IDS {
                             freePacket = new ArrayList<>();
                             attackPacket = new ArrayList<>();
                             dataTruth = new HashMap<>();
-                            dataTruth = ids.getTruth(fileName[fileName.length-2]);
+                            dataTruth = ids.getTruth("doc/"+fileName[fileName.length-2]);
                             JpcapCaptor captor = JpcapCaptor.openFile(fileDataTesting.toString());                        
-                            pr = new PacketReader(countFile, captor, input, datasetTcp, datasetUdp, dataTest, packetType);
+                            pr = new PacketReader(countFile, captor, input, datasetTcp, datasetUdp, dataTest, packetType, windowSize);
                             Thread threadTest = new Thread(pr);
                             threadTest.start();
                             System.out.println("Processing data testing ke-"+countFile+" "+fileDataTesting.toString());
@@ -649,6 +652,8 @@ public class IDS {
                             System.out.println("Total free packet: "+freePacket.size()); 
                             fwRunning.append("Total free packet: "+freePacket.size()+"\n");
                             dataTest.clear();
+                            attackPacket.clear();
+                            freePacket.clear();
                         }
                         countFile = 1;
                         fwRunning.append("++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++\n");

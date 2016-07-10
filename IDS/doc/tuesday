@@ -1,0 +1,92 @@
+﻿ 42.09090903/30/1999 09:09:17  00:02:39 172.16.112.50 197.182.91.233 httptunnel out      auto    rem     succ     aDmp   oDmp       BSM  SysLg   FSLst     Clr     Old  llR2L ÿÿ
+ 42.09090903/30/1999 09:10:44  00:00:07 197.182.91.233 httptunnel out      auto    rem     succ     aDmp   oDmp       BSM  SysLg   FSLst     Clr     Old  llR2L 4sllSO
+ 42.09413103/30/1999 09:41:12  00:00:01 172.16.114.50 202.247.224.89 phf        out      auto    rem     succ     aDmp   oDmp       not  not     not       Clr     Old  llR2L Ã
+ 42.10410703/30/1999 10:41:12  00:26:10 172.16.113.50 194.27.251.21 loadmodule out      auto    rem     succ     aDmp   oDmp       not  not     FSLst     Stlth   Old  llDATA-llU2R- llSUNOS
+ 42.11291303/30/1999 11:29:17  00:01:45 172.16.112.50 206.222.3.197 ps         out      auto    rem     succ     aDmp   oDmp       BSM  not     FSLst     Clr     Old  llDATA-llU2R- llSOLARIS
+ 42.11291303/30/1999 11:30:50  00:00:01 206.222.3.197 ps         out      auto    rem     succ     aDmp   oDmp       BSM  not     FSLst     Clr     Old  llDATA-llU2R- llSOLARIS
+ 42.11291303/30/1999 11:47:10  00:17:59 172.16.112.50 ps         out      auto    rem     succ     aDmp   oDmp       BSM  not     FSLst     Clr     Old  llDATA-llU2R- llSOLARIS
+ 42.12000003/30/1999 12:00:00  00:10:00 172.16.112.100 172.16.112.100 ntfsdos             man     cons    succ     not    not        not  SysLg   FSLst     Clr     New  llDATA-llU2R- llNT
+ 42.12224803/30/1999 12:22:13  00:52:29 172.16.114.50 197.218.177.69 secret     out      auto    rem     succ     aDmp   oDmp       not  not     not       Clr     New  llDATA 
+ 42.12224803/30/1999 12:48:08  00:00:09 197.218.177.69 secret     out      auto    rem     succ     aDmp   oDmp       not  not     not       Clr     New  llDATA f
+ 42.12224803/30/1999 12:53:30  00:15:01 197.218.177.69 secret     out      auto    rem     succ     aDmp   oDmp       not  not     not       Clr     New  llDATA 
+ 42.13545203/30/1999 13:54:17  00:01:09 172.16.112.194 207.253.84.13 sqlattack  out      auto    rem     succ     aDmp   oDmp       not  not     not       Clr     Old  llDATA-llU2R- llLINUX
+ 42.14322803/30/1999 14:32:15  00:00:06 172.16.112.100 205.160.208.190 sechole    out      auto    rem     succ     aDmp   oDmp       not  SysLg   not       Clr     New  llU2R 4¸wllNT
+ 42.14322803/30/1999 14:32:19  00:00:02 205.160.208.190 sechole    out      auto    rem     succ     aDmp   oDmp       not  SysLg   not       Clr     New  llU2R ùn
+ 42.14322803/30/1999 14:32:23  00:06:33 172.16.112.100 sechole    out      auto    rem     succ     aDmp   oDmp       not  SysLg   not       Clr     New  llU2R 
+ 42.14322803/30/1999 19:32:15  00:04:52 172.16.112.100 sechole    out      auto    rem     succ     aDmp   oDmp       not  SysLg   not       Clr     New  llU2R r*llNT
+ 42.14544103/30/1999 14:54:10  00:15:01 172.16.113.50 172.16.113.50 land       out      auto    rem     succ     aDmp   oDmp       not  SysLg   not       Clr     Old  llDOS e illSUNOS
+ 42.15514803/30/1999 15:51:16  00:04:27 172.16.114.50 194.27.251.21 mailbomb   out      auto    rem     succ     aDmp   oDmp       not  not     not       Clr     Old  llDOS , rllLINUX
+ 42.15514803/30/1999 15:51:16  00:00:01 172.16.112.20 mailbomb   out      auto    rem     succ     aDmp   oDmp       not  not     not       Clr     Old  llDOS  arllLINUX
+ 42.15514803/30/1999 15:51:16  00:00:01 194.27.251.21 mailbomb   out      auto    rem     succ     aDmp   oDmp       not  not     not       Clr     Old  llDOS chellLINUX
+ 42.15514803/30/1999 15:51:18  00:00:02 194.27.251.21 mailbomb   out      auto    rem     succ     aDmp   oDmp       not  not     not       Clr     Old  llDOS thellLINUX
+ 42.15514803/30/1999 15:51:18  00:00:02 172.16.112.194 mailbomb   out      auto    rem     succ     aDmp   oDmp       not  not     not       Clr     Old  llDOS s illLINUX
+ 42.15514803/30/1999 15:51:21  00:00:03 194.27.251.21 mailbomb   out      auto    rem     succ     aDmp   oDmp       not  not     not       Clr     Old  llDOS selllLINUX
+ 42.15514803/30/1999 15:51:25  00:00:05 194.27.251.21 mailbomb   out      auto    rem     succ     aDmp   oDmp       not  not     not       Clr     Old  llDOS  thllLINUX
+ 42.15514803/30/1999 15:51:26  00:00:01 172.16.112.20 mailbomb   out      auto    rem     succ     aDmp   oDmp       not  not     not       Clr     Old  llDOS ithllLINUX
+ 42.15514803/30/1999 15:51:31  00:00:05 194.27.251.21 mailbomb   out      auto    rem     succ     aDmp   oDmp       not  not     not       Clr     Old  llDOS  fillLINUX
+ 42.15514803/30/1999 15:51:36  00:00:01 172.16.112.20 mailbomb   out      auto    rem     succ     aDmp   oDmp       not  not     not       Clr     Old  llDOS simllLINUX
+ 42.15514803/30/1999 15:51:37  00:00:06 194.27.251.21 mailbomb   out      auto    rem     succ     aDmp   oDmp       not  not     not       Clr     Old  llDOS ffellLINUX
+ 42.15514803/30/1999 15:51:44  00:00:05 194.27.251.21 mailbomb   out      auto    rem     succ     aDmp   oDmp       not  not     not       Clr     Old  llDOS werllLINUX
+ 42.15514803/30/1999 15:51:46  00:00:01 172.16.112.20 mailbomb   out      auto    rem     succ     aDmp   oDmp       not  not     not       Clr     Old  llDOS spellLINUX
+ 42.15514803/30/1999 15:51:50  00:00:05 194.27.251.21 mailbomb   out      auto    rem     succ     aDmp   oDmp       not  not     not       Clr     Old  llDOS llsllLINUX
+ 42.15514803/30/1999 15:51:56  00:00:01 172.16.112.20 mailbomb   out      auto    rem     succ     aDmp   oDmp       not  not     not       Clr     Old  llDOS taillLINUX
+ 42.15514803/30/1999 15:51:56  00:00:05 194.27.251.21 mailbomb   out      auto    rem     succ     aDmp   oDmp       not  not     not       Clr     Old  llDOS nisllLINUX
+ 42.15514803/30/1999 15:52:02  00:00:05 194.27.251.21 mailbomb   out      auto    rem     succ     aDmp   oDmp       not  not     not       Clr     Old  llDOS thellLINUX
+ 42.15514803/30/1999 15:52:06  00:00:01 172.16.112.20 mailbomb   out      auto    rem     succ     aDmp   oDmp       not  not     not       Clr     Old  llDOS e nllLINUX
+ 42.15514803/30/1999 15:52:08  00:00:04 194.27.251.21 mailbomb   out      auto    rem     succ     aDmp   oDmp       not  not     not       Clr     Old  llDOS exillLINUX
+ 42.15514803/30/1999 15:52:13  00:00:06 194.27.251.21 mailbomb   out      auto    rem     succ     aDmp   oDmp       not  not     not       Clr     Old  llDOS  anllLINUX
+ 42.15514803/30/1999 15:52:18  00:00:01 172.16.112.20 mailbomb   out      auto    rem     succ     aDmp   oDmp       not  not     not       Clr     Old  llDOS eflllLINUX
+ 42.15514803/30/1999 15:52:20  00:00:05 194.27.251.21 mailbomb   out      auto    rem     succ     aDmp   oDmp       not  not     not       Clr     Old  llDOS d pllLINUX
+ 42.15514803/30/1999 15:52:26  00:00:05 194.27.251.21 mailbomb   out      auto    rem     succ     aDmp   oDmp       not  not     not       Clr     Old  llDOS  apllLINUX
+ 42.15514803/30/1999 15:52:28  00:00:01 172.16.112.20 mailbomb   out      auto    rem     succ     aDmp   oDmp       not  not     not       Clr     Old  llDOS  dellLINUX
+ 42.15514803/30/1999 15:52:32  00:00:06 194.27.251.21 mailbomb   out      auto    rem     succ     aDmp   oDmp       not  not     not       Clr     Old  llDOS forllLINUX
+ 42.15514803/30/1999 15:52:39  00:00:01 172.16.112.20 mailbomb   out      auto    rem     succ     aDmp   oDmp       not  not     not       Clr     Old  llDOS f rllLINUX
+ 42.15514803/30/1999 15:52:39  00:00:30 194.27.251.21 mailbomb   out      auto    rem     succ     aDmp   oDmp       not  not     not       Clr     Old  llDOS f *llLINUX
+ 42.15514803/30/1999 15:52:49  00:00:01 172.16.112.20 mailbomb   out      auto    rem     succ     aDmp   oDmp       not  not     not       Clr     Old  llDOS ainllLINUX
+ 42.15514803/30/1999 15:53:10  00:00:01 172.16.112.20 mailbomb   out      auto    rem     succ     aDmp   oDmp       not  not     not       Clr     Old  llDOS g illLINUX
+ 42.15514803/30/1999 15:53:10  00:00:05 194.27.251.21 mailbomb   out      auto    rem     succ     aDmp   oDmp       not  not     not       Clr     Old  llDOS ly llLINUX
+ 42.15514803/30/1999 15:53:16  00:00:05 194.27.251.21 mailbomb   out      auto    rem     succ     aDmp   oDmp       not  not     not       Clr     Old  llDOS 
+ 42.15514803/30/1999 15:53:22  00:00:06 194.27.251.21 mailbomb   out      auto    rem     succ     aDmp   oDmp       not  not     not       Clr     Old  llDOS d bllLINUX
+ 42.15514803/30/1999 15:53:22  00:00:01 172.16.112.20 mailbomb   out      auto    rem     succ     aDmp   oDmp       not  not     not       Clr     Old  llDOS ut llLINUX
+ 42.15514803/30/1999 15:53:29  00:00:06 194.27.251.21 mailbomb   out      auto    rem     succ     aDmp   oDmp       not  not     not       Clr     Old  llDOS 
+ 42.15514803/30/1999 15:53:34  00:00:01 172.16.112.20 mailbomb   out      auto    rem     succ     aDmp   oDmp       not  not     not       Clr     Old  llDOS .
+ 42.15514803/30/1999 15:53:36  00:00:05 194.27.251.21 mailbomb   out      auto    rem     succ     aDmp   oDmp       not  not     not       Clr     Old  llDOS thellLINUX
+ 42.15514803/30/1999 15:53:42  00:00:06 194.27.251.21 mailbomb   out      auto    rem     succ     aDmp   oDmp       not  not     not       Clr     Old  llDOS 
+ 42.15514803/30/1999 15:53:44  00:00:01 172.16.112.20 mailbomb   out      auto    rem     succ     aDmp   oDmp       not  not     not       Clr     Old  llDOS 
+ 42.15514803/30/1999 15:53:49  00:00:06 194.27.251.21 mailbomb   out      auto    rem     succ     aDmp   oDmp       not  not     not       Clr     Old  llDOS hlollLINUX
+ 42.15514803/30/1999 15:53:54  00:00:01 172.16.112.20 mailbomb   out      auto    rem     succ     aDmp   oDmp       not  not     not       Clr     Old  llDOS at llLINUX
+ 42.15514803/30/1999 15:53:56  00:00:06 194.27.251.21 mailbomb   out      auto    rem     succ     aDmp   oDmp       not  not     not       Clr     Old  llDOS 
+ 42.15514803/30/1999 15:54:03  00:00:06 194.27.251.21 mailbomb   out      auto    rem     succ     aDmp   oDmp       not  not     not       Clr     Old  llDOS al llLINUX
+ 42.15514803/30/1999 15:54:04  00:00:01 172.16.112.20 mailbomb   out      auto    rem     succ     aDmp   oDmp       not  not     not       Clr     Old  llDOS challLINUX
+ 42.15514803/30/1999 15:54:10  00:00:06 194.27.251.21 mailbomb   out      auto    rem     succ     aDmp   oDmp       not  not     not       Clr     Old  llDOS  bellLINUX
+ 42.15514803/30/1999 15:54:15  00:00:01 172.16.112.20 mailbomb   out      auto    rem     succ     aDmp   oDmp       not  not     not       Clr     Old  llDOS s.
+ 42.15514803/30/1999 15:54:17  00:00:05 194.27.251.21 mailbomb   out      auto    rem     succ     aDmp   oDmp       not  not     not       Clr     Old  llDOS  thllLINUX
+ 42.15514803/30/1999 15:54:23  00:00:06 194.27.251.21 mailbomb   out      auto    rem     succ     aDmp   oDmp       not  not     not       Clr     Old  llDOS n, llLINUX
+ 42.15514803/30/1999 15:54:26  00:00:01 172.16.112.20 mailbomb   out      auto    rem     succ     aDmp   oDmp       not  not     not       Clr     Old  llDOS  prllLINUX
+ 42.15514803/30/1999 15:54:30  00:00:07 194.27.251.21 mailbomb   out      auto    rem     succ     aDmp   oDmp       not  not     not       Clr     Old  llDOS  callLINUX
+ 42.15514803/30/1999 15:54:36  00:00:01 172.16.112.20 mailbomb   out      auto    rem     succ     aDmp   oDmp       not  not     not       Clr     Old  llDOS uisllLINUX
+ 42.15514803/30/1999 15:54:38  00:00:05 194.27.251.21 mailbomb   out      auto    rem     succ     aDmp   oDmp       not  not     not       Clr     Old  llDOS merllLINUX
+ 42.15514803/30/1999 15:54:44  00:00:06 194.27.251.21 mailbomb   out      auto    rem     succ     aDmp   oDmp       not  not     not       Clr     Old  llDOS  tollLINUX
+ 42.15514803/30/1999 15:54:46  00:00:01 172.16.112.20 mailbomb   out      auto    rem     succ     aDmp   oDmp       not  not     not       Clr     Old  llDOS 
+ 42.15514803/30/1999 15:54:51  00:00:06 194.27.251.21 mailbomb   out      auto    rem     succ     aDmp   oDmp       not  not     not       Clr     Old  llDOS se llLINUX
+ 42.15514803/30/1999 15:54:58  00:00:06 194.27.251.21 mailbomb   out      auto    rem     succ     aDmp   oDmp       not  not     not       Clr     Old  llDOS c sllLINUX
+ 42.15514803/30/1999 15:54:59  00:00:01 172.16.112.20 mailbomb   out      auto    rem     succ     aDmp   oDmp       not  not     not       Clr     Old  llDOS ts llLINUX
+ 42.15514803/30/1999 15:55:05  00:00:06 194.27.251.21 mailbomb   out      auto    rem     succ     aDmp   oDmp       not  not     not       Clr     Old  llDOS  prllLINUX
+ 42.15514803/30/1999 15:55:09  00:00:01 172.16.112.20 mailbomb   out      auto    rem     succ     aDmp   oDmp       not  not     not       Clr     Old  llDOS nd llLINUX
+ 42.15514803/30/1999 15:55:12  00:00:06 194.27.251.21 mailbomb   out      auto    rem     succ     aDmp   oDmp       not  not     not       Clr     Old  llDOS onsllLINUX
+ 42.15514803/30/1999 15:55:19  00:00:01 172.16.112.20 mailbomb   out      auto    rem     succ     aDmp   oDmp       not  not     not       Clr     Old  llDOS ncellLINUX
+ 42.15514803/30/1999 15:55:19  00:00:06 194.27.251.21 mailbomb   out      auto    rem     succ     aDmp   oDmp       not  not     not       Clr     Old  llDOS *j.llLINUX
+ 42.15514803/30/1999 15:55:26  00:00:06 194.27.251.21 mailbomb   out      auto    rem     succ     aDmp   oDmp       not  not     not       Clr     Old  llDOS n tllLINUX
+ 42.15514803/30/1999 15:55:29  00:00:01 172.16.112.20 mailbomb   out      auto    rem     succ     aDmp   oDmp       not  not     not       Clr     Old  llDOS ialllLINUX
+ 42.15514803/30/1999 15:55:33  00:00:10 194.27.251.21 mailbomb   out      auto    rem     succ     aDmp   oDmp       not  not     not       Clr     Old  llDOS he llLINUX
+ 42.15514803/30/1999 15:55:39  00:00:01 172.16.112.20 mailbomb   out      auto    rem     succ     aDmp   oDmp       not  not     not       Clr     Old  llDOS henllLINUX
+ 42.15514803/30/1999 15:55:39  00:00:01 172.16.114.207 mailbomb   out      auto    rem     succ     aDmp   oDmp       not  not     not       Clr     Old  llDOS is llLINUX
+ 42.15514803/30/1999 15:55:51  00:00:01 172.16.112.20 mailbomb   out      auto    rem     succ     aDmp   oDmp       not  not     not       Clr     Old  llDOS a sllLINUX
+ 42.15514803/30/1999 15:56:41  00:00:01 194.27.251.21 mailbomb   out      auto    rem     succ     aDmp   oDmp       not  not     not       Clr     Old  llDOS r ollLINUX
+ 42.15514803/30/1999 15:58:46  00:00:01 194.27.251.21 mailbomb   out      auto    rem     succ     aDmp   oDmp       not  not     not       Clr     Old  llDOS  prllLINUX
+ 42.15514803/30/1999 16:02:27  00:00:01 194.27.251.21 mailbomb   out      auto    rem     succ     aDmp   oDmp       not  not     not       Clr     Old  llDOS oplllLINUX
+ 42.15514803/30/1999 16:02:27  00:00:01 172.16.113.84 mailbomb   out      auto    rem     succ     aDmp   oDmp       not  not     not       Clr     Old  llDOS  *jllLINUX
+ 42.15514803/30/1999 16:02:27  00:00:01 172.16.112.20 mailbomb   out      auto    rem     succ     aDmp   oDmp       not  not     not       Clr     Old  llDOS es llLINUX
+ 42.15514803/30/1999 16:02:39  00:00:01 172.16.112.20 mailbomb   out      auto    rem     succ     aDmp   oDmp       not  not     not       Clr     Old  llDOS on llLINUX
+ 42.17494403/30/1999 17:49:15  00:03:01 172.16.114.50 208.240.124.83 processtable out      auto    rem     succ     aDmp   oDmp       not  not     not       Clr     Old  llDOS 
+ 42.21041003/30/1999 21:04:10  00:15:07 172.16.112.100 209.1.12.46 crashiis   out      auto    rem     succ     aDmp   oDmp       not  SysLg   not       Clr     Old  llDOS 
