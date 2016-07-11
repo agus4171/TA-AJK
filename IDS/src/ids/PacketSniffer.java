@@ -79,9 +79,9 @@ public class PacketSniffer implements Runnable {
                                 packetBody.put(tuples, bp); 
                                 packetTime.put(tuples, timeFormat);
                             } 
-//                            count++;
+                            count++;
                         }
-                        count++;
+//                        count++;
                     }
                     
                     else if(packet instanceof UDPPacket && packet.data.length != 0){
@@ -102,9 +102,9 @@ public class PacketSniffer implements Runnable {
                                 packetBody.put(tuples, bp); 
                                 packetTime.put(tuples, timeFormat);
                             } 
-//                            count++;
+                            count++;
                         }       
-                        count++;
+//                        count++;
                     }                    
                 }     
             }

@@ -138,7 +138,8 @@ public class PacketReader implements Runnable {
                     }
                 }                
             }            
-        }  
+        }
+        counter = 0;
         
         for (Map.Entry<String, BodyPacket> entry : packetBody.entrySet()) {
             String key = entry.getKey();
