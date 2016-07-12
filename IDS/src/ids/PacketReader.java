@@ -39,6 +39,7 @@ public class PacketReader implements Runnable {
     private ArrayList<DataPacket> dataTest;
     private Map<String, BodyPacket> packetBody = new HashMap<>();
     private Map<String, String> packetTime = new HashMap<>();
+    private Map<String, String> dataPort;
     Ngram ng = new Ngram();
     BodyPacket bp;
     
@@ -46,13 +47,14 @@ public class PacketReader implements Runnable {
         
     }
     
-    public PacketReader(int files, JpcapCaptor captor, int input, ArrayList<DataPacket> datasetTcp, ArrayList<DataPacket> datasetUdp, ArrayList<DataPacket> dataTest, int type, int windowSize){
+    public PacketReader(int files, JpcapCaptor captor, int input, ArrayList<DataPacket> datasetTcp, ArrayList<DataPacket> datasetUdp, ArrayList<DataPacket> dataTest, Map<String, String> dataPort, int type, int windowSize){
         this.files = files;
         this.captor = captor;        
         this.input = input;
         this.datasetTcp = datasetTcp;
         this.datasetUdp = datasetUdp;
         this.dataTest = dataTest;
+        this.dataPort = dataPort;
         this.type = type;
         this.windowSize = windowSize;
     }
@@ -67,8 +69,7 @@ public class PacketReader implements Runnable {
 
                 if (packet instanceof TCPPacket && packet.data.length != 0){
                     tcp = (TCPPacket) packet;
-                    if (tcp.dst_port < 1024) {
-//                        System.out.println("TCP "+tcp + new String(tcp.data, StandardCharsets.US_ASCII));
+                    if (dataPort.containsKey(tcp.dst_port)) {
 //                        if (tcp.dst_port == 80) {
 //                            System.out.println(tcp+new String(tcp.data, StandardCharsets.US_ASCII));
 //                        }
@@ -90,7 +91,6 @@ public class PacketReader implements Runnable {
 //                        } 
 //                        else {
                         if (input == 3) {
-//                            if (countPacket == windowSize) break;
                             time = new String(tcp.toString()).split(":");
                             date = new Date(Long.parseLong(time[0])*1000L);
                             format = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss");
@@ -114,10 +114,8 @@ public class PacketReader implements Runnable {
 
                 else if(packet instanceof UDPPacket && packet.data.length != 0){
                     udp = (UDPPacket) packet; 
-                    if (udp.dst_port < 1024) {
-//                        System.out.println("UDP "+udp + new String(udp.data, StandardCharsets.US_ASCII));
+                    if (dataPort.containsKey(udp.dst_port)) {
                         if (input == 3) {
-//                            if (countPacket == windowSize) break;
                             time = new String(udp.toString()).split(":");
                             date = new Date(Long.parseLong(time[0])*1000L);
                             format = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss");
@@ -139,30 +137,18 @@ public class PacketReader implements Runnable {
                 }                
             }            
         }
-        counter = 0;
         
         for (Map.Entry<String, BodyPacket> entry : packetBody.entrySet()) {
             String key = entry.getKey();
             header = key.split("-", 0);
             BodyPacket value = entry.getValue();
             numChars = ng.Ngram(value.getBytes());
-//            System.out.println("Panjang konten paket data: "+value.getBytes().length);
-//            System.out.println(header[1]+" "+header[2]+":"+header[3]+"-"+header[4]+":"+header[5]+Arrays.toString(numChars));
-//            double sum = 0;
-//            for (double numChar : numChars) {
-//                sum += numChar;
-//            }
-//            System.out.println("Jumlah karakter :"+sum);
             if (header[0].equals("1") && header[1].equals("TCP")) {
-//                System.out.println(header[1]+" "+header[2]+":"+header[3]+"-"+header[4]+":"+header[5]+new String(value.getBytes(), StandardCharsets.US_ASCII));
                 datasetTcp.add(new DataPacket(startTime, header[1], header[2], Integer.parseInt(header[3]), header[4], Integer.parseInt(header[5]), null, numChars, type));
             } 
-
             else if (header[0].equals("1") && header[1].equals("UDP")) {
-//                System.out.println(header[1]+" "+header[2]+":"+header[3]+"-"+header[4]+":"+header[5]+new String(value.getBytes(), StandardCharsets.US_ASCII));
                 datasetUdp.add(new DataPacket(startTime, header[1], header[2], Integer.parseInt(header[3]), header[4], Integer.parseInt(header[5]), null, numChars, type));
             }
-
             else {
                 startTime = packetTime.get(header[1]+"-"+header[2]+"-"+header[3]+"-"+header[4]+"-"+header[5]);
                 dataTest.add(new DataPacket(startTime, header[1], header[2], Integer.parseInt(header[3]), header[4], Integer.parseInt(header[5]), value.getBytes(), numChars, type));

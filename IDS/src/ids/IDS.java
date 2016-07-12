@@ -62,17 +62,32 @@ public class IDS {
         return dataString;
     }
     
-    private Map<String, String> getTruth(String data) throws FileNotFoundException, IOException{
+    private Map<String, String> getDataString(String data) throws FileNotFoundException, IOException{
         BufferedReader br = new BufferedReader(new FileReader(data));
-        Map<String, String> dataTruth = new HashMap<>();
+        Map<String, String> dataString = new HashMap<>();
         String line;
-        String[] ip;
+        String[] str;
         while ((line = br.readLine()) != null) {
-            ip = line.split(" ");
-            dataTruth.put(ip[5], ip[6]);
+            str = line.split(" ");
+            if (data.equals("port")) {
+                dataString.put(str[0], str[1]);
+            } else
+                dataString.put(str[5], str[6]);
         }
-        return dataTruth;
+        return dataString;
     }
+    
+//    private Map<Integer, String> getPort(String data) throws FileNotFoundException, IOException{
+//        BufferedReader br = new BufferedReader(new FileReader(data));
+//        Map<Integer, String> dataPort = new HashMap<>();
+//        String line;
+//        String[] port;
+//        while ((line = br.readLine()) != null) {
+//            port = line.split(" ");
+//            dataPort.put(Integer.parseInt(port[0]), port[1]);
+//        }
+//        return dataPort;
+//    }
     
     private double[] getThreshold() throws FileNotFoundException, IOException{
         BufferedReader br = new BufferedReader(new FileReader("conf"));
@@ -118,30 +133,22 @@ public class IDS {
                 if (dataTcp.getDstPort() == port) {
                     int numNew = dataTcp.getTotalModel();
                     double[] sumNew = dataTcp.getSumData();
-//                    System.out.println("old sum "+Arrays.toString(sumNew));
                     for (int i = 0; i < sumNew.length; i++) {
                         sumNew[i] = sumNew[i]+ngram[i];
                     }                    
-//                    System.out.println("new sum "+Arrays.toString(sumNew));
                     double[] quadraticNew = dataTcp.getQuadraticData();
-//                    System.out.println("old kuadrat "+Arrays.toString(quadraticNew));
                     for (int i = 0; i < quadraticNew.length; i++) {
                         quadraticNew[i] = quadraticNew[i]+Math.pow(ngram[i], 2);
                     }
-//                    System.out.println("new kuadrat "+Arrays.toString(quadraticNew));
                     double[] meanNew = dataTcp.getMeanData();
-//                    System.out.println("old mean "+Arrays.toString(meanNew));
                     for (int i = 0; i < meanNew.length; i++) {
                         meanNew[i] = (meanNew[i]*numNew+ngram[i])/(numNew+1);
                     }
-//                    System.out.println("new mean"+Arrays.toString(meanNew));
                     numNew = numNew + 1;
                     double[] deviasiNew = dataTcp.getDeviasiData();
-//                    System.out.println("old deviasi"+Arrays.toString(deviasiNew));
                     for (int i = 0; i < deviasiNew.length; i++) {
                         deviasiNew[i] = Math.sqrt((numNew*quadraticNew[i]-Math.pow(sumNew[i], 2))/(numNew*(numNew-1)));
                     }
-//                    System.out.println("new deviasi"+Arrays.toString(deviasiNew));
                     dataTcp.setSumData(sumNew);
                     dataTcp.setDeviasiData(deviasiNew);
                     dataTcp.setMeanData(meanNew);
@@ -196,8 +203,7 @@ public class IDS {
         List<File> fileData;
         ArrayList<Double> attackPacket, freePacket;
         ArrayList<Double[]> dataTraining;
-        Map<Integer, Integer> portTrainingTcp, portTrainingUdp;
-        Map<String, String> dataTruth;
+        Map<String, String> dataTruth, dataPort;
         Mahalanobis mahalanobis;
         IDS ids;
         PacketReader pr;
@@ -229,6 +235,8 @@ public class IDS {
                     ids = new IDS();
                     dirPath = ids.getData("Data Training ");
                     packetType = Integer.parseInt(ids.getData("Packet Type "));
+                    dataPort = new HashMap<>();
+                    dataPort = ids.getDataString("port");
                     threadFile = new ArrayList<>();
                     fileData = new ArrayList<>();
                     System.out.println("Dataset directory : "+dirPath);
@@ -249,7 +257,7 @@ public class IDS {
 //                            threadFile.clear();
 //                        } 
                         JpcapCaptor captor = JpcapCaptor.openFile(fileDataset.toString());
-                        pr = new PacketReader(countFile, captor, input, datasetTcp, datasetUdp, dataTest, packetType, 0);
+                        pr = new PacketReader(countFile, captor, input, datasetTcp, datasetUdp, dataTest, dataPort, packetType, 0);
                         Thread threadFiles = new Thread(pr);
                         threadFiles.start();
                         System.out.println("Processing dataset ke-"+countFile+" "+fileDataset.toString());
@@ -280,59 +288,22 @@ public class IDS {
                     System.out.println("Create Model Data Training...");
                     fwRunning.append("Create Model Data Training...\n");
                     start = System.currentTimeMillis();
-                    if (!datasetTcp.isEmpty()) {
-                        portTrainingTcp = new HashMap<>();
-                        for (DataPacket dpTcp : datasetTcp) {
-                            portPacket = dpTcp.getDstPort();
-                            if (portTrainingTcp.containsKey(portPacket)) continue;
-                            portTrainingTcp.put(portPacket, portPacket);                            
-                        }                        
-
-                        threadTraining = new ArrayList<>();
-                        for (Map.Entry<Integer, Integer> entry : portTrainingTcp.entrySet()) {
-                            Integer port = entry.getKey();
-                            dt = new DataTraining("TCP", datasetTcp, datasetUdp, modelTcp, modelUdp, port);
-                            Thread threadDt = new Thread(dt);
-                            threadDt.start();
-                            try {
-                                threadDt.join();
-                            } catch (InterruptedException ex) {
-                                Logger.getLogger(IDS.class.getName()).log(Level.SEVERE, null, ex);
-                            }
-                        }                                           
-                    }  
-                    
-                    if (!datasetUdp.isEmpty()) {
-                        portTrainingUdp = new HashMap<>();
-                        for (DataPacket dpUdp : datasetUdp) {
-                            portPacket = dpUdp.getDstPort();
-                            if (portTrainingUdp.containsKey(portPacket)) continue;
-                            portTrainingUdp.put(portPacket, portPacket);                            
-                        }
-                        
-                        threadTraining = new ArrayList<>();
-                        for (Map.Entry<Integer, Integer> entry : portTrainingUdp.entrySet()) {
-                            Integer port = entry.getKey();
-                            dt = new DataTraining("UDP", datasetTcp, datasetUdp, modelTcp, modelUdp, port);
-                            Thread threadDt = new Thread(dt);
-                            threadDt.start();
-                            try {
-                                threadDt.join();
-                            } catch (InterruptedException ex) {
-                                Logger.getLogger(IDS.class.getName()).log(Level.SEVERE, null, ex);
-                            }
-                        }
+                    threadTraining = new ArrayList<>();
+                    for (Map.Entry<String, String> entry : dataPort.entrySet()) {
+                        Integer port = Integer.parseInt(entry.getKey().substring(3));
+                        String proto = entry.getValue();
+                        dt = new DataTraining(proto, datasetTcp, datasetUdp, modelTcp, modelUdp, port);
+                        Thread threadDt = new Thread(dt);
+                        threadDt.start();
+                        threadTraining.add(threadDt);
                     }
-                    
-//                    for (DataModel modelTcp : modelTcp) {
-//                        System.out.println(modelTcp.getDstPort());
-//                        System.out.println(modelTcp.getTotalModel());
-//                        System.out.println(Arrays.toString(modelTcp.getSumData()));
-//                        System.out.println(Arrays.toString(modelTcp.getMeanData()));
-//                        System.out.println(Arrays.toString(modelTcp.getDeviasiData()));
-//                        System.out.println(Arrays.toString(modelTcp.getQuadraticData()));
-//                    }
-                    
+                    for (Thread thDt : threadTraining) {
+                        try {
+                            thDt.join();
+                        } catch (InterruptedException ex) {
+                            Logger.getLogger(IDS.class.getName()).log(Level.SEVERE, null, ex);
+                        }
+                    }                    
                     end = System.currentTimeMillis();
                     System.out.println("Total time of training dataset : "+(end-start)/3600000+" hour "+((end-start)%3600000)/60000+" minutes "+(((end-start)%3600000)%60000)/1000+" seconds");
                     fwRunning.append("Total time of training dataset : "+(end-start)/3600000+" hour "+((end-start)%3600000)/60000+" minutes "+(((end-start)%3600000)%60000)/1000+" seconds\n");
@@ -348,29 +319,24 @@ public class IDS {
                         fwRunning.append("+++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++\n");
                         fwRunning.append("Start time : "+new String(new SimpleDateFormat("yyyy-MMMM-dd HH:mm:ss a").format(Calendar.getInstance().getTime()))+"\n");
                         fwRunning.append("Sniffer Testing...\n");
-//                        ids = new IDS();
-//                        time = ids.getDateTime();
-//                        windowSize = ids.getWindowSize();
-                        NetworkInterface[] device = JpcapCaptor.getDeviceList();
-                        
+                        ids = new IDS();
+                        dataPort = new HashMap<>();
+                        dataPort = ids.getDataString("port");
+                        NetworkInterface[] device = JpcapCaptor.getDeviceList();                        
                         for (int i = 0; i < device.length; i++) {
                             System.out.println(i+": "+device[i].name + "(" + device[i].description+")");
-
                             //print out its datalink name and description
                             System.out.println("   Datalink: "+device[i].datalink_name + "(" + device[i].datalink_description+")");
-
                             //print out its MAC address
                             System.out.print("   MAC address: ");
                             for (byte b : device[i].mac_address)
                                 System.out.print(Integer.toHexString(b&0xff) + ":");
                             System.out.println();
-
                             //print out its IP address, subnet mask and broadcast address
                             for (NetworkInterfaceAddress a : device[i].addresses)
                                 System.out.println("   Address: "+a.address + " " + a.subnet + " "+ a.broadcast);
                             System.out.println("\n");
                         }
-//                        System.out.println("Window Size : "+windowSize);
                         System.out.println("Choose active network interface...(0,1,2)!");
                         sc = new Scanner(System.in);
                         input = sc.nextInt();
@@ -379,7 +345,6 @@ public class IDS {
                         snifferStatus = true;
                         while (snifferStatus) {                            
                             System.out.println("Start Sniffing...");
-                            ids = new IDS();
                             time = ids.getDateTime();
                             windowSize = Integer.parseInt(ids.getData("Window Size "));
                             thresholdAll = ids.getData("Threshold "); 
@@ -404,7 +369,7 @@ public class IDS {
                             attackPacket = new ArrayList<>();
                             System.out.println("Window Size : "+windowSize);
                             fwRunning.append("Window Size : "+windowSize+"\n");
-                            PacketSniffer ps = new PacketSniffer(device[input], input, dataTest, windowSize);
+                            PacketSniffer ps = new PacketSniffer(device[input], input, dataTest, dataPort, windowSize);
                             Thread threadPs = new Thread(ps);
                             threadPs.start();
                             try {
@@ -432,7 +397,6 @@ public class IDS {
                             System.out.println("Calculating Mahalanobis Distance...");
 
                             start = System.currentTimeMillis();
-
                             for (DataPacket dataPacketTes : dataTest) {     
 
                                 if ("TCP".equals(dataPacketTes.getProtokol())) {
@@ -489,8 +453,6 @@ public class IDS {
                             System.out.println("Total free packet: "+freePacket.size()); 
                             fwRunning.append("Total free packet: "+freePacket.size()+"\n");
                             dataTest.clear();
-                            attackPacket.clear();
-                            freePacket.clear();
                             snifferStatus = Integer.parseInt(ids.getData("Sniffer Status ")) != 0;
                             if (!snifferStatus) {
                                 fwRunning.append("++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++\n");
@@ -511,6 +473,8 @@ public class IDS {
                         time = ids.getDateTime();
                         thresholdAll = ids.getData("Threshold "); 
                         portTh = ids.getThreshold();
+                        dataPort = new HashMap<>();
+                        dataPort = ids.getDataString("port");
                         windowSize = Integer.parseInt(ids.getData("Window Size "));
                         portTest = Integer.parseInt(ids.getData("Port "));
                         sFactor = Double.parseDouble(ids.getData("Smoothing Factor "));
@@ -541,9 +505,9 @@ public class IDS {
                             freePacket = new ArrayList<>();
                             attackPacket = new ArrayList<>();
                             dataTruth = new HashMap<>();
-                            dataTruth = ids.getTruth("doc/"+fileName[fileName.length-2]);
+                            dataTruth = ids.getDataString("doc/"+fileName[fileName.length-2]);
                             JpcapCaptor captor = JpcapCaptor.openFile(fileDataTesting.toString());                        
-                            pr = new PacketReader(countFile, captor, input, datasetTcp, datasetUdp, dataTest, packetType, windowSize);
+                            pr = new PacketReader(countFile, captor, input, datasetTcp, datasetUdp, dataTest, dataPort, packetType, windowSize);
                             Thread threadTest = new Thread(pr);
                             threadTest.start();
                             System.out.println("Processing data testing ke-"+countFile+" "+fileDataTesting.toString());
@@ -574,10 +538,9 @@ public class IDS {
                             fwRunning.append("Smoothing Factor : "+sFactor+"\n");
                             System.out.println("Calculating Mahalanobis Distance...");
 
-                            start = System.currentTimeMillis();                         
-
+                            start = System.currentTimeMillis();
                             for (DataPacket dataPacketTes : dataTest) {     
-                                if ("TCP".equals(dataPacketTes.getProtokol())) {
+                                if ("TCP".equals(dataPacketTes.getProtokol()) && dataPacketTes.getDstPort() == portTest) {
                                     for (DataModel dataTcp : modelTcp) {
                                         if (dataTcp.getDstPort() == dataPacketTes.getDstPort()) {
                                             mahalanobis = new Mahalanobis();
@@ -616,7 +579,7 @@ public class IDS {
                                     }
                                 }
 
-                                else if ("UDP".equals(dataPacketTes.getProtokol())) {
+                                else if ("UDP".equals(dataPacketTes.getProtokol()) && dataPacketTes.getDstPort() == portTest) {
                                     for (DataModel dataUdp : modelUdp) {
                                         if (dataUdp.getDstPort() == dataPacketTes.getDstPort()) {
                                             mahalanobis = new Mahalanobis();
@@ -655,14 +618,14 @@ public class IDS {
                                 }
                             }
                             if (!attackPacket.isEmpty()) {
-                                System.out.println("Max "+portTest+" : "+Collections.max(attackPacket));
-                                System.out.println("Min "+portTest+" : "+Collections.min(attackPacket));
+                                System.out.println("Max attack "+portTest+" : "+Collections.max(attackPacket));
+                                System.out.println("Min attack "+portTest+" : "+Collections.min(attackPacket));
                                 fwLog.append("Max "+portTest+" : "+Collections.max(attackPacket)+"\n");
                                 fwLog.append("Min "+portTest+" : "+Collections.min(attackPacket)+"\n");
                             }
                             if (!freePacket.isEmpty()) {
-                                System.out.println("Max "+portTest+" : "+Collections.max(freePacket));
-                                System.out.println("Min "+portTest+" : "+Collections.min(freePacket));
+                                System.out.println("Max free "+portTest+" : "+Collections.max(freePacket));
+                                System.out.println("Min free "+portTest+" : "+Collections.min(freePacket));
                                 fwLog.append("Max "+portTest+" : "+Collections.max(freePacket)+"\n");
                                 fwLog.append("Min "+portTest+" : "+Collections.min(freePacket)+"\n");
                             }
@@ -676,8 +639,6 @@ public class IDS {
                             System.out.println("Total free packet: "+freePacket.size()); 
                             fwRunning.append("Total free packet: "+freePacket.size()+"\n");
                             dataTest.clear();
-                            attackPacket.clear();
-                            freePacket.clear();
                         }
                         countFile = 1;
                         fwRunning.append("++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++\n");

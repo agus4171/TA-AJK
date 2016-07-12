@@ -1,21 +1,5 @@
-PORT TCP
-tcp80
-tcp113
-tcp515
-tcp21
-tcp22
-tcp23
-tcp25
-tcp139
-tcp110
-tcp1022
-tcp79
-tcp1023
-
-PORT UDP
-udp161
-udp514
-udp53
-udp137
-udp138
-udp123
+TCP80 TCP
+TCP21 TCP
+TCP23 TCP
+TCP25 TCP
+UDP53 UDP
