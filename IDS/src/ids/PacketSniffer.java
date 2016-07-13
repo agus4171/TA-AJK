@@ -64,7 +64,7 @@ public class PacketSniffer implements Runnable {
                     
                     if (packet instanceof TCPPacket && packet.data.length != 0){
                         tcp = (TCPPacket) packet;
-                        if (dataPort.containsKey(tcp.dst_port)) {
+                        if (dataPort.containsKey("TCP"+tcp.dst_port)) {
                             System.out.println("TCP "+tcp + new String(tcp.data, StandardCharsets.US_ASCII));
                             time = new String(tcp.toString()).split(":");
                             date = new Date(Long.parseLong(time[0])*1000L);
@@ -88,7 +88,7 @@ public class PacketSniffer implements Runnable {
                     
                     else if(packet instanceof UDPPacket && packet.data.length != 0){
                         udp = (UDPPacket) packet;
-                        if (dataPort.containsKey(udp.dst_port)) {
+                        if (dataPort.containsKey("UDP"+udp.dst_port)) {
                             System.out.println("UDP "+udp + new String(udp.data, StandardCharsets.US_ASCII));
                             time = new String(udp.toString()).split(":");
                             date = new Date(Long.parseLong(time[0])*1000L);

@@ -69,7 +69,7 @@ public class PacketReader implements Runnable {
 
                 if (packet instanceof TCPPacket && packet.data.length != 0){
                     tcp = (TCPPacket) packet;
-                    if (dataPort.containsKey(tcp.dst_port)) {
+                    if (dataPort.containsKey("TCP"+tcp.dst_port)) {
 //                        if (tcp.dst_port == 80) {
 //                            System.out.println(tcp+new String(tcp.data, StandardCharsets.US_ASCII));
 //                        }
@@ -114,7 +114,7 @@ public class PacketReader implements Runnable {
 
                 else if(packet instanceof UDPPacket && packet.data.length != 0){
                     udp = (UDPPacket) packet; 
-                    if (dataPort.containsKey(udp.dst_port)) {
+                    if (dataPort.containsKey("UDP"+udp.dst_port)) {
                         if (input == 3) {
                             time = new String(udp.toString()).split(":");
                             date = new Date(Long.parseLong(time[0])*1000L);
