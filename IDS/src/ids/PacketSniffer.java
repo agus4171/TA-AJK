@@ -27,7 +27,7 @@ import jpcap.packet.UDPPacket;
  * @author agus
  */
 public class PacketSniffer implements Runnable {
-    private int input, counter, count = 1;
+    private int input, counter, count;
     private double[] numChars, temp;
     private String tuples, timeFormat, startTime;
     private String[] header, time;

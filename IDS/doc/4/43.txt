@@ -1,0 +1,303 @@
+Summarized attack: 43.080401
+ IDnum    Date       StartTime Duration Destination    Attackname insider? manual? console?success? aDump? oDump iDumpBSM? SysLogs FSListing StealthyNew? Category OS
+ 43.08040103/31/1999 08:04:14  00:00:03 172.016.114.050satan      out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llPROBE 
+ 43.08040103/31/1999 08:04:14  00:00:01 209.030.070.014satan      out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llPROBE 
+ 43.08040103/31/1999 08:04:18  00:00:09 172.016.114.050satan      out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llPROBE >llLINUX
+ 43.08040103/31/1999 08:04:25  00:00:02 209.030.070.014satan      out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llPROBE 
+
+Summarized attack: 43.084000
+ IDnum    Date       StartTime Duration Destination    Attackname   insider? manual? console?success? aDump? oDump iDumpBSM? SysLogs FSListing StealthyNew? Category OS
+ 43.08400003/31/1999 09:26:12  00:00:04 172.016.112.100netcat_setup out      man     rem     succ     aDmp   oDmp  iDmp not  SysLg   FSLst     Clr     New  llR2L 
+ 43.08400003/31/1999 09:26:12  00:00:03 207.230.054.203netcat_setup out      man     rem     succ     aDmp   oDmp  iDmp not  SysLg   FSLst     Clr     New  llR2L 
+
+Summarized attack: 43.093814
+ IDnum    Date       StartTime Duration Destination    Attackname insider? manual? console?success? aDump? oDump iDumpBSM? SysLogs FSListing StealthyNew? Category OS
+ 43.09381403/31/1999 09:38:13  00:00:53 172.016.114.050imap       out      auto    rem     succ     aDmp   oDmp  iDmp not  not     FSLst     Clr     Old  llR2L o tllLINUX
+
+Summarized attack: 43.100000
+ IDnum    Date       StartTime Duration Destination    Attackname insider? manual? console?success? aDump? oDump iDumpBSM? SysLogs FSListing StealthyNew? Category 
+ 43.10000003/31/1999 10:14:36  00:00:04 172.016.112.100ppmacro    out      man     rem     succ     aDmp   oDmp  iDmp not  SysLg   FSLst     Clr     New  llDATA-llR2L- llNT
+ 43.10000003/31/1999 10:14:36  00:00:03 194.027.251.021ppmacro    out      man     rem     succ     aDmp   oDmp  iDmp not  SysLg   FSLst     Clr     New  llDATA-llR2L- llNT
+ 43.10000003/31/1999 10:23:37  00:00:01 172.016.112.100ppmacro    out      man     rem     succ     aDmp   oDmp  iDmp not  SysLg   FSLst     Clr     New  llDATA-llR2L- llNT
+ 43.10000003/31/1999 10:24:03  00:00:01 172.016.112.100ppmacro    out      man     rem     succ     aDmp   oDmp  iDmp not  SysLg   FSLst     Clr     New  llDATA-llR2L- llNT
+ 43.10000003/31/1999 10:24:09  00:00:01 172.016.112.100ppmacro    out      man     rem     succ     aDmp   oDmp  iDmp not  SysLg   FSLst     Clr     New  llDATA-llR2L- llNT
+ 43.10000003/31/1999 10:26:10  00:00:01 172.016.112.100ppmacro    out      man     rem     succ     aDmp   oDmp  iDmp not  SysLg   FSLst     Clr     New  llDATA-llR2L- llNT
+ 43.10000003/31/1999 10:26:21  00:00:56 172.016.112.100ppmacro    out      man     rem     succ     aDmp   oDmp  iDmp not  SysLg   FSLst     Clr     New  llDATA-llR2L- llNT
+ 43.10000003/31/1999 10:27:21  00:00:16 172.016.112.100ppmacro    out      man     rem     succ     aDmp   oDmp  iDmp not  SysLg   FSLst     Clr     New  llDATA-llR2L- llNT
+
+Summarized attack: 43.101313
+ IDnum    Date       StartTime Duration Destination    Attackname   insider? manual? console?success? aDump? oDump iDumpBSM? SysLogs FSListing StealthyNew? Category OS
+ 43.10131303/31/1999 10:13:18  00:28:02 172.016.113.050processtable in       auto    rem     succ     aDmp   not   iDmp not  SysLg   not       Clr     Old  llDOS 
+
+Summarized attack: 43.103931
+ IDnum    Date       StartTime Duration Destination    Attackname insider? manual? console?success? aDump? oDump iDumpBSM? SysLogs FSListing StealthyNew? Category OS
+ 43.10393103/31/1999 10:38:00  00:03:00 172.016.112.050fdformat            man     cons    succ     not    not   not  BSM  not     not       Stlth   Old  llU2R 
+
+Summarized attack: 43.110000
+ IDnum    Date       StartTime Duration Destination    Attackname     insider? manual? console?success? aDump? oDump iDumpBSM? SysLogs FSListing StealthyNew? Category OS
+ 43.11000003/31/1999 11:11:08  00:00:32 172.016.112.100netcat_breakin out      man     rem     succ     aDmp   oDmp  iDmp not  SysLg   not       Clr     New  llR2L ÌØtllNT
+
+Summarized attack: 43.111111
+ IDnum    Date       StartTime Duration Destination    Attackname insider? manual? console?success? aDump? oDump iDumpBSM? SysLogs FSListing StealthyNew? Category OS
+ 43.11111103/31/1999 11:25:39  00:00:47 172.016.112.050warez      out      auto    rem     succ     aDmp   oDmp  iDmp BSM  SysLg   FSLst     Clr     Old  llDOS À}llSOLARIS
+ 43.11111103/31/1999 11:26:14  00:00:01 202.027.121.118warez      out      auto    rem     succ     aDmp   oDmp  iDmp BSM  SysLg   FSLst     Clr     Old  llDOS 
+
+
+Summarized attack: 43.113032
+ IDnum    Date       StartTime Duration Destination    Attackname insider? manual? console?success? aDump? oDump iDumpBSM? SysLogs FSListing StealthyNew? Category OS
+ 43.11303203/31/1999 11:30:13  00:00:15 172.016.113.050arppoision in       auto    rem     succ     aDmp   not   iDmp not  not     FSLst     Clr     New  llDOS 
+ 43.11303203/31/1999 11:30:30  00:11:04 172.016.113.050arppoision in       auto    rem     succ     aDmp   not   iDmp not  not     FSLst     Clr     New  llDOS 
+
+Summarized attack: 43.114500
+ IDnum    Date       StartTime Duration Destination    Attackname insider? manual? console?success? aDump? oDump iDumpBSM? SysLogs FSListing StealthyNew? Category OS
+ 43.11450003/31/1999 12:12:38  00:01:29 172.016.114.050ncftp      out      auto    rem     succ     aDmp   oDmp  iDmp not  SysLg   FSLst     Stlth   New  llR2L 
+ 43.11450003/31/1999 12:13:00  00:00:47 152.169.215.104ncftp      out      auto    rem     succ     aDmp   oDmp  iDmp not  SysLg   FSLst     Stlth   New  llR2L 
+
+Summarized attack: 43.122854
+ IDnum    Date       StartTime Duration Destination    Attackname insider? manual? console?success? aDump? oDump iDumpBSM? SysLogs FSListing StealthyNew? Category OS
+ 43.12285403/31/1999 12:28:15  00:08:12 172.016.112.050secret     out      auto    rem     succ     aDmp   oDmp  iDmp BSM  not     FSLst     Clr     New  llDATA 
+ 43.12285403/31/1999 12:31:09  00:00:11 196.037.075.158secret     out      auto    rem     succ     aDmp   oDmp  iDmp BSM  not     FSLst     Clr     New  llDATA 
+
+Summarized attack: 43.125900
+ IDnum    Date       StartTime Duration Destination    Attackname insider? manual? console?success? aDump? oDump iDumpBSM? SysLogs FSListing StealthyNew? Category OS
+ 43.12590003/31/1999 13:00:32  00:00:01 172.016.112.020named      out      man     rem     succ     aDmp   oDmp  iDmp not  SysLg   not       Clr     Old  llR2L |
+ 43.12590003/31/1999 13:00:32  00:05:10 194.007.248.153named      out      man     rem     succ     aDmp   oDmp  iDmp not  SysLg   not       Clr     Old  llR2L 
+
+Summarized attack: 43.134223
+ IDnum    Date       StartTime Duration Destination    Attackname insider? manual? console?success? aDump? oDump iDumpBSM? SysLogs FSListing StealthyNew? Category OS
+ 43.13422303/31/1999 13:42:16  00:01:56 172.016.113.050guessftp   out      auto    rem     succ     aDmp   oDmp  iDmp not  SysLg   not       Clr     Old  llR2L f ollSUNOS
+
+Summarized attack: 43.144547
+ IDnum    Date       StartTime Duration Destination    Attackname insider? manual? console?success? aDump? oDump iDumpBSM? SysLogs FSListing StealthyNew? Category OS
+ 43.14454703/31/1999 18:29:25  00:00:01 172.016.112.100smurf      in       auto    rem     succ     aDmp   not   iDmp not  not     not       Clr     Old  llDOS cepllNT
+
+Summarized attack: 43.155357
+ IDnum    Date       StartTime Duration Destination    Attackname insider? manual? console?success? aDump? oDump iDumpBSM? SysLogs FSListing StealthyNew? Category OS
+ 43.15535703/31/1999 15:53:15  00:00:05 172.016.112.050guest      out      auto    rem     succ     aDmp   oDmp  iDmp BSM  SysLg   not       Clr     Old  llR2L ¸CllSOLARIS
+ 43.15535703/31/1999 15:53:21  00:00:05 172.016.112.050guest      out      auto    rem     succ     aDmp   oDmp  iDmp BSM  SysLg   not       Clr     Old  llR2L 
+ 43.15535703/31/1999 15:53:27  00:00:05 172.016.112.050guest      out      auto    rem     succ     aDmp   oDmp  iDmp BSM  SysLg   not       Clr     Old  llR2L Ú
+ 43.15535703/31/1999 15:53:33  00:00:05 172.016.112.050guest      out      auto    rem     succ     aDmp   oDmp  iDmp BSM  SysLg   not       Clr     Old  llR2L 
+ 43.15535703/31/1999 15:53:39  00:00:05 172.016.112.050guest      out      auto    rem     succ     aDmp   oDmp  iDmp BSM  SysLg   not       Clr     Old  llR2L 
+
+ 43.15535703/31/1999 15:53:45  00:00:05 172.016.112.050guest      out      auto    rem     succ     aDmp   oDmp  iDmp BSM  SysLg   not       Clr     Old  llR2L ÿÿÿllSOLARIS
+ 43.15535703/31/1999 15:53:51  00:02:07 172.016.112.050guest      out      auto    rem     succ     aDmp   oDmp  iDmp BSM  SysLg   not       Clr     Old  llR2L 4.{llSOLARIS
+
+Summarized attack: 43.164334
+ IDnum    Date       StartTime Duration Destination    Attackname insider? manual? console?success? aDump? oDump iDumpBSM? SysLogs FSListing StealthyNew? Category OS
+ 43.16433403/31/1999 16:43:15  00:00:01 172.016.112.100portsweep  out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Stlth   Old  llPROBE yllNT
+ 43.16433403/31/1999 16:45:11  00:00:01 172.016.112.100portsweep  out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Stlth   Old  llPROBE lllNT
+ 43.16433403/31/1999 16:47:08  00:00:01 172.016.112.100portsweep  out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Stlth   Old  llPROBE lllNT
+
+Summarized attack: 43.165422
+ IDnum    Date       StartTime Duration Destination    Attackname insider? manual? console?success? aDump? oDump iDumpBSM? SysLogs FSListing StealthyNew? Category OS
+ 43.16542203/31/1999 16:54:17  00:03:01 172.016.112.050mailbomb   out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llDOS ¶
+
+Summarized attack: 43.175811
+ IDnum    Date       StartTime Duration Destination    Attackname  insider? manual? console?success? aDump? oDump iDumpBSM? SysLogs FSListing StealthyNew? Category OS
+ 43.17581103/31/1999 17:58:17  00:01:19 172.016.112.050guesstelnet out      auto    rem     succ     aDmp   oDmp  iDmp BSM  SysLg   not       Clr     Old  llR2L E
+ 43.17581103/31/1999 17:59:37  00:02:28 172.016.112.050guesstelnet out      auto    rem     succ     aDmp   oDmp  iDmp BSM  SysLg   not       Clr     Old  llR2L 
+
+Summarized attack: 43.191217
+ IDnum    Date       StartTime Duration Destination    Attackname insider? manual? console?success? aDump? oDump iDumpBSM? SysLogs FSListing StealthyNew? Category OS
+ 43.19121703/31/1999 19:12:16  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:12:21  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:12:26  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:12:31  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:12:36  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:12:41  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:12:46  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:12:51  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:12:56  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:13:01  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:13:06  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:13:12  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:13:17  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:13:22  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:13:27  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:13:32  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:13:37  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:13:42  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:13:47  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:13:52  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:13:57  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:14:02  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:14:07  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:14:12  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:14:17  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:14:23  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:14:28  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:14:33  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:14:38  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:14:43  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:14:48  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:14:53  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:14:58  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:15:03  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:15:08  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:15:13  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:15:18  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:15:23  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:15:29  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:15:34  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:15:39  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:15:44  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:15:49  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:15:54  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:15:59  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:16:04  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:16:09  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:16:14  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:16:19  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:16:24  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:16:30  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:16:35  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:16:40  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:16:45  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:16:50  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:16:55  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:17:00  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:17:05  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:17:10  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:17:15  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:17:20  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:17:25  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:17:30  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:17:36  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:17:41  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:17:46  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:17:51  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:17:56  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:18:01  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:18:06  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:18:11  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:18:16  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:18:21  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:18:26  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:18:31  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:18:36  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:18:42  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:18:47  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:18:52  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:18:57  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:19:02  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:19:07  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:19:12  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:19:17  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:19:22  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:19:27  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:19:32  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:19:37  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:19:43  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:19:48  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:19:53  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:19:58  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:20:03  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:20:08  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:20:13  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:20:18  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:20:23  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:20:28  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:20:33  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:20:38  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:20:43  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:20:49  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:20:54  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:20:59  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:21:04  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:21:09  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:21:14  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:21:19  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:21:24  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:21:29  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:21:34  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:21:39  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:21:44  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:21:49  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:21:55  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:22:00  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:22:05  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:22:10  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:22:15  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:22:20  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:22:25  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:22:30  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:22:35  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:22:40  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:22:45  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:22:50  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:22:55  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:23:01  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:23:06  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:23:11  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:23:16  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:23:21  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:23:26  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:23:31  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:23:36  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:23:41  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:23:46  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:23:51  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:23:56  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:24:02  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:24:07  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:24:12  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:24:17  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:24:22  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:24:27  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:24:32  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:24:37  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:24:42  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:24:47  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:24:52  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:24:58  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:25:03  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:25:08  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:25:13  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:25:18  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:25:23  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:25:28  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:25:33  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:25:39  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:25:44  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:25:49  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:25:54  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:25:59  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:26:04  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:26:09  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:26:14  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:26:19  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:26:24  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:26:29  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:26:34  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:26:39  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:26:45  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:26:50  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:26:55  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:27:00  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:27:05  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:27:10  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:27:15  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:27:20  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:27:25  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:27:30  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:27:35  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:27:40  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:27:45  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:27:51  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:27:56  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:28:01  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:28:06  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:28:11  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:28:16  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:28:21  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:28:26  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:28:31  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:28:36  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:28:41  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:28:46  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:28:51  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:28:57  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:29:02  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:29:07  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+ 43.19121703/31/1999 19:29:12  00:00:01 172.016.000.001snmpget    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+

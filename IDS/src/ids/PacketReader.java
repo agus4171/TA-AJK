@@ -24,8 +24,8 @@ import jpcap.packet.UDPPacket;
  * @author agus
  */
 public class PacketReader implements Runnable {
-    private static int countPacket = 1;
-    private int input, files, type, counter = 1, windowSize;
+    private static int countPacket;
+    private int input, files, type, counter, windowSize;
     private double[] numChars;
     private String tuples, timeFormat, startTime, regex = "\\r?\\n";
     private String[] header, time;

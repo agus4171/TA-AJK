@@ -1,0 +1,185 @@
+Summarized attack: 55.080105
+ IDnum    Date       StartTime Duration Destination    Attackname insider? manual? console?success? aDump? oDump iDumpBSM? SysLogs FSListing StealthyNew? Category OS
+ 55.08010504/09/1999 08:01:28  00:00:01 206.048.044.050portsweep  in       auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llPROBE ÁllSUNOS
+ 55.08010504/09/1999 08:01:39  00:00:01 206.048.044.050portsweep  in       auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llPROBE 
+ 55.08010504/09/1999 08:01:56  00:00:01 206.048.044.050portsweep  in       auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llPROBE 
+
+Summarized attack: 55.080500
+ IDnum    Date       StartTime Duration Destination    Attackname insider? manual? console?success? aDump? oDump iDumpBSM? SysLogs FSListing StealthyNew? Category OS
+ 55.08050004/09/1999 08:08:37  00:01:19 172.016.113.050xsnoop     out      man     rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llR2L 
+
+
+Summarized attack: 55.081418
+ IDnum    Date       StartTime Duration Destination    Attackname insider? manual? console?success? aDump? oDump iDumpBSM? SysLogs FSListing StealthyNew? Category OS
+ 55.08141804/09/1999 08:14:17  00:15:45 172.016.112.100crashiis   in       auto    rem     succ     aDmp   not   iDmp not  SysLg   not       Clr     Old  llDOS earllNT
+
+Summarized attack: 55.082500
+ IDnum    Date       StartTime Duration Destination  Attackname    insider? manual? console?success? aDump? oDump iDumpBSM? SysLogs FSListing StealthyNew? Category OS
+ 55.08250004/09/1999 08:26:21  00:17:53 172.016.112.*insidesniffer in       man     rem     succ     aDmp   not   not  not  not     not       Stlth   New  llPROBE 
+ 55.08250004/09/1999 08:26:21  00:17:53 172.016.113.*insidesniffer in       man     rem     succ     aDmp   not   not  not  not     not       Stlth   New  llPROBE 
+ 55.08250004/09/1999 08:26:21  00:17:53 172.016.114.*insidesniffer in       man     rem     succ     aDmp   not   not  not  not     not       Stlth   New  llPROBE 
+ 55.08250004/09/1999 08:26:21  00:17:53 172.016.115.*insidesniffer in       man     rem     succ     aDmp   not   not  not  not     not       Stlth   New  llPROBE 
+ 55.08250004/09/1999 08:26:21  00:17:53 172.016.116.*insidesniffer in       man     rem     succ     aDmp   not   not  not  not     not       Stlth   New  llPROBE 
+ 55.08250004/09/1999 08:26:21  00:17:53 172.016.117.*insidesniffer in       man     rem     succ     aDmp   not   not  not  not     not       Stlth   New  llPROBE 
+ 55.08250004/09/1999 08:26:21  00:17:53 172.016.118.*insidesniffer in       man     rem     succ     aDmp   not   not  not  not     not       Stlth   New  llPROBE 
+
+Summarized attack: 55.084452
+ IDnum    Date       StartTime Duration Destination    Attackname insider? manual? console?success? aDump? oDump iDumpBSM? SysLogs FSListing StealthyNew? Category OS
+ 55.08445204/09/1999 08:44:16  00:01:49 172.016.114.050back       out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llDOS 
+
+Summarized attack: 55.085500
+ IDnum    Date       StartTime Duration Destination  Attackname    insider? manual? console?success? aDump? oDump iDumpBSM? SysLogs FSListing StealthyNew? Category OS
+ 55.08550004/09/1999 08:53:46  00:25:58 172.016.112.*insidesniffer in       auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     New  llPROBE 
+ 55.08550004/09/1999 08:53:46  00:25:58 172.016.113.*insidesniffer in       auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     New  llPROBE 
+ 55.08550004/09/1999 08:53:46  00:25:58 172.016.114.*insidesniffer in       auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     New  llPROBE 
+ 55.08550004/09/1999 08:53:46  00:25:58 172.016.115.*insidesniffer in       auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     New  llPROBE ÿllALL
+ 55.08550004/09/1999 08:53:46  00:25:58 172.016.116.*insidesniffer in       auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     New  llPROBE llALL
+ 55.08550004/09/1999 08:53:46  00:25:58 172.016.117.*insidesniffer in       auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     New  llPROBE 
+ 55.08550004/09/1999 08:53:46  00:25:58 172.016.118.*insidesniffer in       auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     New  llPROBE 
+
+Summarized attack: 55.085514
+ IDnum    Date       StartTime Duration Destination    Attackname insider? manual? console?success? aDump? oDump iDumpBSM? SysLogs FSListing StealthyNew? Category OS
+ 55.08551404/09/1999 08:57:31  00:00:01 172.016.112.100netcat     in       man     rem     succ     aDmp   not   iDmp not  SysLg   FSLst     Clr     New  llR2L onsllNT
+ 55.08551404/09/1999 12:03:08  00:01:44 172.016.112.100netcat     in       man     rem     succ     aDmp   not   iDmp not  SysLg   FSLst     Clr     New  llR2L 
+
+Summarized attack: 55.091529
+ IDnum    Date       StartTime Duration Destination    Attackname insider? manual? console?success? aDump? oDump iDumpBSM? SysLogs FSListing StealthyNew? Category OS
+ 55.09152904/09/1999 09:16:17  00:05:32 172.016.112.207xterm      out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llU2R iatllLINUX
+ 55.09152904/09/1999 09:18:28  00:00:39 194.027.251.021xterm      out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llU2R 
+
+Summarized attack: 55.093137
+ IDnum    Date       StartTime Duration Destination    Attackname insider? manual? console?success? aDump? oDump iDumpBSM? SysLogs FSListing StealthyNew? Category OS
+ 55.09313704/09/1999 09:31:11  00:00:01 172.016.112.050portsweep  out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Stlth   Old  llPROBE 
+ 55.09313704/09/1999 09:31:11  00:00:01 153.010.008.174portsweep  out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Stlth   Old  llPROBE 
+ 55.09313704/09/1999 09:34:31  00:00:01 172.016.112.050portsweep  out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Stlth   Old  llPROBE 
+ 55.09313704/09/1999 09:34:31  00:00:01 153.010.008.174portsweep  out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Stlth   Old  llPROBE 
+ 55.09313704/09/1999 09:37:51  00:00:01 172.016.112.050portsweep  out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Stlth   Old  llPROBE 
+ 55.09313704/09/1999 09:37:51  00:00:01 153.010.008.174portsweep  out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Stlth   Old  llPROBE 
+
+Summarized attack: 55.100600
+ IDnum    Date       StartTime Duration Destination    Attackname insider? manual? console?success? aDump? oDump iDumpBSM? SysLogs FSListing StealthyNew? Category OS
+ 55.10060004/09/1999 10:45:00  00:15:00 172.16.112.100 anypw               man     cons    succ     not    not   not  not  not     FSLst     Clr     New  llU2R ophllNT
+ 55.10060004/09/1999 10:46:16  00:02:37 172.016.112.100anypw               man     cons    succ     not    not   not  not  not     FSLst     Clr     New  llU2R  esllNT
+
+Summarized attack: 55.100830
+ IDnum    Date       StartTime Duration Destination    Attackname insider? manual? console?success? aDump? oDump iDumpBSM? SysLogs FSListing StealthyNew? Category OS
+ 55.10083004/09/1999 10:08:13  00:00:05 172.016.112.050guest      in       auto    rem     succ     aDmp   not   iDmp BSM  SysLg   not       Clr     Old  llR2L ssellSOLARIS
+ 55.10083004/09/1999 10:08:19  00:00:05 172.016.112.050guest      in       auto    rem     succ     aDmp   not   iDmp BSM  SysLg   not       Clr     Old  llR2L ry llSOLARIS
+ 55.10083004/09/1999 10:08:25  00:00:05 172.016.112.050guest      in       auto    rem     succ     aDmp   not   iDmp BSM  SysLg   not       Clr     Old  llR2L ŒQ?llSOLARIS
+ 55.10083004/09/1999 10:08:31  00:00:05 172.016.112.050guest      in       auto    rem     succ     aDmp   not   iDmp BSM  SysLg   not       Clr     Old  llR2L  thllSOLARIS
+ 55.10083004/09/1999 10:08:37  00:00:05 172.016.112.050guest      in       auto    rem     succ     aDmp   not   iDmp BSM  SysLg   not       Clr     Old  llR2L  whllSOLARIS
+ 55.10083004/09/1999 10:08:43  00:00:05 172.016.112.050guest      in       auto    rem     succ     aDmp   not   iDmp BSM  SysLg   not       Clr     Old  llR2L 
+ 55.10083004/09/1999 10:08:49  00:00:10 172.016.112.050guest      in       auto    rem     succ     aDmp   not   iDmp BSM  SysLg   not       Clr     Old  llR2L 
+ 55.10083004/09/1999 10:09:00  00:00:05 172.016.112.050guest      in       auto    rem     succ     aDmp   not   iDmp BSM  SysLg   not       Clr     Old  llR2L À}llSOLARIS
+
+Summarized attack: 55.102000
+ IDnum    Date       StartTime Duration Destination    Attackname insider? manual? console?success? aDump? oDump iDumpBSM? SysLogs FSListing StealthyNew? Category OS
+ 55.10200004/09/1999 10:20:00  00:05:00 172.016.112.100tcpreset            man     rem     succ     not    not   iDmp not  SysLg   FSLst     Clr     New  llDOS intllNT
+
+Summarized attack: 55.103001
+ IDnum    Date       StartTime Duration Destination    Attackname insider? manual? console?success? aDump? oDump iDumpBSM? SysLogs FSListing StealthyNew? Category OS
+ 55.10300104/09/1999 10:35:00  00:05:00 172.016.114.050perl                man     cons    succ     not    not   not  not  SysLg   FSLst     Clr     Old  llU2R 
+
+Summarized attack: 55.110800
+ IDnum    Date       StartTime Duration Destination    Attackname   insider? manual? console?success? aDump? oDump iDumpBSM? SysLogs FSListing StealthyNew? Category OS
+ 55.11080004/09/1999 11:10:26  00:00:05 172.016.112.100framespoofer out      man     rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     New  llR2L ionllNT
+ 55.11080004/09/1999 11:17:08  00:00:01 194.027.251.021framespoofer out      man     rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     New  llR2L <4llNT
+ 55.11080004/09/1999 11:17:14  00:00:04 194.027.251.021framespoofer out      man     rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     New  llR2L =¤llNT
+ 55.11080004/09/1999 11:17:20  00:00:15 194.027.251.021framespoofer out      man     rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     New  llR2L t tllNT
+
+Summarized attack: 55.115202
+ IDnum    Date       StartTime Duration Destination    Attackname insider? manual? console?success? aDump? oDump iDumpBSM? SysLogs FSListing StealthyNew? Category OS
+ 55.11520204/09/1999 11:52:10  00:00:01 172.016.113.050portsweep  out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Stlth   Old  llPROBE ¾llSUNOS
+ 55.11520204/09/1999 11:52:16  00:00:01 172.016.113.050portsweep  out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Stlth   Old  llPROBE 
+ 55.11520204/09/1999 11:54:02  00:00:01 172.016.113.050portsweep  out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Stlth   Old  llPROBE 
+ 55.11520204/09/1999 11:54:08  00:00:01 172.016.113.050portsweep  out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Stlth   Old  llPROBE ÇllSUNOS
+ 55.11520204/09/1999 11:55:55  00:00:01 172.016.113.050portsweep  out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Stlth   Old  llPROBE 
+ 55.11520204/09/1999 11:56:01  00:00:01 172.016.113.050portsweep  out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Stlth   Old  llPROBE 
+ 55.11520204/09/1999 11:57:47  00:00:01 172.016.113.050portsweep  out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Stlth   Old  llPROBE bllSUNOS
+ 55.11520204/09/1999 11:57:53  00:00:01 172.016.113.050portsweep  out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Stlth   Old  llPROBE 
+
+Summarized attack: 55.123412
+ IDnum    Date       StartTime Duration Destination    Attackname insider? manual? console?success? aDump? oDump iDumpBSM? SysLogs FSListing StealthyNew? Category OS
+ 55.12341204/09/1999 12:34:15  00:01:02 172.016.112.194sqlattack  out      auto    rem     succ     aDmp   oDmp  iDmp not  not     FSLst     Stlth   Old  llU2R ichllLINUX
+
+Summarized attack: 55.124400
+ IDnum    Date       StartTime Duration Destination    Attackname insider? manual? console?success? aDump? oDump iDumpBSM? SysLogs FSListing StealthyNew? Category OS
+ 55.12440004/09/1999 12:44:38  00:14:19 172.016.112.100yaga       out      auto    rem     succ     aDmp   oDmp  iDmp not  SysLg   not       Clr     New  llU2R 
+ 55.12440004/09/1999 12:59:06  00:03:14 172.016.112.100yaga       out      auto    rem     succ     aDmp   oDmp  iDmp not  SysLg   not       Clr     New  llU2R 
+
+Summarized attack: 55.125112
+ IDnum    Date       StartTime Duration Destination    Attackname insider? manual? console?success? aDump? oDump iDumpBSM? SysLogs FSListing StealthyNew? Category OS
+ 55.12511204/09/1999 12:51:12  00:15:32 172.016.112.100crashiis   out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llDOS atellNT
+
+Summarized attack: 55.125811
+ IDnum    Date       StartTime Duration Destination    Attackname insider? manual? console?success? aDump? oDump iDumpBSM? SysLogs FSListing StealthyNew? Category OS
+ 55.12581104/09/1999 12:58:11  00:03:00 172.016.112.100telnet     out      auto    rem     succ     aDmp   oDmp  iDmp not  SysLg   not       Clr     Old  llR2L 
+ 55.12581104/09/1999 13:01:12  00:03:30 172.016.112.100telnet     out      auto    rem     succ     aDmp   oDmp  iDmp not  SysLg   not       Clr     Old  llR2L 
+ 55.12581104/09/1999 13:04:43  00:03:31 172.016.112.100telnet     out      auto    rem     succ     aDmp   oDmp  iDmp not  SysLg   not       Clr     Old  llR2L $¼llNT
+
+Summarized attack: 55.125830
+ IDnum    Date       StartTime Duration Destination    Attackname insider? manual? console?success? aDump? oDump iDumpBSM? SysLogs FSListing StealthyNew? Category OS
+ 55.12583004/09/1999 12:58:30  00:15:03 172.016.112.100crashiis   out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llDOS 
+
+Summarized attack: 55.140643
+ IDnum    Date       StartTime Duration Destination    Attackname insider? manual? console?success? aDump? oDump iDumpBSM? SysLogs FSListing StealthyNew? Category OS
+ 55.14064304/09/1999 14:06:15  00:15:01 172.016.112.050syslogd    out      auto    rem     succ     aDmp   oDmp  iDmp BSM  SysLg   not       Clr     Old  llDOS allllSOLARIS
+
+Summarized attack: 55.141732
+ IDnum    Date       StartTime Duration Destination    Attackname insider? manual? console?success? aDump? oDump iDumpBSM? SysLogs FSListing StealthyNew? Category OS
+ 55.14173204/09/1999 14:17:28  00:00:25 172.016.112.050eject      in       auto    rem     succ     aDmp   oDmp  iDmp BSM  SysLg   FSLst     Clr     Old  llU2R fCllSOLARIS
+ 55.14173204/09/1999 14:17:42  00:00:09 206.048.044.050eject      in       auto    rem     succ     aDmp   oDmp  iDmp BSM  SysLg   FSLst     Clr     Old  llU2R 
+ 55.14173204/09/1999 14:21:17  00:00:29 172.016.112.050eject      in       auto    rem     succ     aDmp   oDmp  iDmp BSM  SysLg   FSLst     Clr     Old  llU2R Ý
+
+Summarized attack: 55.163447
+ IDnum    Date       StartTime Duration Destination    Attackname insider? manual? console?success? aDump? oDump iDumpBSM? SysLogs FSListing StealthyNew? Category OS
+ 55.16344704/09/1999 14:32:27  00:15:01 172.016.113.050land       in       auto    rem     succ     aDmp   not   iDmp not  not     not       Clr     Old  llDOS , ellSUNOS
+
+Summarized attack: 55.171917
+ IDnum    Date       StartTime Duration Destination    Attackname insider? manual? console?success? aDump? oDump iDumpBSM? SysLogs FSListing StealthyNew? Category OS
+ 55.17191704/09/1999 14:56:30  00:15:01 172.016.112.050syslogd    out      man     rem     succ     aDmp   oDmp  iDmp BSM  SysLg   not       Clr     Old  llDOS 
+
+Summarized attack: 55.172757
+ IDnum    Date       StartTime Duration Destination    Attackname insider? manual? console?success? aDump? oDump iDumpBSM? SysLogs FSListing StealthyNew? Category OS
+ 55.17275704/09/1999 17:27:15  00:00:11 172.016.114.050sendmail   out      auto    rem     succ     aDmp   oDmp  iDmp not  not     FSLst     Clr     Old  llR2L $
+
+Summarized attack: 55.174733
+ IDnum    Date       StartTime Duration Destination    Attackname insider? manual? console?success? aDump? oDump iDumpBSM? SysLogs FSListing StealthyNew? Category OS
+ 55.17473304/09/1999 17:47:15  00:00:30 172.016.113.105xterm      out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llU2R n allLINUX
+ 55.17473304/09/1999 17:47:33  00:00:01 202.072.001.077xterm      out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llU2R 
+ 55.17473304/09/1999 17:47:38  00:00:01 202.072.001.077xterm      out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llU2R 
+ 55.17473304/09/1999 17:56:45  00:28:10 172.016.113.105xterm      out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llU2R as llLINUX
+
+Summarized attack: 55.183012
+ IDnum    Date       StartTime Duration Destination    Attackname insider? manual? console?success? aDump? oDump iDumpBSM? SysLogs FSListing StealthyNew? Category OS
+ 55.18301204/09/1999 18:30:04  00:00:09 172.016.113.050neptune    out      auto    rem     succ     aDmp   oDmp  iDmp not  not     not       Clr     Old  llDOS ÄÚ
+
+Summarized attack: 55.184715
+ IDnum    Date       StartTime Duration Destination    Attackname insider? manual? console?success? aDump? oDump iDumpBSM? SysLogs FSListing StealthyNew? Category OS
+ 55.18471504/09/1999 18:47:14  00:35:49 172.016.114.050perl       in       auto    rem     succ     aDmp   not   iDmp not  not     FSLst     Stlth   Old  llU2R tatllLINUX
+
+Summarized attack: 55.185233
+ IDnum    Date       StartTime Duration Destination    Attackname insider? manual? console?success? aDump? oDump iDumpBSM? SysLogs FSListing StealthyNew? Category OS
+ 55.18523304/09/1999 18:52:09  00:00:41 172.016.112.050warez      out      auto    rem     succ     aDmp   oDmp  iDmp BSM  SysLg   not       Clr     Old  llDOS <
+ 55.18523304/09/1999 18:52:39  00:00:01 206.047.098.151warez      out      auto    rem     succ     aDmp   oDmp  iDmp BSM  SysLg   not       Clr     Old  llDOS 
+
+Summarized attack: 55.202002
+ IDnum    Date       StartTime Duration Destination    Attackname insider? manual? console?success? aDump? oDump iDumpBSM? SysLogs FSListing StealthyNew? Category OS
+ 55.20200204/09/1999 20:20:20  00:00:01 172.016.000.001queso      out      auto    rem     succ     aDmp   oDmp  not  not  not     not       Stlth   New  llPROBE 
+ 55.20200204/09/1999 20:23:21  00:00:01 172.016.000.001queso      out      auto    rem     succ     aDmp   oDmp  not  not  not     not       Stlth   New  llPROBE ÿllCISCO
+ 55.20200204/09/1999 20:26:22  00:00:01 172.016.000.001queso      out      auto    rem     succ     aDmp   oDmp  not  not  not     not       Stlth   New  llPROBE ûllCISCO
+ 55.20200204/09/1999 20:29:23  00:00:01 172.016.000.001queso      out      auto    rem     succ     aDmp   oDmp  not  not  not     not       Stlth   New  llPROBE llCISCO
+ 55.20200204/09/1999 20:32:24  00:00:01 172.016.000.001queso      out      auto    rem     succ     aDmp   oDmp  not  not  not     not       Stlth   New  llPROBE 
+ 55.20200204/09/1999 20:35:25  00:00:01 172.016.000.001queso      out      auto    rem     succ     aDmp   oDmp  not  not  not     not       Stlth   New  llPROBE llCISCO
+ 55.20200204/09/1999 20:38:26  00:00:01 172.016.000.001queso      out      auto    rem     succ     aDmp   oDmp  not  not  not     not       Stlth   New  llPROBE 
+
+Summarized attack: 55.204925
+ IDnum    Date       StartTime Duration Destination    Attackname insider? manual? console?success? aDump? oDump iDumpBSM? SysLogs FSListing StealthyNew? Category OS
+ 55.20492504/09/1999 20:49:17  00:00:14 172.016.112.100cassen     out      auto    rem     succ     aDmp   oDmp  iDmp not  SysLg   FSLst     Clr     New  llU2R $
+ 55.20492504/09/1999 20:49:28  00:00:03 204.071.051.016cassen     out      auto    rem     succ     aDmp   oDmp  iDmp not  SysLg   FSLst     Clr     New  llU2R 
+ 55.20492504/09/1999 20:49:33  00:18:22 172.016.112.100cassen     out      auto    rem     succ     aDmp   oDmp  iDmp not  SysLg   FSLst     Clr     New  llU2R 
+ 55.20492504/09/1999 21:22:58  00:10:06 172.016.112.100cassen     out      auto    rem     succ     aDmp   oDmp  iDmp not  SysLg   FSLst     Clr     New  llU2R 
+
+Summarized attack: 55.200530
+ IDnum    Date       StartTime Duration Destination    Attackname insider? manual? console?success? aDump? oDump iDumpBSM? SysLogs FSListing StealthyNew? Category OS
+ 55.20053004/09/1999 20:05:30  00:10:00 172.016.112.050secret              auto    rem     succ     not    not   not  BSM  not     FSLst     Clr     New  llDATA 
