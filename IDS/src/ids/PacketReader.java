@@ -28,7 +28,8 @@ public class PacketReader implements Runnable {
     private int input, files, type, counter, windowSize;
     private double[] numChars;
     private String tuples, timeFormat, startTime, regex = "\\r?\\n";
-    private String[] header, time;
+    private String[] header, time, line, split;
+    private byte[] data;
     private Date date;
     private DateFormat format;
     private JpcapCaptor captor;
@@ -70,26 +71,6 @@ public class PacketReader implements Runnable {
                 if (packet instanceof TCPPacket && packet.data.length != 0){
                     tcp = (TCPPacket) packet;
                     if (dataPort.containsKey("TCP"+tcp.dst_port)) {
-//                        if (tcp.dst_port == 80) {
-//                            System.out.println(tcp+new String(tcp.data, StandardCharsets.US_ASCII));
-//                        }
-//                        if (tcp.dst_port == 80) {
-//                            String[] split = new String(tcp.data, StandardCharsets.US_ASCII).split(regex);
-//                            for (String string : split) {
-//                                String[] line = string.split(":");
-//                                byte[] data = line[1].getBytes(StandardCharsets.US_ASCII);
-//                            }
-//                            
-//                            tuples = input+"-TCP-"+tcp.src_ip.toString().substring(1)+"-"+tcp.src_port+"-"+tcp.dst_ip.toString().substring(1)+"-"+tcp.dst_port;
-//                            if (packetBody.containsKey(tuples)){
-//                                bp = packetBody.get(tuples);
-//                                bp.addBytes(data);
-//                            } else { 
-//                                bp = new BodyPacket(data); 
-//                                packetBody.put(tuples, bp); 
-//                            }
-//                        } 
-//                        else {
                         if (input == 3) {
                             time = new String(tcp.toString()).split(":");
                             date = new Date(Long.parseLong(time[0])*1000L);
@@ -97,6 +78,25 @@ public class PacketReader implements Runnable {
                             format.setTimeZone(TimeZone.getTimeZone("America/New_York"));
                             timeFormat = format.format(date);
                         }
+//                        if (tcp.dst_port == 80) {;
+//                            System.out.println(new String(tcp.data, StandardCharsets.US_ASCII));
+//                            split = new String(tcp.data, StandardCharsets.US_ASCII).split(regex);
+//                            data = split[0].getBytes(StandardCharsets.US_ASCII);
+//                            for (int i = 1; i < split.length; i++) {
+//                                line = split[i].split(": ");
+//                                data = line[1].getBytes(StandardCharsets.US_ASCII);
+//                            }
+//                            System.out.println(new String(data, StandardCharsets.US_ASCII));
+//                            tuples = input+"-TCP-"+tcp.src_ip.toString().substring(1)+"-"+tcp.src_port+"-"+tcp.dst_ip.toString().substring(1)+"-"+tcp.dst_port;
+//                            if (packetBody.containsKey(tuples)){
+//                                bp = packetBody.get(tuples);
+//                                bp.addBytes(data);
+//                            } else { 
+//                                bp = new BodyPacket(data); 
+//                                packetBody.put(tuples, bp); 
+//                                packetTime.put("TCP-"+tcp.src_ip.toString().substring(1)+"-"+tcp.src_port+"-"+tcp.dst_ip.toString().substring(1)+"-"+tcp.dst_port, timeFormat);
+//                            }
+//                        } else {
                         tuples = input+"-TCP-"+tcp.src_ip.toString().substring(1)+"-"+tcp.src_port+"-"+tcp.dst_ip.toString().substring(1)+"-"+tcp.dst_port;
                         if (packetBody.containsKey(tuples)){
                             bp = packetBody.get(tuples);

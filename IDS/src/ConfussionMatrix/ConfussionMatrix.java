@@ -39,22 +39,22 @@ public class ConfussionMatrix {
             conf = line.split(":");
         }
         System.out.println("File condensed : Week "+conf[0]+", "+conf[1]);
-        brTh = new BufferedReader(new FileReader(dirTh+"\\"+conf[0]+"\\"+conf[1]));
+        brTh = new BufferedReader(new FileReader(dirTh+"/"+conf[0]+"/"+conf[1]));
         while ((line = brTh.readLine()) != null) {
             str = line.split(" ");
-            dataString.put(str[5], str[6]);
-//            if (dataString.containsKey(str[5])) continue;
-//            else if (str[5].contains("*")) {
-//                ip = str[5].split("\\.");
-//                for (int i = 1; i < 255; i++) {
-//                    newIP = ip[0]+"."+ip[1]+"."+ip[2]+"."+i;
-//                    if (dataString.containsKey(newIP)) continue;
-//                    else
-//                        dataString.put(newIP, str[6]);
-//                }
-//            }  
-//            else
-//                dataString.put(str[5], str[6]);
+//            dataString.put(str[5], str[6]);
+            if (dataString.containsKey(str[5])) continue;
+            else if (str[5].contains("*")) {
+                ip = str[5].split("\\.");
+                for (int i = 1; i < 255; i++) {
+                    newIP = ip[0]+"."+ip[1]+"."+ip[2]+"."+i;
+                    if (dataString.containsKey(newIP)) continue;
+                    else
+                        dataString.put(newIP, str[6]);
+                }
+            }  
+            else
+                dataString.put(str[5], str[6]);
         }
         for (File file : listFile) {
             if (file.isFile()) {
