@@ -71,8 +71,11 @@ public class IDS {
             str = line.split(" ");
             if (data.equals("port")) {
                 dataString.put(str[0], str[1]);
-            } else
-                dataString.put(str[5], str[6]);
+            } else {
+                if (dataString.containsKey(str[5])) continue;
+                else
+                    dataString.put(str[5], str[6]);
+            }
         }
         return dataString;
     }

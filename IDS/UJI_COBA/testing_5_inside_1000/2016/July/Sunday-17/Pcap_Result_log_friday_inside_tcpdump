@@ -1,0 +1,1138 @@
++++++++++++++++++++++++++++++++++++++++++++
+#  Start time : 2016-July-17 18:26:29 PM  #
++++++++++++++++++++++++++++++++++++++++++++
+Protokol | Date | Source | Destination | Distance
+-------------------------------------------------
+TCP | 04/09/1999 08:05:20 | 197.182.91.233:1267 | 172.16.113.204:25 | 589.21
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+EHLO mars.avocado.net
+HELO mars.avocado.net
+MAIL From:<ipng@marslistserv.com>
+RCPT To:<vladislj@goose.eyrie.af.mil>
+DATA
+Received: (from mail@localhost) by mars.avocado.net (SMI-8.6/SMI-SVR4)
+	id: CAA2190; Fri,  9 Apr 1999 08:05:20 -0400
+Date: Fri,  9 Apr 1999 08:05:20 -0400
+To: vladislj@goose.eyrie.af.mil, suzannac@marx.eyrie.af.mil
+Subject: ipng
+Message-Id: <19990409080520.CAA2190>
+
+<!--X-Subject: Attendance,Dec. 1997,Nurse Results -->
+<!--X-From: Randi Lite <lite@whale.simmons.edu> -->
+<!--X-Date: Tue, 13 Jan 1998 15:09:34 &#45;0500 (EST) -->
+<!--X-Message-Id: Pine.SUN.3.95.980113150748.1752E&#45;200000@sun.simmons.edu -->
+<!--X-ContentType: multipart/mixed -->
+<!--X-Head-End-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML//EN">
+<HTML>
+<HEAD>
+<TITLE>Attendance,Dec. 1997,Nurse Results</TITLE>
+<LINK REV="made" HREF="mailto:lite@whale.simmons.edu">
+</HEAD>
+<BODY>
+<!--X-Body-Begin-->
+<!--X-User-Header-->
+<body bgcolor="#ffffff">
+<!--X-User-Header-End-->
+<!--X-TopPNI-->
+<HR>
+<A HREF="msg00029.html">
+<IMG SRC="/images/mhonarc/date_prev.gif" border=0 ALT="[Date Prev]"></A>
+<A HREF="msg00031.html">
+<IMG SRC="/images/mhonarc/date_next.gif" border=0 ALT="[Date Next]"></A>
+<A HREF="msg00029.html">
+<IMG SRC="/images/mhonarc/thread_prev.gif" border=0 ALT="[Thread Prev]"></A>
+<A HREF="msg00031.html">
+<IMG SRC="/images/mhonarc/thread_next.gif" border=0 ALT="[Thread Next]"></A>
+<A HREF="maillist.html#00030">
+<IMG SRC="/images/mhonarc/date_index.gif" border=0 ALT="[Date Index]"></A>
+<A HREF="index.html#00030">
+<IMG SRC="/images/mhonarc/thread_index.gif" border=0 ALT="[Thread Index]"></A>
+
+<!--X-TopPNI-End-->
+<!--X-MsgBody-->
+<!--X-Subject-Header-Begin-->
+<H1>Attendance,Dec. 1997,Nurse Results</H1>
+<HR>
+<!--X-Subject-Header-End-->
+<UL>
+<LI><em>To</em>: <A HREF="mailto:attendance@whale.simmons.edu">attendance@whale.simmons.edu</A>, <A HREF="mailto:health-talk@whale.simmons.edu">health-talk@whale.simmons.edu</A></LI>
+<LI><em>Subject</em>: Attendance,Dec. 1997,Nurse Results</LI>
+<LI><em>From</em>: Randi Lite &lt;<A HREF="mailto:lite@whale.simmons.edu">lite@whale.simmons.edu</A>&gt;</LI>
+<LI><em>Date</em>: Tue, 13 Jan 1998 15:09:34 -0500 (EST)</LI>
+<LI><em>Sender</em>: <A HREF="mailto:owner-health-talk@whale.simmons.edu">owner-health-talk@whale.simmons.edu</A></LI>
+</UL>
+<!--X-Head-Body-Sep-Begin-->
+<HR>
+<!--X-Head-Body-Sep-End-->
+<!--X-Body-of-Message-->
+<PRE>
+Here is the collated data from the nurses' offices as of January 13. It
+represents 13 schools and 975 children:
+
+*1216 visits to the nurse were reported
+*85.3 hours of lost time total
+The visits were due to the following reasons:
+
+        * 62 or  4.9% due to respiratory illness
+        * 67 or  5.3% due to rash/skin issues
+        * 169 or 13.5% due to injuries
+        *  11 or   .9% due to other communicable diseases
+        *  52 or  4.1% due to asthma
+        * 101 or  8.0% due to gastrointestinal illnesses
+        *  5 or   .4% due to fever
+        *626 or 49.8% due to meds/therapy
+        * 155 or 12.3% due to other medical issues
+        *  8 or   .6% due to nonmedical reasons
+        * there were 40 dismissals
+
+Interesting that the meds/therapy rate has decreased from 58.3% in
+November to
+49.8% in December. Any thoughts??
+
+Nurses comments appear below:
+-In December we had an increase in injuries due to the weather and a lot
+of sand on the  playground area.
+-The children with asthma had an increase in inhaler use. Physical
+Education classes were held indoors causing an increase in injuries.                      
+-Our district is experiencing an outbreak of strep throat. HealthNet
+classes appear to be less affected. Could it be the handwashing?
+-This data is from two classrooms, a fifth grade and a first grade class.
+It is interesting to note that the fifth grade had a total of nine visits
+and the first grade had a total of eleven visits.  The fifth grade had 
+four of the nine visits under injuries, while the first grade had four
+out of eleven visits as colds, sore throats.
+- DATA MAY BE OFF AS I WAS OUT FOR 2 1/2 WEEKS AND DID NOT HAVE ACCURATE
+DATA TO COLLATE
+
+Happy New Year!
+
+
+**************************************************
+
+Randi Lite
+HealthNet Program Director and Instructor of Biology
+Simmons College, 300 The Fenway, Boston, MA 02115
+(617)521-2660
+lite@whale.simmons.edu
+
+*************************************************
+</PRE>
+<PRE>
+(This file must be converted with BinHex 4.0)
+
+:$84PBepZGA*cC@4KG'%!3eG68d*23Nm!!!!!4LF!!!!!C&amp;X#!$F!3Np#6`!"!1c
+KU!!!!!!$'!*N!#3!*!!N!#3!*!!N![3#3!%!!!%!!!!!!!!!!!!!!!!!!!!!!!!
+"!!!#!!)!!!$Xj03!!!!!!!!!!3!"!!!!5!!!!!J!!!!"!!!!!J$XiD3!!!!!!3-
+!!!!!!!!!!!!!!!!!l15B!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1cKI!!!!1cM@!)!!!!
+!!!!9!!!-!3!!!!%#!J!!!3!!!!!!!3!!!3!"!#d!!!%!!3!!!!"D!!!!%J!!!!!
+!"J%!!!!!!3"N!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!`
+!!2rr!!!!B!!!!!)!!!"i!!m!!!")!%J!!!!!![J#52rfrr)$$J*@,!)&amp;+!2m!3!
+!!!&amp;S!@J!!!!!$YJ,D!!"!3!!C!!"!!!!!3!#!!!!!5F2!!%!!!!!!!!!!!!!!!!
+!!$!!!"!!!!!!!!!3!2r1rlS24JZZ!#!"!!!!!!!!!!!!!!!!!"N"!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!F!!$rr`!!!!3!%!!"!!8!!!%!!3%!!!%!!!!!!!!!!!!
+!l0V%!J!!!!!"!!J!!!!!!!!!!!!!rrm!!!!!rrm!!3!"!!!!!3!!!!!!!!!!!!!
+!!3#T!!!!!!!!!!!!!!!!!!!!!!!!!!!!+3!!!I8!!!!!!!%!!3"5!QX!!!!!!"3
+"63!!!!!!!!!!!!!!!!!!!!!!!!!-!!!!!!!!!!!!l1))!!!!!!!!!!!!l16F!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!l1@%!!!!!!!8!$)"63*V!!%!!!%!!!!!!3!!!3!
+!!!!!!!!!!!!!!1cFU!!!!!!"!4%Z#`!!!!!!!!!!!!!!!!!!!3!)!!!!!!!!!1c
+K`!!!)53!!!!!!!!!!!!!!!!!!@X!!!$K!!!S!!-"K!*p!!0%8d98!!!"e!!"rrm
+!!!!`!CJ!!J)!!!%"p!!S!1cP%!!!!!!!!!!!!!!!!!!!!!X!l15N!1cKZ!!J!!-
+*!!%!!%J!$J!!!!!!!!!!*")4%K!5%K36%a38&amp;L3N*#3N*#3N*#3N*#3N*#3N*#3
+N*#3N*#3N*#3N*#3N*#3N*#3N*#3N*#3N*#3N*#3N*#3N*#3N*#3N*#3N*#3N*#3
+N*#3N*#3N*#3N*#3N*#3N*#3N*#3N*#3N*#3N*#3N*#3N*#3N*#3N*#3N*#3N*#3
+N*#3N*#3N*#3N*#3N*#3N*#3N*#3N*#3N*#3N*#3N*#3N*#3N*#3N*#3N*#3N*#3
+N*#3N*#3N*#3N*#3N*#3N*#3N*#3N*#3N*#3N*#3N*#3N*#3N*#3N*#3N*#3N*#3
+N*#3N*#3N*#3N*#3N*#3N*#3N*#3N*#3N*#3N*#3N*!!!!!!!!!!!!"3!"!!8!!3
+!(J!&amp;!"%!!3!4!!%!!!!!!3!"!3!"!!!!!!!#!!!!!!!1!"J!'!!1!!`!!!!!!+J
+!!!!!!MN"13!"!!%!!!$XiD`!l16-!!!!!!!!!!!$K!!!!!!"eJ#8!!!!!!!!!!!
+!!!!!!!!!!!!"!!%!!!(@!(3"eIp`!!!!!!!!!!!$K!!!!&amp;J!&amp;!!"!"3!!`!9!!%
+!&amp;3!$!"B!!3!@!!-!&amp;`!"!"F!!`!B!!%!'!!$!"N!!3!C!!-!'J!"!"S!!`!E!!%
+!'`!$!"`!!3!F!!-!(3!"!"d!!`!H!!%!(J!$!!!"[J!Irrm!!!!1!!!!!3!8!!%
+!(3!"!!!!(`!"!!%!!3!"!!`!!!!4!!)!!3!"!!%!$!!!!"%!!3!#!!%!!J!-!!!
+!%J!"!!-!!3!$!!`!!!!6!!%!"!!"!!3!$!!!!"3!!3!&amp;!!%!"3!-!!!!&amp;3!"!!B
+!!3!'!!`!!!!@!!%!"`!"!!F!$!!!!"F!!3!)!!%!#!!-!!!!'!!"!!N!!3!*!!`
+!!!!C!!%!#J!"!!S!$!!!!"S!!3!,!!%!#`!-!!!!'`!"!!`!!3!-!!`!!!!F!!%
+!$3!"!!d!$!!!!"d!!3!1!!%!$J!-!!!!(J!"!!)!!3!#!!`!!!!5!!)!!`!"!!-
+!$!!!!"-!!J!%!!%!"!!-!!!!&amp;!!#!!8!!3!&amp;!!`!!!!9!!)!"J!"!!B!$!!!!"B
+!!J!(!!%!"`!-!!!!&amp;`!#!!J!!3!)!!`!!!!B!!)!#3!"!!N!$!!!!"N!!J!+!!%
+!#J!-!!!!'J!#!!X!!3!,!!`!!!!E!!)!$!!"!!`!$!!!!"`!!J!0!!%!$3!-!!!
+!(3!#!!i!!3!1!!`!!!!H!!)!&amp;!!$!"d!!`!!!"m!!`!8!!3!(J!&amp;!!%!!J!!!!!
+jUJ!"!!!%#%0838)!$!"j!1cP&amp;!$XiE`!l16X!1cKK!$Xi4!!l1*-!1cNS!$XiL3
+!l1(-!1cP,!$Xi2!!l1&amp;!!1cNP!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!""$6da0!!!!!3$Xib!
+!l16d!!!%M%0)6NX!)!3!!S!!*J,@!Z3#lJ-'!a)$)!-X!cJ$8J0F!fB$EJ0q!ii
+$SJ!!!@J$X!1k!mS$eJ2N!r!$r!3-""B%)!3S"$J%5!4B!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!#NJ+8!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!F#!`)!YcBfK[EfaIBfpNC6!J"QKZAh"[F!!`)"4cG(9NC@jdAfjeFR0PAhC
+TFfPdFp``)!PXEh0dAh4TE@8`)!YMEh9RD&amp;pMEfaNFc!J#A*KFfKIFfYTEM!J#'P
+ZDR9bD@9c#6!J&amp;Q0[E9pNDA0PBA0P,fPZCQ9MG'P[ER29-#!'BA0dD'eK!$!J"h0
+IEPpfAf3`)!9QCACPFM!J$'ePC(0IG'KPFQ&amp;`H8)`)!e[G'KPFPpYC@4TBf&amp;X-#!
+3Eh4SCA*IEQpZE@9ND@0KE0S`)!TNDA0YDA0cB@acjR!JF#!`)!YcBfK[EfaIBfp
+NC6!J"QKZAh"[F!!`)"4cG(9NC@jdAfjeFR0PAhCTFfPdFp``)!PXEh0dAh4TE@8
+`)!YMEh9RD&amp;pMEfaNFc!J#A*KFfKIFfYTEM!J#'PZDR9bD@9c#6!J&amp;Q0[E9pNDA0
+PBA0P,fPZCQ9MG'P[ER29-#!'BA0dD'eK!$!J"h0IEPpfAf3`)!9QCACPFM!J$'e
+PC(0IG'KPFQ&amp;`H8)`)!e[G'KPFPpYC@4TBf&amp;X-#!3Eh4SCA*IEQpZE@9ND@0KE0X
+`)!TNDA0YDA0cB@acjM!J!5!`)!8a-#dj0c!J"'KZ-6)!!#!!$!!J!$F!)!!#!#!
+!!!!J!!!!)!!#!#!!!!!J!!!!)!!$!#!!!!!J!#`!)!!'!#!!!!!J!!"`)(!J-#!
+&amp;-6!Y16F`)!4SEMCL!!!J!"J!)!!,)#"!$!!!!!!!!'&amp;X!#!!"3!J!!!!)!!#!#!
+!!!!J!!!!)!!%!#!!!$!J#h0MD'p[E&amp;pMEf4P-#!'D'jIF'p`!$!J$5"ZGA*cC9p
+fDA0TG(0IGQPcDA4ch$!J#@a[Fh4IG'PYC6!J#f0[G@GSAf0[E'4c-#!*FQ&amp;cD&amp;p
+cDfPZ-#!)D@jUGA*TCA-*-#!-BfpYAf4TFf9KFf8J!'jQC@0dD@pZFp8`)!CKFh4
+SE@%!-#!(FepZAhCIC$!J"@CPGQ9b-#!-E@9NFepdD'9bBA"j3M!J$@pdD'9bAfe
+PC'PMB@``)!e[G'KPFPpZEfjYC@3JBf&amp;XfM!J#Q4TFfeTFh0KE(2Q-#!'D'jIF'p
+`!$!J$5"ZGA*cC9pfDA0TG(-`)!PXEh0dAh4TE@8`)!YMEh9RD&amp;pMEfaNFc!J#A*
+KFfKIFfYTEM!J#'PZDR9bD@9c#6!J$'0[E9pNDA0PBA0P)!!`)!CKFh4SE@%!-#!
+(FepZAhCIC$!J"@CPGQ9b-#!-E@9NFepdD'9bBA"j3M!J$@pdD'9bAfePC'PMB@`
+`)!e[G'KPFPpZEfjYC@3J-#!+C'PcE@PcFf&amp;XFqCKG'9REh*j,J!!!!$q!J!!!GA
+K"!(X[F!!!2V!!!!(h!(9p1`"e3!!!Sa$5%j,!!8#!!(f!2`!!!!!!!!!!!#F!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!lJ$`!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!B`"MJ!!!!!!!!!!!!!!!!!J!!!!)!!!!#!!!!!J!!0`)$!J"6%`,6Nh-#!
+%D'ifB`!!)!!A!#!!%b!J3")!!!!!!!"KE!!J!!8!)!!!!#!!"J!J!!!!)!!!!#!
+!!3!J!!%!)!!!!#!!"!!J!!)!)!!#F#"`)$!J"'KZ0Q)!!#!!'!!J!K!!)!!4)#"
+!#Di8HZ&amp;(VQ&amp;X!#!!"!!J!!!!)!!!!#!!!3!J!!!!)!!$!#!!!!!J!!!!)!!!!#!
+!!!!J!!P`)$!J"'KZ0Q-!!#!!&amp;`!J!IS!)!!F)#"!&amp;J!!!!!!!'&amp;X!#!!"3!J!!!
+!)!!!!#!!!!!J!!!!)!!'!#!!"!!J!!%!)!!"!#!!!!!J!!Y`)(!J!HCFl!(@!!X
+!!!!!!HCFi%#)CUj!L'Db3)J)8SjcG@f1)%&amp;ZB@`J4QajCA*bH8&amp;ZB@ajHQ9br)!
+"p`(X[1#94!(@!!X!!!!!!)+Tm"V52c`!JUR`!!!r2!(XDdeKDf9c)'%JF'9bFfp
+ZB@`JFSjcG@f1)(GTG'JJB@iJEh"PEL`JFh"KBfP[GA-JE'p[DcXJC@e`D'&amp;cDAT
+PFb"aG@&amp;XD@CTBf&amp;dD@pZFb"KEQ3JF(*[CQ9cFfP[EQ&amp;X)'9iF'9bD@9ZBf8ZC5N
+Z)(*PF'pbG#"LH5"cF'9ZC'PZCb"MBA4PCfpbH5i!!!!!rJ)!!!(9i33"l,h!!!$
+k`!!!!!!!$%026%d!!!!!!1cK)!!!")a$5%j,!"m%!!+%!!J%$!38""J%(!3J"#3
+%+!3X"$!%0!3i"$`%3!4%"%J!!!&amp;S!A!"K!4S!D`"`!(8!HJ"r!)3!L3#1!*-!Q!
+#G!+N!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!$!J"L!JD'ic0J!!)!"&amp;!#!!65!J3#QSpF+2A#P
+YC3!J!!-!)!!#!#!!'`!J!!!!)!!"!#!!#`!J!!!!)!!6!#!!#J!J!!!!)!!%-#!
+&amp;)'KZ-M!!)!"D!#!!p5!J3"d!!!!!!!"YC3!J!!d!)!!-!#!!)`!J!!!!)!!#!#!
+!$3!J!!%!)!#6!#!!$`!J!!3!)!!$-#!')#"SEM-f!!!J!%8!)!"0)#"!+DMe`Sp
+F+8J!!#!!!`!J!!)!)!!E!#!!!!!J!!%!)!!,!#!!!!!J!"-!)!!+!#!!!!!J!!3
+`)!98Eh4KE%!J$4C*!46rm)!!rr#!#am!!!223#!0&amp;NN"&amp;2r`J!$rm)!,(`!!"-"
+!)!d@53%8rr#!!2r`J!3I#!!!fN!J$4C*!46rm)!!rr#!#am!!!!q3#!0&amp;NN"&amp;2r
+`J!$rm)!,(`!!!%0!)!d@53%8rr#!!2r`J!XI!!!!U8!J$4C*!46rm)!!rr#!#am
+!!!!,3#!0&amp;NN"&amp;2r`J!$rm)!,(`!!!$4!)!d@53%8rr#!!2r`J!XI!!!!C8!J$4C
+*!46rm)!!rr#!#am!!!!&amp;3#!0&amp;NN"&amp;2r`J!$rm)!,(`!!!R*!)!d@53%8rr#!!2r
+`J!XI!!!!Qd!J$4C*!46rm)!!rr#!#am!!!!)3#!0&amp;NN"&amp;2r`J!$rm)!,(`!!!#K
+!)!d@53%8rr#!!2r`J!JI#!!#044ki8HZ&amp;+!!3#!0&amp;NN"&amp;2reJ!$rrS!!(`!!"1K
+!)!d@53%8rr#!!2r`J!JI#!!!!$Z&amp;(VK4l'!!-#!,Ff0SEfpXAf0[C'8`)!CSEPp
+`Eh!!-#!8Fh4eC'9ZG&amp;pZGA*cC9pfDA0TG(-&amp;-#!*E'pcG&amp;pdD@eP-#!,BfpeCfK
+IBfpXC(-`)!PbBA0SAh0VD@i`)!KTEQTeFQPPF`N`)"CMEfeIC'PcC@&amp;cC5pTEQC
+PBh4TEfjce6!J"Q&amp;cG'KYB3!`)!GcAfjIGPpN-#!&amp;CQ9fCA)`)!aYC@4cAh4SCA*
+KF(Qf-#!0Eh4SCA*IE@9ND@0KE$!J%'pdD'9bAfj[EQePC'PMB@cI-#!+C'PcE@P
+cFf&amp;XFqC!)!d@53%8rr#!!2r`J!JI#!!!#S%!!!!!!!!!F#!()#!JD'ic0R!J!%9
+`)!",F#!!"R!J!!&amp;`)!!"F#!!&amp;h!J!!"`)!!$F#!!#R!J!!"`)!!AF#!!#A!J!!&amp;
+`)!!%-#!%D'ifB`!!)!!A!#!!'J!J!!B!)!!%!#!!!!!J!!J!)!!)!#!!!!!J!!%
+!)!!!!#!!!!!J!!)!)!!"!#!!!N!J$4C*!46rm)!!rr#!#am)!!22J$-c-c-c-c4
+!)!d@53%8rr#!!2r`J!XI)!"!"DUCQCQCQCQDCA,mJ!(h!H`!!!!-3dp-63!!!!!
+!l1*m!!!)0N0)6NX!(JHU"G`"$!++!T)#PJ+D!Ti#SJ+Q!US#VJ+b!VB#ZJ+q!X)
+#aJ!!!03'ZJD#!ri%qJE@"GS%EJDH"Ei'mJF1!`)#jJ@L!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!F#!%D'ic0+C`)!!CF#!!5(!J3!$J!!!!!!!!!(!J!!&amp;`)!!#F#!!!A!J!!"
+`)!!"F#!!!A!J!!"`)!!kF#!!#(!J!!"`)!!!-#!$3ACP4"!0&amp;JJ"&amp;2r`rrrrm)!
+((`J!!#4%%!d@#!%8rr$rrrr`J!FI#!!!9DmNNNNNNNNP4"!0&amp;JJ"&amp;2r`rrrrm)!
+((`J!!!@6EEEEEEEEEN33$4B)!46rm2rrrr#!"am)!!!#K**********%%!d@#!%
+8rr$rrrr`J!FI#!!!!155555555554"!0&amp;JJ"&amp;2r`rrrrm)!((`J!!!LQfffffff
+ffd33$4B)!46rm2rrrr#!"am)!!!!4"!0&amp;JJ"&amp;2r`rrrrm)!((`J!!!#55555555
+55833$4B)!46rm2rrrr#!"am!!!!!ffffffffffj%%!d@#!%8rr$rrrr`J!FI#!!
+!!-b5555555554"!0&amp;JJ"&amp;2r`rrrrm)!((`J!!!+GYYYYYYYYYd33$4B)!46rm2r
+rrr#!"am)!!!"YYYYYYYYYYY%%!d@#!%8rr$rrrr`J!FI#!!!!Zfffffffffh4"!
+0&amp;JJ"&amp;2r`rrrrm)!((`J!!!'%NNNNNNNNNN33$4B)!46rm2rrrr#!"am)!!!%NNN
+NNNNNNNP%%!d@#!%8rr$rrrr`J!FI#!!!&amp;kj*********-#!%D'ifBJ!!)!!B!#!
+!&amp;J!J!!3!)!!!!#!!!!!J!!N!)!!!!#!!!!!J!!3!)!!!!#!!!3!J!!8!)!!!!#!
+!!d33$4B)!46rm2rrrr#!"am)!!!$S!!!!!!!!!"%%!d@#!%8rr$rrrr`J!SI)!!
+rrUUUUUUUUUUV4"!0&amp;JJ"&amp;2r`rrrrm)!+(b!!3!,1UUUUUUUUUd33$4B)!46rm2r
+rrr#!"am)!!!Ve-c-c-c-c-e%%!d@#!%8rr$rrrr`J!FI#!!!"U!!!!!!!!!!4"!
+0&amp;JJ"&amp;2r`rrrrm)!((`J!!!r-!!!!!!!!!%33$4B)!46rm2rrrr#!"am)!!"+[!!
+!!!!!!!"%%!d@#!%8rr$rrrr`J!FI#!!!"1fffffffffh4"!0&amp;JJ"&amp;2r`rrrrm)!
+((`J!!!+UUUUUUUUUUd33$4B)!46rm2rrrr#!"am!!!!(q!!!!!!!!!"%%!d@#!%
+8rr$rrrr`J!FI#!!!"EQCQCQCQCQD4"!0&amp;JJ"&amp;2r`rrrrm)!+(b!!3!(MGhGhGhG
+hH%33$4B)!46rm2rrrr#!"am)!!!%d!!!!!!!!!"%%!d@#!%8rr$rrrr`J!FI#!!
+!"l!!!!!!!!!!4"!0&amp;JJ"&amp;2r`rrrrm)!+(`J!!!#G3!!!!!!!!%33$4B)!46rm2r
+rrr#!#KmJ!$rqkUUUUUUUUUY%%!d@#!%8rr$rrrr`J!FI#!!!8-E-c-c-c-c04"!
+0&amp;JJ"&amp;2r`rrrrm)!((`J!!!H`!!!!!!!!!%33$4B)!46rm2rrrr#!"am)!!!2h!!
+!!!!!!!"%%!d@#!%8rr$rrrr`J!FI#!!!,p6-c-c-c-c04"!0&amp;JJ"&amp;2r`rrrrm)!
++(b!!3!'P999999999833$4B)!46rm2rrrr#!"am)!!"Aa&amp;999999999%%!d@#!%
+8rr$rrrr`J!FI#!!!"1!!!!!!!!!!4"!0&amp;JJ"&amp;2r`rrrrm)!((`J!!!IUUUUUUUU
+UUd33$4B)!46rm2rrrr#!"am)!!!2r9999999999%%!d@#!%8rr$rrrr`J!FI#!!
+!,p6-c-c-c-c04"!0&amp;JJ"&amp;2r`rrrrm)!+(b!!3!$9999999999833$4B)!46rm2r
+rrr#!#KmJ!%!#KUUUUUUUUUY%%!d@#!%8rr$rrrr`J!SI)!"!!Z&amp;9999999994"!
+0&amp;JJ"&amp;2r`rrrrm)!((`J!!#qK*********833$4B)!46rm2rrrr#!"am)!!"Aa&amp;9
+99999999%%!d@#!%8rr$rrrr`J!FI!!!!+lQ!!!!!!!!!4"!0&amp;JJ"&amp;2r`rrrrm)!
+((`J!!&amp;I-3!!!!!!!!%33$4B)!46rm2rrrr#!"am)!!!%lEEEEEEEEEG%%!d@#!%
+8rr$rrrr`J!SI)!"!"FUUUUUUUUUV4"!0&amp;JJ"&amp;2r`rrrrm)!+(b!!3!'+UUUUUUU
+UUd33$4B)!46rm2rrrr#!#KmJ!%!&amp;SS!!!!!!!!"%%!d@#!%8rr$rrrr`J!SI)!"
+!!E+UUUUUUUUV4"!0&amp;JJ"&amp;2r`rrrrm)!+(b!!2rh9999999999833$4B)!46rm2r
+rrr#!#KmJ!%!%d+UUUUUUUUX!)!!!!!!!!!+B!%XlE%0)6NX!$`)!!Ei"[J#-!*B
+!QJ#H!+)!TJ#U!+i!XJ#f!,S![J$#!-B!bJ!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-#!()#"SEL!c0J!J!%8!)!"F!#!
+!#!!J!!8!)!!%!#!!&amp;!!J!!!!)!!!!#!!#3!J!!!!)!!3!#!!*!!J!!!!)!!"Fep
+dD'9bBA"j1$!J$@pdD'9bAfePC'PMB@``)""[!!!!!!!!!X4YC@4TBf&amp;Xi6!J!!!
+!$%026%d!!!!!!1cNr!!!!mC$5%j,!"`$1J(H!AJ!M!#3!!#8!*J!SJ('!FS"cJ(
+5!GB"fJ(H!H)"jJ(U!!!!TJ!!!!!!!!)f!-)!fJ$b!3S")J)H!8S"BJ&amp;k!C)"UJ!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!)!!L!#!!'3!J!(-!)!!*)$PSFR-!!#!!"$!J!59#%!N
++%i!!rri3!hF)!!!!Yh2STXCfD4*#%!N+%i!!rri3"1JJ!$rkfRm[5@!d,DK#%!N
++%i!!rri3"1JJ!$rmLFL2IBhF)*e#%!N+%i!!rri3"1JJ!$riMhf0h##FL2K#%!N
++%i!!rri3"1JJ!$rkUC4KeCVRLTP#%!N+%i!!rri3"1JJ!$rlT,!D&amp;Y2jHNY#%!N
++%i!!rri3!QB!!!!!3K!*#K1!!2rq%!6S)!!rrIm[5@!d,DIc3K!*#K1!!2rq%!6
+S)!!rqrbp*B$3YTr-3K!*#K1!!2rq%!6S)!!rpp#fRm[5@!d,3K!*#K1!!2rq%!6
+S)!!rqS*b)ppMG`JR3#!0&amp;NN"&amp;2reJ!$rrS!!(`!!!!'%%j%HqaZi33!J!!%!)!!
+1!#!!!!!J!!)!)!!%!#!!!!!J!&amp;)!)!!(!#!!!3!J!!4#%!N+%i!!rri3"1J)!!!
+!MbEfHFYilG&amp;#%!N+%i!!rri3!hF)!!!!rIV1%H6HccP#%!N+%i!!rri3"1JJ!$r
+hJR)Mhf0h##G#%!N+%i!!rri3"1JJ!$rkbM$UcA2&amp;6+-!rri3!QB)!!!!jLCEZI4
+6BcY#%!N+%i!!rri3!QB)!!!!P81,3H"3$9K#%!N+%i!!rri3!QB)!!!!`A@6Q*P
+Zjp&amp;#%!N+%i!!rri3!QB)!!!!eAMTI$pIj9&amp;#%!N+%i!!rri3!QB)!!!!mhhU8EK
+*BC!!3K!*#K1!!2rq%!*Q#!!!!+E'GQN4JZXR3K!*#K1!!2rq%!#6#!!54(NI0!&amp;
+ANJ!!3#!0&amp;NN"&amp;2reJ!$rri!!(`J!!!%4#"'#aD-"eM!J#h0MD'p[E&amp;pMEf4P-#!
+'D'jIF'p`!$!J&amp;(0dG@4PER4IER9bFf9IGQPcDA4c"c!J#@a[Fh4IG'PYC6!J#f0
+[G@GSAf0[E'4c-#!*FQ&amp;cD&amp;pcDfPZ-#!)D@jUGA*TCA-*-#!@BfpYAf4TFf9KFf8
+[D@jQC@0dD@pZFp8`)!CKFh4SE@%!-#!(FepZAhCIC$!J"@CPGQ9b-#!-E@9NFep
+dD'9bBA"j1$!J$@pdD'9bAfePC'PMB@``)!!!!!a$6da0!!!!!!$Xjc!!!!+-3dK
+15`!D!J!"+!"'!Ii#"J)+!Ji#'J)H!L)#*J)U!Li#-J)f!MS#2J*#!!!!!!!!!!!
+!!!$8!1)!lJ$k!3S"&amp;!%H!5B"0J&amp;'!9B!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!`)!4SEMC
+L!!!J!"J!)!!,)#"!$!!!!!!!!!!!!#!!"3!J!!!!)!!#!#!!!!!J!!!!)!!%!#!
+!!!!J!!!!)!!!!#!!!!!J!!-`)!YMEh9RD&amp;pMEfaNFc!J#A*KFfKIFfYTEM!J#'P
+ZDR9bD@9c#6!J$'0[E9pNDA0PBA0P)!!`)!CKFh4SE@%!-#!(FepZAhCIC$!J"@C
+PGQ9b-#!-E@9NFepdD'9bBA"j3M!J$@pdD'9bAfePC'PMB@``)!e[G'KPFPpZEfj
+YC@3J-#!+C'PcE@PcFf&amp;XFqB`)!FJ)#"SEM-f!#!!43!J!%X!)!!'!#!!!3!J!!%
+!)!!A!#!!!!!J!!-!)!!+!#!!!!!J!"F!)!!*!#!!!3!J!!5!))!JJ##!))!JJ##
+!))!JJ##!))!JJ#"`)!4SEM%b!(!J!"P`)!$#F#!!!h!J!!"`)!!&amp;F#!!!A!J!!"
+`)!!!F#!!!h!J!!"`)!#dF#!!"A!J!!"`)!!!-#!&amp;)#"SEM)!)!#[!#!!R5!J3!+
+&amp;QCQCQCQCQJ!J!!`!)!!T!#!!'!!J!!%!)!!)!#!!$3!J!!!!)!"C!#!!%`!J!!%
+!)!!(5-B["NM',`C`!$!(,`"1V3KL@)m[!%kY,kT2l`!--!G54b"YV@UqD!('Bp4
+J2%SZrr0Q$%SZrr4Q"NSZrr9R%%M',`C`#3!!!!a$6da0!!!!!!$Xj"3!!!5-3dK
+15`!D"!!$0!"F!f3$E!0`!h3$J!1%!iJ$M!13!!18!jJ$R!1J!k3$U!!!!!!!!!!
+!!!!$V!1i!m3$d!2F!qJ$p!3!"!`%'!3N!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-#!%D'i
+fB`!!)!!A!#!!%b!J3")!!!!!!!!!!!!J!!8!)!!!!#!!"J!J!!!!)!!!!#!!!3!
+J!!%!)!!!!#!!"!!J!!)!)!!#J##!))!JJ##!))!JJ##!))!JJ#!`)!YMEh9RD&amp;p
+MEfaNFc!J#A*KFfKIFfYTEM!J#'PZDR9bD@9c#6!J$'0[E9pNDA0PBA0P)!!`)!C
+KFh4SE@%!-#!(FepZAhCIC$!J"@CPGQ9b-#!-E@9NFepdD'9bBA"j3M!J$@pdD'9
+bAfePC'PMB@``)!e[G'KPFPpZEfjYC@3J-#!+C'PcE@PcFf&amp;XFqD!))!JJ##!))!
+JJ##!))!JJ##!))!JJ##!))!JJ##!))!JJ##!))!J)K!rX#I%@AR*8T!!!#)32k&amp;
+Pjb9)%q)3!#)32mCHFP5"2L-B!!)3!!!L%$ppdd-E9[f%)!!L%$qciLbmj+N#%!!
+L%$pciLbmj+N#%!!L%$rJ6iLbmj+N)!!L%$qe[f$ZQKMEf!!L%$q0dd-E9[f%)!!
+L%$qGdd-E9[f%)!!L%$rkp[$QeJp[%!!L%$rkKM8$"3KM8!!L%$rmRPe'(iRPf!!
+#%!!!)K!rqH&amp;hak)1&amp;i!!)K!rqk%-DJB+%-J!)K!rpi$@ZcJ)$@J!)K!rrS%XRl6
+B%XJ!)K!rqk1lMHb+1lJ!)K!rqH`d9c`1`dJ!)K!rqH`d9c`1`dJ!J##!))!JJ#"
+`)!4SEM-c!(!J!$*`)!!EF#!!!h!J!!*`)!!&amp;F#!!#R!J!!"`)!!!F#!!!h!J!!"
+`)!!!F#!!"R!J!!&amp;`)!!!)K!rqX&amp;eNjLCEZI4)K!rqUE'GQN4JZXR)K!rqr0pkP'
+i5@'3!#)32rE9H1Pm2erP85)32rM9H1Pm2erP85)32rV"GC1BQ@lRd5)32rHJ'Um
+G,iIVr5)32rk93iY"i&amp;!0@#)32r[Q*PZjp&amp;0M1b)32rL&amp;Dj(YTj[[8b)32rQYFMf
+dmhhU8M!J"5!JD'ib!#!!V`!J!,%J)%!#MCQCQCQCQCS!)!!*!#!!"!!J!"3!)!!
+!!#!!%!!J!!d!)!!!!#!!AJ!J!"!!)!!"!#!!"#)32rV+-1V0Fm9-Sb)32rVDIbp
+*B$3YU#)32rb*b)ppMG`JR5)32rL2IBhF)*b)q#)32rUTP'(9QZH+Q5)32rZNX"S
+@drPk5b)32rH#FL2IBhF)*b)32rhr,dPJ0#fRmb)32r[m[5@!d,DIc#)32rI3YTr
+,dPJ0#b)32rU#FL2IBhF)*f9bBA"j3M!J$@pdD'9bAfePC'PMB@``)""[G'KPFPp
+ZEfjYC@4TBf&amp;XfM!J#Q4TFfeTFh0KE(2QF#"`)$!J#h0MD'p[E&amp;pMEf4P-#!'D'j
+IF'p`!$!J&amp;(0dG@4P!!!!$%026%d!!!!!!1cP'!!!!Sa$5%j,!!m#!!'q!Ei!M!#
+@!*S!RJ#L!+B!UJ#Z!,)!YJ#k!,i!`J$'!-S!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!$!J"b!JD'iJ-cB!)!"&amp;!#!!A!!
+J!!J!)!!&amp;!#!!"!!J!"3!)!!!!#!!!!!J!!N!)!!!!#!!%!!J!#3!)!!!!#!!!A0
+IG'KPFQ&amp;`H6J`)!e[G'KPFPpYC@4TBf&amp;X-#!3E`!!!!!!!!,%E@9ND@0KE1%`)!T
+NDA0YDA0cB@acjN)3#3S6J!$rrK!#q`J!!!"j(c3"9j)!!%)3#3S6J!$rrK!#q`J
+!!!"j(c3"9j)!!%)3#3S6J!$rrK!#CJJ!!!#YFMfdmhhU8N)3#3S6J!$rrK!#CJJ
+!!!#&amp;Dj(YTj[[8d)3#3S6J!$rrK!#CJJ!!!$+!hZPF6+!hd)3#3S6J!$rrK!!N`J
+!!!$G+iQ8"[F"f%)3#3S6J!$rrK!!N`J!!!$G+iQ8"[F"f%!J$4C*!46rpB!!rrq
+!!"m)!!!!J0Zm)IHkY!4#%!N+%i!!rri3!*-)!!!!Tbm&amp;1AJTbm&amp;#%!N+%i!!rri
+3!*-)!!!!hZPF6+!hZPF!)!!8F#!!@A!J!0e`)!!+F#!!%R!J!!Y`)!!DF#!!!R!
+J!!4`)!!,F#!!!h!J!'&amp;`)!!SF#!!!A!J!!K#%!N+%i!!rri3!QB!!!!!S"U[(5q
+(kre#%!N+%i!!rri3!QB)!!!!eAMTI$pIj9&amp;`)!4SEM)`!%)3#3S6J!$rrK!#CJJ
+!!!$"GC1BQ@lRd8)3!!!!$%026%d!!!!!!1cNU!!!")a$5%j,!#m%!!1%!&amp;J$q!2
+m"!!%"!3)"!`%%!38""J%(!3J"#3%+!3X"$!"CJ&amp;S!AB"J!'B!D3"XJ'q!FS"j!(
+Z!IJ#!!)3!L!#0!*#!N3#8J*F!R3#J!+1!TS#TJ,!!XS#e!,F!Z`#r!-3!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!(!J#h0MD'p[E&amp;pMEf4PF#!'D'j
+IF'p`Ah!J&amp;(0dG@4PER4IER9bFf9IGQPcDA4c!(!J#@a[Fh4IG'PYCA!J#f0[G@G
+SAf0[E'4cF#!*FQ&amp;cD&amp;pcDfPZF#!)D@jUGA*TCA2rF#!@BfpYAf4TFf9KFf8[D@j
+QC@0dD@pZF`"`)!CKFh4SE@&amp;cF#!(FepZAhCIC(!J"@CPGQ9bF#!-E@9NFepdD'9
+bBA"j!(!J$@pdD'9bAfePC'PMB@a`)""[G'KPFPpZEfjYC@4TBf&amp;X!(!J#Q4TFfe
+TFh0KE(1#F#"`)!YcBfK[EfaIBfpNCA!J"QKZAh"[F&amp;p`)"4cG(9NC@jdAfjeFR0
+PAhCTFfPdF`"`)!PXEh0dAh4TE@9`)!YMEh9RD&amp;pMEfaNFh!J#A*KFfKIFfYTER!
+J#'PZDR9bD@9crh!J&amp;Q0[E9pNDA0PBA0P,fPZCQ9MG'P[ER-!F#!'BA0dD'eKrh!
+J"h0IEPpfAf4`)!9QCACPFR!J$'ePC(0IG'KPFQ&amp;`H3"`)!e[G'KPFPpYC@4TBf&amp;
+XF#!3Eh4SCA*IEQpZE@9ND@0KE!"`)!TNDA0YDA0cB@ac9(!JF#!,Ff0SEfpXAf0
+[C'9`)!CSEPp`Eh$rF#!8Fh4eC'9ZG&amp;pZGA*cC9pfDA0TG(-!F#!*E'pcG&amp;pdD@e
+PF#!,BfpeCfKIBfpXC(0`)!PbBA0SAh0VD@j`)!KTEQTeFQPPFlK`)"CMEfeIC'P
+cC@&amp;cC5pTEQCPBh4TEfjc!(!J"Q&amp;cG'KYBA0`)!GcAfjIGPpNF#!&amp;CQ9fCA*`)!a
+YC@4cAh4SCA*KF(N!F#!0Eh4SCA*IE@9ND@0KE(!J%'pdD'9bAfj[EQePC'PMB@`
+!F#!+C'PcE@PcFf&amp;XFi*`)!YcBfK[EfaIBfpNCA!J"QKZAh"[F)"`)"4cG(9NC@j
+dAfjeFR0PAhCTFfPdF`"`)!PXEh0dAh4TE@9`)!YMEh9RD&amp;pMEfaNFh!J#A*KFfK
+IFfYTER!J#'PZDR9bD@9crh!J&amp;Q0[E9pNDA0PBA0P,fPZCQ9MG'P[ER-!F#!'BA0
+dD'eKFh!J"h0IEPpfAf4`)!9QCACPFR!J$'ePC(0IG'KPFQ&amp;`H3"`)!e[G'KPFPp
+YC@4TBf&amp;XF#!3Eh4SCA*IEQpZE@9ND@0KE!"`)!TNDA0YDA0cB@acJ!!J!#%!)!!
+b!#!!&amp;!!J!!N!)!!&amp;!#!!!`!J!!8!)!!!!#!!!!!J!!-!)!!!!#!!!!!J!!3!)!!
+!!#!!!`!!!J!2rrrrrrrq!!J!!!3!!!)!#!!!"!!!!J!)!!!%!!!#!!J2r!3"q!)
+!#"!#"!B'!J!))!%%#!%#!!JJ!333!))!##!"""!!JJ!))!%%%!##!!!!!!!!!!!
+-3dp-63!!!!!!l163!!!#M%0)6NX!$`)!!E`"[!#-!*!!!*3!Q!#N!+J!V!#`!,3
+!Z!#m!-!!a!$)!-`!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!J!"3!)!"B!#!!d#!J3!(Fc-c-c-c-c3!J!!i!)!!*!#!
+!&amp;J!J!!%!)!!'!#!!&amp;3!J!!!!)!"C!#!!,!!J!!)!)!!#Af0[E'4cF#!*FQ&amp;cD&amp;p
+cDfPZF#!)D@jUGA*TCA2rF#!@BfpYAf4TFf9KFf8[D@jQC@0dD@pZF`"`)!CKFh4
+SE@(rF#!(FepZAhCIC(!J"@CPGQ9bF#!-E@9NFepdD'9bBA"j!(!J$@pdD'9bAfe
+PC'PMB@a`)""[G'KPFPpZEfjYC@4TBf&amp;X!(!J#Q4TFfeTFh0KE(1#!#-!!(!J!#3
+!!(!J!#8!!(!J!#B!!(!J!#F!!(!J!#J!!(!J!#N!!(!J!#S!!(!J!#X!!(!J!#`
+!!(!J!#d!!(!J!#i!!(!J&amp;2m!!!!!!!!$4!!$@I!!#J!!!!!!!!!!!!i!!!!!!!!
+$,(rr!0-"@!'"Irm"4!!B!HYrrhrr!0-"@!!!!!!!!!!8!83"k`!!!!!!!!!!!!!
+!!!!!![J!!eKi!!i!'!!1!9J!$J'"!!i"k`$6!9J!d`'"!83!'!&amp;%!HX!!!!!!!!
+!!!!!!!!!!!,%!!!!!!!!!!!!!!+iFh4SE@%!-#!(FepZAhCIC$!J"@CPGQ9b-#!
+-E@9NFepdD'9bBA"j1$!J$@pdD'9bAfePC'PMB@``)'0[!!!!!!!!!R3!!eAi!!!
+!$%026%d!!!!!!1cKe!!!!Sa$5%j,!!m#!!(!!F!!M!#8!*J!R!#J!+3!U!#X!,!
+!Y!#i!,`!`!$%!-J!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!$!J"'KZ-c)!!#!!0`!J!"i!)!!%!#!!!J!J!!%!)!!"!#!
+!!!!J!!)!)!!(!#!!!!!J!"!!)!!"!#!!!!!J!!-!!!"1NPJ!6T(!!%k5Q2rr!%k
+5A+T9UP@U9DT9!!!!!!!!!)J!!eEX!!!!!!!"!!!!!!!)!!J!!!!!!!!!!!")!!!
+!5!!!!!!!!3!"!!%!!!!!!%k4U!!!!!!!!!!!!!!!!!")!!0@2!!!!!%!!!!"!!$
+rrrrrrrm!!3!!!!!!!!!!!!!!!!!8!!0@9!!!!!!!!!!!!!!!!!!!!"!!!eFX!!!
+!!!!!!!!!!!!N!!0Bd!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!#`!!0
+@a!!!!%k6`!"1NL`!6T(Xrrm!6T3mUP@U9DT9UP8!!!!!!!!!L!!$@&amp;3!!!!!!!%
+!!!!!!!J!#!!!!!!!!!!!!%J!!!")!!!!!!!"!!%!!3!!!!!!6T3!!!!!!!!!!!!
+!!!!!!%J!!eL8!!!!!3!!!!%!!2rrrrrrr`!"!!!!!!!!!!!!!!!!!"3!!eE!rrr
+rrrrrrrm!!!!!!!!!%!!$9S!!!!!!!!!!!!!!!#3!!eH%!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!"M`!!eEN!!!!6T2N!%k89!"1NLMrr`"1N[#U9DT9!!!
+!$%026%d!!!!!!1cKL!!!")a$5%j,!#m%!!0i!5B$(J-Q!bS$,J-k!ci$3J0'!dS
+$6J05!eB$@J0H!f)"CJ&amp;S!AB"J!'B!D3"XJ'q!FS"j!(Z!IJ#!!)3!L!#0!*#!N3
+#8J*F!R3#J!+1!TS#TJ,!!XS#e!,F!Z`#r!-3!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!(!J#h0MD'p[E&amp;pMEf4PF#!'D'jIF'p`Ah!J&amp;(0dG@4PER4
+IER9bFf9IGQPcDA4c!(!J#@a[Fh4IG'PYCA!J#f0[G@GSAf0[E'4cF#!*FQ&amp;cD&amp;p
+cDfPZF#!)D@jUGA*TCA2rF#!@BfpYAf4TFf9KFf8[D@jQC@0dD@pZF`"`)!CKFh4
+SE@'!F#!(FepZAhCIC(!J"@CPGQ9bF#!-E@9NFepdD'9bBA"j!(!J$@pdD'9bAfe
+PC'PMB@a`)""[G'KPFPpZEfjYC@4TBf&amp;X!(!J#Q4TFfeTFh0KE(0PF#"`)!YcBfK
+[EfaIBfpNCA!J"QKZAh"[F&amp;p`)"4cG(9NC@jdAfjeFR0PAhCTFfPdF`"`)!PXEh0
+dAh4TE@9`)!YMEh9RD&amp;pMEfaNFh!J#A*KFfKIFfYTER!J#'PZDR9bD@9cER!J&amp;Q0
+[E9pNDA0PBA0P,fPZCQ9MG'P[ER-!F#!'BA0dD'eKFh!J"h0IEPpfAf4`)!9QCAC
+PFR!J$'ePC(0IG'KPFQ&amp;`H3"`)!e[G'KPFPpYC@4TBf&amp;XF#!3Eh4SCA*IEQpZE@9
+ND@0KE)4`)!TNDA0YDA0cB@acJR!JF#!,Ff0SEfpXAf0[C'9`)!CSEPp`Eh"IF#!
+8Fh4eC'9ZG&amp;pZGA*cC9pfDA0TG(-!F#!*E'pcG&amp;pdD@ePF#!,BfpeCfKIBfpXC(0
+`)!PbBA0SAh0VD@j`)!KTEQTeFQPPFrp`)"CMEfeIC'PcC@&amp;cC5pTEQCPBh4TEfj
+c!(!J"Q&amp;cG'KYBIp`)!GcAfjIGPpNF#!&amp;CQ9fCA*`)!aYC@4cAh4SCA*KF(N!F#!
+0Eh4SCA*IE@9ND@0KE(!J%'pdD'9bAfj[EQePC'PMB@`!F#!+C'PcE@PcFf&amp;XFii
+`)!8J5%ib)!!J!,!!)!%`)#"!![-c-c-c-c-c!#!!"!!J!!-!)!!S!#!!!3!J!"!
+!)!!2!#!!!J!J!-X!)!!6!#!!!3!J!!8!"`!J!!!!)!!3!#!!!3!J!!!!)!!$-#!
+')#"SEM%bA`!J!$`!)!!M!#!!!J!J!!%!)!!!!#!!"3!J!!!!)!!!!#!!"!!J!!-
+!)!!8!#!!!3!J!!%!)!!$-#!&amp;)%K1-L!!)!#`!#!"-#!J3!,c-c-c-c-c-`!!!!e
+$l!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-3dp-63!!!!!!l16J!!!
+#M%0)6NX!$`)!!F!"0J#-!*3!Q!#F!+!!T!#S!+`!X!#d!,J![!$!!-3!b!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-#!
+&amp;)'KZ-c)!)!!h!#!!(J!J!!3!)!!#!#!!!3!J!!%!)!!!!#!!!J!J!!F!)!!!!#!
+!%!!J!!%!)!!!!#!!!c!J"L!JD'ia-Pm!)!!m!#!!)`!J!!)!)!!"!#!!!!!J!!8
+!)!!!!#!!!!!J!!3!)!!$!#!!&amp;!!J!!%!)!!"!#!!!c!J"5")6M)J!#!!X!!J!6!
+J)%!#mc-c-c-c-c-!)!!%!#!!!`!J!#J!)!!"!#!!%!!J!!m!)!!#!#!!b`!J!"-
+!)!!"!#!!"3!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-3dp-63!!!!!!l1&amp;)!!!
+#M%0)6NX!$`)!!Ei"[J#-!*B!QJ#H!+)!TJ#U!+i!XJ#f!,S![J$#!-B!bJ!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-#!
+')#"SEM%bA`!J!$`!)!!M!#!!!J!J!!%!)!!!!#!!"3!J!!!!)!!!!#!!"!!J!!-
+!)!!8!#!!!3!J!!%!)!!$!!!!$6cB!!dme'0KE!!!$J!!-#!+C'PcE@PcFf&amp;XFf8
+!$`!!F#!!%!!!-#!,Ff0SEfpXAf0[C'8!%3!!-#!'D'jIF'p`A`!5!!!`)"4cG(9
+NC@jdAfjeFR0PAhCTFfPdF`!!%`!!-#!*E'pcG&amp;pdD@eP!"3!!$!J#f0[G@GSAf0
+[E'4c!"8!!$!J!!!!!!!02%aTEJ!@!!!`)!KTEQTeFQPPFfi!&amp;`!!-#!@BfpYAf4
+TFf9KFf8[D@jQC@0dD@pZF`!!'!!!-#!'BA0dD'eKF`!C!!!`)!GcAfjIGPpN!"S
+!!$!J"@CPGQ9b!"X!!$!J$'ePC(0IG'KPFQ&amp;`H3!!(!!!-#!0Eh4SCA*IE@9ND@0
+KE!!G!!!`)""[G'KPFPpZEfjYC@4TBf&amp;XK!!H!!!`)!TNDA0YDA0cB@acJJ!I!!"
+`)!!J!!!`)!YcBfK[EfaIBfpNC3!K!!!`)!CSEPp`Eh"I!#)!!$!J&amp;(0dG@4PER4
+IER9bFf9IGQPcDA4c!!!M!!!`)!PXEh0dAh4TE@8!*!!!-#!,BfpeCfKIBfpXC(-
+!*3!!-#!*FQ&amp;cD&amp;pcDfPZ!#B!!$!J#'PZDR9bD@8!!!!!!!!!!!!!!!!!!!!!!!!
+!&amp;!!#rrm!!!!%!!!!!3*U!!!"jJ!1!!!!&amp;!!#rrm!!!!%!!!!!3&amp;#!!`"jJ!L4&amp;0
+&amp;9!!!!(`!!Irr!!!!+!")!!%!!!!#!!!!#J!!!!"eY(rrrrprrrrr!1cN[!!!!!!
+!!+J!!!!!!!!!!!!!!!!!!!%!!3!!!!!!!EZ!!!!!!!$XiI3!l1*N!H`*!"#H!!%
+@r!!"+I`!!IF%!!+5"!!%!3!!!J!A!!!!l1#F!"i!"3!"!!!!0J!"rrm!!!!U!!!
+!!J!!!!!!!!!!!!!!!!!!!!!!!3!"!!!!!!!!Zi!!!!!!!!!!!!!!!!!"l!!!!"!
+!![rr!!!!!J!!!!%#8J(1!!!!%!!#rrm!!!!#!!!!!3%d!GJ!!!1B!!crr`!!!#i
+"C!!"!1cPY!!!!!%!&amp;!!%!"i!"3!!!!)!!!!)Ik!!l1%B!#%!!`N!!3!!!!!!!!!
+!!"d"!3!!!J!#!!S!@J!H!3ij!)!!!!!!!!!!!!!!!!!!!!!!!!!!!!"!!U!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!5!!!!!!!!!!!!!%!!`N!!3!!!!!!!!!
+!!!!"!3!!!!!(!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"!!U!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!D!!!!!!!!!!!!!%!!`N!!3!!!!!!!!!!!!!"!3!!!!!(!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!#J!fJ$U!9jJJ)!!rrr
+rr`!!!!!!!J!!!!!!i!&amp;S!#J!#J$@!0!'!5S"#!!!!3!$#3!!!!!!!!!!!!!!+J%
+"!!!#!!)!!!!!!!!rqX2c@kH"P)X3"J%*!3J!!!%!!`N!!!!!!!!!!!!!!!N"!3!
+!!J!#!!!!!!!!2rV6`-T&amp;KqDh6`B""!%)!!!"!!-*!!!!!!!!!!!!!!!%!3%!!!)
+!!J!!!!!!!$rmKBIQYdm$+4F'!8%"#!!!!3!$#3!!!!!!!!!!!!!!33%"!!!#!!)
+!!!!!!!!rq)X2c@kH"P)Y"J%$!3J!!!%!!`N!!!!!!!!!!!!!!!-"!3!!!J!#!!!
+!!!!!2rUN@(jVG2!bN3B"p3%)!!!"!!-*!!!!!!!!!!!!!!$e!3%!!!)!!J!!!!!
+!!$rlRjVG2!bN@(m'!93"#!!!!3!$#3!!!!!!!!!!!!!!9!%"!!!#!!)!!!!!!!!
+rp[c@kH"P)X2d"J%,!3J!!!%!!`N!!!!!!!!!!!!!!!X"!3!!!J!#!!!!!!!!2rh
+h6`-T&amp;KqDhJB"FJ%)!!!"!!-*!!!!!!!!!!!!!!"b!3%!!!)!!J!!!!!!!$rlp2!
+bN@(jVG3'!3%"#!!!!3!$#3!!!!!!!!!!!!!!!3%"!!!#!!)!!!!!!!!rpmT&amp;KqD
+h6`-T"J%3!3J!!!%!!`N!!!!!!!!!!!!!!"!"!3!!!J!#!!!!!!!!2rRmeZRJC5,
+$p!B"33"!!!!"!!-*!!!!!!!!!!!!!!!G!3%!!!)!!J"T!!!!!!!!!!!!!!!!!!!
+!!!!P*%jeFR0P)&amp;CTFfPdFb"LH5"$BA4PCfpbH6SJ4'9M,L`J-6Nj0`!!!!!J!!N
+!@Ym!!!:
+</PRE>
+<!--X-MsgBody-End-->
+<!--X-Follow-Ups-->
+<!--X-Follow-Ups-End-->
+<!--X-References-->
+<!--X-References-End-->
+<!--X-BotPNI-->
+<HR>
+<UL>
+<LI>Prev by Date:
+<STRONG><A HREF="msg00029.html">[Fwd: Websites to Share]</A></STRONG>
+</LI>
+<LI>Next by Date:
+<STRONG><A HREF="msg00031.html">Exercise, Pretest Results</A></STRONG>
+</LI>
+<LI>Prev by thread:
+<STRONG><A HREF="msg00029.html">[Fwd: Websites to Share]</A></STRONG>
+</LI>
+<LI>Next by thread:
+<STRONG><A HREF="msg00031.html">Exercise, Pretest Results</A></STRONG>
+</LI>
+<LI>Index(es):
+<UL>
+<LI><A HREF="maillist.html#00030"><STRONG>Date</STRONG></A></LI>
+<LI><A HREF="index.html#00030"><STRONG>Thread</STRONG></A></LI>
+</UL>
+</LI>
+</UL>
+
+<!--X-BotPNI-End-->
+<!--X-User-Footer-->
+<!--X-User-Footer-End-->
+</BODY>
+</HTML>
+
+.
+QUIT
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 04/09/1999 08:07:28 | 172.16.113.84:1211 | 197.218.177.69:21 | 99.76
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+USER anonymous
+PASS wynnec@duck.eyrie.af.mil
+SYST
+PORT 172,16,113,84,4,191
+LIST
+CWD src
+PORT 172,16,113,84,4,192
+LIST
+CWD c
+PORT 172,16,113,84,4,193
+LIST
+CWD lnknet
+PORT 172,16,113,84,4,194
+LIST
+CWD algorithm
+PORT 172,16,113,84,4,195
+LIST
+CWD committee
+PORT 172,16,113,84,4,196
+LIST
+TYPE I
+TYPE A
+PORT 172,16,113,84,4,197
+NLST *
+TYPE I
+PORT 172,16,113,84,4,217
+RETR Imakefile
+PORT 172,16,113,84,4,218
+RETR Makefile
+PORT 172,16,113,84,4,221
+RETR committee.h
+PORT 172,16,113,84,5,18
+RETR committee2c
+PORT 172,16,113,84,5,80
+RETR committee_args.h
+PORT 172,16,113,84,5,81
+RETR committee_cv.c
+PORT 172,16,113,84,5,82
+RETR committee_main.c
+PORT 172,16,113,84,5,145
+RETR committee_pack.c
+PORT 172,16,113,84,5,208
+RETR committee_pack.h
+PORT 172,16,113,84,5,209
+RETR committee_plot_bound.c
+PORT 172,16,113,84,6,23
+RETR committee_test.c
+PORT 172,16,113,84,6,24
+RETR err2data.c
+PORT 172,16,113,84,6,84
+RETR err2data_args.h
+PORT 172,16,113,84,6,86
+RETR localLNK.rules
+PORT 172,16,113,84,6,87
+RETR make_committee
+PORT 172,16,113,84,6,88
+RETR quick_comm_main.c
+PORT 172,16,113,84,6,149
+RETR quick_comm_test.c
+QUIT
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+TCP | 04/09/1999 08:05:19 | 197.182.91.233:1266 | 172.16.114.50:25 | 588.84
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+EHLO mars.avocado.net
+MAIL From:<ipng@marslistserv.com>
+RCPT To:<suzannac@marx.eyrie.af.mil>
+DATA
+Received: (from mail@localhost) by mars.avocado.net (SMI-8.6/SMI-SVR4)
+	id: CAA2190; Fri,  9 Apr 1999 08:05:20 -0400
+Date: Fri,  9 Apr 1999 08:05:20 -0400
+To: vladislj@goose.eyrie.af.mil, suzannac@marx.eyrie.af.mil
+Subject: ipng
+Message-Id: <19990409080520.CAA2190>
+
+<!--X-Subject: Attendance,Dec. 1997,Nurse Results -->
+<!--X-From: Randi Lite <lite@whale.simmons.edu> -->
+<!--X-Date: Tue, 13 Jan 1998 15:09:34 &#45;0500 (EST) -->
+<!--X-Message-Id: Pine.SUN.3.95.980113150748.1752E&#45;200000@sun.simmons.edu -->
+<!--X-ContentType: multipart/mixed -->
+<!--X-Head-End-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML//EN">
+<HTML>
+<HEAD>
+<TITLE>Attendance,Dec. 1997,Nurse Results</TITLE>
+<LINK REV="made" HREF="mailto:lite@whale.simmons.edu">
+</HEAD>
+<BODY>
+<!--X-Body-Begin-->
+<!--X-User-Header-->
+<body bgcolor="#ffffff">
+<!--X-User-Header-End-->
+<!--X-TopPNI-->
+<HR>
+<A HREF="msg00029.html">
+<IMG SRC="/images/mhonarc/date_prev.gif" border=0 ALT="[Date Prev]"></A>
+<A HREF="msg00031.html">
+<IMG SRC="/images/mhonarc/date_next.gif" border=0 ALT="[Date Next]"></A>
+<A HREF="msg00029.html">
+<IMG SRC="/images/mhonarc/thread_prev.gif" border=0 ALT="[Thread Prev]"></A>
+<A HREF="msg00031.html">
+<IMG SRC="/images/mhonarc/thread_next.gif" border=0 ALT="[Thread Next]"></A>
+<A HREF="maillist.html#00030">
+<IMG SRC="/images/mhonarc/date_index.gif" border=0 ALT="[Date Index]"></A>
+<A HREF="index.html#00030">
+<IMG SRC="/images/mhonarc/thread_index.gif" border=0 ALT="[Thread Index]"></A>
+
+<!--X-TopPNI-End-->
+<!--X-MsgBody-->
+<!--X-Subject-Header-Begin-->
+<H1>Attendance,Dec. 1997,Nurse Results</H1>
+<HR>
+<!--X-Subject-Header-End-->
+<UL>
+<LI><em>To</em>: <A HREF="mailto:attendance@whale.simmons.edu">attendance@whale.simmons.edu</A>, <A HREF="mailto:health-talk@whale.simmons.edu">health-talk@whale.simmons.edu</A></LI>
+<LI><em>Subject</em>: Attendance,Dec. 1997,Nurse Results</LI>
+<LI><em>From</em>: Randi Lite &lt;<A HREF="mailto:lite@whale.simmons.edu">lite@whale.simmons.edu</A>&gt;</LI>
+<LI><em>Date</em>: Tue, 13 Jan 1998 15:09:34 -0500 (EST)</LI>
+<LI><em>Sender</em>: <A HREF="mailto:owner-health-talk@whale.simmons.edu">owner-health-talk@whale.simmons.edu</A></LI>
+</UL>
+<!--X-Head-Body-Sep-Begin-->
+<HR>
+<!--X-Head-Body-Sep-End-->
+<!--X-Body-of-Message-->
+<PRE>
+Here is the collated data from the nurses' offices as of January 13. It
+represents 13 schools and 975 children:
+
+*1216 visits to the nurse were reported
+*85.3 hours of lost time total
+The visits were due to the following reasons:
+
+        * 62 or  4.9% due to respiratory illness
+        * 67 or  5.3% due to rash/skin issues
+        * 169 or 13.5% due to injuries
+        *  11 or   .9% due to other communicable diseases
+        *  52 or  4.1% due to asthma
+        * 101 or  8.0% due to gastrointestinal illnesses
+        *  5 or   .4% due to fever
+        *626 or 49.8% due to meds/therapy
+        * 155 or 12.3% due to other medical issues
+        *  8 or   .6% due to nonmedical reasons
+        * there were 40 dismissals
+
+Interesting that the meds/therapy rate has decreased from 58.3% in
+November to
+49.8% in December. Any thoughts??
+
+Nurses comments appear below:
+-In December we had an increase in injuries due to the weather and a lot
+of sand on the  playground area.
+-The children with asthma had an increase in inhaler use. Physical
+Education classes were held indoors causing an increase in injuries.                      
+-Our district is experiencing an outbreak of strep throat. HealthNet
+classes appear to be less affected. Could it be the handwashing?
+-This data is from two classrooms, a fifth grade and a first grade class.
+It is interesting to note that the fifth grade had a total of nine visits
+and the first grade had a total of eleven visits.  The fifth grade had 
+four of the nine visits under injuries, while the first grade had four
+out of eleven visits as colds, sore throats.
+- DATA MAY BE OFF AS I WAS OUT FOR 2 1/2 WEEKS AND DID NOT HAVE ACCURATE
+DATA TO COLLATE
+
+Happy New Year!
+
+
+**************************************************
+
+Randi Lite
+HealthNet Program Director and Instructor of Biology
+Simmons College, 300 The Fenway, Boston, MA 02115
+(617)521-2660
+lite@whale.simmons.edu
+
+*************************************************
+</PRE>
+<PRE>
+(This file must be converted with BinHex 4.0)
+
+:$84PBepZGA*cC@4KG'%!3eG68d*23Nm!!!!!4LF!!!!!C&amp;X#!$F!3Np#6`!"!1c
+KU!!!!!!$'!*N!#3!*!!N!#3!*!!N![3#3!%!!!%!!!!!!!!!!!!!!!!!!!!!!!!
+"!!!#!!)!!!$Xj03!!!!!!!!!!3!"!!!!5!!!!!J!!!!"!!!!!J$XiD3!!!!!!3-
+!!!!!!!!!!!!!!!!!l15B!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1cKI!!!!1cM@!)!!!!
+!!!!9!!!-!3!!!!%#!J!!!3!!!!!!!3!!!3!"!#d!!!%!!3!!!!"D!!!!%J!!!!!
+!"J%!!!!!!3"N!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!`
+!!2rr!!!!B!!!!!)!!!"i!!m!!!")!%J!!!!!![J#52rfrr)$$J*@,!)&amp;+!2m!3!
+!!!&amp;S!@J!!!!!$YJ,D!!"!3!!C!!"!!!!!3!#!!!!!5F2!!%!!!!!!!!!!!!!!!!
+!!$!!!"!!!!!!!!!3!2r1rlS24JZZ!#!"!!!!!!!!!!!!!!!!!"N"!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!F!!$rr`!!!!3!%!!"!!8!!!%!!3%!!!%!!!!!!!!!!!!
+!l0V%!J!!!!!"!!J!!!!!!!!!!!!!rrm!!!!!rrm!!3!"!!!!!3!!!!!!!!!!!!!
+!!3#T!!!!!!!!!!!!!!!!!!!!!!!!!!!!+3!!!I8!!!!!!!%!!3"5!QX!!!!!!"3
+"63!!!!!!!!!!!!!!!!!!!!!!!!!-!!!!!!!!!!!!l1))!!!!!!!!!!!!l16F!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!l1@%!!!!!!!8!$)"63*V!!%!!!%!!!!!!3!!!3!
+!!!!!!!!!!!!!!1cFU!!!!!!"!4%Z#`!!!!!!!!!!!!!!!!!!!3!)!!!!!!!!!1c
+K`!!!)53!!!!!!!!!!!!!!!!!!@X!!!$K!!!S!!-"K!*p!!0%8d98!!!"e!!"rrm
+!!!!`!CJ!!J)!!!%"p!!S!1cP%!!!!!!!!!!!!!!!!!!!!!X!l15N!1cKZ!!J!!-
+*!!%!!%J!$J!!!!!!!!!!*")4%K!5%K36%a38&amp;L3N*#3N*#3N*#3N*#3N*#3N*#3
+N*#3N*#3N*#3N*#3N*#3N*#3N*#3N*#3N*#3N*#3N*#3N*#3N*#3N*#3N*#3N*#3
+N*#3N*#3N*#3N*#3N*#3N*#3N*#3N*#3N*#3N*#3N*#3N*#3N*#3N*#3N*#3N*#3
+N*#3N*#3N*#3N*#3N*#3N*#3N*#3N*#3N*#3N*#3N*#3N*#3N*#3N*#3N*#3N*#3
+N*#3N*#3N*#3N*#3N*#3N*#3N*#3N*#3N*#3N*#3N*#3N*#3N*#3N*#3N*#3N*#3
+N*#3N*#3N*#3N*#3N*#3N*#3N*#3N*#3N*#3N*#3N*!!!!!!!!!!!!"3!"!!8!!3
+!(J!&amp;!"%!!3!4!!%!!!!!!3!"!3!"!!!!!!!#!!!!!!!1!"J!'!!1!!`!!!!!!+J
+!!!!!!MN"13!"!!%!!!$XiD`!l16-!!!!!!!!!!!$K!!!!!!"eJ#8!!!!!!!!!!!
+!!!!!!!!!!!!"!!%!!!(@!(3"eIp`!!!!!!!!!!!$K!!!!&amp;J!&amp;!!"!"3!!`!9!!%
+!&amp;3!$!"B!!3!@!!-!&amp;`!"!"F!!`!B!!%!'!!$!"N!!3!C!!-!'J!"!"S!!`!E!!%
+!'`!$!"`!!3!F!!-!(3!"!"d!!`!H!!%!(J!$!!!"[J!Irrm!!!!1!!!!!3!8!!%
+!(3!"!!!!(`!"!!%!!3!"!!`!!!!4!!)!!3!"!!%!$!!!!"%!!3!#!!%!!J!-!!!
+!%J!"!!-!!3!$!!`!!!!6!!%!"!!"!!3!$!!!!"3!!3!&amp;!!%!"3!-!!!!&amp;3!"!!B
+!!3!'!!`!!!!@!!%!"`!"!!F!$!!!!"F!!3!)!!%!#!!-!!!!'!!"!!N!!3!*!!`
+!!!!C!!%!#J!"!!S!$!!!!"S!!3!,!!%!#`!-!!!!'`!"!!`!!3!-!!`!!!!F!!%
+!$3!"!!d!$!!!!"d!!3!1!!%!$J!-!!!!(J!"!!)!!3!#!!`!!!!5!!)!!`!"!!-
+!$!!!!"-!!J!%!!%!"!!-!!!!&amp;!!#!!8!!3!&amp;!!`!!!!9!!)!"J!"!!B!$!!!!"B
+!!J!(!!%!"`!-!!!!&amp;`!#!!J!!3!)!!`!!!!B!!)!#3!"!!N!$!!!!"N!!J!+!!%
+!#J!-!!!!'J!#!!X!!3!,!!`!!!!E!!)!$!!"!!`!$!!!!"`!!J!0!!%!$3!-!!!
+!(3!#!!i!!3!1!!`!!!!H!!)!&amp;!!$!"d!!`!!!"m!!`!8!!3!(J!&amp;!!%!!J!!!!!
+jUJ!"!!!%#%0838)!$!"j!1cP&amp;!$XiE`!l16X!1cKK!$Xi4!!l1*-!1cNS!$XiL3
+!l1(-!1cP,!$Xi2!!l1&amp;!!1cNP!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!""$6da0!!!!!3$Xib!
+!l16d!!!%M%0)6NX!)!3!!S!!*J,@!Z3#lJ-'!a)$)!-X!cJ$8J0F!fB$EJ0q!ii
+$SJ!!!@J$X!1k!mS$eJ2N!r!$r!3-""B%)!3S"$J%5!4B!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!#NJ+8!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!F#!`)!YcBfK[EfaIBfpNC6!J"QKZAh"[F!!`)"4cG(9NC@jdAfjeFR0PAhC
+TFfPdFp``)!PXEh0dAh4TE@8`)!YMEh9RD&amp;pMEfaNFc!J#A*KFfKIFfYTEM!J#'P
+ZDR9bD@9c#6!J&amp;Q0[E9pNDA0PBA0P,fPZCQ9MG'P[ER29-#!'BA0dD'eK!$!J"h0
+IEPpfAf3`)!9QCACPFM!J$'ePC(0IG'KPFQ&amp;`H8)`)!e[G'KPFPpYC@4TBf&amp;X-#!
+3Eh4SCA*IEQpZE@9ND@0KE0S`)!TNDA0YDA0cB@acjR!JF#!`)!YcBfK[EfaIBfp
+NC6!J"QKZAh"[F!!`)"4cG(9NC@jdAfjeFR0PAhCTFfPdFp``)!PXEh0dAh4TE@8
+`)!YMEh9RD&amp;pMEfaNFc!J#A*KFfKIFfYTEM!J#'PZDR9bD@9c#6!J&amp;Q0[E9pNDA0
+PBA0P,fPZCQ9MG'P[ER29-#!'BA0dD'eK!$!J"h0IEPpfAf3`)!9QCACPFM!J$'e
+PC(0IG'KPFQ&amp;`H8)`)!e[G'KPFPpYC@4TBf&amp;X-#!3Eh4SCA*IEQpZE@9ND@0KE0X
+`)!TNDA0YDA0cB@acjM!J!5!`)!8a-#dj0c!J"'KZ-6)!!#!!$!!J!$F!)!!#!#!
+!!!!J!!!!)!!#!#!!!!!J!!!!)!!$!#!!!!!J!#`!)!!'!#!!!!!J!!"`)(!J-#!
+&amp;-6!Y16F`)!4SEMCL!!!J!"J!)!!,)#"!$!!!!!!!!'&amp;X!#!!"3!J!!!!)!!#!#!
+!!!!J!!!!)!!%!#!!!$!J#h0MD'p[E&amp;pMEf4P-#!'D'jIF'p`!$!J$5"ZGA*cC9p
+fDA0TG(0IGQPcDA4ch$!J#@a[Fh4IG'PYC6!J#f0[G@GSAf0[E'4c-#!*FQ&amp;cD&amp;p
+cDfPZ-#!)D@jUGA*TCA-*-#!-BfpYAf4TFf9KFf8J!'jQC@0dD@pZFp8`)!CKFh4
+SE@%!-#!(FepZAhCIC$!J"@CPGQ9b-#!-E@9NFepdD'9bBA"j3M!J$@pdD'9bAfe
+PC'PMB@``)!e[G'KPFPpZEfjYC@3JBf&amp;XfM!J#Q4TFfeTFh0KE(2Q-#!'D'jIF'p
+`!$!J$5"ZGA*cC9pfDA0TG(-`)!PXEh0dAh4TE@8`)!YMEh9RD&amp;pMEfaNFc!J#A*
+KFfKIFfYTEM!J#'PZDR9bD@9c#6!J$'0[E9pNDA0PBA0P)!!`)!CKFh4SE@%!-#!
+(FepZAhCIC$!J"@CPGQ9b-#!-E@9NFepdD'9bBA"j3M!J$@pdD'9bAfePC'PMB@`
+`)!e[G'KPFPpZEfjYC@3J-#!+C'PcE@PcFf&amp;XFqCKG'9REh*j,J!!!!$q!J!!!GA
+K"!(X[F!!!2V!!!!(h!(9p1`"e3!!!Sa$5%j,!!8#!!(f!2`!!!!!!!!!!!#F!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!lJ$`!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!B`"MJ!!!!!!!!!!!!!!!!!J!!!!)!!!!#!!!!!J!!0`)$!J"6%`,6Nh-#!
+%D'ifB`!!)!!A!#!!%b!J3")!!!!!!!"KE!!J!!8!)!!!!#!!"J!J!!!!)!!!!#!
+!!3!J!!%!)!!!!#!!"!!J!!)!)!!#F#"`)$!J"'KZ0Q)!!#!!'!!J!K!!)!!4)#"
+!#Di8HZ&amp;(VQ&amp;X!#!!"!!J!!!!)!!!!#!!!3!J!!!!)!!$!#!!!!!J!!!!)!!!!#!
+!!!!J!!P`)$!J"'KZ0Q-!!#!!&amp;`!J!IS!)!!F)#"!&amp;J!!!!!!!'&amp;X!#!!"3!J!!!
+!)!!!!#!!!!!J!!!!)!!'!#!!"!!J!!%!)!!"!#!!!!!J!!Y`)(!J!HCFl!(@!!X
+!!!!!!HCFi%#)CUj!L'Db3)J)8SjcG@f1)%&amp;ZB@`J4QajCA*bH8&amp;ZB@ajHQ9br)!
+"p`(X[1#94!(@!!X!!!!!!)+Tm"V52c`!JUR`!!!r2!(XDdeKDf9c)'%JF'9bFfp
+ZB@`JFSjcG@f1)(GTG'JJB@iJEh"PEL`JFh"KBfP[GA-JE'p[DcXJC@e`D'&amp;cDAT
+PFb"aG@&amp;XD@CTBf&amp;dD@pZFb"KEQ3JF(*[CQ9cFfP[EQ&amp;X)'9iF'9bD@9ZBf8ZC5N
+Z)(*PF'pbG#"LH5"cF'9ZC'PZCb"MBA4PCfpbH5i!!!!!rJ)!!!(9i33"l,h!!!$
+k`!!!!!!!$%026%d!!!!!!1cK)!!!")a$5%j,!"m%!!+%!!J%$!38""J%(!3J"#3
+%+!3X"$!%0!3i"$`%3!4%"%J!!!&amp;S!A!"K!4S!D`"`!(8!HJ"r!)3!L3#1!*-!Q!
+#G!+N!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!$!J"L!JD'ic0J!!)!"&amp;!#!!65!J3#QSpF+2A#P
+YC3!J!!-!)!!#!#!!'`!J!!!!)!!"!#!!#`!J!!!!)!!6!#!!#J!J!!!!)!!%-#!
+&amp;)'KZ-M!!)!"D!#!!p5!J3"d!!!!!!!"YC3!J!!d!)!!-!#!!)`!J!!!!)!!#!#!
+!$3!J!!%!)!#6!#!!$`!J!!3!)!!$-#!')#"SEM-f!!!J!%8!)!"0)#"!+DMe`Sp
+F+8J!!#!!!`!J!!)!)!!E!#!!!!!J!!%!)!!,!#!!!!!J!"-!)!!+!#!!!!!J!!3
+`)!98Eh4KE%!J$4C*!46rm)!!rr#!#am!!!223#!0&amp;NN"&amp;2r`J!$rm)!,(`!!"-"
+!)!d@53%8rr#!!2r`J!3I#!!!fN!J$4C*!46rm)!!rr#!#am!!!!q3#!0&amp;NN"&amp;2r
+`J!$rm)!,(`!!!%0!)!d@53%8rr#!!2r`J!XI!!!!U8!J$4C*!46rm)!!rr#!#am
+!!!!,3#!0&amp;NN"&amp;2r`J!$rm)!,(`!!!$4!)!d@53%8rr#!!2r`J!XI!!!!C8!J$4C
+*!46rm)!!rr#!#am!!!!&amp;3#!0&amp;NN"&amp;2r`J!$rm)!,(`!!!R*!)!d@53%8rr#!!2r
+`J!XI!!!!Qd!J$4C*!46rm)!!rr#!#am!!!!)3#!0&amp;NN"&amp;2r`J!$rm)!,(`!!!#K
+!)!d@53%8rr#!!2r`J!JI#!!#044ki8HZ&amp;+!!3#!0&amp;NN"&amp;2reJ!$rrS!!(`!!"1K
+!)!d@53%8rr#!!2r`J!JI#!!!!$Z&amp;(VK4l'!!-#!,Ff0SEfpXAf0[C'8`)!CSEPp
+`Eh!!-#!8Fh4eC'9ZG&amp;pZGA*cC9pfDA0TG(-&amp;-#!*E'pcG&amp;pdD@eP-#!,BfpeCfK
+IBfpXC(-`)!PbBA0SAh0VD@i`)!KTEQTeFQPPF`N`)"CMEfeIC'PcC@&amp;cC5pTEQC
+PBh4TEfjce6!J"Q&amp;cG'KYB3!`)!GcAfjIGPpN-#!&amp;CQ9fCA)`)!aYC@4cAh4SCA*
+KF(Qf-#!0Eh4SCA*IE@9ND@0KE$!J%'pdD'9bAfj[EQePC'PMB@cI-#!+C'PcE@P
+cFf&amp;XFqC!)!d@53%8rr#!!2r`J!JI#!!!#S%!!!!!!!!!F#!()#!JD'ic0R!J!%9
+`)!",F#!!"R!J!!&amp;`)!!"F#!!&amp;h!J!!"`)!!$F#!!#R!J!!"`)!!AF#!!#A!J!!&amp;
+`)!!%-#!%D'ifB`!!)!!A!#!!'J!J!!B!)!!%!#!!!!!J!!J!)!!)!#!!!!!J!!%
+!)!!!!#!!!!!J!!)!)!!"!#!!!N!J$4C*!46rm)!!rr#!#am)!!22J$-c-c-c-c4
+!)!d@53%8rr#!!2r`J!XI)!"!"DUCQCQCQCQDCA,mJ!(h!H`!!!!-3dp-63!!!!!
+!l1*m!!!)0N0)6NX!(JHU"G`"$!++!T)#PJ+D!Ti#SJ+Q!US#VJ+b!VB#ZJ+q!X)
+#aJ!!!03'ZJD#!ri%qJE@"GS%EJDH"Ei'mJF1!`)#jJ@L!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!F#!%D'ic0+C`)!!CF#!!5(!J3!$J!!!!!!!!!(!J!!&amp;`)!!#F#!!!A!J!!"
+`)!!"F#!!!A!J!!"`)!!kF#!!#(!J!!"`)!!!-#!$3ACP4"!0&amp;JJ"&amp;2r`rrrrm)!
+((`J!!#4%%!d@#!%8rr$rrrr`J!FI#!!!9DmNNNNNNNNP4"!0&amp;JJ"&amp;2r`rrrrm)!
+((`J!!!@6EEEEEEEEEN33$4B)!46rm2rrrr#!"am)!!!#K**********%%!d@#!%
+8rr$rrrr`J!FI#!!!!155555555554"!0&amp;JJ"&amp;2r`rrrrm)!((`J!!!LQfffffff
+ffd33$4B)!46rm2rrrr#!"am)!!!!4"!0&amp;JJ"&amp;2r`rrrrm)!((`J!!!#55555555
+55833$4B)!46rm2rrrr#!"am!!!!!ffffffffffj%%!d@#!%8rr$rrrr`J!FI#!!
+!!-b5555555554"!0&amp;JJ"&amp;2r`rrrrm)!((`J!!!+GYYYYYYYYYd33$4B)!46rm2r
+rrr#!"am)!!!"YYYYYYYYYYY%%!d@#!%8rr$rrrr`J!FI#!!!!Zfffffffffh4"!
+0&amp;JJ"&amp;2r`rrrrm)!((`J!!!'%NNNNNNNNNN33$4B)!46rm2rrrr#!"am)!!!%NNN
+NNNNNNNP%%!d@#!%8rr$rrrr`J!FI#!!!&amp;kj*********-#!%D'ifBJ!!)!!B!#!
+!&amp;J!J!!3!)!!!!#!!!!!J!!N!)!!!!#!!!!!J!!3!)!!!!#!!!3!J!!8!)!!!!#!
+!!d33$4B)!46rm2rrrr#!"am)!!!$S!!!!!!!!!"%%!d@#!%8rr$rrrr`J!SI)!!
+rrUUUUUUUUUUV4"!0&amp;JJ"&amp;2r`rrrrm)!+(b!!3!,1UUUUUUUUUd33$4B)!46rm2r
+rrr#!"am)!!!Ve-c-c-c-c-e%%!d@#!%8rr$rrrr`J!FI#!!!"U!!!!!!!!!!4"!
+0&amp;JJ"&amp;2r`rrrrm)!((`J!!!r-!!!!!!!!!%33$4B)!46rm2rrrr#!"am)!!"+[!!
+!!!!!!!"%%!d@#!%8rr$rrrr`J!FI#!!!"1fffffffffh4"!0&amp;JJ"&amp;2r`rrrrm)!
+((`J!!!+UUUUUUUUUUd33$4B)!46rm2rrrr#!"am!!!!(q!!!!!!!!!"%%!d@#!%
+8rr$rrrr`J!FI#!!!"EQCQCQCQCQD4"!0&amp;JJ"&amp;2r`rrrrm)!+(b!!3!(MGhGhGhG
+hH%33$4B)!46rm2rrrr#!"am)!!!%d!!!!!!!!!"%%!d@#!%8rr$rrrr`J!FI#!!
+!"l!!!!!!!!!!4"!0&amp;JJ"&amp;2r`rrrrm)!+(`J!!!#G3!!!!!!!!%33$4B)!46rm2r
+rrr#!#KmJ!$rqkUUUUUUUUUY%%!d@#!%8rr$rrrr`J!FI#!!!8-E-c-c-c-c04"!
+0&amp;JJ"&amp;2r`rrrrm)!((`J!!!H`!!!!!!!!!%33$4B)!46rm2rrrr#!"am)!!!2h!!
+!!!!!!!"%%!d@#!%8rr$rrrr`J!FI#!!!,p6-c-c-c-c04"!0&amp;JJ"&amp;2r`rrrrm)!
++(b!!3!'P999999999833$4B)!46rm2rrrr#!"am)!!"Aa&amp;999999999%%!d@#!%
+8rr$rrrr`J!FI#!!!"1!!!!!!!!!!4"!0&amp;JJ"&amp;2r`rrrrm)!((`J!!!IUUUUUUUU
+UUd33$4B)!46rm2rrrr#!"am)!!!2r9999999999%%!d@#!%8rr$rrrr`J!FI#!!
+!,p6-c-c-c-c04"!0&amp;JJ"&amp;2r`rrrrm)!+(b!!3!$9999999999833$4B)!46rm2r
+rrr#!#KmJ!%!#KUUUUUUUUUY%%!d@#!%8rr$rrrr`J!SI)!"!!Z&amp;9999999994"!
+0&amp;JJ"&amp;2r`rrrrm)!((`J!!#qK*********833$4B)!46rm2rrrr#!"am)!!"Aa&amp;9
+99999999%%!d@#!%8rr$rrrr`J!FI!!!!+lQ!!!!!!!!!4"!0&amp;JJ"&amp;2r`rrrrm)!
+((`J!!&amp;I-3!!!!!!!!%33$4B)!46rm2rrrr#!"am)!!!%lEEEEEEEEEG%%!d@#!%
+8rr$rrrr`J!SI)!"!"FUUUUUUUUUV4"!0&amp;JJ"&amp;2r`rrrrm)!+(b!!3!'+UUUUUUU
+UUd33$4B)!46rm2rrrr#!#KmJ!%!&amp;SS!!!!!!!!"%%!d@#!%8rr$rrrr`J!SI)!"
+!!E+UUUUUUUUV4"!0&amp;JJ"&amp;2r`rrrrm)!+(b!!2rh9999999999833$4B)!46rm2r
+rrr#!#KmJ!%!%d+UUUUUUUUX!)!!!!!!!!!+B!%XlE%0)6NX!$`)!!Ei"[J#-!*B
+!QJ#H!+)!TJ#U!+i!XJ#f!,S![J$#!-B!bJ!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-#!()#"SEL!c0J!J!%8!)!"F!#!
+!#!!J!!8!)!!%!#!!&amp;!!J!!!!)!!!!#!!#3!J!!!!)!!3!#!!*!!J!!!!)!!"Fep
+dD'9bBA"j1$!J$@pdD'9bAfePC'PMB@``)""[!!!!!!!!!X4YC@4TBf&amp;Xi6!J!!!
+!$%026%d!!!!!!1cNr!!!!mC$5%j,!"`$1J(H!AJ!M!#3!!#8!*J!SJ('!FS"cJ(
+5!GB"fJ(H!H)"jJ(U!!!!TJ!!!!!!!!)f!-)!fJ$b!3S")J)H!8S"BJ&amp;k!C)"UJ!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!)!!L!#!!'3!J!(-!)!!*)$PSFR-!!#!!"$!J!59#%!N
++%i!!rri3!hF)!!!!Yh2STXCfD4*#%!N+%i!!rri3"1JJ!$rkfRm[5@!d,DK#%!N
++%i!!rri3"1JJ!$rmLFL2IBhF)*e#%!N+%i!!rri3"1JJ!$riMhf0h##FL2K#%!N
++%i!!rri3"1JJ!$rkUC4KeCVRLTP#%!N+%i!!rri3"1JJ!$rlT,!D&amp;Y2jHNY#%!N
++%i!!rri3!QB!!!!!3K!*#K1!!2rq%!6S)!!rrIm[5@!d,DIc3K!*#K1!!2rq%!6
+S)!!rqrbp*B$3YTr-3K!*#K1!!2rq%!6S)!!rpp#fRm[5@!d,3K!*#K1!!2rq%!6
+S)!!rqS*b)ppMG`JR3#!0&amp;NN"&amp;2reJ!$rrS!!(`!!!!'%%j%HqaZi33!J!!%!)!!
+1!#!!!!!J!!)!)!!%!#!!!!!J!&amp;)!)!!(!#!!!3!J!!4#%!N+%i!!rri3"1J)!!!
+!MbEfHFYilG&amp;#%!N+%i!!rri3!hF)!!!!rIV1%H6HccP#%!N+%i!!rri3"1JJ!$r
+hJR)Mhf0h##G#%!N+%i!!rri3"1JJ!$rkbM$UcA2&amp;6+-!rri3!QB)!!!!jLCEZI4
+6BcY#%!N+%i!!rri3!QB)!!!!P81,3H"3$9K#%!N+%i!!rri3!QB)!!!!`A@6Q*P
+Zjp&amp;#%!N+%i!!rri3!QB)!!!!eAMTI$pIj9&amp;#%!N+%i!!rri3!QB)!!!!mhhU8EK
+*BC!!3K!*#K1!!2rq%!*Q#!!!!+E'GQN4JZXR3K!*#K1!!2rq%!#6#!!54(NI0!&amp;
+ANJ!!3#!0&amp;NN"&amp;2reJ!$rri!!(`J!!!%4#"'#aD-"eM!J#h0MD'p[E&amp;pMEf4P-#!
+'D'jIF'p`!$!J&amp;(0dG@4PER4IER9bFf9IGQPcDA4c"c!J#@a[Fh4IG'PYC6!J#f0
+[G@GSAf0[E'4c-#!*FQ&amp;cD&amp;pcDfPZ-#!)D@jUGA*TCA-*-#!@BfpYAf4TFf9KFf8
+[D@jQC@0dD@pZFp8`)!CKFh4SE@%!-#!(FepZAhCIC$!J"@CPGQ9b-#!-E@9NFep
+dD'9bBA"j1$!J$@pdD'9bAfePC'PMB@``)!!!!!a$6da0!!!!!!$Xjc!!!!+-3dK
+15`!D!J!"+!"'!Ii#"J)+!Ji#'J)H!L)#*J)U!Li#-J)f!MS#2J*#!!!!!!!!!!!
+!!!$8!1)!lJ$k!3S"&amp;!%H!5B"0J&amp;'!9B!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!`)!4SEMC
+L!!!J!"J!)!!,)#"!$!!!!!!!!!!!!#!!"3!J!!!!)!!#!#!!!!!J!!!!)!!%!#!
+!!!!J!!!!)!!!!#!!!!!J!!-`)!YMEh9RD&amp;pMEfaNFc!J#A*KFfKIFfYTEM!J#'P
+ZDR9bD@9c#6!J$'0[E9pNDA0PBA0P)!!`)!CKFh4SE@%!-#!(FepZAhCIC$!J"@C
+PGQ9b-#!-E@9NFepdD'9bBA"j3M!J$@pdD'9bAfePC'PMB@``)!e[G'KPFPpZEfj
+YC@3J-#!+C'PcE@PcFf&amp;XFqB`)!FJ)#"SEM-f!#!!43!J!%X!)!!'!#!!!3!J!!%
+!)!!A!#!!!!!J!!-!)!!+!#!!!!!J!"F!)!!*!#!!!3!J!!5!))!JJ##!))!JJ##
+!))!JJ##!))!JJ#"`)!4SEM%b!(!J!"P`)!$#F#!!!h!J!!"`)!!&amp;F#!!!A!J!!"
+`)!!!F#!!!h!J!!"`)!#dF#!!"A!J!!"`)!!!-#!&amp;)#"SEM)!)!#[!#!!R5!J3!+
+&amp;QCQCQCQCQJ!J!!`!)!!T!#!!'!!J!!%!)!!)!#!!$3!J!!!!)!"C!#!!%`!J!!%
+!)!!(5-B["NM',`C`!$!(,`"1V3KL@)m[!%kY,kT2l`!--!G54b"YV@UqD!('Bp4
+J2%SZrr0Q$%SZrr4Q"NSZrr9R%%M',`C`#3!!!!a$6da0!!!!!!$Xj"3!!!5-3dK
+15`!D"!!$0!"F!f3$E!0`!h3$J!1%!iJ$M!13!!18!jJ$R!1J!k3$U!!!!!!!!!!
+!!!!$V!1i!m3$d!2F!qJ$p!3!"!`%'!3N!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-#!%D'i
+fB`!!)!!A!#!!%b!J3")!!!!!!!!!!!!J!!8!)!!!!#!!"J!J!!!!)!!!!#!!!3!
+J!!%!)!!!!#!!"!!J!!)!)!!#J##!))!JJ##!))!JJ##!))!JJ#!`)!YMEh9RD&amp;p
+MEfaNFc!J#A*KFfKIFfYTEM!J#'PZDR9bD@9c#6!J$'0[E9pNDA0PBA0P)!!`)!C
+KFh4SE@%!-#!(FepZAhCIC$!J"@CPGQ9b-#!-E@9NFepdD'9bBA"j3M!J$@pdD'9
+bAfePC'PMB@``)!e[G'KPFPpZEfjYC@3J-#!+C'PcE@PcFf&amp;XFqD!))!JJ##!))!
+JJ##!))!JJ##!))!JJ##!))!JJ##!))!JJ##!))!J)K!rX#I%@AR*8T!!!#)32k&amp;
+Pjb9)%q)3!#)32mCHFP5"2L-B!!)3!!!L%$ppdd-E9[f%)!!L%$qciLbmj+N#%!!
+L%$pciLbmj+N#%!!L%$rJ6iLbmj+N)!!L%$qe[f$ZQKMEf!!L%$q0dd-E9[f%)!!
+L%$qGdd-E9[f%)!!L%$rkp[$QeJp[%!!L%$rkKM8$"3KM8!!L%$rmRPe'(iRPf!!
+#%!!!)K!rqH&amp;hak)1&amp;i!!)K!rqk%-DJB+%-J!)K!rpi$@ZcJ)$@J!)K!rrS%XRl6
+B%XJ!)K!rqk1lMHb+1lJ!)K!rqH`d9c`1`dJ!)K!rqH`d9c`1`dJ!J##!))!JJ#"
+`)!4SEM-c!(!J!$*`)!!EF#!!!h!J!!*`)!!&amp;F#!!#R!J!!"`)!!!F#!!!h!J!!"
+`)!!!F#!!"R!J!!&amp;`)!!!)K!rqX&amp;eNjLCEZI4)K!rqUE'GQN4JZXR)K!rqr0pkP'
+i5@'3!#)32rE9H1Pm2erP85)32rM9H1Pm2erP85)32rV"GC1BQ@lRd5)32rHJ'Um
+G,iIVr5)32rk93iY"i&amp;!0@#)32r[Q*PZjp&amp;0M1b)32rL&amp;Dj(YTj[[8b)32rQYFMf
+dmhhU8M!J"5!JD'ib!#!!V`!J!,%J)%!#MCQCQCQCQCS!)!!*!#!!"!!J!"3!)!!
+!!#!!%!!J!!d!)!!!!#!!AJ!J!"!!)!!"!#!!"#)32rV+-1V0Fm9-Sb)32rVDIbp
+*B$3YU#)32rb*b)ppMG`JR5)32rL2IBhF)*b)q#)32rUTP'(9QZH+Q5)32rZNX"S
+@drPk5b)32rH#FL2IBhF)*b)32rhr,dPJ0#fRmb)32r[m[5@!d,DIc#)32rI3YTr
+,dPJ0#b)32rU#FL2IBhF)*f9bBA"j3M!J$@pdD'9bAfePC'PMB@``)""[G'KPFPp
+ZEfjYC@4TBf&amp;XfM!J#Q4TFfeTFh0KE(2QF#"`)$!J#h0MD'p[E&amp;pMEf4P-#!'D'j
+IF'p`!$!J&amp;(0dG@4P!!!!$%026%d!!!!!!1cP'!!!!Sa$5%j,!!m#!!'q!Ei!M!#
+@!*S!RJ#L!+B!UJ#Z!,)!YJ#k!,i!`J$'!-S!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!$!J"b!JD'iJ-cB!)!"&amp;!#!!A!!
+J!!J!)!!&amp;!#!!"!!J!"3!)!!!!#!!!!!J!!N!)!!!!#!!%!!J!#3!)!!!!#!!!A0
+IG'KPFQ&amp;`H6J`)!e[G'KPFPpYC@4TBf&amp;X-#!3E`!!!!!!!!,%E@9ND@0KE1%`)!T
+NDA0YDA0cB@acjN)3#3S6J!$rrK!#q`J!!!"j(c3"9j)!!%)3#3S6J!$rrK!#q`J
+!!!"j(c3"9j)!!%)3#3S6J!$rrK!#CJJ!!!#YFMfdmhhU8N)3#3S6J!$rrK!#CJJ
+!!!#&amp;Dj(YTj[[8d)3#3S6J!$rrK!#CJJ!!!$+!hZPF6+!hd)3#3S6J!$rrK!!N`J
+!!!$G+iQ8"[F"f%)3#3S6J!$rrK!!N`J!!!$G+iQ8"[F"f%!J$4C*!46rpB!!rrq
+!!"m)!!!!J0Zm)IHkY!4#%!N+%i!!rri3!*-)!!!!Tbm&amp;1AJTbm&amp;#%!N+%i!!rri
+3!*-)!!!!hZPF6+!hZPF!)!!8F#!!@A!J!0e`)!!+F#!!%R!J!!Y`)!!DF#!!!R!
+J!!4`)!!,F#!!!h!J!'&amp;`)!!SF#!!!A!J!!K#%!N+%i!!rri3!QB!!!!!S"U[(5q
+(kre#%!N+%i!!rri3!QB)!!!!eAMTI$pIj9&amp;`)!4SEM)`!%)3#3S6J!$rrK!#CJJ
+!!!$"GC1BQ@lRd8)3!!!!$%026%d!!!!!!1cNU!!!")a$5%j,!#m%!!1%!&amp;J$q!2
+m"!!%"!3)"!`%%!38""J%(!3J"#3%+!3X"$!"CJ&amp;S!AB"J!'B!D3"XJ'q!FS"j!(
+Z!IJ#!!)3!L!#0!*#!N3#8J*F!R3#J!+1!TS#TJ,!!XS#e!,F!Z`#r!-3!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!(!J#h0MD'p[E&amp;pMEf4PF#!'D'j
+IF'p`Ah!J&amp;(0dG@4PER4IER9bFf9IGQPcDA4c!(!J#@a[Fh4IG'PYCA!J#f0[G@G
+SAf0[E'4cF#!*FQ&amp;cD&amp;pcDfPZF#!)D@jUGA*TCA2rF#!@BfpYAf4TFf9KFf8[D@j
+QC@0dD@pZF`"`)!CKFh4SE@&amp;cF#!(FepZAhCIC(!J"@CPGQ9bF#!-E@9NFepdD'9
+bBA"j!(!J$@pdD'9bAfePC'PMB@a`)""[G'KPFPpZEfjYC@4TBf&amp;X!(!J#Q4TFfe
+TFh0KE(1#F#"`)!YcBfK[EfaIBfpNCA!J"QKZAh"[F&amp;p`)"4cG(9NC@jdAfjeFR0
+PAhCTFfPdF`"`)!PXEh0dAh4TE@9`)!YMEh9RD&amp;pMEfaNFh!J#A*KFfKIFfYTER!
+J#'PZDR9bD@9crh!J&amp;Q0[E9pNDA0PBA0P,fPZCQ9MG'P[ER-!F#!'BA0dD'eKrh!
+J"h0IEPpfAf4`)!9QCACPFR!J$'ePC(0IG'KPFQ&amp;`H3"`)!e[G'KPFPpYC@4TBf&amp;
+XF#!3Eh4SCA*IEQpZE@9ND@0KE!"`)!TNDA0YDA0cB@ac9(!JF#!,Ff0SEfpXAf0
+[C'9`)!CSEPp`Eh$rF#!8Fh4eC'9ZG&amp;pZGA*cC9pfDA0TG(-!F#!*E'pcG&amp;pdD@e
+PF#!,BfpeCfKIBfpXC(0`)!PbBA0SAh0VD@j`)!KTEQTeFQPPFlK`)"CMEfeIC'P
+cC@&amp;cC5pTEQCPBh4TEfjc!(!J"Q&amp;cG'KYBA0`)!GcAfjIGPpNF#!&amp;CQ9fCA*`)!a
+YC@4cAh4SCA*KF(N!F#!0Eh4SCA*IE@9ND@0KE(!J%'pdD'9bAfj[EQePC'PMB@`
+!F#!+C'PcE@PcFf&amp;XFi*`)!YcBfK[EfaIBfpNCA!J"QKZAh"[F)"`)"4cG(9NC@j
+dAfjeFR0PAhCTFfPdF`"`)!PXEh0dAh4TE@9`)!YMEh9RD&amp;pMEfaNFh!J#A*KFfK
+IFfYTER!J#'PZDR9bD@9crh!J&amp;Q0[E9pNDA0PBA0P,fPZCQ9MG'P[ER-!F#!'BA0
+dD'eKFh!J"h0IEPpfAf4`)!9QCACPFR!J$'ePC(0IG'KPFQ&amp;`H3"`)!e[G'KPFPp
+YC@4TBf&amp;XF#!3Eh4SCA*IEQpZE@9ND@0KE!"`)!TNDA0YDA0cB@acJ!!J!#%!)!!
+b!#!!&amp;!!J!!N!)!!&amp;!#!!!`!J!!8!)!!!!#!!!!!J!!-!)!!!!#!!!!!J!!3!)!!
+!!#!!!`!!!J!2rrrrrrrq!!J!!!3!!!)!#!!!"!!!!J!)!!!%!!!#!!J2r!3"q!)
+!#"!#"!B'!J!))!%%#!%#!!JJ!333!))!##!"""!!JJ!))!%%%!##!!!!!!!!!!!
+-3dp-63!!!!!!l163!!!#M%0)6NX!$`)!!E`"[!#-!*!!!*3!Q!#N!+J!V!#`!,3
+!Z!#m!-!!a!$)!-`!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!J!"3!)!"B!#!!d#!J3!(Fc-c-c-c-c3!J!!i!)!!*!#!
+!&amp;J!J!!%!)!!'!#!!&amp;3!J!!!!)!"C!#!!,!!J!!)!)!!#Af0[E'4cF#!*FQ&amp;cD&amp;p
+cDfPZF#!)D@jUGA*TCA2rF#!@BfpYAf4TFf9KFf8[D@jQC@0dD@pZF`"`)!CKFh4
+SE@(rF#!(FepZAhCIC(!J"@CPGQ9bF#!-E@9NFepdD'9bBA"j!(!J$@pdD'9bAfe
+PC'PMB@a`)""[G'KPFPpZEfjYC@4TBf&amp;X!(!J#Q4TFfeTFh0KE(1#!#-!!(!J!#3
+!!(!J!#8!!(!J!#B!!(!J!#F!!(!J!#J!!(!J!#N!!(!J!#S!!(!J!#X!!(!J!#`
+!!(!J!#d!!(!J!#i!!(!J&amp;2m!!!!!!!!$4!!$@I!!#J!!!!!!!!!!!!i!!!!!!!!
+$,(rr!0-"@!'"Irm"4!!B!HYrrhrr!0-"@!!!!!!!!!!8!83"k`!!!!!!!!!!!!!
+!!!!!![J!!eKi!!i!'!!1!9J!$J'"!!i"k`$6!9J!d`'"!83!'!&amp;%!HX!!!!!!!!
+!!!!!!!!!!!,%!!!!!!!!!!!!!!+iFh4SE@%!-#!(FepZAhCIC$!J"@CPGQ9b-#!
+-E@9NFepdD'9bBA"j1$!J$@pdD'9bAfePC'PMB@``)'0[!!!!!!!!!R3!!eAi!!!
+!$%026%d!!!!!!1cKe!!!!Sa$5%j,!!m#!!(!!F!!M!#8!*J!R!#J!+3!U!#X!,!
+!Y!#i!,`!`!$%!-J!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!$!J"'KZ-c)!!#!!0`!J!"i!)!!%!#!!!J!J!!%!)!!"!#!
+!!!!J!!)!)!!(!#!!!!!J!"!!)!!"!#!!!!!J!!-!!!"1NPJ!6T(!!%k5Q2rr!%k
+5A+T9UP@U9DT9!!!!!!!!!)J!!eEX!!!!!!!"!!!!!!!)!!J!!!!!!!!!!!")!!!
+!5!!!!!!!!3!"!!%!!!!!!%k4U!!!!!!!!!!!!!!!!!")!!0@2!!!!!%!!!!"!!$
+rrrrrrrm!!3!!!!!!!!!!!!!!!!!8!!0@9!!!!!!!!!!!!!!!!!!!!"!!!eFX!!!
+!!!!!!!!!!!!N!!0Bd!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!#`!!0
+@a!!!!%k6`!"1NL`!6T(Xrrm!6T3mUP@U9DT9UP8!!!!!!!!!L!!$@&amp;3!!!!!!!%
+!!!!!!!J!#!!!!!!!!!!!!%J!!!")!!!!!!!"!!%!!3!!!!!!6T3!!!!!!!!!!!!
+!!!!!!%J!!eL8!!!!!3!!!!%!!2rrrrrrr`!"!!!!!!!!!!!!!!!!!"3!!eE!rrr
+rrrrrrrm!!!!!!!!!%!!$9S!!!!!!!!!!!!!!!#3!!eH%!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!"M`!!eEN!!!!6T2N!%k89!"1NLMrr`"1N[#U9DT9!!!
+!$%026%d!!!!!!1cKL!!!")a$5%j,!#m%!!0i!5B$(J-Q!bS$,J-k!ci$3J0'!dS
+$6J05!eB$@J0H!f)"CJ&amp;S!AB"J!'B!D3"XJ'q!FS"j!(Z!IJ#!!)3!L!#0!*#!N3
+#8J*F!R3#J!+1!TS#TJ,!!XS#e!,F!Z`#r!-3!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!(!J#h0MD'p[E&amp;pMEf4PF#!'D'jIF'p`Ah!J&amp;(0dG@4PER4
+IER9bFf9IGQPcDA4c!(!J#@a[Fh4IG'PYCA!J#f0[G@GSAf0[E'4cF#!*FQ&amp;cD&amp;p
+cDfPZF#!)D@jUGA*TCA2rF#!@BfpYAf4TFf9KFf8[D@jQC@0dD@pZF`"`)!CKFh4
+SE@'!F#!(FepZAhCIC(!J"@CPGQ9bF#!-E@9NFepdD'9bBA"j!(!J$@pdD'9bAfe
+PC'PMB@a`)""[G'KPFPpZEfjYC@4TBf&amp;X!(!J#Q4TFfeTFh0KE(0PF#"`)!YcBfK
+[EfaIBfpNCA!J"QKZAh"[F&amp;p`)"4cG(9NC@jdAfjeFR0PAhCTFfPdF`"`)!PXEh0
+dAh4TE@9`)!YMEh9RD&amp;pMEfaNFh!J#A*KFfKIFfYTER!J#'PZDR9bD@9cER!J&amp;Q0
+[E9pNDA0PBA0P,fPZCQ9MG'P[ER-!F#!'BA0dD'eKFh!J"h0IEPpfAf4`)!9QCAC
+PFR!J$'ePC(0IG'KPFQ&amp;`H3"`)!e[G'KPFPpYC@4TBf&amp;XF#!3Eh4SCA*IEQpZE@9
+ND@0KE)4`)!TNDA0YDA0cB@acJR!JF#!,Ff0SEfpXAf0[C'9`)!CSEPp`Eh"IF#!
+8Fh4eC'9ZG&amp;pZGA*cC9pfDA0TG(-!F#!*E'pcG&amp;pdD@ePF#!,BfpeCfKIBfpXC(0
+`)!PbBA0SAh0VD@j`)!KTEQTeFQPPFrp`)"CMEfeIC'PcC@&amp;cC5pTEQCPBh4TEfj
+c!(!J"Q&amp;cG'KYBIp`)!GcAfjIGPpNF#!&amp;CQ9fCA*`)!aYC@4cAh4SCA*KF(N!F#!
+0Eh4SCA*IE@9ND@0KE(!J%'pdD'9bAfj[EQePC'PMB@`!F#!+C'PcE@PcFf&amp;XFii
+`)!8J5%ib)!!J!,!!)!%`)#"!![-c-c-c-c-c!#!!"!!J!!-!)!!S!#!!!3!J!"!
+!)!!2!#!!!J!J!-X!)!!6!#!!!3!J!!8!"`!J!!!!)!!3!#!!!3!J!!!!)!!$-#!
+')#"SEM%bA`!J!$`!)!!M!#!!!J!J!!%!)!!!!#!!"3!J!!!!)!!!!#!!"!!J!!-
+!)!!8!#!!!3!J!!%!)!!$-#!&amp;)%K1-L!!)!#`!#!"-#!J3!,c-c-c-c-c-`!!!!e
+$l!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-3dp-63!!!!!!l16J!!!
+#M%0)6NX!$`)!!F!"0J#-!*3!Q!#F!+!!T!#S!+`!X!#d!,J![!$!!-3!b!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-#!
+&amp;)'KZ-c)!)!!h!#!!(J!J!!3!)!!#!#!!!3!J!!%!)!!!!#!!!J!J!!F!)!!!!#!
+!%!!J!!%!)!!!!#!!!c!J"L!JD'ia-Pm!)!!m!#!!)`!J!!)!)!!"!#!!!!!J!!8
+!)!!!!#!!!!!J!!3!)!!$!#!!&amp;!!J!!%!)!!"!#!!!c!J"5")6M)J!#!!X!!J!6!
+J)%!#mc-c-c-c-c-!)!!%!#!!!`!J!#J!)!!"!#!!%!!J!!m!)!!#!#!!b`!J!"-
+!)!!"!#!!"3!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-3dp-63!!!!!!l1&amp;)!!!
+#M%0)6NX!$`)!!Ei"[J#-!*B!QJ#H!+)!TJ#U!+i!XJ#f!,S![J$#!-B!bJ!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-#!
+')#"SEM%bA`!J!$`!)!!M!#!!!J!J!!%!)!!!!#!!"3!J!!!!)!!!!#!!"!!J!!-
+!)!!8!#!!!3!J!!%!)!!$!!!!$6cB!!dme'0KE!!!$J!!-#!+C'PcE@PcFf&amp;XFf8
+!$`!!F#!!%!!!-#!,Ff0SEfpXAf0[C'8!%3!!-#!'D'jIF'p`A`!5!!!`)"4cG(9
+NC@jdAfjeFR0PAhCTFfPdF`!!%`!!-#!*E'pcG&amp;pdD@eP!"3!!$!J#f0[G@GSAf0
+[E'4c!"8!!$!J!!!!!!!02%aTEJ!@!!!`)!KTEQTeFQPPFfi!&amp;`!!-#!@BfpYAf4
+TFf9KFf8[D@jQC@0dD@pZF`!!'!!!-#!'BA0dD'eKF`!C!!!`)!GcAfjIGPpN!"S
+!!$!J"@CPGQ9b!"X!!$!J$'ePC(0IG'KPFQ&amp;`H3!!(!!!-#!0Eh4SCA*IE@9ND@0
+KE!!G!!!`)""[G'KPFPpZEfjYC@4TBf&amp;XK!!H!!!`)!TNDA0YDA0cB@acJJ!I!!"
+`)!!J!!!`)!YcBfK[EfaIBfpNC3!K!!!`)!CSEPp`Eh"I!#)!!$!J&amp;(0dG@4PER4
+IER9bFf9IGQPcDA4c!!!M!!!`)!PXEh0dAh4TE@8!*!!!-#!,BfpeCfKIBfpXC(-
+!*3!!-#!*FQ&amp;cD&amp;pcDfPZ!#B!!$!J#'PZDR9bD@8!!!!!!!!!!!!!!!!!!!!!!!!
+!&amp;!!#rrm!!!!%!!!!!3*U!!!"jJ!1!!!!&amp;!!#rrm!!!!%!!!!!3&amp;#!!`"jJ!L4&amp;0
+&amp;9!!!!(`!!Irr!!!!+!")!!%!!!!#!!!!#J!!!!"eY(rrrrprrrrr!1cN[!!!!!!
+!!+J!!!!!!!!!!!!!!!!!!!%!!3!!!!!!!EZ!!!!!!!$XiI3!l1*N!H`*!"#H!!%
+@r!!"+I`!!IF%!!+5"!!%!3!!!J!A!!!!l1#F!"i!"3!"!!!!0J!"rrm!!!!U!!!
+!!J!!!!!!!!!!!!!!!!!!!!!!!3!"!!!!!!!!Zi!!!!!!!!!!!!!!!!!"l!!!!"!
+!![rr!!!!!J!!!!%#8J(1!!!!%!!#rrm!!!!#!!!!!3%d!GJ!!!1B!!crr`!!!#i
+"C!!"!1cPY!!!!!%!&amp;!!%!"i!"3!!!!)!!!!)Ik!!l1%B!#%!!`N!!3!!!!!!!!!
+!!"d"!3!!!J!#!!S!@J!H!3ij!)!!!!!!!!!!!!!!!!!!!!!!!!!!!!"!!U!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!5!!!!!!!!!!!!!%!!`N!!3!!!!!!!!!
+!!!!"!3!!!!!(!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"!!U!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!D!!!!!!!!!!!!!%!!`N!!3!!!!!!!!!!!!!"!3!!!!!(!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!#J!fJ$U!9jJJ)!!rrr
+rr`!!!!!!!J!!!!!!i!&amp;S!#J!#J$@!0!'!5S"#!!!!3!$#3!!!!!!!!!!!!!!+J%
+"!!!#!!)!!!!!!!!rqX2c@kH"P)X3"J%*!3J!!!%!!`N!!!!!!!!!!!!!!!N"!3!
+!!J!#!!!!!!!!2rV6`-T&amp;KqDh6`B""!%)!!!"!!-*!!!!!!!!!!!!!!!%!3%!!!)
+!!J!!!!!!!$rmKBIQYdm$+4F'!8%"#!!!!3!$#3!!!!!!!!!!!!!!33%"!!!#!!)
+!!!!!!!!rq)X2c@kH"P)Y"J%$!3J!!!%!!`N!!!!!!!!!!!!!!!-"!3!!!J!#!!!
+!!!!!2rUN@(jVG2!bN3B"p3%)!!!"!!-*!!!!!!!!!!!!!!$e!3%!!!)!!J!!!!!
+!!$rlRjVG2!bN@(m'!93"#!!!!3!$#3!!!!!!!!!!!!!!9!%"!!!#!!)!!!!!!!!
+rp[c@kH"P)X2d"J%,!3J!!!%!!`N!!!!!!!!!!!!!!!X"!3!!!J!#!!!!!!!!2rh
+h6`-T&amp;KqDhJB"FJ%)!!!"!!-*!!!!!!!!!!!!!!"b!3%!!!)!!J!!!!!!!$rlp2!
+bN@(jVG3'!3%"#!!!!3!$#3!!!!!!!!!!!!!!!3%"!!!#!!)!!!!!!!!rpmT&amp;KqD
+h6`-T"J%3!3J!!!%!!`N!!!!!!!!!!!!!!"!"!3!!!J!#!!!!!!!!2rRmeZRJC5,
+$p!B"33"!!!!"!!-*!!!!!!!!!!!!!!!G!3%!!!)!!J"T!!!!!!!!!!!!!!!!!!!
+!!!!P*%jeFR0P)&amp;CTFfPdFb"LH5"$BA4PCfpbH6SJ4'9M,L`J-6Nj0`!!!!!J!!N
+!@Ym!!!:
+</PRE>
+<!--X-MsgBody-End-->
+<!--X-Follow-Ups-->
+<!--X-Follow-Ups-End-->
+<!--X-References-->
+<!--X-References-End-->
+<!--X-BotPNI-->
+<HR>
+<UL>
+<LI>Prev by Date:
+<STRONG><A HREF="msg00029.html">[Fwd: Websites to Share]</A></STRONG>
+</LI>
+<LI>Next by Date:
+<STRONG><A HREF="msg00031.html">Exercise, Pretest Results</A></STRONG>
+</LI>
+<LI>Prev by thread:
+<STRONG><A HREF="msg00029.html">[Fwd: Websites to Share]</A></STRONG>
+</LI>
+<LI>Next by thread:
+<STRONG><A HREF="msg00031.html">Exercise, Pretest Results</A></STRONG>
+</LI>
+<LI>Index(es):
+<UL>
+<LI><A HREF="maillist.html#00030"><STRONG>Date</STRONG></A></LI>
+<LI><A HREF="index.html#00030"><STRONG>Thread</STRONG></A></LI>
+</UL>
+</LI>
+</UL>
+
+<!--X-BotPNI-End-->
+<!--X-User-Footer-->
+<!--X-User-Footer-End-->
+</BODY>
+</HTML>
+
+.
+QUIT
+
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
+Max 53 : 589.21
+Min 53 : 99.76
+Max 53 : 75.84
+Min 53 : 0.0

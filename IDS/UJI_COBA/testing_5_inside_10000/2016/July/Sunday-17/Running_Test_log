@@ -1,0 +1,166 @@
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+Start time : 2016-July-17 16:55:22 PM
+Training Dataset...
+Dataset directory : /home/ta/dataset/inside/
+Total dataset : 13 file
+Processing dataset ke-1 /home/ta/dataset/inside/3/monday/inside.tcpdump
+Processing dataset ke-2 /home/ta/dataset/inside/3/monday/inside_extra.tcpdump
+Processing dataset ke-3 /home/ta/dataset/inside/3/wednesday/inside.tcpdump
+Processing dataset ke-4 /home/ta/dataset/inside/3/wednesday/inside_extra.tcpdump
+Processing dataset ke-5 /home/ta/dataset/inside/3/friday/inside.tcpdump
+Processing dataset ke-6 /home/ta/dataset/inside/3/thursday/inside.tcpdump
+Processing dataset ke-7 /home/ta/dataset/inside/3/tuesday/inside.tcpdump
+Processing dataset ke-8 /home/ta/dataset/inside/3/tuesday/inside_extra.tcpdump
+Processing dataset ke-9 /home/ta/dataset/inside/1/monday/inside.tcpdump
+Processing dataset ke-10 /home/ta/dataset/inside/1/wednesday/inside.tcpdump
+Processing dataset ke-11 /home/ta/dataset/inside/1/friday/inside.tcpdump
+Processing dataset ke-12 /home/ta/dataset/inside/1/thursday/inside.tcpdump
+Processing dataset ke-13 /home/ta/dataset/inside/1/tuesday/inside.tcpdump
+Total Packet : 5362192 packet
+Total TCP Connection : 520065 connections
+Total UDP Connection : 119702 connections
+Total time of processing dateset : 0 hour 10 minutes 43 seconds
+Create Model Data Training...
+Total time of training dataset : 0 hour 0 minutes 31 seconds
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+Start time : 2016-July-17 17:12:53 PM
+Pcap Testing...
+Data testing directory : /home/ta/datates/inside/4/
+Processing data testing ke-1 /home/ta/datates/inside/4/monday/inside.tcpdump
+Total Paket Testing : 21218 connections
+Threshold : 21-77.22,  23-27.87,  25-213.88,  80-0.0,  53-116.92
+Smoothing Factor : 0.001
+Total time is : 59633 milliseconds or 0 hour 0 minutes 59 seconds
+Total attack packet: 100
+Total free packet: 52
+Processing data testing ke-2 /home/ta/datates/inside/4/wednesday/inside.tcpdump
+Total Paket Testing : 57751 connections
+Threshold : 21-77.22,  23-27.87,  25-213.88,  80-0.0,  53-116.92
+Smoothing Factor : 0.001
+Total time is : 119667 milliseconds or 0 hour 1 minutes 59 seconds
+Total attack packet: 169
+Total free packet: 61
+Processing data testing ke-3 /home/ta/datates/inside/4/friday/inside.tcpdump
+Total Paket Testing : 46389 connections
+Threshold : 21-77.22,  23-27.87,  25-213.88,  80-0.0,  53-116.92
+Smoothing Factor : 0.001
+Total time is : 147579 milliseconds or 0 hour 2 minutes 27 seconds
+Total attack packet: 82
+Total free packet: 61
+Processing data testing ke-4 /home/ta/datates/inside/4/thursday/inside.tcpdump
+Total Paket Testing : 62985 connections
+Threshold : 21-77.22,  23-27.87,  25-213.88,  80-0.0,  53-116.92
+Smoothing Factor : 0.001
+Total time is : 148237 milliseconds or 0 hour 2 minutes 28 seconds
+Total attack packet: 66
+Total free packet: 73
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+Start time : 2016-July-17 17:22:17 PM
+Pcap Testing...
+Data testing directory : /home/ta/datates/inside/4/
+Processing data testing ke-1 /home/ta/datates/inside/4/monday/inside.tcpdump
+Total Paket Testing : 21218 connections
+Threshold : 21-77.22,  23-27.87,  25-213.88,  80-0.0,  53-116.92
+Smoothing Factor : 0.001
+Total time is : 56359 milliseconds or 0 hour 0 minutes 56 seconds
+Total attack packet: 244
+Total free packet: 108
+Processing data testing ke-2 /home/ta/datates/inside/4/wednesday/inside.tcpdump
+Total Paket Testing : 57751 connections
+Threshold : 21-77.22,  23-27.87,  25-213.88,  80-0.0,  53-116.92
+Smoothing Factor : 0.001
+Total time is : 118312 milliseconds or 0 hour 1 minutes 58 seconds
+Total attack packet: 268
+Total free packet: 84
+Processing data testing ke-3 /home/ta/datates/inside/4/friday/inside.tcpdump
+Total Paket Testing : 46389 connections
+Threshold : 21-77.22,  23-27.87,  25-213.88,  80-0.0,  53-116.92
+Smoothing Factor : 0.001
+Total time is : 147307 milliseconds or 0 hour 2 minutes 27 seconds
+Total attack packet: 292
+Total free packet: 56
+Processing data testing ke-4 /home/ta/datates/inside/4/thursday/inside.tcpdump
+Total Paket Testing : 62985 connections
+Threshold : 21-77.22,  23-27.87,  25-213.88,  80-0.0,  53-116.92
+Smoothing Factor : 0.001
+Total time is : 148286 milliseconds or 0 hour 2 minutes 28 seconds
+Total attack packet: 303
+Total free packet: 109
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+Start time : 2016-July-17 17:30:47 PM
+Pcap Testing...
+Data testing directory : /home/ta/datates/inside/4/
+Processing data testing ke-1 /home/ta/datates/inside/4/monday/inside.tcpdump
+Total Paket Testing : 21218 connections
+Threshold : 21-77.22,  23-27.87,  25-213.88,  80-0.0,  53-116.92
+Smoothing Factor : 0.001
+Total time is : 56882 milliseconds or 0 hour 0 minutes 56 seconds
+Total attack packet: 998
+Total free packet: 1594
+Processing data testing ke-2 /home/ta/datates/inside/4/wednesday/inside.tcpdump
+Total Paket Testing : 57751 connections
+Threshold : 21-77.22,  23-27.87,  25-213.88,  80-0.0,  53-116.92
+Smoothing Factor : 0.001
+Total time is : 118771 milliseconds or 0 hour 1 minutes 58 seconds
+Total attack packet: 1322
+Total free packet: 1551
+Processing data testing ke-3 /home/ta/datates/inside/4/friday/inside.tcpdump
+Total Paket Testing : 46389 connections
+Threshold : 21-77.22,  23-27.87,  25-213.88,  80-0.0,  53-116.92
+Smoothing Factor : 0.001
+Total time is : 146598 milliseconds or 0 hour 2 minutes 26 seconds
+Total attack packet: 2213
+Total free packet: 1377
+Processing data testing ke-4 /home/ta/datates/inside/4/thursday/inside.tcpdump
+Total Paket Testing : 62985 connections
+Threshold : 21-77.22,  23-27.87,  25-213.88,  80-0.0,  53-116.92
+Smoothing Factor : 0.001
+Total time is : 147657 milliseconds or 0 hour 2 minutes 27 seconds
+Total attack packet: 2011
+Total free packet: 1713
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+Start time : 2016-July-17 17:39:13 PM
+Pcap Testing...
+Data testing directory : /home/ta/datates/inside/4/
+Processing data testing ke-1 /home/ta/datates/inside/4/monday/inside.tcpdump
+Total Paket Testing : 21218 connections
+Threshold : 21-77.22,  23-27.87,  25-213.88,  80-0.0,  53-116.92
+Smoothing Factor : 0.001
+Total time is : 56868 milliseconds or 0 hour 0 minutes 56 seconds
+Total attack packet: 2327
+Total free packet: 6661
+Processing data testing ke-2 /home/ta/datates/inside/4/wednesday/inside.tcpdump
+Total Paket Testing : 57751 connections
+Threshold : 21-77.22,  23-27.87,  25-213.88,  80-0.0,  53-116.92
+Smoothing Factor : 0.001
+Total time is : 119223 milliseconds or 0 hour 1 minutes 59 seconds
+Total attack packet: 1623
+Total free packet: 38995
+Processing data testing ke-3 /home/ta/datates/inside/4/friday/inside.tcpdump
+Total Paket Testing : 46389 connections
+Threshold : 21-77.22,  23-27.87,  25-213.88,  80-0.0,  53-116.92
+Smoothing Factor : 0.001
+Total time is : 146136 milliseconds or 0 hour 2 minutes 26 seconds
+Total attack packet: 757
+Total free packet: 25585
+Processing data testing ke-4 /home/ta/datates/inside/4/thursday/inside.tcpdump
+Total Paket Testing : 62985 connections
+Threshold : 21-77.22,  23-27.87,  25-213.88,  80-0.0,  53-116.92
+Smoothing Factor : 0.001
+Total time is : 147477 milliseconds or 0 hour 2 minutes 27 seconds
+Total attack packet: 3316
+Total free packet: 41979
+++++++++++++++++++++++++++++++++++++++END+++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++START++++++++++++++++++++++++++++++++++++
+Start time : 2016-July-17 18:13:48 PM
+Pcap Testing...
+Data testing directory : /home/ta/datates/inside/4/
+Processing data testing ke-1 /home/ta/datates/inside/4/monday/inside.tcpdump
+Total Paket Testing : 21218 connections
+Threshold : 21-77.22,  23-27.87,  25-213.88,  80-0.0,  53-116.92
+Smoothing Factor : 0.001
+Total time is : 56112 milliseconds or 0
