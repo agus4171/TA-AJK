@@ -469,6 +469,7 @@ public class IDS {
                         sFactor = Double.parseDouble(ids.getData("Smoothing Factor "));
                         packetType = Integer.parseInt(ids.getData("Packet Type "));
                         filePath = ids.getData("Data Testing ");
+                        trainingStatus = Integer.parseInt(ids.getData("Training Status ")) != 0;
                         System.out.println("Data testing directory : "+filePath);
                         fwRunning.append("Data testing directory : "+filePath+"\n");
                         fileData = new ArrayList<>();
@@ -528,8 +529,7 @@ public class IDS {
                             fwRunning.append("Smoothing Factor : "+sFactor+"\n");
                             System.out.println("Calculating Mahalanobis Distance...");
 
-//                            start = System.currentTimeMillis();
-                            trainingStatus = Integer.parseInt(ids.getData("Training Status ")) != 0;
+//                            start = System.currentTimeMillis();                            
                             if (trainingStatus) {
                                 for (DataPacket dataPacketTes : dataTest) {     
                                     if ("TCP".equals(dataPacketTes.getProtokol()) && dataPacketTes.getDstPort() == portTest) {
