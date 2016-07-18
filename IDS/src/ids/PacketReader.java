@@ -67,7 +67,6 @@ public class PacketReader implements Runnable {
             
             synchronized(packetBody){
                 if (packet == null || packet == Packet.EOF || (input == 3 && counter == windowSize)) break;
-
                 if (packet instanceof TCPPacket && packet.data.length != 0){
                     tcp = (TCPPacket) packet;
                     if (dataPort.containsKey("TCP"+tcp.dst_port)) {
@@ -153,8 +152,7 @@ public class PacketReader implements Runnable {
                 startTime = packetTime.get(header[1]+"-"+header[2]+"-"+header[3]+"-"+header[4]+"-"+header[5]);
                 dataTest.add(new DataPacket(startTime, header[1], header[2], Integer.parseInt(header[3]), header[4], Integer.parseInt(header[5]), value.getBytes(), numChars, type));
             }                
-        }   
-        
+        }           
         packetBody.clear();
         packetTime.clear();
     }

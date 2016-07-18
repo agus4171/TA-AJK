@@ -60,8 +60,7 @@ public class PacketSniffer implements Runnable {
             while (true) {                
                 packet = captor.getPacket();
                 synchronized(packetBody){                            
-                    if (count == counter) break;
-                    
+                    if (count == counter) break;                    
                     if (packet instanceof TCPPacket && packet.data.length != 0){
                         tcp = (TCPPacket) packet;
                         if (dataPort.containsKey("TCP"+tcp.dst_port)) {
@@ -83,9 +82,7 @@ public class PacketSniffer implements Runnable {
                             } 
                             count++;
                         }
-//                        count++;
-                    }
-                    
+                    }                    
                     else if(packet instanceof UDPPacket && packet.data.length != 0){
                         udp = (UDPPacket) packet;
                         if (dataPort.containsKey("UDP"+udp.dst_port)) {
@@ -106,7 +103,6 @@ public class PacketSniffer implements Runnable {
                             } 
                             count++;
                         }       
-//                        count++;
                     }                    
                 }     
             }
@@ -121,8 +117,7 @@ public class PacketSniffer implements Runnable {
             numChars = ng.Ngram(value.getBytes());
             startTime = packetTime.get(header[0]+"-"+header[1]+"-"+header[2]+"-"+header[3]+"-"+header[4]);
             dataTest.add(new DataPacket(startTime, header[0], header[1], Integer.parseInt(header[2]), header[3], Integer.parseInt(header[4]), value.getBytes(), numChars, 0));
-        }
-        
+        }        
         packetBody.clear();
         packetTime.clear();
     }

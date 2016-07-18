@@ -38,48 +38,39 @@ public class DataTraining implements Runnable {
                     if (dataSetTcp.getDstPort() == port) {                                        
                         dataTraining.add(ArrayUtils.toObject(dataSetTcp.getNgram()));
                     }                                    
-                }               
-
+                } 
                 for (int i = 0; i < dataTraining.size(); i++) {
                     for (int j = 0; j < ascii; j++) {
                         sumData[j] += dataTraining.get(i)[j];
                         quadraticData[j] += Math.pow(dataTraining.get(i)[j], 2);
                     }                                                                        
                 }
-
                 for (int i = 0; i < meanData.length; i++) {
                     meanData[i] = sumData[i]/dataTraining.size();
                 }
-
                 for (int i = 0; i < deviasiData.length; i++) {
                     deviasiData[i] = Math.sqrt((dataTraining.size()*quadraticData[i]-Math.pow(sumData[i], 2))/(dataTraining.size()*(dataTraining.size()-1)));
-                }
-                
+                }                
                 modelTcp.add(new DataModel(port, sumData, meanData, deviasiData, quadraticData, dataTraining.size()));
             }
-
             else if (proto.equals("UDP")) {
                 for (DataPacket dataSetUdp : datasetUdp) {
                     if (dataSetUdp.getDstPort() == port) {                                        
                         dataTraining.add(ArrayUtils.toObject(dataSetUdp.getNgram()));                                        
                     }                                    
                 }
-
                 for (int i = 0; i < dataTraining.size(); i++) {
                     for (int j = 0; j < ascii; j++) {
                         sumData[j] += dataTraining.get(i)[j];
                         quadraticData[j] += Math.pow(dataTraining.get(i)[j], 2);
                     }                                                                        
                 }
-
                 for (int i = 0; i < meanData.length; i++) {
                     meanData[i] = sumData[i]/dataTraining.size();
                 }
-
                 for (int i = 0; i < deviasiData.length; i++) {
                     deviasiData[i] = Math.sqrt((dataTraining.size()*quadraticData[i]-Math.pow(sumData[i], 2))/(dataTraining.size()*(dataTraining.size()-1)));
                 }
-
                 modelUdp.add(new DataModel(port, sumData, meanData, deviasiData, quadraticData, dataTraining.size()));
             }            
         }                

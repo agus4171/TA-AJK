@@ -181,7 +181,7 @@ public class IDS {
     }
     
     public static void main(String[] args) throws IOException {
-        boolean snifferStatus, trainingStatus;
+        boolean snifferStatus, trainingStatus, incremental;
         int input, totalPacket, windowSize, packetType, portPacket, portTest, countFile = 1;
         double mDist, threshold, sFactor;
         double[] portTh;
@@ -341,6 +341,7 @@ public class IDS {
                             thresholdAll = ids.getData("Threshold "); 
                             portTh = ids.getThreshold();
                             sFactor = Double.parseDouble(ids.getData("Smoothing Factor "));
+                            incremental = Integer.parseInt(ids.getData("Incremental Learning ")) != 0;
                             dateTime = time.split("_");
                             fileLog = new File(dateTime[0]+"/"+dateTime[1]+"/"+dateTime[2]);
                             if (!fileLog.exists()) {
@@ -369,7 +370,6 @@ public class IDS {
                             } catch (InterruptedException ex) {
                                 Logger.getLogger(IDS.class.getName()).log(Level.SEVERE, null, ex);
                             }
-
                             System.out.println("Total Paket Testing : "+dataTest.size()+" connections");
                             fwRunning.append("Total Paket Testing : "+dataTest.size()+" connections\n");
                             fwLog.append("+++++++++++++++++++++++++++++++++++++++++++\n");
@@ -406,13 +406,14 @@ public class IDS {
                                                 attackPacket.add(Math.round(mDist*100.0)/100.0);
                                             } else {                                            
                                                 fwRecord.append("TCP | "+dataPacketTes.getTimePacket()+" | "+dataPacketTes.getSrcIP()+":"+dataPacketTes.getSrcPort()+" | "+dataPacketTes.getDstIP()+":"+dataPacketTes.getDstPort()+" | Normal"+"\n");
-                                                ids.incremental("TCP", dataPacketTes.getNgram(), dataPacketTes.getDstPort());
                                                 freePacket.add(Math.round(mDist*100.0)/100.0);
+                                                if (incremental) {
+                                                    ids.incremental("TCP", dataPacketTes.getNgram(), dataPacketTes.getDstPort());
+                                                }
                                             }
                                         }
                                     }
                                 }
-
                                 else if ("UDP".equals(dataPacketTes.getProtokol())) {
                                     for (DataModel dataUdp : modelUdp) {
                                         if (dataUdp.getDstPort() == dataPacketTes.getDstPort()) {
@@ -428,14 +429,15 @@ public class IDS {
                                                 attackPacket.add(Math.round(mDist*100.0)/100.0);
                                             } else {
                                                 fwRecord.append("UDP | "+dataPacketTes.getTimePacket()+" | "+dataPacketTes.getSrcIP()+":"+dataPacketTes.getSrcPort()+" | "+dataPacketTes.getDstIP()+":"+dataPacketTes.getDstPort()+" | Normal"+"\n");
-                                                ids.incremental("UDP", dataPacketTes.getNgram(), dataPacketTes.getDstPort());
                                                 freePacket.add(Math.round(mDist*100.0)/100.0);
+                                                if (incremental) {
+                                                    ids.incremental("UDP", dataPacketTes.getNgram(), dataPacketTes.getDstPort());
+                                                }
                                             } 
                                         }
                                     }
                                 }
                             }
-
                             fwLog.close();
                             fwRecord.close();
                             end = System.currentTimeMillis();
@@ -473,6 +475,7 @@ public class IDS {
                         packetType = Integer.parseInt(ids.getData("Packet Type "));
                         filePath = ids.getData("Data Testing ");
                         trainingStatus = Integer.parseInt(ids.getData("Training Status ")) != 0;
+                        incremental = Integer.parseInt(ids.getData("Incremental Learning ")) != 0;
                         System.out.println("Data testing directory : "+filePath);
                         fwRunning.append("Data testing directory : "+filePath+"\n");
                         fileData = new ArrayList<>();
@@ -510,12 +513,10 @@ public class IDS {
                                 threadTest.join();                        
                             } catch (InterruptedException ex) {
                                 Logger.getLogger(IDS.class.getName()).log(Level.SEVERE, null, ex);
-                            }
-                            
+                            }                            
                             System.out.println("Total Paket Testing : "+dataTest.size()+" connections");
                             fwRunning.append("Total Paket Testing : "+dataTest.size()+" connections\n");
-                            countFile++;                            
-                            
+                            countFile++;                             
                             fwLog.append("+++++++++++++++++++++++++++++++++++++++++++\n");
                             fwLog.append("#  Start time : "+new String(new SimpleDateFormat("yyyy-MMMM-dd HH:mm:ss a  #").format(Calendar.getInstance().getTime()))+"\n");
                             fwLog.append("+++++++++++++++++++++++++++++++++++++++++++\n");
@@ -531,7 +532,6 @@ public class IDS {
                             System.out.println("Smoothing Factor : "+sFactor);
                             fwRunning.append("Smoothing Factor : "+sFactor+"\n");
                             System.out.println("Calculating Mahalanobis Distance...");
-
 //                            start = System.currentTimeMillis();                            
                             if (trainingStatus) {
                                 for (DataPacket dataPacketTes : dataTest) {     
@@ -562,7 +562,6 @@ public class IDS {
                                             }
                                         }
                                     }
-
                                     else if ("UDP".equals(dataPacketTes.getProtokol()) && dataPacketTes.getDstPort() == portTest) {
                                         for (DataModel dataUdp : modelUdp) {
                                             if (dataUdp.getDstPort() == dataPacketTes.getDstPort()) {
@@ -587,8 +586,7 @@ public class IDS {
                                             }
                                         }
                                     }
-                                }
-                                
+                                }                                
                             } else {
                                 for (DataPacket dataPacketTes : dataTest) {     
                                     if ("TCP".equals(dataPacketTes.getProtokol())) {
@@ -606,13 +604,15 @@ public class IDS {
                                                     attackPacket.add(Math.round(mDist*100.0)/100.0);
                                                 } else {
                                                     fwRecord.append("TCP | "+dataPacketTes.getTimePacket()+" | "+dataPacketTes.getSrcIP()+":"+dataPacketTes.getSrcPort()+" | "+dataPacketTes.getDstIP()+":"+dataPacketTes.getDstPort()+" | Normal\n");
-                                                    //ids.incremental("TCP", dataPacketTes.getNgram(), dataPacketTes.getDstPort());
                                                     freePacket.add(Math.round(mDist*100.0)/100.0);
+                                                    if (incremental) {
+                                                        System.out.println("Incremental");
+                                                        ids.incremental("TCP", dataPacketTes.getNgram(), dataPacketTes.getDstPort());
+                                                    }                                                    
                                                 }                                           
                                             }
                                         }
                                     }
-
                                     else if ("UDP".equals(dataPacketTes.getProtokol())) {
                                         for (DataModel dataUdp : modelUdp) {
                                             if (dataUdp.getDstPort() == dataPacketTes.getDstPort()) {
@@ -628,8 +628,11 @@ public class IDS {
                                                     attackPacket.add(Math.round(mDist*100.0)/100.0);
                                                 } else {
                                                     fwRecord.append("UDP | "+dataPacketTes.getTimePacket()+" | "+dataPacketTes.getSrcIP()+":"+dataPacketTes.getSrcPort()+" | "+dataPacketTes.getDstIP()+":"+dataPacketTes.getDstPort()+" | Normal\n");
-                                                    //ids.incremental("UDP", dataPacketTes.getNgram(), dataPacketTes.getDstPort());
                                                     freePacket.add(Math.round(mDist*100.0)/100.0);
+                                                    if (incremental) {
+                                                        System.out.println("Incremental");
+                                                        ids.incremental("UDP", dataPacketTes.getNgram(), dataPacketTes.getDstPort());
+                                                    }
                                                 }                                            
                                             }
                                         }

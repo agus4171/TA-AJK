@@ -12,8 +12,7 @@ package ids;
 public class Mahalanobis {
     
     public double distance(double[] x, double[] y, double[] sd, double sf){
-        double sum = 0;
-        
+        double sum = 0;        
         for (int i = 0; i < x.length; i++) {
             sum += Math.abs(x[i] - y[i])/(sd[i]+sf);
         }

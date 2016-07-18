@@ -15,8 +15,7 @@ public class Ngram {
     
     public double[] Ngram(byte[] data){
         if (data != null) {
-            n = new double[256];
-           
+            n = new double[256];           
             for (byte b : data) {
                 ascii = b & 0xFF;
                 n[ascii] += 1;                
