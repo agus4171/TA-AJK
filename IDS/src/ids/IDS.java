@@ -104,8 +104,7 @@ public class IDS {
         for (File file : listFile) {
             if (file.isFile()) {
                 files.add(file);
-            } 
-            
+            }             
             else if (file.isDirectory()) {
                 getListFile(file.getAbsolutePath(), files);
             }
@@ -119,24 +118,26 @@ public class IDS {
     }
     
     private void incremental(String proto, double[] ngram, int port){
+        int numNew;
+        double[] sumNew, quadraticNew, meanNew, deviasiNew;
         if (proto.equals("TCP")) {
             for (DataModel dataTcp : modelTcp) {
                 if (dataTcp.getDstPort() == port) {
-                    int numNew = dataTcp.getTotalModel();
-                    double[] sumNew = dataTcp.getSumData();
+                    numNew = dataTcp.getTotalModel();
+                    sumNew = dataTcp.getSumData();
                     for (int i = 0; i < sumNew.length; i++) {
                         sumNew[i] = sumNew[i]+ngram[i];
                     }                    
-                    double[] quadraticNew = dataTcp.getQuadraticData();
+                    quadraticNew = dataTcp.getQuadraticData();
                     for (int i = 0; i < quadraticNew.length; i++) {
                         quadraticNew[i] = quadraticNew[i]+Math.pow(ngram[i], 2);
                     }
-                    double[] meanNew = dataTcp.getMeanData();
+                    meanNew = dataTcp.getMeanData();
                     for (int i = 0; i < meanNew.length; i++) {
                         meanNew[i] = (meanNew[i]*numNew+ngram[i])/(numNew+1);
                     }
                     numNew = numNew + 1;
-                    double[] deviasiNew = dataTcp.getDeviasiData();
+                    deviasiNew = dataTcp.getDeviasiData();
                     for (int i = 0; i < deviasiNew.length; i++) {
                         deviasiNew[i] = Math.sqrt((numNew*quadraticNew[i]-Math.pow(sumNew[i], 2))/(numNew*(numNew-1)));
                     }
@@ -147,26 +148,25 @@ public class IDS {
                     dataTcp.setTotalModel(numNew);
                 }
             }
-        }
-        
+        }        
         else if (proto.equals("UDP")) {
             for (DataModel dataUdp : modelUdp) {
                 if (dataUdp.getDstPort() == port) {
-                    int numNew = dataUdp.getTotalModel();
-                    double[] sumNew = dataUdp.getSumData();
+                    numNew = dataUdp.getTotalModel();
+                    sumNew = dataUdp.getSumData();
                     for (int i = 0; i < sumNew.length; i++) {
                         sumNew[i] = sumNew[i]+ngram[i];
                     }
-                    double[] quadraticNew = dataUdp.getQuadraticData();
+                    quadraticNew = dataUdp.getQuadraticData();
                     for (int i = 0; i < quadraticNew.length; i++) {
                         quadraticNew[i] = quadraticNew[i]+Math.pow(ngram[i], 2);
                     }
-                    double[] meanNew = dataUdp.getMeanData();
+                    meanNew = dataUdp.getMeanData();
                     for (int i = 0; i < meanNew.length; i++) {
                         meanNew[i] = (meanNew[i]*numNew+ngram[i])/(numNew+1);
                     }
                     numNew = numNew + 1;
-                    double[] deviasiNew = dataUdp.getDeviasiData();
+                    deviasiNew = dataUdp.getDeviasiData();
                     for (int i = 0; i < deviasiNew.length; i++) {
                         deviasiNew[i] = Math.sqrt((numNew*quadraticNew[i]-Math.pow(sumNew[i], 2))/(numNew*(numNew-1)));
                     }
