@@ -1,0 +1,21 @@
+[LATAR BELAKANG]
+
+[TUJUAN]
+Tujuan dari dibuatnya Tugas Akhir ini adalah membuat sistem pendeteksi intrusi yang mampu mengenali serangan pada  lalu lintas jaringan dengan menggunakan metode Mahalanobis Distance berbasis anomali yang nantinya mampu membedakan paket data normal maupun paket data yang berupa intrusi.
+
+[METODE]
+N-GRAM
+MAHALANOBIS DISTANCE
+INCREMENTAL LEARNING
+
+[HASIL]
+TABEL 1
+TABEL 2
+
+[KESIMPULAN]
+Dalam proses pengerjaan Tugas Akhir yang melalui tahap perancangan, implementasi, serta uji coba, didapatkan kesimpulan sebagai berikut :
+1.	Metode Mahalanobis Distance tidak dapat digunakan untuk mengklasifikasikan antara paket data normal dan paket data yang berupa intrusi untuk protokol HTTP. Jarak yang dihasilkan pada saat training menggunakan paket data normal maupun paket data yang berupa intrusi yaitu bernilai 0. Sehingga paket data normal maupun paket data intrusi tidak dapat dibedakan. 
+2.	Sistem yang dibuat untuk pendeteksi intrusi menggunakan metode Mahalanobis Distance tanpa proses incremental learning dapat mendeteksi intrusi dengan persentase kebenaran sekitar 93%, namun dengan tambahan proses incremental learning hanya dapat mendeteksi intrusi dengan persentase kebenaran sekitar 20%. Dari hasil tersebut, dengan tambahan proses incremental learning mangurangi tingkat akurasi pendeteksian intrusi.
+
+[SARAN]
+Adapun saran-saran yang diberikan untuk pengembangan sistem ini selanjutnya adalah karena membedakan paket data normal dengan paket data serangan menggunakan metode mahalanobis distance dengan proses incremental learning kurang akurat dibandingkan tanpa proses incremental leraning. Hal ini dikarenakan dengan menambahkan proses incremental learning, rata-rata dan standar deviasi pada model diperbaharui tetapi threshold yang digunakan untuk mendeteksi intrusi tidak diperbaharui, sehingga threshold yang ada tidak akurat untuk mendeteksi intrusi. Perlu ada implementasi metode lain sehingga dapat membantu meningkatkan keakuratan pendeteksian intrusi. 
