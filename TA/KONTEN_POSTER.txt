@@ -1,12 +1,35 @@
-[LATAR BELAKANG]
+EVALUASI SISTEM PENDETEKSI INTRUSI BERBASIS ANOMALI DENGAN N-GRAM DAN INCREMENTAL LEARNING
+Nama Mahasiswa	:	I MADE AGUS ADI WIRAWAN
+NRP				:	5112100036
 
+ROYYANA MUSLIM IJTIHADIE, S.Kom., M.Kom., Ph.D.
+NIP. 19770824 202624 1 001
+
+BASKORO ADI PRATOMO, S.Kom., M.Kom.
+NIP. 19870218 201404 1 001
+
+[LATAR BELAKANG]
+Saat ini telah banyak dikembangkan aplikasi IDS (Intrusion Detection System), namun sebagian besar yang dikembangkan berbasis signature atau menggunakan rule, dan sebagian kecil menggunakan anomaly. IDS yang berbasis pada anomaly bersifat lebih fleksibel, karena dapat mengenali pola serangan baru tanpa harus memperbaharui basis data pola serangan.
+ 
 [TUJUAN]
 Tujuan dari dibuatnya Tugas Akhir ini adalah membuat sistem pendeteksi intrusi yang mampu mengenali serangan pada  lalu lintas jaringan dengan menggunakan metode Mahalanobis Distance berbasis anomali yang nantinya mampu membedakan paket data normal maupun paket data yang berupa intrusi.
 
+[MANFAAT]
+Dengan dibuatnya Tugas Akhir ini akan memberikan konsep baru pada cara membedakan paket data normal dan paket data yang berupa intrusi.
+
 [METODE]
 N-GRAM
+N-Gram adalah sebuah metode yang digunakan untuk memodelkan huruf, kata atau yang lain sesuai dengan aplikasi. Sebuah n-gram merupakan wadah kumpulan kata dengan masing-masing panjang n huruf atau n kata.
+
 MAHALANOBIS DISTANCE
+Mahalanobis distance [5] adalah sebuah metode statistika untuk menghitung jarak antara titik P dan distribusi D. Prinsip dari Mahalanobis Distance adalah mengitung jarak di ruang multidimensional antara sebuah objek pengamatan dengan pusat dari semua pengamatan. Pada artikel ini Mahalanobis Distance digunakan untuk menghitung jarak antara distribusi byte karakter dari payload baru terhadap model yang ada pada data training. Semakin jauh jaraknya, semakin besar kemungkinan payload ini tidak normal.
+
 INCREMENTAL LEARNING
+Incremental Learning merupakan proses untuk memperbaharui nilai rata-rata dan standar deviasi dari model yang ada pada data training ketika menambahkan payload baru. Proses ini diperlukan untuk meningkatkan akurasi dari setiap model ketika data sampel baru ditambahkan.
+
+[DESAIN DAN PERANCANGAN]
+Proses
+Training data set, penangkapan paket data, identifikasi intrusi
 
 [HASIL]
 TABEL 1
@@ -19,3 +42,6 @@ Dalam proses pengerjaan Tugas Akhir yang melalui tahap perancangan, implementasi
 
 [SARAN]
 Adapun saran-saran yang diberikan untuk pengembangan sistem ini selanjutnya adalah karena membedakan paket data normal dengan paket data serangan menggunakan metode mahalanobis distance dengan proses incremental learning kurang akurat dibandingkan tanpa proses incremental leraning. Hal ini dikarenakan dengan menambahkan proses incremental learning, rata-rata dan standar deviasi pada model diperbaharui tetapi threshold yang digunakan untuk mendeteksi intrusi tidak diperbaharui, sehingga threshold yang ada tidak akurat untuk mendeteksi intrusi. Perlu ada implementasi metode lain sehingga dapat membantu meningkatkan keakuratan pendeteksian intrusi. 
+
+[Supported by]
+Java, NetBeans IDE 8.1
