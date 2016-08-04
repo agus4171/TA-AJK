@@ -1,0 +1,31 @@
+Aplikasi IDS ini dapat berjalan di sistem operasi windows / linux.
+
+[Requirement] 
+Perangkat Keras:
+	1. Minimum Memory 6GB
+	
+Perangkat Lunak:
+	1. Oracle Java Development Kit (JDK) 1.8
+	2. Jpcap 0.7
+	3. Sistem operasi windows install WinPcap 4.1.3
+	4. Sistem operasi linux install Libpcap
+
+[File-file Konfigurasi]
+nama file: "conf"
+	merupakan file yang berisi informasi yang nantinya dibaca oleh aplikasi. Berikut informasi yang harus dilengkapai agar aplikasi dapat berjalan dengan normal.
+	1. Data Training : [direktori file data set]
+	2. Data Testing : [direktori file data testing]
+	3. Threshold : [port aplikasi1]-[nilai threshold]: [port aplikasi2]-[nilai threshold]: [port aplikasi3]-[nilai threshold]: dst.
+	4. Training Status : [0, berarti aplikasi berjalan pada mode testing; 1, berarti aplikasi berjalan pada mode training]
+	5. Incremental Learning : [0, berarti aplikasi berjalan tanpa proses incremental learning; 1, berarti aplikasi berjalan dengan proses incremental learning]
+	6. Smoothing Factor : [nilai smoothing factor]
+	7. Window Size : [jumlah paket data yang ditangkap]
+	8. Sniffer Status : [0, berarti aplikasi menjalankan mode sniffer hanya sekali saja; 1, berarti aplikasi menjalankan mode sniffer secara terus-menerus]
+
+nama file: "port"
+	merupakan file yang berisi informasi port yang ingin diperiksa. Contoh untuk port aplikasi HTTP, tambahkan "TCP80 TCP" pada file "port"
+
+[Langkah Menjalankan Aplikasi]
+Pastikan aplikasi sudah dicompile. Jalankan aplikasi disarankan sebagai sudoers 
+/ administrator. Menjalakan melalui terminal / command promt:
+	"java -Xmx[minimum 6GB] -jar [jar file]"
